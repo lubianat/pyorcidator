@@ -40,17 +40,22 @@ LAST|P106|Q1650915
 LAST|P496|"{orcid}"
 """
 
-for institution in employment_institutions:
-    if institution not in dicts["institutions"]:
-        add_key(dicts["institutions"], institution)
-        with open("src/dictionaries/institutions.json", "w+") as f:
-            f.write(json.dumps(dicts["institutions"], indent=4, sort_keys=True))
+property_id = "P108"
+key = "institutions"
+target_list = employment_institutions
 
-    institution_qid = dicts["institutions"][institution]
+
+for target_item in target_list:
+    if target_item not in dicts[key]:
+        add_key(dicts[key], target_item)
+        with open(f"src/dictionaries/{key}.json", "w+") as f:
+            f.write(json.dumps(dicts[key], indent=4, sort_keys=True))
+
+    qid = dicts[key][target_item]
     qs = (
         qs
         + f"""
-LAST|P108|{institution_qid}
+LAST|{property_id}|{qid}
     """
     )
 
