@@ -27,10 +27,9 @@ publication_data = data["activities-summary"]["works"]
 first_name = personal_data["name"]["given-names"]["value"]
 last_name = personal_data["name"]["family-name"]["value"]
 
-print(education_data)
 
 employment_institutions = get_organization_list(employment_data)
-education_institution = get_organization_list(education_data)
+education_institutions, qualifier_nested_dictionary = get_education_info(education_data)
 
 s = lookup_id(orcid, property="P496", default="LAST")
 
@@ -55,13 +54,24 @@ qs = (
 property_id = "P108"
 key = "institutions"
 target_list = employment_institutions
-print(target_list)
-qs = process_item(qs, property_id, key, target_list, subject_qid=s, ref=ref)
+qs = process_item(
+    qs, property_id, original_dict=key, target_list=target_list, subject_qid=s, ref=ref
+)
 
 property_id = "P69"
-target_list = education_institution
+target_list = education_institutions
+
+print(qualifier_nested_dictionary)
 print(target_list)
-qs = process_item(qs, property_id, key, target_list, subject_qid=s, ref=ref)
+qs = process_item(
+    qs,
+    property_id,
+    original_dict=key,
+    target_list=target_list,
+    subject_qid=s,
+    ref=ref,
+    qualifier_nested_dictionary=qualifier_nested_dictionary,
+)
 
-
+clipboard.copy(qs)
 print(qs)

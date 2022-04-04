@@ -14,34 +14,42 @@ def add_key(dictionary, string):
 def process_item(
     qs,
     property_id,
-    key,
+    original_dict,
     target_list,
     subject_qid,
     ref,
-    qualifier_pairs={},
+    qualifier_nested_dictionary={},
 ):
     global dicts
     for target_item in target_list:
         if re.findall("Q[0-9]*", target_item):
             qid = target_item
         else:
-            if target_item not in dicts[key]:
-                add_key(dicts[key], target_item)
-                with open(f"src/dictionaries/{key}.json", "w+") as f:
-                    f.write(json.dumps(dicts[key], indent=4, sort_keys=True))
-
-            qid = dicts[key][target_item]
+            qid = get_qid_for_item(original_dict, target_item)
         qs = (
             qs
             + f"""
-{subject_qid}|{property_id}|{qid}{ref}"""
+{subject_qid}|{property_id}|{qid}"""
         )
 
-        if qualifier_pairs != {}:
-            for key, value in qualifier_pairs.items():
-                qs = qs + f"|{key}{value}"
+        if qualifier_nested_dictionary != {}:
+            qualifier_pairs = qualifier_nested_dictionary[target_item]
 
+            for key, value in qualifier_pairs.items():
+                qs = qs + f"|{key}|{value}" + f"{ref}"
+        else:
+            qs = qs + f"{ref}"
     return qs
+
+
+def get_qid_for_item(original_dict, target_item):
+    if target_item not in dicts[original_dict]:
+        add_key(dicts[original_dict], target_item)
+        with open(f"src/dictionaries/{original_dict}.json", "w+") as f:
+            f.write(json.dumps(dicts[original_dict], indent=4, sort_keys=True))
+
+    qid = dicts[original_dict][target_item]
+    return qid
 
 
 def lookup_id(id, property, default):
@@ -53,7 +61,6 @@ def lookup_id(id, property, default):
         ?item wdt:{property} "{id}" .
     }}
     """
-    print(query)
     sparql.setQuery(query)
 
     sparql.setReturnFormat(JSON)
@@ -79,3 +86,29 @@ def get_organization_list(data):
             name = id
         organization_list.append(name)
     return organization_list
+
+
+def get_education_info(data):
+    organization_list = []
+    qualifier_nested_dict = {}
+
+    for a in data:
+        qualifiers = {}
+
+        title = a["role-title"]
+        title_qid = get_qid_for_item("degree", title)
+        qualifiers["P512"] = title_qid
+
+        a = a["organization"]
+        name = a["name"]
+        if a["disambiguated-organization"]["disambiguation-source"] == "GRID":
+            grid = a["disambiguated-organization"][
+                "disambiguated-organization-identifier"
+            ]
+            id = lookup_id(grid, "P2427", name)
+            name = id
+        organization_list.append(name)
+
+        qualifier_nested_dict[name] = qualifiers
+        print(qualifier_nested_dict)
+    return organization_list, qualifier_nested_dict
