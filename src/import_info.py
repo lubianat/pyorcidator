@@ -16,18 +16,26 @@ header = {"Accept": "application/json"}
 payload = {"orcid": orcid}
 r = requests.get(f"{url}{orcid}", headers=header)
 data = r.json()
+with open("sample.json", "w+") as f:
+    f.write(json.dumps(data, indent=4))
 
 personal_data = data["person"]
 employment_data = data["activities-summary"]["employments"]["employment-summary"]
-education_data = data["activities-summary"]["educations"]
+education_data = data["activities-summary"]["educations"]["education-summary"]
 publication_data = data["activities-summary"]["works"]
 
 first_name = personal_data["name"]["given-names"]["value"]
 last_name = personal_data["name"]["family-name"]["value"]
 
-employment_institutions = [a["organization"]["name"] for a in employment_data]
+print(education_data)
 
-s = lookup_orcid(orcid)
+employment_institutions = get_organization_list(employment_data)
+education_institution = get_organization_list(education_data)
+
+s = lookup_id(orcid, property="P496", default="LAST")
+
+ref = f'|S854|"https://orcid.org/{str(orcid)}"'
+
 
 if s == "LAST":
     qs = "CREATE"
@@ -38,22 +46,22 @@ qs = (
     + f"""
 {s}|Len|"{first_name} {last_name}"
 {s}|Den|"researcher"
-{s}|P31|Q5
-{s}|P106|Q1650915
-{s}|P496|"{orcid}"
+{s}|P31|Q5{ref}
+{s}|P106|Q1650915{ref}
+{s}|P496|"{orcid}"{ref}
 """
 )
 
 property_id = "P108"
 key = "institutions"
 target_list = employment_institutions
+print(target_list)
+qs = process_item(qs, property_id, key, target_list, subject_qid=s, ref=ref)
 
-qs = process_item(qs, property_id, key, target_list, subject_qid=s)
+property_id = "P69"
+target_list = education_institution
+print(target_list)
+qs = process_item(qs, property_id, key, target_list, subject_qid=s, ref=ref)
 
-with open("sample.json", "w+") as f:
-    f.write(json.dumps(data, indent=4))
 
 print(qs)
-
-item = lookup_orcid(orcid)
-print(item)

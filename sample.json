@@ -1,20 +1,20 @@
 {
     "orcid-identifier": {
-        "uri": "http://orcid.org/0000-0003-2473-2313",
-        "path": "0000-0003-2473-2313",
+        "uri": "http://orcid.org/0000-0001-9020-6018",
+        "path": "0000-0001-9020-6018",
         "host": "orcid.org"
     },
     "preferences": {
         "locale": "EN"
     },
     "history": {
-        "creation-method": "DIRECT",
+        "creation-method": "MEMBER_REFERRED",
         "completion-date": null,
         "submission-date": {
-            "value": 1461189437633
+            "value": 1595403283447
         },
         "last-modified-date": {
-            "value": 1649091211541
+            "value": 1640097300913
         },
         "claimed": true,
         "source": null,
@@ -24,63 +24,63 @@
     },
     "person": {
         "last-modified-date": {
-            "value": 1605650824055
+            "value": 1640097300910
         },
         "name": {
             "created-date": {
-                "value": 1461189437853
+                "value": 1595403283687
             },
             "last-modified-date": {
-                "value": 1595648367114
+                "value": 1595922093806
             },
             "given-names": {
-                "value": "Tiago"
+                "value": "Vin\u00edcius Elias de Moura"
             },
             "family-name": {
-                "value": "Lubiana Alves"
+                "value": "Oliveira"
             },
             "credit-name": {
-                "value": "Tiago Lubiana"
+                "value": "Oliveira, VEM"
             },
             "source": null,
             "visibility": "PUBLIC",
-            "path": "0000-0003-2473-2313"
+            "path": "0000-0001-9020-6018"
         },
         "other-names": {
             "last-modified-date": null,
             "other-name": [],
-            "path": "/0000-0003-2473-2313/other-names"
+            "path": "/0000-0001-9020-6018/other-names"
         },
         "biography": null,
         "researcher-urls": {
             "last-modified-date": null,
             "researcher-url": [],
-            "path": "/0000-0003-2473-2313/researcher-urls"
+            "path": "/0000-0001-9020-6018/researcher-urls"
         },
         "emails": {
             "last-modified-date": {
-                "value": 1596162423857
+                "value": 1595939260149
             },
             "email": [
                 {
                     "created-date": {
-                        "value": 1595971031446
+                        "value": 1595403283673
                     },
                     "last-modified-date": {
-                        "value": 1596162423857
+                        "value": 1595939260149
                     },
                     "source": {
                         "source-orcid": {
-                            "uri": "http://orcid.org/0000-0003-2473-2313",
-                            "path": "0000-0003-2473-2313",
+                            "uri": "http://orcid.org/0000-0001-9020-6018",
+                            "path": "0000-0001-9020-6018",
                             "host": "orcid.org"
                         },
                         "source-client-id": null,
                         "source-name": {
-                            "value": "Tiago Lubiana"
+                            "value": "Oliveira, VEM"
                         }
                     },
-                    "email": "tiago.lubiana.alves@usp.br",
+                    "email": "vinicius.oliveira@biologie.uni-regensburg.de",
                     "path": null,
                     "visibility": "PUBLIC",
                     "verified": true,
@@ -88,140 +88,247 @@
                     "put-code": null
                 }
             ],
-            "path": "/0000-0003-2473-2313/email"
+            "path": "/0000-0001-9020-6018/email"
         },
         "addresses": {
             "last-modified-date": {
-                "value": 1605650824055
+                "value": 1615294355072
             },
             "address": [
                 {
                     "created-date": {
-                        "value": 1605650824055
+                        "value": 1595942287822
                     },
                     "last-modified-date": {
-                        "value": 1605650824055
+                        "value": 1615294355072
                     },
                     "source": {
                         "source-orcid": {
-                            "uri": "http://orcid.org/0000-0003-2473-2313",
-                            "path": "0000-0003-2473-2313",
+                            "uri": "http://orcid.org/0000-0001-9020-6018",
+                            "path": "0000-0001-9020-6018",
                             "host": "orcid.org"
                         },
                         "source-client-id": null,
                         "source-name": {
-                            "value": "Tiago Lubiana"
+                            "value": "Oliveira, VEM"
                         }
                     },
                     "country": {
-                        "value": "BR"
+                        "value": "BE"
                     },
                     "visibility": "PUBLIC",
-                    "path": "/0000-0003-2473-2313/address/1875660",
-                    "put-code": 1875660,
+                    "path": "/0000-0001-9020-6018/address/1737026",
+                    "put-code": 1737026,
                     "display-index": 1
                 }
             ],
-            "path": "/0000-0003-2473-2313/address"
+            "path": "/0000-0001-9020-6018/address"
         },
         "keywords": {
-            "last-modified-date": null,
-            "keyword": [],
-            "path": "/0000-0003-2473-2313/keywords"
+            "last-modified-date": {
+                "value": 1595942355839
+            },
+            "keyword": [
+                {
+                    "created-date": {
+                        "value": 1595942355834
+                    },
+                    "last-modified-date": {
+                        "value": 1595942355834
+                    },
+                    "source": {
+                        "source-orcid": {
+                            "uri": "http://orcid.org/0000-0001-9020-6018",
+                            "path": "0000-0001-9020-6018",
+                            "host": "orcid.org"
+                        },
+                        "source-client-id": null,
+                        "source-name": {
+                            "value": "Oliveira, VEM"
+                        }
+                    },
+                    "content": "Aggression",
+                    "visibility": "PUBLIC",
+                    "path": "/0000-0001-9020-6018/keywords/1663518",
+                    "put-code": 1663518,
+                    "display-index": 5
+                },
+                {
+                    "created-date": {
+                        "value": 1595942355836
+                    },
+                    "last-modified-date": {
+                        "value": 1595942355836
+                    },
+                    "source": {
+                        "source-orcid": {
+                            "uri": "http://orcid.org/0000-0001-9020-6018",
+                            "path": "0000-0001-9020-6018",
+                            "host": "orcid.org"
+                        },
+                        "source-client-id": null,
+                        "source-name": {
+                            "value": "Oliveira, VEM"
+                        }
+                    },
+                    "content": "Social Behavior",
+                    "visibility": "PUBLIC",
+                    "path": "/0000-0001-9020-6018/keywords/1663519",
+                    "put-code": 1663519,
+                    "display-index": 4
+                },
+                {
+                    "created-date": {
+                        "value": 1595942355837
+                    },
+                    "last-modified-date": {
+                        "value": 1595942355837
+                    },
+                    "source": {
+                        "source-orcid": {
+                            "uri": "http://orcid.org/0000-0001-9020-6018",
+                            "path": "0000-0001-9020-6018",
+                            "host": "orcid.org"
+                        },
+                        "source-client-id": null,
+                        "source-name": {
+                            "value": "Oliveira, VEM"
+                        }
+                    },
+                    "content": "Oxytocin",
+                    "visibility": "PUBLIC",
+                    "path": "/0000-0001-9020-6018/keywords/1663520",
+                    "put-code": 1663520,
+                    "display-index": 3
+                },
+                {
+                    "created-date": {
+                        "value": 1595942355838
+                    },
+                    "last-modified-date": {
+                        "value": 1595942355838
+                    },
+                    "source": {
+                        "source-orcid": {
+                            "uri": "http://orcid.org/0000-0001-9020-6018",
+                            "path": "0000-0001-9020-6018",
+                            "host": "orcid.org"
+                        },
+                        "source-client-id": null,
+                        "source-name": {
+                            "value": "Oliveira, VEM"
+                        }
+                    },
+                    "content": "Vasopressin",
+                    "visibility": "PUBLIC",
+                    "path": "/0000-0001-9020-6018/keywords/1663521",
+                    "put-code": 1663521,
+                    "display-index": 2
+                },
+                {
+                    "created-date": {
+                        "value": 1595942355839
+                    },
+                    "last-modified-date": {
+                        "value": 1595942355839
+                    },
+                    "source": {
+                        "source-orcid": {
+                            "uri": "http://orcid.org/0000-0001-9020-6018",
+                            "path": "0000-0001-9020-6018",
+                            "host": "orcid.org"
+                        },
+                        "source-client-id": null,
+                        "source-name": {
+                            "value": "Oliveira, VEM"
+                        }
+                    },
+                    "content": "Female neurobiology",
+                    "visibility": "PUBLIC",
+                    "path": "/0000-0001-9020-6018/keywords/1663522",
+                    "put-code": 1663522,
+                    "display-index": 1
+                }
+            ],
+            "path": "/0000-0001-9020-6018/keywords"
         },
         "external-identifiers": {
-            "last-modified-date": null,
-            "external-identifier": [],
-            "path": "/0000-0003-2473-2313/external-identifiers"
+            "last-modified-date": {
+                "value": 1640097300910
+            },
+            "external-identifier": [
+                {
+                    "created-date": {
+                        "value": 1640097300910
+                    },
+                    "last-modified-date": {
+                        "value": 1640097300910
+                    },
+                    "source": {
+                        "source-orcid": null,
+                        "source-client-id": {
+                            "uri": "http://orcid.org/client/APP-4DPEW6SVSNQHKC8G",
+                            "path": "APP-4DPEW6SVSNQHKC8G",
+                            "host": "orcid.org"
+                        },
+                        "source-name": {
+                            "value": "Loop"
+                        }
+                    },
+                    "external-id-type": "Loop profile",
+                    "external-id-value": "1608129",
+                    "external-id-url": {
+                        "value": "http://loop.frontiersin.org/people/1608129/overview?referrer=orcid_profile"
+                    },
+                    "external-id-relationship": "SELF",
+                    "visibility": "PUBLIC",
+                    "path": "/0000-0001-9020-6018/external-identifiers/2291935",
+                    "put-code": 2291935,
+                    "display-index": 0
+                }
+            ],
+            "path": "/0000-0001-9020-6018/external-identifiers"
         },
-        "path": "/0000-0003-2473-2313/person"
+        "path": "/0000-0001-9020-6018/person"
     },
     "activities-summary": {
         "last-modified-date": {
-            "value": 1644226578935
+            "value": 1639752819809
         },
         "educations": {
             "last-modified-date": {
-                "value": 1605651764237
+                "value": 1595404105358
             },
             "education-summary": [
                 {
                     "created-date": {
-                        "value": 1605642491385
+                        "value": 1595403888946
                     },
                     "last-modified-date": {
-                        "value": 1605651745543
+                        "value": 1595403888946
                     },
                     "source": {
                         "source-orcid": {
-                            "uri": "http://orcid.org/0000-0003-2473-2313",
-                            "path": "0000-0003-2473-2313",
+                            "uri": "http://orcid.org/0000-0001-9020-6018",
+                            "path": "0000-0001-9020-6018",
                             "host": "orcid.org"
                         },
                         "source-client-id": null,
                         "source-name": {
-                            "value": "Tiago Lubiana"
+                            "value": "Oliveira, VEM"
                         }
                     },
-                    "department-name": "Bioinformatics Program",
+                    "department-name": "Department of Behavioural and Molecular Neurobiology",
                     "role-title": "PhD",
                     "start-date": {
                         "year": {
-                            "value": "2020"
+                            "value": "2015"
                         },
                         "month": {
-                            "value": "07"
+                            "value": "09"
                         },
                         "day": {
-                            "value": "21"
-                        }
-                    },
-                    "end-date": null,
-                    "organization": {
-                        "name": "Universidade de S\u00e3o Paulo",
-                        "address": {
-                            "city": "S\u00e3o Paulo",
-                            "region": "SP",
-                            "country": "BR"
-                        },
-                        "disambiguated-organization": {
-                            "disambiguated-organization-identifier": "http://dx.doi.org/10.13039/501100005639",
-                            "disambiguation-source": "FUNDREF"
-                        }
-                    },
-                    "visibility": "PUBLIC",
-                    "put-code": 13254544,
-                    "path": "/0000-0003-2473-2313/education/13254544"
-                },
-                {
-                    "created-date": {
-                        "value": 1605642438765
-                    },
-                    "last-modified-date": {
-                        "value": 1605651764237
-                    },
-                    "source": {
-                        "source-orcid": {
-                            "uri": "http://orcid.org/0000-0003-2473-2313",
-                            "path": "0000-0003-2473-2313",
-                            "host": "orcid.org"
-                        },
-                        "source-client-id": null,
-                        "source-name": {
-                            "value": "Tiago Lubiana"
-                        }
-                    },
-                    "department-name": "Bioinformatics Program",
-                    "role-title": "Master of Sciences",
-                    "start-date": {
-                        "year": {
-                            "value": "2018"
-                        },
-                        "month": {
                             "value": "01"
-                        },
-                        "day": {
-                            "value": "17"
                         }
                     },
                     "end-date": {
@@ -229,276 +336,225 @@
                             "value": "2020"
                         },
                         "month": {
-                            "value": "03"
+                            "value": "05"
+                        },
+                        "day": {
+                            "value": "26"
+                        }
+                    },
+                    "organization": {
+                        "name": "University of Regensburg",
+                        "address": {
+                            "city": "Regensburg",
+                            "region": "Bayern",
+                            "country": "DE"
+                        },
+                        "disambiguated-organization": {
+                            "disambiguated-organization-identifier": "grid.7727.5",
+                            "disambiguation-source": "GRID"
+                        }
+                    },
+                    "visibility": "PUBLIC",
+                    "put-code": 12209145,
+                    "path": "/0000-0001-9020-6018/education/12209145"
+                },
+                {
+                    "created-date": {
+                        "value": 1595404105358
+                    },
+                    "last-modified-date": {
+                        "value": 1595404105358
+                    },
+                    "source": {
+                        "source-orcid": {
+                            "uri": "http://orcid.org/0000-0001-9020-6018",
+                            "path": "0000-0001-9020-6018",
+                            "host": "orcid.org"
+                        },
+                        "source-client-id": null,
+                        "source-name": {
+                            "value": "Oliveira, VEM"
+                        }
+                    },
+                    "department-name": "Physiology- Nucleo de Neurociencias",
+                    "role-title": "Master",
+                    "start-date": {
+                        "year": {
+                            "value": "2013"
+                        },
+                        "month": {
+                            "value": "08"
+                        },
+                        "day": null
+                    },
+                    "end-date": {
+                        "year": {
+                            "value": "2015"
+                        },
+                        "month": {
+                            "value": "06"
+                        },
+                        "day": null
+                    },
+                    "organization": {
+                        "name": "Universidade Federal de Minas Gerais Instituto de Ci\u00eancias Biol\u00f3gicas",
+                        "address": {
+                            "city": "Belo Horizonte",
+                            "region": "MG",
+                            "country": "BR"
+                        },
+                        "disambiguated-organization": {
+                            "disambiguated-organization-identifier": "113014",
+                            "disambiguation-source": "RINGGOLD"
+                        }
+                    },
+                    "visibility": "PUBLIC",
+                    "put-code": 12209168,
+                    "path": "/0000-0001-9020-6018/education/12209168"
+                }
+            ],
+            "path": "/0000-0001-9020-6018/educations"
+        },
+        "employments": {
+            "last-modified-date": {
+                "value": 1615294609934
+            },
+            "employment-summary": [
+                {
+                    "created-date": {
+                        "value": 1615294609934
+                    },
+                    "last-modified-date": {
+                        "value": 1615294609934
+                    },
+                    "source": {
+                        "source-orcid": {
+                            "uri": "http://orcid.org/0000-0001-9020-6018",
+                            "path": "0000-0001-9020-6018",
+                            "host": "orcid.org"
+                        },
+                        "source-client-id": null,
+                        "source-name": {
+                            "value": "Oliveira, VEM"
+                        }
+                    },
+                    "department-name": "GIGA Neurosciences - Neuroendocrinology",
+                    "role-title": "Postdoc Fellow",
+                    "start-date": {
+                        "year": {
+                            "value": "2021"
+                        },
+                        "month": {
+                            "value": "01"
+                        },
+                        "day": {
+                            "value": "04"
+                        }
+                    },
+                    "end-date": null,
+                    "organization": {
+                        "name": "Universit\u00e9 de Li\u00e8ge",
+                        "address": {
+                            "city": "Liege",
+                            "region": "Wallonia",
+                            "country": "BE"
+                        },
+                        "disambiguated-organization": {
+                            "disambiguated-organization-identifier": "26658",
+                            "disambiguation-source": "RINGGOLD"
+                        }
+                    },
+                    "visibility": "PUBLIC",
+                    "put-code": 14224077,
+                    "path": "/0000-0001-9020-6018/employment/14224077"
+                },
+                {
+                    "created-date": {
+                        "value": 1595403770877
+                    },
+                    "last-modified-date": {
+                        "value": 1615294393460
+                    },
+                    "source": {
+                        "source-orcid": {
+                            "uri": "http://orcid.org/0000-0001-9020-6018",
+                            "path": "0000-0001-9020-6018",
+                            "host": "orcid.org"
+                        },
+                        "source-client-id": null,
+                        "source-name": {
+                            "value": "Oliveira, VEM"
+                        }
+                    },
+                    "department-name": "Department of Behavioural and Molecular Neurobiology",
+                    "role-title": "Postdoc fellow",
+                    "start-date": {
+                        "year": {
+                            "value": "2020"
+                        },
+                        "month": {
+                            "value": "06"
+                        },
+                        "day": {
+                            "value": "01"
+                        }
+                    },
+                    "end-date": {
+                        "year": {
+                            "value": "2020"
+                        },
+                        "month": {
+                            "value": "12"
                         },
                         "day": {
                             "value": "31"
                         }
                     },
                     "organization": {
-                        "name": "Universidade de S\u00e3o Paulo",
+                        "name": "University of Regensburg",
                         "address": {
-                            "city": "S\u00e3o Paulo",
-                            "region": "SP",
-                            "country": "BR"
+                            "city": "Regensburg",
+                            "region": "Bayern",
+                            "country": "DE"
                         },
                         "disambiguated-organization": {
-                            "disambiguated-organization-identifier": "http://dx.doi.org/10.13039/501100005639",
-                            "disambiguation-source": "FUNDREF"
+                            "disambiguated-organization-identifier": "grid.7727.5",
+                            "disambiguation-source": "GRID"
                         }
                     },
                     "visibility": "PUBLIC",
-                    "put-code": 13254538,
-                    "path": "/0000-0003-2473-2313/education/13254538"
-                },
-                {
-                    "created-date": {
-                        "value": 1461294587096
-                    },
-                    "last-modified-date": {
-                        "value": 1580243691727
-                    },
-                    "source": {
-                        "source-orcid": {
-                            "uri": "http://orcid.org/0000-0003-2473-2313",
-                            "path": "0000-0003-2473-2313",
-                            "host": "orcid.org"
-                        },
-                        "source-client-id": null,
-                        "source-name": {
-                            "value": "Tiago Lubiana"
-                        }
-                    },
-                    "department-name": null,
-                    "role-title": "Biomedical Sciences",
-                    "start-date": {
-                        "year": {
-                            "value": "2014"
-                        },
-                        "month": {
-                            "value": "02"
-                        },
-                        "day": {
-                            "value": "17"
-                        }
-                    },
-                    "end-date": {
-                        "year": {
-                            "value": "2017"
-                        },
-                        "month": {
-                            "value": "12"
-                        },
-                        "day": {
-                            "value": "03"
-                        }
-                    },
-                    "organization": {
-                        "name": "Universidade de S\u00e3o Paulo",
-                        "address": {
-                            "city": "Sao Paulo",
-                            "region": "SP",
-                            "country": "BR"
-                        },
-                        "disambiguated-organization": {
-                            "disambiguated-organization-identifier": "67887",
-                            "disambiguation-source": "RINGGOLD"
-                        }
-                    },
-                    "visibility": "PUBLIC",
-                    "put-code": 1770256,
-                    "path": "/0000-0003-2473-2313/education/1770256"
+                    "put-code": 12209133,
+                    "path": "/0000-0001-9020-6018/employment/12209133"
                 }
             ],
-            "path": "/0000-0003-2473-2313/educations"
-        },
-        "employments": {
-            "last-modified-date": null,
-            "employment-summary": [],
-            "path": "/0000-0003-2473-2313/employments"
+            "path": "/0000-0001-9020-6018/employments"
         },
         "fundings": {
-            "last-modified-date": {
-                "value": 1605651076408
-            },
-            "group": [
-                {
-                    "last-modified-date": {
-                        "value": 1605651076408
-                    },
-                    "external-ids": {
-                        "external-id": [
-                            {
-                                "external-id-type": "grant_number",
-                                "external-id-value": "19/26284-1",
-                                "external-id-url": {
-                                    "value": "https://bv.fapesp.br/en/bolsas/193825/building-a-biological-knowledge-graph-via-wikidata-with-a-focus-on-the-human-cell-atlas/"
-                                },
-                                "external-id-relationship": "SELF"
-                            }
-                        ]
-                    },
-                    "funding-summary": [
-                        {
-                            "created-date": {
-                                "value": 1605643104587
-                            },
-                            "last-modified-date": {
-                                "value": 1605651076408
-                            },
-                            "source": {
-                                "source-orcid": {
-                                    "uri": "http://orcid.org/0000-0003-2473-2313",
-                                    "path": "0000-0003-2473-2313",
-                                    "host": "orcid.org"
-                                },
-                                "source-client-id": null,
-                                "source-name": {
-                                    "value": "Tiago Lubiana"
-                                }
-                            },
-                            "title": {
-                                "title": {
-                                    "value": "Building a biological knowledge graph via Wikidata with a focus on the Human Cell Atlas"
-                                },
-                                "translated-title": {
-                                    "value": "-",
-                                    "language-code": "zu"
-                                }
-                            },
-                            "external-ids": {
-                                "external-id": [
-                                    {
-                                        "external-id-type": "grant_number",
-                                        "external-id-value": "19/26284-1",
-                                        "external-id-url": {
-                                            "value": "https://bv.fapesp.br/en/bolsas/193825/building-a-biological-knowledge-graph-via-wikidata-with-a-focus-on-the-human-cell-atlas/"
-                                        },
-                                        "external-id-relationship": "SELF"
-                                    }
-                                ]
-                            },
-                            "type": "GRANT",
-                            "start-date": null,
-                            "end-date": null,
-                            "organization": {
-                                "name": "Funda\u00e7\u00e3o de Amparo \u00e0 Pesquisa do Estado de S\u00e3o Paulo",
-                                "address": {
-                                    "city": "S\u00e3o Paulo",
-                                    "region": null,
-                                    "country": "BR"
-                                },
-                                "disambiguated-organization": {
-                                    "disambiguated-organization-identifier": "http://dx.doi.org/10.13039/501100001807",
-                                    "disambiguation-source": "FUNDREF"
-                                }
-                            },
-                            "visibility": "PUBLIC",
-                            "put-code": 997914,
-                            "path": "/0000-0003-2473-2313/funding/997914",
-                            "display-index": "1"
-                        }
-                    ]
-                }
-            ],
-            "path": "/0000-0003-2473-2313/fundings"
+            "last-modified-date": null,
+            "group": [],
+            "path": "/0000-0001-9020-6018/fundings"
         },
         "peer-reviews": {
-            "last-modified-date": {
-                "value": 1606716851682
-            },
-            "group": [
-                {
-                    "last-modified-date": {
-                        "value": 1606716851682
-                    },
-                    "external-ids": {
-                        "external-id": [
-                            {
-                                "external-id-type": "peer-review",
-                                "external-id-value": "issn:1758-2946",
-                                "external-id-url": null,
-                                "external-id-relationship": null
-                            }
-                        ]
-                    },
-                    "peer-review-summary": [
-                        {
-                            "created-date": {
-                                "value": 1606716851682
-                            },
-                            "last-modified-date": {
-                                "value": 1606716851682
-                            },
-                            "source": {
-                                "source-orcid": null,
-                                "source-client-id": {
-                                    "uri": "http://orcid.org/client/APP-945VYTN20C7BZXYT",
-                                    "path": "APP-945VYTN20C7BZXYT",
-                                    "host": "orcid.org"
-                                },
-                                "source-name": {
-                                    "value": "Springer Nature"
-                                }
-                            },
-                            "external-ids": {
-                                "external-id": [
-                                    {
-                                        "external-id-type": "source-work-id",
-                                        "external-id-value": "694f5cf4-bb3a-48fa-a93f-c67628e565e0",
-                                        "external-id-url": {
-                                            "value": ""
-                                        },
-                                        "external-id-relationship": "SELF"
-                                    }
-                                ]
-                            },
-                            "completion-date": {
-                                "year": {
-                                    "value": "2020"
-                                },
-                                "month": null,
-                                "day": null
-                            },
-                            "review-group-id": "issn:1758-2946",
-                            "convening-organization": {
-                                "name": "Springer Nature",
-                                "address": {
-                                    "city": "New York",
-                                    "region": null,
-                                    "country": "US"
-                                },
-                                "disambiguated-organization": {
-                                    "disambiguated-organization-identifier": "grid.467660.5",
-                                    "disambiguation-source": "GRID"
-                                }
-                            },
-                            "visibility": "PUBLIC",
-                            "put-code": 2968989,
-                            "path": "/0000-0003-2473-2313/peer-review/2968989",
-                            "display-index": "0"
-                        }
-                    ]
-                }
-            ],
-            "path": "/0000-0003-2473-2313/peer-reviews"
+            "last-modified-date": null,
+            "group": [],
+            "path": "/0000-0001-9020-6018/peer-reviews"
         },
         "works": {
             "last-modified-date": {
-                "value": 1644226578935
+                "value": 1639752819809
             },
             "group": [
                 {
                     "last-modified-date": {
-                        "value": 1644226578935
+                        "value": 1621335164990
                     },
                     "external-ids": {
                         "external-id": [
                             {
                                 "external-id-type": "doi",
-                                "external-id-value": "10.3233/SW-210444",
+                                "external-id-value": "10.1038/s41467-021-23064-5",
                                 "external-id-url": {
-                                    "value": "https://doi.org/10.3233/SW-210444"
+                                    "value": "https://doi.org/10.1038/s41467-021-23064-5"
                                 },
                                 "external-id-relationship": "SELF"
                             }
@@ -506,12 +562,12 @@
                     },
                     "work-summary": [
                         {
-                            "put-code": 100684203,
+                            "put-code": 94013870,
                             "created-date": {
-                                "value": 1632867980876
+                                "value": 1621335164990
                             },
                             "last-modified-date": {
-                                "value": 1644226578935
+                                "value": 1621335164990
                             },
                             "source": {
                                 "source-orcid": null,
@@ -526,7 +582,7 @@
                             },
                             "title": {
                                 "title": {
-                                    "value": "Representing COVID-19 information in collaborative knowledge graphs: The case of Wikidata"
+                                    "value": "Oxytocin and vasopressin within the ventral and dorsal lateral septum modulate aggression in female rats"
                                 },
                                 "subtitle": null,
                                 "translated-title": null
@@ -535,89 +591,15 @@
                                 "external-id": [
                                     {
                                         "external-id-type": "doi",
-                                        "external-id-value": "10.3233/SW-210444",
+                                        "external-id-value": "10.1038/s41467-021-23064-5",
                                         "external-id-url": {
-                                            "value": "https://doi.org/10.3233/SW-210444"
+                                            "value": "https://doi.org/10.1038/s41467-021-23064-5"
                                         },
                                         "external-id-relationship": "SELF"
                                     }
                                 ]
                             },
                             "type": "JOURNAL_ARTICLE",
-                            "publication-date": {
-                                "year": {
-                                    "value": "2022"
-                                },
-                                "month": {
-                                    "value": "02"
-                                },
-                                "day": {
-                                    "value": "03"
-                                },
-                                "media-type": null
-                            },
-                            "visibility": "PUBLIC",
-                            "path": "/0000-0003-2473-2313/work/100684203",
-                            "display-index": "0"
-                        }
-                    ]
-                },
-                {
-                    "last-modified-date": {
-                        "value": 1639081182577
-                    },
-                    "external-ids": {
-                        "external-id": [
-                            {
-                                "external-id-type": "doi",
-                                "external-id-value": "10.1101/2021.12.07.471603",
-                                "external-id-url": {
-                                    "value": "https://doi.org/10.1101/2021.12.07.471603"
-                                },
-                                "external-id-relationship": "SELF"
-                            }
-                        ]
-                    },
-                    "work-summary": [
-                        {
-                            "put-code": 104508015,
-                            "created-date": {
-                                "value": 1639081182577
-                            },
-                            "last-modified-date": {
-                                "value": 1639081182577
-                            },
-                            "source": {
-                                "source-orcid": null,
-                                "source-client-id": {
-                                    "uri": "http://orcid.org/client/0000-0001-9884-1913",
-                                    "path": "0000-0001-9884-1913",
-                                    "host": "orcid.org"
-                                },
-                                "source-name": {
-                                    "value": "Crossref"
-                                }
-                            },
-                            "title": {
-                                "title": {
-                                    "value": "Using coexpression to explore cell-type diversity with the fcoex package"
-                                },
-                                "subtitle": null,
-                                "translated-title": null
-                            },
-                            "external-ids": {
-                                "external-id": [
-                                    {
-                                        "external-id-type": "doi",
-                                        "external-id-value": "10.1101/2021.12.07.471603",
-                                        "external-id-url": {
-                                            "value": "https://doi.org/10.1101/2021.12.07.471603"
-                                        },
-                                        "external-id-relationship": "SELF"
-                                    }
-                                ]
-                            },
-                            "type": "OTHER",
                             "publication-date": {
                                 "year": {
                                     "value": "2021"
@@ -625,28 +607,26 @@
                                 "month": {
                                     "value": "12"
                                 },
-                                "day": {
-                                    "value": "09"
-                                },
+                                "day": null,
                                 "media-type": null
                             },
                             "visibility": "PUBLIC",
-                            "path": "/0000-0003-2473-2313/work/104508015",
+                            "path": "/0000-0001-9020-6018/work/94013870",
                             "display-index": "0"
                         }
                     ]
                 },
                 {
                     "last-modified-date": {
-                        "value": 1638393156107
+                        "value": 1639752819809
                     },
                     "external-ids": {
                         "external-id": [
                             {
                                 "external-id-type": "doi",
-                                "external-id-value": "10.31222/osf.io/vbwa9",
+                                "external-id-value": "10.1016/j.tins.2021.10.010",
                                 "external-id-url": {
-                                    "value": "https://doi.org/10.31222/osf.io/vbwa9"
+                                    "value": "https://doi.org/10.1016/j.tins.2021.10.010"
                                 },
                                 "external-id-relationship": "SELF"
                             }
@@ -654,27 +634,27 @@
                     },
                     "work-summary": [
                         {
-                            "put-code": 103922002,
+                            "put-code": 104922629,
                             "created-date": {
-                                "value": 1638203127705
+                                "value": 1639752819809
                             },
                             "last-modified-date": {
-                                "value": 1638393156107
+                                "value": 1639752819809
                             },
                             "source": {
-                                "source-orcid": null,
-                                "source-client-id": {
-                                    "uri": "http://orcid.org/client/0000-0001-9884-1913",
-                                    "path": "0000-0001-9884-1913",
+                                "source-orcid": {
+                                    "uri": "http://orcid.org/0000-0001-9020-6018",
+                                    "path": "0000-0001-9020-6018",
                                     "host": "orcid.org"
                                 },
+                                "source-client-id": null,
                                 "source-name": {
-                                    "value": "Crossref"
+                                    "value": "Oliveira, VEM"
                                 }
                             },
                             "title": {
                                 "title": {
-                                    "value": "Sharing intermediate datasets from systematic reviews"
+                                    "value": "Neurobiology of the lateral septum: regulation of social behavior"
                                 },
                                 "subtitle": null,
                                 "translated-title": null
@@ -683,15 +663,23 @@
                                 "external-id": [
                                     {
                                         "external-id-type": "doi",
-                                        "external-id-value": "10.31222/osf.io/vbwa9",
+                                        "external-id-value": "10.1016/j.tins.2021.10.010",
                                         "external-id-url": {
-                                            "value": "https://doi.org/10.31222/osf.io/vbwa9"
+                                            "value": "https://doi.org/10.1016/j.tins.2021.10.010"
                                         },
                                         "external-id-relationship": "SELF"
+                                    },
+                                    {
+                                        "external-id-type": "issn",
+                                        "external-id-value": "0166-2236",
+                                        "external-id-url": {
+                                            "value": "https://portal.issn.org/resource/ISSN/0166-2236"
+                                        },
+                                        "external-id-relationship": "PART_OF"
                                     }
                                 ]
                             },
-                            "type": "OTHER",
+                            "type": "JOURNAL_ARTICLE",
                             "publication-date": {
                                 "year": {
                                     "value": "2021"
@@ -699,102 +687,26 @@
                                 "month": {
                                     "value": "11"
                                 },
-                                "day": {
-                                    "value": "26"
-                                },
+                                "day": null,
                                 "media-type": null
                             },
                             "visibility": "PUBLIC",
-                            "path": "/0000-0003-2473-2313/work/103922002",
-                            "display-index": "0"
-                        }
-                    ]
-                },
-                {
-                    "last-modified-date": {
-                        "value": 1616519079150
-                    },
-                    "external-ids": {
-                        "external-id": [
-                            {
-                                "external-id-type": "doi",
-                                "external-id-value": "10.5281/ZENODO.4630965",
-                                "external-id-url": {
-                                    "value": "https://doi.org/10.5281/ZENODO.4630965"
-                                },
-                                "external-id-relationship": "SELF"
-                            }
-                        ]
-                    },
-                    "work-summary": [
-                        {
-                            "put-code": 91087551,
-                            "created-date": {
-                                "value": 1616519079150
-                            },
-                            "last-modified-date": {
-                                "value": 1616519079150
-                            },
-                            "source": {
-                                "source-orcid": {
-                                    "uri": "http://orcid.org/0000-0003-2473-2313",
-                                    "path": "0000-0003-2473-2313",
-                                    "host": "orcid.org"
-                                },
-                                "source-client-id": null,
-                                "source-name": {
-                                    "value": "Tiago Lubiana"
-                                }
-                            },
-                            "title": {
-                                "title": {
-                                    "value": "Paratransgenesis - Candidate Chassis for iGEM USP-Brazil 2017"
-                                },
-                                "subtitle": null,
-                                "translated-title": null
-                            },
-                            "external-ids": {
-                                "external-id": [
-                                    {
-                                        "external-id-type": "doi",
-                                        "external-id-value": "10.5281/ZENODO.4630965",
-                                        "external-id-url": {
-                                            "value": "https://doi.org/10.5281/ZENODO.4630965"
-                                        },
-                                        "external-id-relationship": "SELF"
-                                    }
-                                ]
-                            },
-                            "type": "DATA_SET",
-                            "publication-date": {
-                                "year": {
-                                    "value": "2021"
-                                },
-                                "month": {
-                                    "value": "03"
-                                },
-                                "day": {
-                                    "value": "23"
-                                },
-                                "media-type": null
-                            },
-                            "visibility": "PUBLIC",
-                            "path": "/0000-0003-2473-2313/work/91087551",
+                            "path": "/0000-0001-9020-6018/work/104922629",
                             "display-index": "1"
                         }
                     ]
                 },
                 {
                     "last-modified-date": {
-                        "value": 1614703894618
+                        "value": 1633906807790
                     },
                     "external-ids": {
                         "external-id": [
                             {
                                 "external-id-type": "doi",
-                                "external-id-value": "10.5281/ZENODO.4573573",
+                                "external-id-value": "10.1101/2021.10.06.463346",
                                 "external-id-url": {
-                                    "value": "https://doi.org/10.5281/ZENODO.4573573"
+                                    "value": "https://doi.org/10.1101/2021.10.06.463346"
                                 },
                                 "external-id-relationship": "SELF"
                             }
@@ -802,86 +714,12 @@
                     },
                     "work-summary": [
                         {
-                            "put-code": 89778754,
+                            "put-code": 101131620,
                             "created-date": {
-                                "value": 1614703894618
+                                "value": 1633654345921
                             },
                             "last-modified-date": {
-                                "value": 1614703894618
-                            },
-                            "source": {
-                                "source-orcid": {
-                                    "uri": "http://orcid.org/0000-0003-2473-2313",
-                                    "path": "0000-0003-2473-2313",
-                                    "host": "orcid.org"
-                                },
-                                "source-client-id": null,
-                                "source-name": {
-                                    "value": "Tiago Lubiana"
-                                }
-                            },
-                            "title": {
-                                "title": {
-                                    "value": "Studies on GEO related to neurogeneration or infections diseases"
-                                },
-                                "subtitle": null,
-                                "translated-title": null
-                            },
-                            "external-ids": {
-                                "external-id": [
-                                    {
-                                        "external-id-type": "doi",
-                                        "external-id-value": "10.5281/ZENODO.4573573",
-                                        "external-id-url": {
-                                            "value": "https://doi.org/10.5281/ZENODO.4573573"
-                                        },
-                                        "external-id-relationship": "SELF"
-                                    }
-                                ]
-                            },
-                            "type": "DATA_SET",
-                            "publication-date": {
-                                "year": {
-                                    "value": "2021"
-                                },
-                                "month": {
-                                    "value": "03"
-                                },
-                                "day": {
-                                    "value": "02"
-                                },
-                                "media-type": null
-                            },
-                            "visibility": "PUBLIC",
-                            "path": "/0000-0003-2473-2313/work/89778754",
-                            "display-index": "1"
-                        }
-                    ]
-                },
-                {
-                    "last-modified-date": {
-                        "value": 1609795755175
-                    },
-                    "external-ids": {
-                        "external-id": [
-                            {
-                                "external-id-type": "doi",
-                                "external-id-value": "10.22541/au.160979530.02627436/v1",
-                                "external-id-url": {
-                                    "value": "https://doi.org/10.22541/au.160979530.02627436/v1"
-                                },
-                                "external-id-relationship": "SELF"
-                            }
-                        ]
-                    },
-                    "work-summary": [
-                        {
-                            "put-code": 86224080,
-                            "created-date": {
-                                "value": 1609795755175
-                            },
-                            "last-modified-date": {
-                                "value": 1609795755175
+                                "value": 1633906807790
                             },
                             "source": {
                                 "source-orcid": null,
@@ -896,7 +734,7 @@
                             },
                             "title": {
                                 "title": {
-                                    "value": "Towards a pragmatic definition of cell type"
+                                    "value": "Modelling sexual violence in male rats: The sexual aggression test (SxAT)"
                                 },
                                 "subtitle": null,
                                 "translated-title": null
@@ -905,9 +743,9 @@
                                 "external-id": [
                                     {
                                         "external-id-type": "doi",
-                                        "external-id-value": "10.22541/au.160979530.02627436/v1",
+                                        "external-id-value": "10.1101/2021.10.06.463346",
                                         "external-id-url": {
-                                            "value": "https://doi.org/10.22541/au.160979530.02627436/v1"
+                                            "value": "https://doi.org/10.1101/2021.10.06.463346"
                                         },
                                         "external-id-relationship": "SELF"
                                     }
@@ -919,30 +757,30 @@
                                     "value": "2021"
                                 },
                                 "month": {
-                                    "value": "01"
+                                    "value": "10"
                                 },
                                 "day": {
-                                    "value": "04"
+                                    "value": "07"
                                 },
                                 "media-type": null
                             },
                             "visibility": "PUBLIC",
-                            "path": "/0000-0003-2473-2313/work/86224080",
+                            "path": "/0000-0001-9020-6018/work/101131620",
                             "display-index": "0"
                         }
                     ]
                 },
                 {
                     "last-modified-date": {
-                        "value": 1605651275644
+                        "value": 1596985853294
                     },
                     "external-ids": {
                         "external-id": [
                             {
                                 "external-id-type": "doi",
-                                "external-id-value": "10.5281/ZENODO.4033382",
+                                "external-id-value": "10.1101/2020.07.28.224873",
                                 "external-id-url": {
-                                    "value": "https://doi.org/10.5281/ZENODO.4033382"
+                                    "value": "https://doi.org/10.1101/2020.07.28.224873"
                                 },
                                 "external-id-relationship": "SELF"
                             }
@@ -950,27 +788,27 @@
                     },
                     "work-summary": [
                         {
-                            "put-code": 83630046,
+                            "put-code": 78536857,
                             "created-date": {
-                                "value": 1605651275644
+                                "value": 1596985330615
                             },
                             "last-modified-date": {
-                                "value": 1605651275644
+                                "value": 1596985330615
                             },
                             "source": {
                                 "source-orcid": {
-                                    "uri": "http://orcid.org/0000-0003-2473-2313",
-                                    "path": "0000-0003-2473-2313",
+                                    "uri": "http://orcid.org/0000-0001-9020-6018",
+                                    "path": "0000-0001-9020-6018",
                                     "host": "orcid.org"
                                 },
                                 "source-client-id": null,
                                 "source-name": {
-                                    "value": "Tiago Lubiana"
+                                    "value": "Oliveira, VEM"
                                 }
                             },
                             "title": {
                                 "title": {
-                                    "value": "Representing COVID-19 information in collaborative knowledge graphs: a study of Wikidata"
+                                    "value": "Concerted but segregated actions of oxytocin and vasopressin within the ventral and dorsal lateral septum determine female aggression"
                                 },
                                 "subtitle": null,
                                 "translated-title": null
@@ -979,201 +817,38 @@
                                 "external-id": [
                                     {
                                         "external-id-type": "doi",
-                                        "external-id-value": "10.5281/ZENODO.4033382",
+                                        "external-id-value": "10.1101/2020.07.28.224873",
                                         "external-id-url": {
-                                            "value": "https://doi.org/10.5281/ZENODO.4033382"
+                                            "value": "https://doi.org/10.1101/2020.07.28.224873"
                                         },
                                         "external-id-relationship": "SELF"
                                     }
                                 ]
                             },
-                            "type": "JOURNAL_ARTICLE",
+                            "type": "OTHER",
                             "publication-date": {
                                 "year": {
                                     "value": "2020"
                                 },
                                 "month": {
-                                    "value": "09"
+                                    "value": "07"
                                 },
                                 "day": {
-                                    "value": "14"
+                                    "value": "28"
                                 },
                                 "media-type": null
                             },
                             "visibility": "PUBLIC",
-                            "path": "/0000-0003-2473-2313/work/83630046",
+                            "path": "/0000-0001-9020-6018/work/78536857",
                             "display-index": "1"
-                        }
-                    ]
-                },
-                {
-                    "last-modified-date": {
-                        "value": 1605651194554
-                    },
-                    "external-ids": {
-                        "external-id": [
-                            {
-                                "external-id-type": "doi",
-                                "external-id-value": "10.5281/ZENODO.4008359",
-                                "external-id-url": {
-                                    "value": "https://doi.org/10.5281/ZENODO.4008359"
-                                },
-                                "external-id-relationship": "SELF"
-                            }
-                        ]
-                    },
-                    "work-summary": [
+                        },
                         {
-                            "put-code": 83630028,
+                            "put-code": 78537203,
                             "created-date": {
-                                "value": 1605651194554
+                                "value": 1596985853294
                             },
                             "last-modified-date": {
-                                "value": 1605651194554
-                            },
-                            "source": {
-                                "source-orcid": {
-                                    "uri": "http://orcid.org/0000-0003-2473-2313",
-                                    "path": "0000-0003-2473-2313",
-                                    "host": "orcid.org"
-                                },
-                                "source-client-id": null,
-                                "source-name": {
-                                    "value": "Tiago Lubiana"
-                                }
-                            },
-                            "title": {
-                                "title": {
-                                    "value": "Using logical constraints to validate information in collaborative knowledge graphs: a study of COVID-19 on Wikidata"
-                                },
-                                "subtitle": null,
-                                "translated-title": null
-                            },
-                            "external-ids": {
-                                "external-id": [
-                                    {
-                                        "external-id-type": "doi",
-                                        "external-id-value": "10.5281/ZENODO.4008359",
-                                        "external-id-url": {
-                                            "value": "https://doi.org/10.5281/ZENODO.4008359"
-                                        },
-                                        "external-id-relationship": "SELF"
-                                    }
-                                ]
-                            },
-                            "type": "JOURNAL_ARTICLE",
-                            "publication-date": {
-                                "year": {
-                                    "value": "2020"
-                                },
-                                "month": {
-                                    "value": "08"
-                                },
-                                "day": {
-                                    "value": "30"
-                                },
-                                "media-type": null
-                            },
-                            "visibility": "PUBLIC",
-                            "path": "/0000-0003-2473-2313/work/83630028",
-                            "display-index": "1"
-                        }
-                    ]
-                },
-                {
-                    "last-modified-date": {
-                        "value": 1614714194088
-                    },
-                    "external-ids": {
-                        "external-id": [
-                            {
-                                "external-id-type": "doi",
-                                "external-id-value": "10.7490/F1000RESEARCH.1118155.1",
-                                "external-id-url": {
-                                    "value": "https://doi.org/10.7490/F1000RESEARCH.1118155.1"
-                                },
-                                "external-id-relationship": "SELF"
-                            }
-                        ]
-                    },
-                    "work-summary": [
-                        {
-                            "put-code": 89791675,
-                            "created-date": {
-                                "value": 1614714194088
-                            },
-                            "last-modified-date": {
-                                "value": 1614714194088
-                            },
-                            "source": {
-                                "source-orcid": {
-                                    "uri": "http://orcid.org/0000-0003-2473-2313",
-                                    "path": "0000-0003-2473-2313",
-                                    "host": "orcid.org"
-                                },
-                                "source-client-id": null,
-                                "source-name": {
-                                    "value": "Tiago Lubiana"
-                                }
-                            },
-                            "title": {
-                                "title": {
-                                    "value": "Wikidata WikiProject COVID-19 : a community effort to integrate biomedical knowledge"
-                                },
-                                "subtitle": null,
-                                "translated-title": null
-                            },
-                            "external-ids": {
-                                "external-id": [
-                                    {
-                                        "external-id-type": "doi",
-                                        "external-id-value": "10.7490/F1000RESEARCH.1118155.1",
-                                        "external-id-url": {
-                                            "value": "https://doi.org/10.7490/F1000RESEARCH.1118155.1"
-                                        },
-                                        "external-id-relationship": "SELF"
-                                    }
-                                ]
-                            },
-                            "type": "CONFERENCE_POSTER",
-                            "publication-date": {
-                                "year": {
-                                    "value": "2020"
-                                },
-                                "month": null,
-                                "day": null,
-                                "media-type": null
-                            },
-                            "visibility": "PUBLIC",
-                            "path": "/0000-0003-2473-2313/work/89791675",
-                            "display-index": "1"
-                        }
-                    ]
-                },
-                {
-                    "last-modified-date": {
-                        "value": 1569346576552
-                    },
-                    "external-ids": {
-                        "external-id": [
-                            {
-                                "external-id-type": "doi",
-                                "external-id-value": "10.1371/journal.ppat.1007651",
-                                "external-id-url": {
-                                    "value": "https://doi.org/10.1371/journal.ppat.1007651"
-                                },
-                                "external-id-relationship": "SELF"
-                            }
-                        ]
-                    },
-                    "work-summary": [
-                        {
-                            "put-code": 61543165,
-                            "created-date": {
-                                "value": 1568313527647
-                            },
-                            "last-modified-date": {
-                                "value": 1569346576552
+                                "value": 1596985853294
                             },
                             "source": {
                                 "source-orcid": null,
@@ -1188,7 +863,7 @@
                             },
                             "title": {
                                 "title": {
-                                    "value": "The opportunistic pathogen Stenotrophomonas maltophilia utilizes a type IV secretion system for interbacterial killing"
+                                    "value": "Concerted but segregated actions of oxytocin and vasopressin within the ventral and dorsal lateral septum determine female aggression"
                                 },
                                 "subtitle": null,
                                 "translated-title": null
@@ -1197,11 +872,173 @@
                                 "external-id": [
                                     {
                                         "external-id-type": "doi",
-                                        "external-id-value": "10.1371/journal.ppat.1007651",
+                                        "external-id-value": "10.1101/2020.07.28.224873",
                                         "external-id-url": {
-                                            "value": "https://doi.org/10.1371/journal.ppat.1007651"
+                                            "value": "https://doi.org/10.1101/2020.07.28.224873"
                                         },
                                         "external-id-relationship": "SELF"
+                                    }
+                                ]
+                            },
+                            "type": "OTHER",
+                            "publication-date": {
+                                "year": {
+                                    "value": "2020"
+                                },
+                                "month": {
+                                    "value": "07"
+                                },
+                                "day": {
+                                    "value": "28"
+                                },
+                                "media-type": null
+                            },
+                            "visibility": "PUBLIC",
+                            "path": "/0000-0001-9020-6018/work/78537203",
+                            "display-index": "0"
+                        }
+                    ]
+                },
+                {
+                    "last-modified-date": {
+                        "value": 1595404325543
+                    },
+                    "external-ids": {
+                        "external-id": [
+                            {
+                                "external-id-type": "doi",
+                                "external-id-value": "10.1016/j.neuron.2020.05.028",
+                                "external-id-url": {
+                                    "value": "https://doi.org/10.1016/j.neuron.2020.05.028"
+                                },
+                                "external-id-relationship": "SELF"
+                            }
+                        ]
+                    },
+                    "work-summary": [
+                        {
+                            "put-code": 77674551,
+                            "created-date": {
+                                "value": 1595404325543
+                            },
+                            "last-modified-date": {
+                                "value": 1595404325543
+                            },
+                            "source": {
+                                "source-orcid": {
+                                    "uri": "http://orcid.org/0000-0001-9020-6018",
+                                    "path": "0000-0001-9020-6018",
+                                    "host": "orcid.org"
+                                },
+                                "source-client-id": null,
+                                "source-name": {
+                                    "value": "Oliveira, VEM"
+                                }
+                            },
+                            "title": {
+                                "title": {
+                                    "value": "Wireless Optogenetic Stimulation of Oxytocin Neurons in a Semi-natural Setup Dynamically Elevates Both Pro-social and Agonistic Behaviors"
+                                },
+                                "subtitle": null,
+                                "translated-title": null
+                            },
+                            "external-ids": {
+                                "external-id": [
+                                    {
+                                        "external-id-type": "doi",
+                                        "external-id-value": "10.1016/j.neuron.2020.05.028",
+                                        "external-id-url": {
+                                            "value": "https://doi.org/10.1016/j.neuron.2020.05.028"
+                                        },
+                                        "external-id-relationship": "SELF"
+                                    },
+                                    {
+                                        "external-id-type": "issn",
+                                        "external-id-value": "0896-6273",
+                                        "external-id-url": {
+                                            "value": "https://portal.issn.org/resource/ISSN/0896-6273"
+                                        },
+                                        "external-id-relationship": "PART_OF"
+                                    }
+                                ]
+                            },
+                            "type": "JOURNAL_ARTICLE",
+                            "publication-date": {
+                                "year": {
+                                    "value": "2020"
+                                },
+                                "month": {
+                                    "value": "06"
+                                },
+                                "day": null,
+                                "media-type": null
+                            },
+                            "visibility": "PUBLIC",
+                            "path": "/0000-0001-9020-6018/work/77674551",
+                            "display-index": "1"
+                        }
+                    ]
+                },
+                {
+                    "last-modified-date": {
+                        "value": 1595404369905
+                    },
+                    "external-ids": {
+                        "external-id": [
+                            {
+                                "external-id-type": "doi",
+                                "external-id-value": "10.1016/j.neuropharm.2019.01.019",
+                                "external-id-url": {
+                                    "value": "https://doi.org/10.1016/j.neuropharm.2019.01.019"
+                                },
+                                "external-id-relationship": "SELF"
+                            }
+                        ]
+                    },
+                    "work-summary": [
+                        {
+                            "put-code": 77674566,
+                            "created-date": {
+                                "value": 1595404369905
+                            },
+                            "last-modified-date": {
+                                "value": 1595404369905
+                            },
+                            "source": {
+                                "source-orcid": {
+                                    "uri": "http://orcid.org/0000-0001-9020-6018",
+                                    "path": "0000-0001-9020-6018",
+                                    "host": "orcid.org"
+                                },
+                                "source-client-id": null,
+                                "source-name": {
+                                    "value": "Oliveira, VEM"
+                                }
+                            },
+                            "title": {
+                                "title": {
+                                    "value": "Post-weaning social isolation exacerbates aggression in both sexes and affects the vasopressin and oxytocin system in a sex-specific manner"
+                                },
+                                "subtitle": null,
+                                "translated-title": null
+                            },
+                            "external-ids": {
+                                "external-id": [
+                                    {
+                                        "external-id-type": "doi",
+                                        "external-id-value": "10.1016/j.neuropharm.2019.01.019",
+                                        "external-id-url": {
+                                            "value": "https://doi.org/10.1016/j.neuropharm.2019.01.019"
+                                        },
+                                        "external-id-relationship": "SELF"
+                                    },
+                                    {
+                                        "external-id-type": "issn",
+                                        "external-id-value": "0028-3908",
+                                        "external-id-url": {
+                                            "value": "https://portal.issn.org/resource/ISSN/0028-3908"
+                                        },
+                                        "external-id-relationship": "PART_OF"
                                     }
                                 ]
                             },
@@ -1213,28 +1050,26 @@
                                 "month": {
                                     "value": "09"
                                 },
-                                "day": {
-                                    "value": "12"
-                                },
+                                "day": null,
                                 "media-type": null
                             },
                             "visibility": "PUBLIC",
-                            "path": "/0000-0003-2473-2313/work/61543165",
-                            "display-index": "0"
+                            "path": "/0000-0001-9020-6018/work/77674566",
+                            "display-index": "1"
                         }
                     ]
                 },
                 {
                     "last-modified-date": {
-                        "value": 1580243659264
+                        "value": 1595404446071
                     },
                     "external-ids": {
                         "external-id": [
                             {
                                 "external-id-type": "doi",
-                                "external-id-value": "10.1016/j.ydbio.2018.01.021",
+                                "external-id-value": "10.1080/10253890.2018.1462327",
                                 "external-id-url": {
-                                    "value": "https://doi.org/10.1016/j.ydbio.2018.01.021"
+                                    "value": "https://doi.org/10.1080/10253890.2018.1462327"
                                 },
                                 "external-id-relationship": "SELF"
                             }
@@ -1242,27 +1077,27 @@
                     },
                     "work-summary": [
                         {
-                            "put-code": 68058255,
+                            "put-code": 77674643,
                             "created-date": {
-                                "value": 1580243659264
+                                "value": 1595404446071
                             },
                             "last-modified-date": {
-                                "value": 1580243659264
+                                "value": 1595404446071
                             },
                             "source": {
                                 "source-orcid": {
-                                    "uri": "http://orcid.org/0000-0003-2473-2313",
-                                    "path": "0000-0003-2473-2313",
+                                    "uri": "http://orcid.org/0000-0001-9020-6018",
+                                    "path": "0000-0001-9020-6018",
                                     "host": "orcid.org"
                                 },
                                 "source-client-id": null,
                                 "source-name": {
-                                    "value": "Tiago Lubiana"
+                                    "value": "Oliveira, VEM"
                                 }
                             },
                             "title": {
                                 "title": {
-                                    "value": "Zebrafish sp7 mutants show tooth cycling independent of attachment, eruption and poor differentiation of teeth"
+                                    "value": "Animal models of social stress: the dark side of social interactions"
                                 },
                                 "subtitle": null,
                                 "translated-title": null
@@ -1271,17 +1106,25 @@
                                 "external-id": [
                                     {
                                         "external-id-type": "doi",
-                                        "external-id-value": "10.1016/j.ydbio.2018.01.021",
+                                        "external-id-value": "10.1080/10253890.2018.1462327",
                                         "external-id-url": {
-                                            "value": "https://doi.org/10.1016/j.ydbio.2018.01.021"
+                                            "value": "https://doi.org/10.1080/10253890.2018.1462327"
                                         },
                                         "external-id-relationship": "SELF"
                                     },
                                     {
                                         "external-id-type": "issn",
-                                        "external-id-value": "0012-1606",
+                                        "external-id-value": "1025-3890",
                                         "external-id-url": {
-                                            "value": "https://portal.issn.org/resource/ISSN/0012-1606"
+                                            "value": "https://portal.issn.org/resource/ISSN/1025-3890"
+                                        },
+                                        "external-id-relationship": "PART_OF"
+                                    },
+                                    {
+                                        "external-id-type": "issn",
+                                        "external-id-value": "1607-8888",
+                                        "external-id-url": {
+                                            "value": "https://portal.issn.org/resource/ISSN/1607-8888"
                                         },
                                         "external-id-relationship": "PART_OF"
                                     }
@@ -1293,54 +1136,58 @@
                                     "value": "2018"
                                 },
                                 "month": {
+                                    "value": "09"
+                                },
+                                "day": {
                                     "value": "03"
                                 },
-                                "day": null,
                                 "media-type": null
                             },
                             "visibility": "PUBLIC",
-                            "path": "/0000-0003-2473-2313/work/68058255",
+                            "path": "/0000-0001-9020-6018/work/77674643",
                             "display-index": "1"
                         }
                     ]
                 },
                 {
                     "last-modified-date": {
-                        "value": 1557327138980
+                        "value": 1595404493993
                     },
                     "external-ids": {
                         "external-id": [
                             {
                                 "external-id-type": "doi",
-                                "external-id-value": "10.3897/rio.2.e9342",
-                                "external-id-url": null,
+                                "external-id-value": "10.1016/j.brainresbull.2018.01.012",
+                                "external-id-url": {
+                                    "value": "https://doi.org/10.1016/j.brainresbull.2018.01.012"
+                                },
                                 "external-id-relationship": "SELF"
                             }
                         ]
                     },
                     "work-summary": [
                         {
-                            "put-code": 57209215,
+                            "put-code": 77674652,
                             "created-date": {
-                                "value": 1557327138980
+                                "value": 1595404493993
                             },
                             "last-modified-date": {
-                                "value": 1557327138980
+                                "value": 1595404493993
                             },
                             "source": {
-                                "source-orcid": null,
-                                "source-client-id": {
-                                    "uri": "http://orcid.org/client/0000-0002-3054-1567",
-                                    "path": "0000-0002-3054-1567",
+                                "source-orcid": {
+                                    "uri": "http://orcid.org/0000-0001-9020-6018",
+                                    "path": "0000-0001-9020-6018",
                                     "host": "orcid.org"
                                 },
+                                "source-client-id": null,
                                 "source-name": {
-                                    "value": "Crossref Metadata Search"
+                                    "value": "Oliveira, VEM"
                                 }
                             },
                             "title": {
                                 "title": {
-                                    "value": "Chimeric spider silk production in microalgae: a modular bionanomaterial"
+                                    "value": "Estradiol effect on short-term object memory under hypocholinergic condition"
                                 },
                                 "subtitle": null,
                                 "translated-title": null
@@ -1349,14 +1196,178 @@
                                 "external-id": [
                                     {
                                         "external-id-type": "doi",
-                                        "external-id-value": "10.3897/rio.2.e9342",
-                                        "external-id-url": null,
+                                        "external-id-value": "10.1016/j.brainresbull.2018.01.012",
+                                        "external-id-url": {
+                                            "value": "https://doi.org/10.1016/j.brainresbull.2018.01.012"
+                                        },
                                         "external-id-relationship": "SELF"
                                     },
                                     {
                                         "external-id-type": "issn",
-                                        "external-id-value": "2367-7163",
-                                        "external-id-url": null,
+                                        "external-id-value": "0361-9230",
+                                        "external-id-url": {
+                                            "value": "https://portal.issn.org/resource/ISSN/0361-9230"
+                                        },
+                                        "external-id-relationship": "PART_OF"
+                                    }
+                                ]
+                            },
+                            "type": "JOURNAL_ARTICLE",
+                            "publication-date": {
+                                "year": {
+                                    "value": "2018"
+                                },
+                                "month": {
+                                    "value": "06"
+                                },
+                                "day": null,
+                                "media-type": null
+                            },
+                            "visibility": "PUBLIC",
+                            "path": "/0000-0001-9020-6018/work/77674652",
+                            "display-index": "1"
+                        }
+                    ]
+                },
+                {
+                    "last-modified-date": {
+                        "value": 1595404552890
+                    },
+                    "external-ids": {
+                        "external-id": [
+                            {
+                                "external-id-type": "doi",
+                                "external-id-value": "10.1016/j.bbr.2017.04.049",
+                                "external-id-url": {
+                                    "value": "https://doi.org/10.1016/j.bbr.2017.04.049"
+                                },
+                                "external-id-relationship": "SELF"
+                            }
+                        ]
+                    },
+                    "work-summary": [
+                        {
+                            "put-code": 77674703,
+                            "created-date": {
+                                "value": 1595404552890
+                            },
+                            "last-modified-date": {
+                                "value": 1595404552890
+                            },
+                            "source": {
+                                "source-orcid": {
+                                    "uri": "http://orcid.org/0000-0001-9020-6018",
+                                    "path": "0000-0001-9020-6018",
+                                    "host": "orcid.org"
+                                },
+                                "source-client-id": null,
+                                "source-name": {
+                                    "value": "Oliveira, VEM"
+                                }
+                            },
+                            "title": {
+                                "title": {
+                                    "value": "Reduced Vesicular Acetylcholine Transporter favors antidepressant behaviors and modulates serotonin and dopamine in female mouse brain"
+                                },
+                                "subtitle": null,
+                                "translated-title": null
+                            },
+                            "external-ids": {
+                                "external-id": [
+                                    {
+                                        "external-id-type": "doi",
+                                        "external-id-value": "10.1016/j.bbr.2017.04.049",
+                                        "external-id-url": {
+                                            "value": "https://doi.org/10.1016/j.bbr.2017.04.049"
+                                        },
+                                        "external-id-relationship": "SELF"
+                                    },
+                                    {
+                                        "external-id-type": "issn",
+                                        "external-id-value": "0166-4328",
+                                        "external-id-url": {
+                                            "value": "https://portal.issn.org/resource/ISSN/0166-4328"
+                                        },
+                                        "external-id-relationship": "PART_OF"
+                                    }
+                                ]
+                            },
+                            "type": "JOURNAL_ARTICLE",
+                            "publication-date": {
+                                "year": {
+                                    "value": "2017"
+                                },
+                                "month": {
+                                    "value": "07"
+                                },
+                                "day": null,
+                                "media-type": null
+                            },
+                            "visibility": "PUBLIC",
+                            "path": "/0000-0001-9020-6018/work/77674703",
+                            "display-index": "1"
+                        }
+                    ]
+                },
+                {
+                    "last-modified-date": {
+                        "value": 1595404647137
+                    },
+                    "external-ids": {
+                        "external-id": [
+                            {
+                                "external-id-type": "doi",
+                                "external-id-value": "10.1016/j.bbi.2016.05.005",
+                                "external-id-url": {
+                                    "value": "https://doi.org/10.1016/j.bbi.2016.05.005"
+                                },
+                                "external-id-relationship": "SELF"
+                            }
+                        ]
+                    },
+                    "work-summary": [
+                        {
+                            "put-code": 77674728,
+                            "created-date": {
+                                "value": 1595404647137
+                            },
+                            "last-modified-date": {
+                                "value": 1595404647137
+                            },
+                            "source": {
+                                "source-orcid": {
+                                    "uri": "http://orcid.org/0000-0001-9020-6018",
+                                    "path": "0000-0001-9020-6018",
+                                    "host": "orcid.org"
+                                },
+                                "source-client-id": null,
+                                "source-name": {
+                                    "value": "Oliveira, VEM"
+                                }
+                            },
+                            "title": {
+                                "title": {
+                                    "value": "Vesicular acetylcholine transporter knock down-mice are more susceptible to inflammation, c- Fos expression and sickness behavior induced by lipopolysaccharide"
+                                },
+                                "subtitle": null,
+                                "translated-title": null
+                            },
+                            "external-ids": {
+                                "external-id": [
+                                    {
+                                        "external-id-type": "doi",
+                                        "external-id-value": "10.1016/j.bbi.2016.05.005",
+                                        "external-id-url": {
+                                            "value": "https://doi.org/10.1016/j.bbi.2016.05.005"
+                                        },
+                                        "external-id-relationship": "SELF"
+                                    },
+                                    {
+                                        "external-id-type": "issn",
+                                        "external-id-value": "0889-1591",
+                                        "external-id-url": {
+                                            "value": "https://portal.issn.org/resource/ISSN/0889-1591"
+                                        },
                                         "external-id-relationship": "PART_OF"
                                     }
                                 ]
@@ -1367,54 +1378,56 @@
                                     "value": "2016"
                                 },
                                 "month": {
-                                    "value": "06"
+                                    "value": "10"
                                 },
                                 "day": null,
                                 "media-type": null
                             },
                             "visibility": "PUBLIC",
-                            "path": "/0000-0003-2473-2313/work/57209215",
-                            "display-index": "0"
+                            "path": "/0000-0001-9020-6018/work/77674728",
+                            "display-index": "1"
                         }
                     ]
                 },
                 {
                     "last-modified-date": {
-                        "value": 1563826583118
+                        "value": 1595404599053
                     },
                     "external-ids": {
                         "external-id": [
                             {
                                 "external-id-type": "doi",
-                                "external-id-value": "10.1101/484147",
-                                "external-id-url": null,
+                                "external-id-value": "10.1016/j.bbr.2016.07.030",
+                                "external-id-url": {
+                                    "value": "https://doi.org/10.1016/j.bbr.2016.07.030"
+                                },
                                 "external-id-relationship": "SELF"
                             }
                         ]
                     },
                     "work-summary": [
                         {
-                            "put-code": 57209199,
+                            "put-code": 77674716,
                             "created-date": {
-                                "value": 1557327103151
+                                "value": 1595404599053
                             },
                             "last-modified-date": {
-                                "value": 1557327103151
+                                "value": 1595404599053
                             },
                             "source": {
-                                "source-orcid": null,
-                                "source-client-id": {
-                                    "uri": "http://orcid.org/client/0000-0002-3054-1567",
-                                    "path": "0000-0002-3054-1567",
+                                "source-orcid": {
+                                    "uri": "http://orcid.org/0000-0001-9020-6018",
+                                    "path": "0000-0001-9020-6018",
                                     "host": "orcid.org"
                                 },
+                                "source-client-id": null,
                                 "source-name": {
-                                    "value": "Crossref Metadata Search"
+                                    "value": "Oliveira, VEM"
                                 }
                             },
                             "title": {
                                 "title": {
-                                    "value": "Science Family skills: An Alexa Assistant Tailored for Laboratory Routine"
+                                    "value": "c-Fos expression predicts long-term social memory retrieval in mice"
                                 },
                                 "subtitle": null,
                                 "translated-title": null
@@ -1423,138 +1436,43 @@
                                 "external-id": [
                                     {
                                         "external-id-type": "doi",
-                                        "external-id-value": "10.1101/484147",
-                                        "external-id-url": null,
-                                        "external-id-relationship": "SELF"
-                                    }
-                                ]
-                            },
-                            "type": "OTHER",
-                            "publication-date": null,
-                            "visibility": "PUBLIC",
-                            "path": "/0000-0003-2473-2313/work/57209199",
-                            "display-index": "0"
-                        },
-                        {
-                            "put-code": 57209207,
-                            "created-date": {
-                                "value": 1557327115643
-                            },
-                            "last-modified-date": {
-                                "value": 1563826583118
-                            },
-                            "source": {
-                                "source-orcid": null,
-                                "source-client-id": {
-                                    "uri": "http://orcid.org/client/0000-0001-9884-1913",
-                                    "path": "0000-0001-9884-1913",
-                                    "host": "orcid.org"
-                                },
-                                "source-name": {
-                                    "value": "Crossref"
-                                }
-                            },
-                            "title": {
-                                "title": {
-                                    "value": "Science Family skills: An Alexa Assistant Tailored for Laboratory Routine"
-                                },
-                                "subtitle": null,
-                                "translated-title": null
-                            },
-                            "external-ids": {
-                                "external-id": [
-                                    {
-                                        "external-id-type": "doi",
-                                        "external-id-value": "10.1101/484147",
+                                        "external-id-value": "10.1016/j.bbr.2016.07.030",
                                         "external-id-url": {
-                                            "value": "https://doi.org/10.1101/484147"
+                                            "value": "https://doi.org/10.1016/j.bbr.2016.07.030"
                                         },
                                         "external-id-relationship": "SELF"
+                                    },
+                                    {
+                                        "external-id-type": "issn",
+                                        "external-id-value": "0166-4328",
+                                        "external-id-url": {
+                                            "value": "https://portal.issn.org/resource/ISSN/0166-4328"
+                                        },
+                                        "external-id-relationship": "PART_OF"
                                     }
                                 ]
                             },
-                            "type": "OTHER",
+                            "type": "JOURNAL_ARTICLE",
                             "publication-date": {
                                 "year": {
-                                    "value": "2018"
+                                    "value": "2016"
                                 },
                                 "month": {
-                                    "value": "11"
+                                    "value": "10"
                                 },
-                                "day": {
-                                    "value": "30"
-                                },
+                                "day": null,
                                 "media-type": null
                             },
                             "visibility": "PUBLIC",
-                            "path": "/0000-0003-2473-2313/work/57209207",
-                            "display-index": "0"
-                        }
-                    ]
-                },
-                {
-                    "last-modified-date": {
-                        "value": 1557327106547
-                    },
-                    "external-ids": {
-                        "external-id": [
-                            {
-                                "external-id-type": "doi",
-                                "external-id-value": "10.17504/protocols.io.rr3d58n",
-                                "external-id-url": null,
-                                "external-id-relationship": "SELF"
-                            }
-                        ]
-                    },
-                    "work-summary": [
-                        {
-                            "put-code": 57209201,
-                            "created-date": {
-                                "value": 1557327106547
-                            },
-                            "last-modified-date": {
-                                "value": 1557327106547
-                            },
-                            "source": {
-                                "source-orcid": null,
-                                "source-client-id": {
-                                    "uri": "http://orcid.org/client/0000-0002-3054-1567",
-                                    "path": "0000-0002-3054-1567",
-                                    "host": "orcid.org"
-                                },
-                                "source-name": {
-                                    "value": "Crossref Metadata Search"
-                                }
-                            },
-                            "title": {
-                                "title": {
-                                    "value": "iGEM Registry Bacterial Transformation v1 (protocols.io.rr3d58n)"
-                                },
-                                "subtitle": null,
-                                "translated-title": null
-                            },
-                            "external-ids": {
-                                "external-id": [
-                                    {
-                                        "external-id-type": "doi",
-                                        "external-id-value": "10.17504/protocols.io.rr3d58n",
-                                        "external-id-url": null,
-                                        "external-id-relationship": "SELF"
-                                    }
-                                ]
-                            },
-                            "type": "OTHER",
-                            "publication-date": null,
-                            "visibility": "PUBLIC",
-                            "path": "/0000-0003-2473-2313/work/57209201",
-                            "display-index": "0"
+                            "path": "/0000-0001-9020-6018/work/77674716",
+                            "display-index": "1"
                         }
                     ]
                 }
             ],
-            "path": "/0000-0003-2473-2313/works"
+            "path": "/0000-0001-9020-6018/works"
         },
-        "path": "/0000-0003-2473-2313/activities"
+        "path": "/0000-0001-9020-6018/activities"
     },
-    "path": "/0000-0003-2473-2313"
+    "path": "/0000-0001-9020-6018"
 }
