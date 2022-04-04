@@ -5,7 +5,6 @@ import json
 from helper import *
 from dictionaries.all import *
 
-# Send API request to Numista
 if len(sys.argv) > 1:
     orcid = sys.argv[1]
 else:
