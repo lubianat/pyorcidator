@@ -3,7 +3,6 @@ import sys
 import requests
 import json
 from helper import *
-from dictionaries.all import *
 
 if len(sys.argv) > 1:
     orcid = sys.argv[1]
@@ -26,9 +25,7 @@ publication_data = data["activities-summary"]["works"]
 first_name = personal_data["name"]["given-names"]["value"]
 last_name = personal_data["name"]["family-name"]["value"]
 
-
 employment_institutions = [a["organization"]["name"] for a in employment_data]
-
 
 qs = f"""
 CREATE
@@ -43,20 +40,7 @@ property_id = "P108"
 key = "institutions"
 target_list = employment_institutions
 
-
-for target_item in target_list:
-    if target_item not in dicts[key]:
-        add_key(dicts[key], target_item)
-        with open(f"src/dictionaries/{key}.json", "w+") as f:
-            f.write(json.dumps(dicts[key], indent=4, sort_keys=True))
-
-    qid = dicts[key][target_item]
-    qs = (
-        qs
-        + f"""
-LAST|{property_id}|{qid}
-    """
-    )
+qs = process_item(qs, property_id, key, target_list)
 
 with open("sample.json", "w+") as f:
     f.write(json.dumps(data, indent=4))
