@@ -1,0 +1,2710 @@
+{
+    "orcid-identifier": {
+        "uri": "http://orcid.org/0000-0003-0091-1894",
+        "path": "0000-0003-0091-1894",
+        "host": "orcid.org"
+    },
+    "preferences": {
+        "locale": "EN"
+    },
+    "history": {
+        "creation-method": "WEBSITE",
+        "completion-date": null,
+        "submission-date": {
+            "value": 1385404403914
+        },
+        "last-modified-date": {
+            "value": 1648769130344
+        },
+        "claimed": true,
+        "source": null,
+        "deactivation-date": null,
+        "verified-email": true,
+        "verified-primary-email": true
+    },
+    "person": {
+        "last-modified-date": {
+            "value": 1642080977786
+        },
+        "name": {
+            "created-date": {
+                "value": 1460762858954
+            },
+            "last-modified-date": {
+                "value": 1460762858954
+            },
+            "given-names": {
+                "value": "Bruna"
+            },
+            "family-name": {
+                "value": "Zampieri"
+            },
+            "credit-name": {
+                "value": "Zampieri BL"
+            },
+            "source": null,
+            "visibility": "PUBLIC",
+            "path": "0000-0003-0091-1894"
+        },
+        "other-names": {
+            "last-modified-date": null,
+            "other-name": [],
+            "path": "/0000-0003-0091-1894/other-names"
+        },
+        "biography": {
+            "created-date": {
+                "value": 1570724495723
+            },
+            "last-modified-date": {
+                "value": 1643038471012
+            },
+            "content": "Dr. Bruna Zampieri earned her undergraduate degree in Biology from the S\u00e3o Paulo State University (Unesp), Institute of Biosciences, Humanities and Exact Sciences, S\u00e3o Jos\u00e9 do Rio Preto, S\u00e3o Paulo, Brazil, and her M.Sc. and Ph.D. from S\u00e3o Jos\u00e9 do Rio Preto School of Medicine, S\u00e3o Jos\u00e9 do Rio Preto, S\u00e3o Paulo, Brazil. During her Ph.D., she was granted a fellowship by the Coordination for the Improvement of Higher Education Personnel (CAPES-Brazil) to develop part of her Ph.D. project at the University of Colorado Denver and Case Western Reserve University. She trained as a Postdoctoral Scholar at the Division of Pediatric Neurology at Case Western Reserve University. At the beginning of 2019, she received her first grant as an independent investigator by S\u00e3o Paulo Research Foundation \u2013 FAPESP, S\u00e3o Paulo, Brazil to work on induced pluripotent stem cells from individuals with Down syndrome differentiation into neurons and glial cells to better understand the syndrome phenotype. Dr. Zampieri has spent the past 16 years studying Down syndrome and has authored or co-authored 17 peer-reviewed papers, 2 book chapters, and several abstracts. She is a member of the Trisomy 21 Research Society.",
+            "visibility": "PUBLIC",
+            "path": "/0000-0003-0091-1894/biography"
+        },
+        "researcher-urls": {
+            "last-modified-date": null,
+            "researcher-url": [],
+            "path": "/0000-0003-0091-1894/researcher-urls"
+        },
+        "emails": {
+            "last-modified-date": null,
+            "email": [],
+            "path": "/0000-0003-0091-1894/email"
+        },
+        "addresses": {
+            "last-modified-date": {
+                "value": 1465226976952
+            },
+            "address": [
+                {
+                    "created-date": {
+                        "value": 1453659569798
+                    },
+                    "last-modified-date": {
+                        "value": 1465226976952
+                    },
+                    "source": {
+                        "source-orcid": {
+                            "uri": "http://orcid.org/0000-0003-0091-1894",
+                            "path": "0000-0003-0091-1894",
+                            "host": "orcid.org"
+                        },
+                        "source-client-id": null,
+                        "source-name": {
+                            "value": "Zampieri BL"
+                        }
+                    },
+                    "country": {
+                        "value": "BR"
+                    },
+                    "visibility": "PUBLIC",
+                    "path": "/0000-0003-0091-1894/address/183941",
+                    "put-code": 183941,
+                    "display-index": 0
+                }
+            ],
+            "path": "/0000-0003-0091-1894/address"
+        },
+        "keywords": {
+            "last-modified-date": {
+                "value": 1642080977786
+            },
+            "keyword": [
+                {
+                    "created-date": {
+                        "value": 1385404444754
+                    },
+                    "last-modified-date": {
+                        "value": 1642080977786
+                    },
+                    "source": {
+                        "source-orcid": {
+                            "uri": "http://orcid.org/0000-0003-0091-1894",
+                            "path": "0000-0003-0091-1894",
+                            "host": "orcid.org"
+                        },
+                        "source-client-id": null,
+                        "source-name": {
+                            "value": "Zampieri BL"
+                        }
+                    },
+                    "content": "Down syndrome",
+                    "visibility": "PUBLIC",
+                    "path": "/0000-0003-0091-1894/keywords/44848",
+                    "put-code": 44848,
+                    "display-index": 6
+                },
+                {
+                    "created-date": {
+                        "value": 1554390484968
+                    },
+                    "last-modified-date": {
+                        "value": 1642080977786
+                    },
+                    "source": {
+                        "source-orcid": {
+                            "uri": "http://orcid.org/0000-0003-0091-1894",
+                            "path": "0000-0003-0091-1894",
+                            "host": "orcid.org"
+                        },
+                        "source-client-id": null,
+                        "source-name": {
+                            "value": "Zampieri BL"
+                        }
+                    },
+                    "content": "Induced Pluripotent Stem Cells",
+                    "visibility": "PUBLIC",
+                    "path": "/0000-0003-0091-1894/keywords/1232047",
+                    "put-code": 1232047,
+                    "display-index": 5
+                },
+                {
+                    "created-date": {
+                        "value": 1570627923672
+                    },
+                    "last-modified-date": {
+                        "value": 1642080977786
+                    },
+                    "source": {
+                        "source-orcid": {
+                            "uri": "http://orcid.org/0000-0003-0091-1894",
+                            "path": "0000-0003-0091-1894",
+                            "host": "orcid.org"
+                        },
+                        "source-client-id": null,
+                        "source-name": {
+                            "value": "Zampieri BL"
+                        }
+                    },
+                    "content": "Ts65Dn",
+                    "visibility": "PUBLIC",
+                    "path": "/0000-0003-0091-1894/keywords/1378397",
+                    "put-code": 1378397,
+                    "display-index": 4
+                },
+                {
+                    "created-date": {
+                        "value": 1570715405404
+                    },
+                    "last-modified-date": {
+                        "value": 1642080977786
+                    },
+                    "source": {
+                        "source-orcid": {
+                            "uri": "http://orcid.org/0000-0003-0091-1894",
+                            "path": "0000-0003-0091-1894",
+                            "host": "orcid.org"
+                        },
+                        "source-client-id": null,
+                        "source-name": {
+                            "value": "Zampieri BL"
+                        }
+                    },
+                    "content": "neuronscience",
+                    "visibility": "PUBLIC",
+                    "path": "/0000-0003-0091-1894/keywords/1379577",
+                    "put-code": 1379577,
+                    "display-index": 3
+                },
+                {
+                    "created-date": {
+                        "value": 1642080977778
+                    },
+                    "last-modified-date": {
+                        "value": 1642080977778
+                    },
+                    "source": {
+                        "source-orcid": {
+                            "uri": "http://orcid.org/0000-0003-0091-1894",
+                            "path": "0000-0003-0091-1894",
+                            "host": "orcid.org"
+                        },
+                        "source-client-id": null,
+                        "source-name": {
+                            "value": "Zampieri BL"
+                        }
+                    },
+                    "content": "astrocytes",
+                    "visibility": "PUBLIC",
+                    "path": "/0000-0003-0091-1894/keywords/2225293",
+                    "put-code": 2225293,
+                    "display-index": 2
+                },
+                {
+                    "created-date": {
+                        "value": 1642080977775
+                    },
+                    "last-modified-date": {
+                        "value": 1642080977775
+                    },
+                    "source": {
+                        "source-orcid": {
+                            "uri": "http://orcid.org/0000-0003-0091-1894",
+                            "path": "0000-0003-0091-1894",
+                            "host": "orcid.org"
+                        },
+                        "source-client-id": null,
+                        "source-name": {
+                            "value": "Zampieri BL"
+                        }
+                    },
+                    "content": "neurons",
+                    "visibility": "PUBLIC",
+                    "path": "/0000-0003-0091-1894/keywords/2225292",
+                    "put-code": 2225292,
+                    "display-index": 1
+                }
+            ],
+            "path": "/0000-0003-0091-1894/keywords"
+        },
+        "external-identifiers": {
+            "last-modified-date": {
+                "value": 1517873256636
+            },
+            "external-identifier": [
+                {
+                    "created-date": {
+                        "value": 1385404598152
+                    },
+                    "last-modified-date": {
+                        "value": 1517869567419
+                    },
+                    "source": {
+                        "source-orcid": null,
+                        "source-client-id": {
+                            "uri": "http://orcid.org/client/0000-0003-1377-5676",
+                            "path": "0000-0003-1377-5676",
+                            "host": "orcid.org"
+                        },
+                        "source-name": {
+                            "value": "ResearcherID"
+                        }
+                    },
+                    "external-id-type": "ResearcherID",
+                    "external-id-value": "F-7120-2012",
+                    "external-id-url": {
+                        "value": "http://www.researcherid.com/rid/F-7120-2012"
+                    },
+                    "external-id-relationship": "SELF",
+                    "visibility": "PUBLIC",
+                    "path": "/0000-0003-0091-1894/external-identifiers/59625",
+                    "put-code": 59625,
+                    "display-index": 0
+                },
+                {
+                    "created-date": {
+                        "value": 1388785023294
+                    },
+                    "last-modified-date": {
+                        "value": 1517873256636
+                    },
+                    "source": {
+                        "source-orcid": null,
+                        "source-client-id": {
+                            "uri": "http://orcid.org/client/0000-0002-5982-8983",
+                            "path": "0000-0002-5982-8983",
+                            "host": "orcid.org"
+                        },
+                        "source-name": {
+                            "value": "Scopus - Elsevier"
+                        }
+                    },
+                    "external-id-type": "Scopus Author ID",
+                    "external-id-value": "23977167400",
+                    "external-id-url": {
+                        "value": "http://www.scopus.com/inward/authorDetails.url?authorID=23977167400&partnerID=MN8TOARS"
+                    },
+                    "external-id-relationship": "SELF",
+                    "visibility": "PUBLIC",
+                    "path": "/0000-0003-0091-1894/external-identifiers/184343",
+                    "put-code": 184343,
+                    "display-index": 0
+                }
+            ],
+            "path": "/0000-0003-0091-1894/external-identifiers"
+        },
+        "path": "/0000-0003-0091-1894/person"
+    },
+    "activities-summary": {
+        "last-modified-date": {
+            "value": 1644154800638
+        },
+        "educations": {
+            "last-modified-date": {
+                "value": 1570714201201
+            },
+            "education-summary": [
+                {
+                    "created-date": {
+                        "value": 1416944704834
+                    },
+                    "last-modified-date": {
+                        "value": 1533575194304
+                    },
+                    "source": {
+                        "source-orcid": {
+                            "uri": "http://orcid.org/0000-0003-0091-1894",
+                            "path": "0000-0003-0091-1894",
+                            "host": "orcid.org"
+                        },
+                        "source-client-id": null,
+                        "source-name": {
+                            "value": "Zampieri BL"
+                        }
+                    },
+                    "department-name": " Department of Pediatrics",
+                    "role-title": "Postdoctoral Scholar",
+                    "start-date": {
+                        "year": {
+                            "value": "2014"
+                        },
+                        "month": {
+                            "value": "11"
+                        },
+                        "day": {
+                            "value": "14"
+                        }
+                    },
+                    "end-date": {
+                        "year": {
+                            "value": "2018"
+                        },
+                        "month": {
+                            "value": "07"
+                        },
+                        "day": {
+                            "value": "31"
+                        }
+                    },
+                    "organization": {
+                        "name": "Case Western Reserve University",
+                        "address": {
+                            "city": "Cleveland",
+                            "region": "OH",
+                            "country": "US"
+                        },
+                        "disambiguated-organization": {
+                            "disambiguated-organization-identifier": "2546",
+                            "disambiguation-source": "RINGGOLD"
+                        }
+                    },
+                    "visibility": "PUBLIC",
+                    "put-code": 587526,
+                    "path": "/0000-0003-0091-1894/education/587526"
+                },
+                {
+                    "created-date": {
+                        "value": 1403013628622
+                    },
+                    "last-modified-date": {
+                        "value": 1459978124627
+                    },
+                    "source": {
+                        "source-orcid": {
+                            "uri": "http://orcid.org/0000-0003-0091-1894",
+                            "path": "0000-0003-0091-1894",
+                            "host": "orcid.org"
+                        },
+                        "source-client-id": null,
+                        "source-name": {
+                            "value": "Zampieri BL"
+                        }
+                    },
+                    "department-name": "Molecular Biology",
+                    "role-title": "Ph.D. in Health Science",
+                    "start-date": {
+                        "year": {
+                            "value": "2009"
+                        },
+                        "month": {
+                            "value": "06"
+                        },
+                        "day": null
+                    },
+                    "end-date": {
+                        "year": {
+                            "value": "2014"
+                        },
+                        "month": {
+                            "value": "02"
+                        },
+                        "day": null
+                    },
+                    "organization": {
+                        "name": "Faculdade de Medicina de S\u00e3o Jos\u00e9 do Rio Preto",
+                        "address": {
+                            "city": "S\u00e3o Jos\u00e9 do Rio Preto",
+                            "region": "SP",
+                            "country": "BR"
+                        },
+                        "disambiguated-organization": {
+                            "disambiguated-organization-identifier": "67736",
+                            "disambiguation-source": "RINGGOLD"
+                        }
+                    },
+                    "visibility": "PUBLIC",
+                    "put-code": 318142,
+                    "path": "/0000-0003-0091-1894/education/318142"
+                },
+                {
+                    "created-date": {
+                        "value": 1570713601365
+                    },
+                    "last-modified-date": {
+                        "value": 1570714098077
+                    },
+                    "source": {
+                        "source-orcid": {
+                            "uri": "http://orcid.org/0000-0003-0091-1894",
+                            "path": "0000-0003-0091-1894",
+                            "host": "orcid.org"
+                        },
+                        "source-client-id": null,
+                        "source-name": {
+                            "value": "Zampieri BL"
+                        }
+                    },
+                    "department-name": "Department of Pediatrics, Division of Pediatric Neurology",
+                    "role-title": "Visiting scholar",
+                    "start-date": {
+                        "year": {
+                            "value": "2013"
+                        },
+                        "month": {
+                            "value": "02"
+                        },
+                        "day": {
+                            "value": "01"
+                        }
+                    },
+                    "end-date": {
+                        "year": {
+                            "value": "2013"
+                        },
+                        "month": {
+                            "value": "08"
+                        },
+                        "day": {
+                            "value": "31"
+                        }
+                    },
+                    "organization": {
+                        "name": "Case Western Reserve University",
+                        "address": {
+                            "city": "Cleveland",
+                            "region": "OH",
+                            "country": "US"
+                        },
+                        "disambiguated-organization": null
+                    },
+                    "visibility": "PUBLIC",
+                    "put-code": 8864241,
+                    "path": "/0000-0003-0091-1894/education/8864241"
+                },
+                {
+                    "created-date": {
+                        "value": 1570713510717
+                    },
+                    "last-modified-date": {
+                        "value": 1570714201201
+                    },
+                    "source": {
+                        "source-orcid": {
+                            "uri": "http://orcid.org/0000-0003-0091-1894",
+                            "path": "0000-0003-0091-1894",
+                            "host": "orcid.org"
+                        },
+                        "source-client-id": null,
+                        "source-name": {
+                            "value": "Zampieri BL"
+                        }
+                    },
+                    "department-name": "Department of Medicine",
+                    "role-title": "Visiting scholar",
+                    "start-date": {
+                        "year": {
+                            "value": "2012"
+                        },
+                        "month": {
+                            "value": "04"
+                        },
+                        "day": {
+                            "value": "15"
+                        }
+                    },
+                    "end-date": {
+                        "year": {
+                            "value": "2013"
+                        },
+                        "month": {
+                            "value": "01"
+                        },
+                        "day": {
+                            "value": "31"
+                        }
+                    },
+                    "organization": {
+                        "name": "University of Colorado Denver ",
+                        "address": {
+                            "city": "Aurora",
+                            "region": "Colorado",
+                            "country": "US"
+                        },
+                        "disambiguated-organization": null
+                    },
+                    "visibility": "PUBLIC",
+                    "put-code": 8864219,
+                    "path": "/0000-0003-0091-1894/education/8864219"
+                },
+                {
+                    "created-date": {
+                        "value": 1392293181510
+                    },
+                    "last-modified-date": {
+                        "value": 1405916803556
+                    },
+                    "source": {
+                        "source-orcid": {
+                            "uri": "http://orcid.org/0000-0003-0091-1894",
+                            "path": "0000-0003-0091-1894",
+                            "host": "orcid.org"
+                        },
+                        "source-client-id": null,
+                        "source-name": {
+                            "value": "Zampieri BL"
+                        }
+                    },
+                    "department-name": null,
+                    "role-title": "Master of Science",
+                    "start-date": {
+                        "year": {
+                            "value": "2007"
+                        },
+                        "month": null,
+                        "day": null
+                    },
+                    "end-date": {
+                        "year": {
+                            "value": "2009"
+                        },
+                        "month": null,
+                        "day": null
+                    },
+                    "organization": {
+                        "name": "Faculdade de Medicina de S\u00e3o Jos\u00e9 do Rio Preto",
+                        "address": {
+                            "city": "S\u00e3o Jos\u00e9 do Rio Preto",
+                            "region": "SP",
+                            "country": "BR"
+                        },
+                        "disambiguated-organization": {
+                            "disambiguated-organization-identifier": "67736",
+                            "disambiguation-source": "RINGGOLD"
+                        }
+                    },
+                    "visibility": "PUBLIC",
+                    "put-code": 116368,
+                    "path": "/0000-0003-0091-1894/education/116368"
+                },
+                {
+                    "created-date": {
+                        "value": 1392293384500
+                    },
+                    "last-modified-date": {
+                        "value": 1405916803556
+                    },
+                    "source": {
+                        "source-orcid": {
+                            "uri": "http://orcid.org/0000-0003-0091-1894",
+                            "path": "0000-0003-0091-1894",
+                            "host": "orcid.org"
+                        },
+                        "source-client-id": null,
+                        "source-name": {
+                            "value": "Zampieri BL"
+                        }
+                    },
+                    "department-name": null,
+                    "role-title": "Bachelor of Science",
+                    "start-date": {
+                        "year": {
+                            "value": "2003"
+                        },
+                        "month": null,
+                        "day": null
+                    },
+                    "end-date": {
+                        "year": {
+                            "value": "2006"
+                        },
+                        "month": null,
+                        "day": null
+                    },
+                    "organization": {
+                        "name": "Universidade Estadual Paulista J\u00falio de Mesquita Filho - C\u00e2mpus de S\u00e3o Jos\u00e9 do Rio Preto",
+                        "address": {
+                            "city": "S\u00e3o Jos\u00e9 do Rio Preto",
+                            "region": "SP",
+                            "country": "BR"
+                        },
+                        "disambiguated-organization": {
+                            "disambiguated-organization-identifier": "135131",
+                            "disambiguation-source": "RINGGOLD"
+                        }
+                    },
+                    "visibility": "PUBLIC",
+                    "put-code": 116373,
+                    "path": "/0000-0003-0091-1894/education/116373"
+                }
+            ],
+            "path": "/0000-0003-0091-1894/educations"
+        },
+        "employments": {
+            "last-modified-date": {
+                "value": 1570628389935
+            },
+            "employment-summary": [
+                {
+                    "created-date": {
+                        "value": 1570628389935
+                    },
+                    "last-modified-date": {
+                        "value": 1570628389935
+                    },
+                    "source": {
+                        "source-orcid": {
+                            "uri": "http://orcid.org/0000-0003-0091-1894",
+                            "path": "0000-0003-0091-1894",
+                            "host": "orcid.org"
+                        },
+                        "source-client-id": null,
+                        "source-name": {
+                            "value": "Zampieri BL"
+                        }
+                    },
+                    "department-name": null,
+                    "role-title": "Visiting Researcher",
+                    "start-date": {
+                        "year": {
+                            "value": "2019"
+                        },
+                        "month": {
+                            "value": "02"
+                        },
+                        "day": {
+                            "value": "01"
+                        }
+                    },
+                    "end-date": null,
+                    "organization": {
+                        "name": "Albert Einstein Jewish Institute for Education and Research, Albert Einstein Israelite Hospital, Brazil",
+                        "address": {
+                            "city": "S\u00e3o Paulo",
+                            "region": "S\u00e3o Paulo",
+                            "country": "BR"
+                        },
+                        "disambiguated-organization": null
+                    },
+                    "visibility": "PUBLIC",
+                    "put-code": 8854675,
+                    "path": "/0000-0003-0091-1894/employment/8854675"
+                }
+            ],
+            "path": "/0000-0003-0091-1894/employments"
+        },
+        "fundings": {
+            "last-modified-date": {
+                "value": 1644154800638
+            },
+            "group": [
+                {
+                    "last-modified-date": {
+                        "value": 1644154800638
+                    },
+                    "external-ids": {
+                        "external-id": []
+                    },
+                    "funding-summary": [
+                        {
+                            "created-date": {
+                                "value": 1644154800638
+                            },
+                            "last-modified-date": {
+                                "value": 1644154800638
+                            },
+                            "source": {
+                                "source-orcid": {
+                                    "uri": "http://orcid.org/0000-0003-0091-1894",
+                                    "path": "0000-0003-0091-1894",
+                                    "host": "orcid.org"
+                                },
+                                "source-client-id": null,
+                                "source-name": {
+                                    "value": "Zampieri BL"
+                                }
+                            },
+                            "title": {
+                                "title": {
+                                    "value": "Thyroid hormones metabolism and action in astrocytes and neurons differentiated from induced pluripotent stem cells of individuals with Down syndrome"
+                                },
+                                "translated-title": null
+                            },
+                            "external-ids": null,
+                            "type": "GRANT",
+                            "start-date": null,
+                            "end-date": null,
+                            "organization": {
+                                "name": "Fondation J\u00e9r\u00f4me Lejeune",
+                                "address": {
+                                    "city": "Paris",
+                                    "region": null,
+                                    "country": "FR"
+                                },
+                                "disambiguated-organization": {
+                                    "disambiguated-organization-identifier": "http://dx.doi.org/10.13039/100007353",
+                                    "disambiguation-source": "FUNDREF"
+                                }
+                            },
+                            "visibility": "PUBLIC",
+                            "put-code": 1283780,
+                            "path": "/0000-0003-0091-1894/funding/1283780",
+                            "display-index": "1"
+                        }
+                    ]
+                },
+                {
+                    "last-modified-date": {
+                        "value": 1576034263993
+                    },
+                    "external-ids": {
+                        "external-id": [
+                            {
+                                "external-id-type": "grant_number",
+                                "external-id-value": "18/15371-8",
+                                "external-id-url": {
+                                    "value": "http://www.bv.fapesp.br/pt/auxilios/102785/producao-de-celulas-tronco-pluripotentes-induzidas-a-partir-de-celulas-epiteliais-descamadas-na-urin/"
+                                },
+                                "external-id-relationship": "SELF"
+                            }
+                        ]
+                    },
+                    "funding-summary": [
+                        {
+                            "created-date": {
+                                "value": 1570628151490
+                            },
+                            "last-modified-date": {
+                                "value": 1576034263993
+                            },
+                            "source": {
+                                "source-orcid": null,
+                                "source-client-id": {
+                                    "uri": "http://orcid.org/client/0000-0003-2174-0924",
+                                    "path": "0000-0003-2174-0924",
+                                    "host": "orcid.org"
+                                },
+                                "source-name": {
+                                    "value": "DimensionsWizard"
+                                }
+                            },
+                            "title": {
+                                "title": {
+                                    "value": "Produ\u00e7\u00e3o de c\u00e9lulas-tronco pluripotentes induzidas a partir de c\u00e9lulas epiteliais descamadas na urina de indiv\u00edduos com S\u00edndrome de Down"
+                                },
+                                "translated-title": {
+                                    "value": "Production of pluripotent stem cells induced from desquamated epithelial cells in the urine of individuals with Down Syndrome",
+                                    "language-code": "en"
+                                }
+                            },
+                            "external-ids": {
+                                "external-id": [
+                                    {
+                                        "external-id-type": "grant_number",
+                                        "external-id-value": "18/15371-8",
+                                        "external-id-url": {
+                                            "value": "http://www.bv.fapesp.br/pt/auxilios/102785/producao-de-celulas-tronco-pluripotentes-induzidas-a-partir-de-celulas-epiteliais-descamadas-na-urin/"
+                                        },
+                                        "external-id-relationship": "SELF"
+                                    }
+                                ]
+                            },
+                            "type": "GRANT",
+                            "start-date": {
+                                "year": {
+                                    "value": "2019"
+                                },
+                                "month": {
+                                    "value": "02"
+                                },
+                                "day": {
+                                    "value": "01"
+                                }
+                            },
+                            "end-date": {
+                                "year": {
+                                    "value": "2021"
+                                },
+                                "month": {
+                                    "value": "01"
+                                },
+                                "day": {
+                                    "value": "31"
+                                }
+                            },
+                            "organization": {
+                                "name": "S\u00e3o Paulo Research Foundation",
+                                "address": {
+                                    "city": "S\u00e3o Paulo",
+                                    "region": null,
+                                    "country": "BR"
+                                },
+                                "disambiguated-organization": {
+                                    "disambiguated-organization-identifier": "http://dx.doi.org/10.13039/501100001807",
+                                    "disambiguation-source": "FUNDREF"
+                                }
+                            },
+                            "visibility": "PUBLIC",
+                            "put-code": 716645,
+                            "path": "/0000-0003-0091-1894/funding/716645",
+                            "display-index": "0"
+                        }
+                    ]
+                }
+            ],
+            "path": "/0000-0003-0091-1894/fundings"
+        },
+        "peer-reviews": {
+            "last-modified-date": null,
+            "group": [],
+            "path": "/0000-0003-0091-1894/peer-reviews"
+        },
+        "works": {
+            "last-modified-date": {
+                "value": 1643038447931
+            },
+            "group": [
+                {
+                    "last-modified-date": {
+                        "value": 1643038447931
+                    },
+                    "external-ids": {
+                        "external-id": [
+                            {
+                                "external-id-type": "doi",
+                                "external-id-value": "10.1007/s13577-022-00672-x",
+                                "external-id-url": {
+                                    "value": "https://doi.org/10.1007/s13577-022-00672-x"
+                                },
+                                "external-id-relationship": "SELF"
+                            },
+                            {
+                                "external-id-type": "pmid",
+                                "external-id-value": "35060072",
+                                "external-id-url": {
+                                    "value": "https://www.ncbi.nlm.nih.gov/pubmed/35060072"
+                                },
+                                "external-id-relationship": "SELF"
+                            }
+                        ]
+                    },
+                    "work-summary": [
+                        {
+                            "put-code": 106901306,
+                            "created-date": {
+                                "value": 1643038447931
+                            },
+                            "last-modified-date": {
+                                "value": 1643038447931
+                            },
+                            "source": {
+                                "source-orcid": {
+                                    "uri": "http://orcid.org/0000-0003-0091-1894",
+                                    "path": "0000-0003-0091-1894",
+                                    "host": "orcid.org"
+                                },
+                                "source-client-id": null,
+                                "source-name": {
+                                    "value": "Zampieri BL"
+                                }
+                            },
+                            "title": {
+                                "title": {
+                                    "value": "Differential microRNA expression profile in blood of children with Down syndrome suggests a role in immunological dysfunction."
+                                },
+                                "subtitle": null,
+                                "translated-title": null
+                            },
+                            "external-ids": {
+                                "external-id": [
+                                    {
+                                        "external-id-type": "pmid",
+                                        "external-id-value": "35060072",
+                                        "external-id-url": {
+                                            "value": "https://www.ncbi.nlm.nih.gov/pubmed/35060072"
+                                        },
+                                        "external-id-relationship": "SELF"
+                                    },
+                                    {
+                                        "external-id-type": "doi",
+                                        "external-id-value": "10.1007/s13577-022-00672-x",
+                                        "external-id-url": {
+                                            "value": "https://doi.org/10.1007/s13577-022-00672-x"
+                                        },
+                                        "external-id-relationship": "SELF"
+                                    }
+                                ]
+                            },
+                            "type": "JOURNAL_ARTICLE",
+                            "publication-date": {
+                                "year": {
+                                    "value": "2022"
+                                },
+                                "month": {
+                                    "value": "01"
+                                },
+                                "day": {
+                                    "value": "20"
+                                },
+                                "media-type": null
+                            },
+                            "visibility": "PUBLIC",
+                            "path": "/0000-0003-0091-1894/work/106901306",
+                            "display-index": "1"
+                        }
+                    ]
+                },
+                {
+                    "last-modified-date": {
+                        "value": 1641862950506
+                    },
+                    "external-ids": {
+                        "external-id": [
+                            {
+                                "external-id-type": "doi",
+                                "external-id-value": "10.3390/brainsci12010083",
+                                "external-id-url": {
+                                    "value": "https://doi.org/10.3390/brainsci12010083"
+                                },
+                                "external-id-relationship": "SELF"
+                            }
+                        ]
+                    },
+                    "work-summary": [
+                        {
+                            "put-code": 105824310,
+                            "created-date": {
+                                "value": 1641471991908
+                            },
+                            "last-modified-date": {
+                                "value": 1641471991908
+                            },
+                            "source": {
+                                "source-orcid": null,
+                                "source-client-id": {
+                                    "uri": "http://orcid.org/client/0000-0001-9884-1913",
+                                    "path": "0000-0001-9884-1913",
+                                    "host": "orcid.org"
+                                },
+                                "source-name": {
+                                    "value": "Crossref"
+                                }
+                            },
+                            "title": {
+                                "title": {
+                                    "value": "Evidence of Energy Metabolism Alterations in Cultured Neonatal Astrocytes Derived from the Ts65Dn Mouse Model of Down Syndrome"
+                                },
+                                "subtitle": null,
+                                "translated-title": null
+                            },
+                            "external-ids": {
+                                "external-id": [
+                                    {
+                                        "external-id-type": "doi",
+                                        "external-id-value": "10.3390/brainsci12010083",
+                                        "external-id-url": {
+                                            "value": "https://doi.org/10.3390/brainsci12010083"
+                                        },
+                                        "external-id-relationship": "SELF"
+                                    }
+                                ]
+                            },
+                            "type": "JOURNAL_ARTICLE",
+                            "publication-date": {
+                                "year": {
+                                    "value": "2022"
+                                },
+                                "month": {
+                                    "value": "01"
+                                },
+                                "day": {
+                                    "value": "06"
+                                },
+                                "media-type": null
+                            },
+                            "visibility": "PUBLIC",
+                            "path": "/0000-0003-0091-1894/work/105824310",
+                            "display-index": "0"
+                        },
+                        {
+                            "put-code": 106055649,
+                            "created-date": {
+                                "value": 1641862950506
+                            },
+                            "last-modified-date": {
+                                "value": 1641862950506
+                            },
+                            "source": {
+                                "source-orcid": null,
+                                "source-client-id": {
+                                    "uri": "http://orcid.org/client/APP-WRQOUAK78G5F7GMD",
+                                    "path": "APP-WRQOUAK78G5F7GMD",
+                                    "host": "orcid.org"
+                                },
+                                "source-name": {
+                                    "value": "Multidisciplinary Digital Publishing Institute"
+                                }
+                            },
+                            "title": {
+                                "title": {
+                                    "value": "Evidence of Energy Metabolism Alterations in Cultured Neonatal Astrocytes Derived from the Ts65Dn Mouse Model of Down Syndrome"
+                                },
+                                "subtitle": null,
+                                "translated-title": null
+                            },
+                            "external-ids": {
+                                "external-id": [
+                                    {
+                                        "external-id-type": "doi",
+                                        "external-id-value": "10.3390/brainsci12010083",
+                                        "external-id-url": {
+                                            "value": "https://doi.org/10.3390/brainsci12010083"
+                                        },
+                                        "external-id-relationship": "SELF"
+                                    }
+                                ]
+                            },
+                            "type": "JOURNAL_ARTICLE",
+                            "publication-date": {
+                                "year": {
+                                    "value": "2022"
+                                },
+                                "month": {
+                                    "value": "01"
+                                },
+                                "day": null,
+                                "media-type": null
+                            },
+                            "visibility": "PUBLIC",
+                            "path": "/0000-0003-0091-1894/work/106055649",
+                            "display-index": "0"
+                        }
+                    ]
+                },
+                {
+                    "last-modified-date": {
+                        "value": 1629415112882
+                    },
+                    "external-ids": {
+                        "external-id": [
+                            {
+                                "external-id-type": "pmid",
+                                "external-id-value": "34410622",
+                                "external-id-url": {
+                                    "value": "https://www.ncbi.nlm.nih.gov/pubmed/34410622"
+                                },
+                                "external-id-relationship": "SELF"
+                            }
+                        ]
+                    },
+                    "work-summary": [
+                        {
+                            "put-code": 98703029,
+                            "created-date": {
+                                "value": 1629414964117
+                            },
+                            "last-modified-date": {
+                                "value": 1629415112882
+                            },
+                            "source": {
+                                "source-orcid": {
+                                    "uri": "http://orcid.org/0000-0003-0091-1894",
+                                    "path": "0000-0003-0091-1894",
+                                    "host": "orcid.org"
+                                },
+                                "source-client-id": null,
+                                "source-name": {
+                                    "value": "Zampieri BL"
+                                }
+                            },
+                            "title": {
+                                "title": {
+                                    "value": "One-carbon metabolism and global DNA methylation in mothers of individuals with Down syndrome"
+                                },
+                                "subtitle": null,
+                                "translated-title": null
+                            },
+                            "external-ids": {
+                                "external-id": [
+                                    {
+                                        "external-id-type": "pmid",
+                                        "external-id-value": "34410622",
+                                        "external-id-url": {
+                                            "value": "https://www.ncbi.nlm.nih.gov/pubmed/34410622"
+                                        },
+                                        "external-id-relationship": "SELF"
+                                    }
+                                ]
+                            },
+                            "type": "JOURNAL_ARTICLE",
+                            "publication-date": {
+                                "year": {
+                                    "value": "2021"
+                                },
+                                "month": null,
+                                "day": null,
+                                "media-type": null
+                            },
+                            "visibility": "PUBLIC",
+                            "path": "/0000-0003-0091-1894/work/98703029",
+                            "display-index": "1"
+                        }
+                    ]
+                },
+                {
+                    "last-modified-date": {
+                        "value": 1570713083521
+                    },
+                    "external-ids": {
+                        "external-id": [
+                            {
+                                "external-id-type": "doi",
+                                "external-id-value": "10.1002/sctm.16-0128",
+                                "external-id-url": null,
+                                "external-id-relationship": "SELF"
+                            },
+                            {
+                                "external-id-type": "eid",
+                                "external-id-value": "2-s2.0-85020113449",
+                                "external-id-url": null,
+                                "external-id-relationship": "SELF"
+                            },
+                            {
+                                "external-id-type": "wosuid",
+                                "external-id-value": "MEDLINE:28371411",
+                                "external-id-url": null,
+                                "external-id-relationship": "SELF"
+                            }
+                        ]
+                    },
+                    "work-summary": [
+                        {
+                            "put-code": 32842412,
+                            "created-date": {
+                                "value": 1495057167277
+                            },
+                            "last-modified-date": {
+                                "value": 1495057167277
+                            },
+                            "source": {
+                                "source-orcid": null,
+                                "source-client-id": {
+                                    "uri": "http://orcid.org/client/0000-0003-1377-5676",
+                                    "path": "0000-0003-1377-5676",
+                                    "host": "orcid.org"
+                                },
+                                "source-name": {
+                                    "value": "ResearcherID"
+                                }
+                            },
+                            "title": {
+                                "title": {
+                                    "value": "Generation of Integration-Free Induced Pluripotent Stem Cells from Urine-Derived Cells Isolated from Individuals with Down Syndrome."
+                                },
+                                "subtitle": null,
+                                "translated-title": null
+                            },
+                            "external-ids": {
+                                "external-id": [
+                                    {
+                                        "external-id-type": "doi",
+                                        "external-id-value": "10.1002/sctm.16-0128",
+                                        "external-id-url": null,
+                                        "external-id-relationship": "SELF"
+                                    },
+                                    {
+                                        "external-id-type": "wosuid",
+                                        "external-id-value": "MEDLINE:28371411",
+                                        "external-id-url": null,
+                                        "external-id-relationship": "SELF"
+                                    }
+                                ]
+                            },
+                            "type": "JOURNAL_ARTICLE",
+                            "publication-date": {
+                                "year": {
+                                    "value": "2017"
+                                },
+                                "month": null,
+                                "day": null,
+                                "media-type": null
+                            },
+                            "visibility": "PUBLIC",
+                            "path": "/0000-0003-0091-1894/work/32842412",
+                            "display-index": "0"
+                        },
+                        {
+                            "put-code": 62916207,
+                            "created-date": {
+                                "value": 1570713083521
+                            },
+                            "last-modified-date": {
+                                "value": 1570713083521
+                            },
+                            "source": {
+                                "source-orcid": null,
+                                "source-client-id": {
+                                    "uri": "http://orcid.org/client/0000-0002-5982-8983",
+                                    "path": "0000-0002-5982-8983",
+                                    "host": "orcid.org"
+                                },
+                                "source-name": {
+                                    "value": "Scopus - Elsevier"
+                                }
+                            },
+                            "title": {
+                                "title": {
+                                    "value": "Generation of integration-free induced pluripotent stem cells from urine-derived cells isolated from individuals with down syndrome"
+                                },
+                                "subtitle": null,
+                                "translated-title": null
+                            },
+                            "external-ids": {
+                                "external-id": [
+                                    {
+                                        "external-id-type": "doi",
+                                        "external-id-value": "10.1002/sctm.16-0128",
+                                        "external-id-url": null,
+                                        "external-id-relationship": "SELF"
+                                    },
+                                    {
+                                        "external-id-type": "eid",
+                                        "external-id-value": "2-s2.0-85020113449",
+                                        "external-id-url": null,
+                                        "external-id-relationship": "SELF"
+                                    }
+                                ]
+                            },
+                            "type": "JOURNAL_ARTICLE",
+                            "publication-date": {
+                                "year": {
+                                    "value": "2017"
+                                },
+                                "month": null,
+                                "day": null,
+                                "media-type": null
+                            },
+                            "visibility": "PUBLIC",
+                            "path": "/0000-0003-0091-1894/work/62916207",
+                            "display-index": "0"
+                        }
+                    ]
+                },
+                {
+                    "last-modified-date": {
+                        "value": 1570713083523
+                    },
+                    "external-ids": {
+                        "external-id": [
+                            {
+                                "external-id-type": "doi",
+                                "external-id-value": "10.1155/2016/6985903",
+                                "external-id-url": null,
+                                "external-id-relationship": "SELF"
+                            },
+                            {
+                                "external-id-type": "wosuid",
+                                "external-id-value": "MEDLINE:27293319",
+                                "external-id-url": null,
+                                "external-id-relationship": "SELF"
+                            },
+                            {
+                                "external-id-type": "eid",
+                                "external-id-value": "2-s2.0-84973146961",
+                                "external-id-url": null,
+                                "external-id-relationship": "SELF"
+                            }
+                        ]
+                    },
+                    "work-summary": [
+                        {
+                            "put-code": 32842413,
+                            "created-date": {
+                                "value": 1495057167280
+                            },
+                            "last-modified-date": {
+                                "value": 1495057167280
+                            },
+                            "source": {
+                                "source-orcid": null,
+                                "source-client-id": {
+                                    "uri": "http://orcid.org/client/0000-0003-1377-5676",
+                                    "path": "0000-0003-1377-5676",
+                                    "host": "orcid.org"
+                                },
+                                "source-name": {
+                                    "value": "ResearcherID"
+                                }
+                            },
+                            "title": {
+                                "title": {
+                                    "value": "Differential Expression of Inflammation-Related Genes in Children with Down Syndrome."
+                                },
+                                "subtitle": null,
+                                "translated-title": null
+                            },
+                            "external-ids": {
+                                "external-id": [
+                                    {
+                                        "external-id-type": "doi",
+                                        "external-id-value": "10.1155/2016/6985903",
+                                        "external-id-url": null,
+                                        "external-id-relationship": "SELF"
+                                    },
+                                    {
+                                        "external-id-type": "wosuid",
+                                        "external-id-value": "MEDLINE:27293319",
+                                        "external-id-url": null,
+                                        "external-id-relationship": "SELF"
+                                    }
+                                ]
+                            },
+                            "type": "JOURNAL_ARTICLE",
+                            "publication-date": {
+                                "year": {
+                                    "value": "2016"
+                                },
+                                "month": null,
+                                "day": null,
+                                "media-type": null
+                            },
+                            "visibility": "PUBLIC",
+                            "path": "/0000-0003-0091-1894/work/32842413",
+                            "display-index": "0"
+                        },
+                        {
+                            "put-code": 62916208,
+                            "created-date": {
+                                "value": 1570713083523
+                            },
+                            "last-modified-date": {
+                                "value": 1570713083523
+                            },
+                            "source": {
+                                "source-orcid": null,
+                                "source-client-id": {
+                                    "uri": "http://orcid.org/client/0000-0002-5982-8983",
+                                    "path": "0000-0002-5982-8983",
+                                    "host": "orcid.org"
+                                },
+                                "source-name": {
+                                    "value": "Scopus - Elsevier"
+                                }
+                            },
+                            "title": {
+                                "title": {
+                                    "value": "Differential Expression of Inflammation-Related Genes in Children with Down Syndrome"
+                                },
+                                "subtitle": null,
+                                "translated-title": null
+                            },
+                            "external-ids": {
+                                "external-id": [
+                                    {
+                                        "external-id-type": "doi",
+                                        "external-id-value": "10.1155/2016/6985903",
+                                        "external-id-url": null,
+                                        "external-id-relationship": "SELF"
+                                    },
+                                    {
+                                        "external-id-type": "eid",
+                                        "external-id-value": "2-s2.0-84973146961",
+                                        "external-id-url": null,
+                                        "external-id-relationship": "SELF"
+                                    }
+                                ]
+                            },
+                            "type": "JOURNAL_ARTICLE",
+                            "publication-date": {
+                                "year": {
+                                    "value": "2016"
+                                },
+                                "month": null,
+                                "day": null,
+                                "media-type": null
+                            },
+                            "visibility": "PUBLIC",
+                            "path": "/0000-0003-0091-1894/work/62916208",
+                            "display-index": "0"
+                        }
+                    ]
+                },
+                {
+                    "last-modified-date": {
+                        "value": 1570713083526
+                    },
+                    "external-ids": {
+                        "external-id": [
+                            {
+                                "external-id-type": "eid",
+                                "external-id-value": "2-s2.0-84964659859",
+                                "external-id-url": null,
+                                "external-id-relationship": "SELF"
+                            },
+                            {
+                                "external-id-type": "wosuid",
+                                "external-id-value": "WOS:000374898500146",
+                                "external-id-url": null,
+                                "external-id-relationship": "SELF"
+                            },
+                            {
+                                "external-id-type": "doi",
+                                "external-id-value": "10.1371/journal.pone.0154108",
+                                "external-id-url": null,
+                                "external-id-relationship": "SELF"
+                            }
+                        ]
+                    },
+                    "work-summary": [
+                        {
+                            "put-code": 32842414,
+                            "created-date": {
+                                "value": 1495057167283
+                            },
+                            "last-modified-date": {
+                                "value": 1495057167283
+                            },
+                            "source": {
+                                "source-orcid": null,
+                                "source-client-id": {
+                                    "uri": "http://orcid.org/client/0000-0003-1377-5676",
+                                    "path": "0000-0003-1377-5676",
+                                    "host": "orcid.org"
+                                },
+                                "source-name": {
+                                    "value": "ResearcherID"
+                                }
+                            },
+                            "title": {
+                                "title": {
+                                    "value": "Trisomy 21 Alters DNA Methylation in Parent-of-Origin-Dependent and -Independent Manners"
+                                },
+                                "subtitle": null,
+                                "translated-title": null
+                            },
+                            "external-ids": {
+                                "external-id": [
+                                    {
+                                        "external-id-type": "doi",
+                                        "external-id-value": "10.1371/journal.pone.0154108",
+                                        "external-id-url": null,
+                                        "external-id-relationship": "SELF"
+                                    },
+                                    {
+                                        "external-id-type": "wosuid",
+                                        "external-id-value": "WOS:000374898500146",
+                                        "external-id-url": null,
+                                        "external-id-relationship": "SELF"
+                                    }
+                                ]
+                            },
+                            "type": "JOURNAL_ARTICLE",
+                            "publication-date": {
+                                "year": {
+                                    "value": "2016"
+                                },
+                                "month": null,
+                                "day": null,
+                                "media-type": null
+                            },
+                            "visibility": "PUBLIC",
+                            "path": "/0000-0003-0091-1894/work/32842414",
+                            "display-index": "0"
+                        },
+                        {
+                            "put-code": 62916210,
+                            "created-date": {
+                                "value": 1570713083526
+                            },
+                            "last-modified-date": {
+                                "value": 1570713083526
+                            },
+                            "source": {
+                                "source-orcid": null,
+                                "source-client-id": {
+                                    "uri": "http://orcid.org/client/0000-0002-5982-8983",
+                                    "path": "0000-0002-5982-8983",
+                                    "host": "orcid.org"
+                                },
+                                "source-name": {
+                                    "value": "Scopus - Elsevier"
+                                }
+                            },
+                            "title": {
+                                "title": {
+                                    "value": "Trisomy 21 alters DNA methylation in parent-of-origin-dependent and -independent manners"
+                                },
+                                "subtitle": null,
+                                "translated-title": null
+                            },
+                            "external-ids": {
+                                "external-id": [
+                                    {
+                                        "external-id-type": "doi",
+                                        "external-id-value": "10.1371/journal.pone.0154108",
+                                        "external-id-url": null,
+                                        "external-id-relationship": "SELF"
+                                    },
+                                    {
+                                        "external-id-type": "eid",
+                                        "external-id-value": "2-s2.0-84964659859",
+                                        "external-id-url": null,
+                                        "external-id-relationship": "SELF"
+                                    }
+                                ]
+                            },
+                            "type": "JOURNAL_ARTICLE",
+                            "publication-date": {
+                                "year": {
+                                    "value": "2016"
+                                },
+                                "month": null,
+                                "day": null,
+                                "media-type": null
+                            },
+                            "visibility": "PUBLIC",
+                            "path": "/0000-0003-0091-1894/work/62916210",
+                            "display-index": "0"
+                        }
+                    ]
+                },
+                {
+                    "last-modified-date": {
+                        "value": 1570713083520
+                    },
+                    "external-ids": {
+                        "external-id": [
+                            {
+                                "external-id-type": "doi",
+                                "external-id-value": "10.1371/journal.pone.0107218",
+                                "external-id-url": {
+                                    "value": ""
+                                },
+                                "external-id-relationship": "SELF"
+                            },
+                            {
+                                "external-id-type": "eid",
+                                "external-id-value": "2-s2.0-84907272758",
+                                "external-id-url": null,
+                                "external-id-relationship": "SELF"
+                            }
+                        ]
+                    },
+                    "work-summary": [
+                        {
+                            "put-code": 13810279,
+                            "created-date": {
+                                "value": 1411399015384
+                            },
+                            "last-modified-date": {
+                                "value": 1437611812601
+                            },
+                            "source": {
+                                "source-orcid": null,
+                                "source-client-id": {
+                                    "uri": "http://orcid.org/client/0000-0002-3054-1567",
+                                    "path": "0000-0002-3054-1567",
+                                    "host": "orcid.org"
+                                },
+                                "source-name": {
+                                    "value": "Crossref Metadata Search"
+                                }
+                            },
+                            "title": {
+                                "title": {
+                                    "value": "Altered Expression of Immune-Related Genes in Children with Down Syndrome"
+                                },
+                                "subtitle": null,
+                                "translated-title": null
+                            },
+                            "external-ids": {
+                                "external-id": [
+                                    {
+                                        "external-id-type": "doi",
+                                        "external-id-value": "10.1371/journal.pone.0107218",
+                                        "external-id-url": {
+                                            "value": ""
+                                        },
+                                        "external-id-relationship": "SELF"
+                                    },
+                                    {
+                                        "external-id-type": "issn",
+                                        "external-id-value": "1932-6203",
+                                        "external-id-url": {
+                                            "value": ""
+                                        },
+                                        "external-id-relationship": "PART_OF"
+                                    }
+                                ]
+                            },
+                            "type": "JOURNAL_ARTICLE",
+                            "publication-date": {
+                                "year": {
+                                    "value": "2014"
+                                },
+                                "month": {
+                                    "value": "09"
+                                },
+                                "day": null,
+                                "media-type": null
+                            },
+                            "visibility": "PUBLIC",
+                            "path": "/0000-0003-0091-1894/work/13810279",
+                            "display-index": "0"
+                        },
+                        {
+                            "put-code": 62916206,
+                            "created-date": {
+                                "value": 1570713083520
+                            },
+                            "last-modified-date": {
+                                "value": 1570713083520
+                            },
+                            "source": {
+                                "source-orcid": null,
+                                "source-client-id": {
+                                    "uri": "http://orcid.org/client/0000-0002-5982-8983",
+                                    "path": "0000-0002-5982-8983",
+                                    "host": "orcid.org"
+                                },
+                                "source-name": {
+                                    "value": "Scopus - Elsevier"
+                                }
+                            },
+                            "title": {
+                                "title": {
+                                    "value": "Altered expression of immune-related genes in children with Down syndrome"
+                                },
+                                "subtitle": null,
+                                "translated-title": null
+                            },
+                            "external-ids": {
+                                "external-id": [
+                                    {
+                                        "external-id-type": "doi",
+                                        "external-id-value": "10.1371/journal.pone.0107218",
+                                        "external-id-url": null,
+                                        "external-id-relationship": "SELF"
+                                    },
+                                    {
+                                        "external-id-type": "eid",
+                                        "external-id-value": "2-s2.0-84907272758",
+                                        "external-id-url": null,
+                                        "external-id-relationship": "SELF"
+                                    }
+                                ]
+                            },
+                            "type": "JOURNAL_ARTICLE",
+                            "publication-date": {
+                                "year": {
+                                    "value": "2014"
+                                },
+                                "month": null,
+                                "day": null,
+                                "media-type": null
+                            },
+                            "visibility": "PUBLIC",
+                            "path": "/0000-0003-0091-1894/work/62916206",
+                            "display-index": "0"
+                        }
+                    ]
+                },
+                {
+                    "last-modified-date": {
+                        "value": 1570713083524
+                    },
+                    "external-ids": {
+                        "external-id": [
+                            {
+                                "external-id-type": "doi",
+                                "external-id-value": "10.1016/j.physbeh.2014.02.020",
+                                "external-id-url": {
+                                    "value": ""
+                                },
+                                "external-id-relationship": "SELF"
+                            },
+                            {
+                                "external-id-type": "eid",
+                                "external-id-value": "2-s2.0-84894358674",
+                                "external-id-url": null,
+                                "external-id-relationship": "SELF"
+                            }
+                        ]
+                    },
+                    "work-summary": [
+                        {
+                            "put-code": 11862600,
+                            "created-date": {
+                                "value": 1393351296522
+                            },
+                            "last-modified-date": {
+                                "value": 1437434533723
+                            },
+                            "source": {
+                                "source-orcid": null,
+                                "source-client-id": {
+                                    "uri": "http://orcid.org/client/0000-0003-1377-5676",
+                                    "path": "0000-0003-1377-5676",
+                                    "host": "orcid.org"
+                                },
+                                "source-name": {
+                                    "value": "ResearcherID"
+                                }
+                            },
+                            "title": {
+                                "title": {
+                                    "value": "Ultrasonic vocalizations during male-female interaction in the mouse model of Down syndrome Ts65Dn"
+                                },
+                                "subtitle": null,
+                                "translated-title": null
+                            },
+                            "external-ids": {
+                                "external-id": [
+                                    {
+                                        "external-id-type": "doi",
+                                        "external-id-value": "10.1016/j.physbeh.2014.02.020",
+                                        "external-id-url": {
+                                            "value": ""
+                                        },
+                                        "external-id-relationship": "SELF"
+                                    },
+                                    {
+                                        "external-id-type": "issn",
+                                        "external-id-value": "1873-507X",
+                                        "external-id-url": {
+                                            "value": ""
+                                        },
+                                        "external-id-relationship": "PART_OF"
+                                    }
+                                ]
+                            },
+                            "type": "JOURNAL_ARTICLE",
+                            "publication-date": {
+                                "year": {
+                                    "value": "2014"
+                                },
+                                "month": null,
+                                "day": null,
+                                "media-type": null
+                            },
+                            "visibility": "PUBLIC",
+                            "path": "/0000-0003-0091-1894/work/11862600",
+                            "display-index": "0"
+                        },
+                        {
+                            "put-code": 62916209,
+                            "created-date": {
+                                "value": 1570713083524
+                            },
+                            "last-modified-date": {
+                                "value": 1570713083524
+                            },
+                            "source": {
+                                "source-orcid": null,
+                                "source-client-id": {
+                                    "uri": "http://orcid.org/client/0000-0002-5982-8983",
+                                    "path": "0000-0002-5982-8983",
+                                    "host": "orcid.org"
+                                },
+                                "source-name": {
+                                    "value": "Scopus - Elsevier"
+                                }
+                            },
+                            "title": {
+                                "title": {
+                                    "value": "Ultrasonic vocalizations during male-female interaction in the mouse model of Down syndrome Ts65Dn"
+                                },
+                                "subtitle": null,
+                                "translated-title": null
+                            },
+                            "external-ids": {
+                                "external-id": [
+                                    {
+                                        "external-id-type": "doi",
+                                        "external-id-value": "10.1016/j.physbeh.2014.02.020",
+                                        "external-id-url": null,
+                                        "external-id-relationship": "SELF"
+                                    },
+                                    {
+                                        "external-id-type": "eid",
+                                        "external-id-value": "2-s2.0-84894358674",
+                                        "external-id-url": null,
+                                        "external-id-relationship": "SELF"
+                                    }
+                                ]
+                            },
+                            "type": "JOURNAL_ARTICLE",
+                            "publication-date": {
+                                "year": {
+                                    "value": "2014"
+                                },
+                                "month": null,
+                                "day": null,
+                                "media-type": null
+                            },
+                            "visibility": "PUBLIC",
+                            "path": "/0000-0003-0091-1894/work/62916209",
+                            "display-index": "0"
+                        }
+                    ]
+                },
+                {
+                    "last-modified-date": {
+                        "value": 1570713083528
+                    },
+                    "external-ids": {
+                        "external-id": [
+                            {
+                                "external-id-type": "doi",
+                                "external-id-value": "10.1089/gtmb.2012.0293",
+                                "external-id-url": {
+                                    "value": ""
+                                },
+                                "external-id-relationship": "SELF"
+                            },
+                            {
+                                "external-id-type": "eid",
+                                "external-id-value": "2-s2.0-84875666463",
+                                "external-id-url": null,
+                                "external-id-relationship": "SELF"
+                            }
+                        ]
+                    },
+                    "work-summary": [
+                        {
+                            "put-code": 10855430,
+                            "created-date": {
+                                "value": 1385404661536
+                            },
+                            "last-modified-date": {
+                                "value": 1437267511584
+                            },
+                            "source": {
+                                "source-orcid": null,
+                                "source-client-id": {
+                                    "uri": "http://orcid.org/client/0000-0003-1377-5676",
+                                    "path": "0000-0003-1377-5676",
+                                    "host": "orcid.org"
+                                },
+                                "source-name": {
+                                    "value": "ResearcherID"
+                                }
+                            },
+                            "title": {
+                                "title": {
+                                    "value": "DHFR 19-bp Deletion and SHMT C1420T Polymorphisms and Metabolite Concentrations of the Folate Pathway in Individuals with Down Syndrome"
+                                },
+                                "subtitle": null,
+                                "translated-title": null
+                            },
+                            "external-ids": {
+                                "external-id": [
+                                    {
+                                        "external-id-type": "doi",
+                                        "external-id-value": "10.1089/gtmb.2012.0293",
+                                        "external-id-url": {
+                                            "value": ""
+                                        },
+                                        "external-id-relationship": "SELF"
+                                    },
+                                    {
+                                        "external-id-type": "issn",
+                                        "external-id-value": "1945-0265",
+                                        "external-id-url": {
+                                            "value": ""
+                                        },
+                                        "external-id-relationship": "PART_OF"
+                                    }
+                                ]
+                            },
+                            "type": "JOURNAL_ARTICLE",
+                            "publication-date": {
+                                "year": {
+                                    "value": "2013"
+                                },
+                                "month": null,
+                                "day": null,
+                                "media-type": null
+                            },
+                            "visibility": "PUBLIC",
+                            "path": "/0000-0003-0091-1894/work/10855430",
+                            "display-index": "0"
+                        },
+                        {
+                            "put-code": 62916211,
+                            "created-date": {
+                                "value": 1570713083528
+                            },
+                            "last-modified-date": {
+                                "value": 1570713083528
+                            },
+                            "source": {
+                                "source-orcid": null,
+                                "source-client-id": {
+                                    "uri": "http://orcid.org/client/0000-0002-5982-8983",
+                                    "path": "0000-0002-5982-8983",
+                                    "host": "orcid.org"
+                                },
+                                "source-name": {
+                                    "value": "Scopus - Elsevier"
+                                }
+                            },
+                            "title": {
+                                "title": {
+                                    "value": "DHFR 19-bp deletion and SHMT C1420T polymorphisms and metabolite concentrations of the folate pathway in individuals with down syndrome"
+                                },
+                                "subtitle": null,
+                                "translated-title": null
+                            },
+                            "external-ids": {
+                                "external-id": [
+                                    {
+                                        "external-id-type": "doi",
+                                        "external-id-value": "10.1089/gtmb.2012.0293",
+                                        "external-id-url": null,
+                                        "external-id-relationship": "SELF"
+                                    },
+                                    {
+                                        "external-id-type": "eid",
+                                        "external-id-value": "2-s2.0-84875666463",
+                                        "external-id-url": null,
+                                        "external-id-relationship": "SELF"
+                                    }
+                                ]
+                            },
+                            "type": "JOURNAL_ARTICLE",
+                            "publication-date": {
+                                "year": {
+                                    "value": "2013"
+                                },
+                                "month": null,
+                                "day": null,
+                                "media-type": null
+                            },
+                            "visibility": "PUBLIC",
+                            "path": "/0000-0003-0091-1894/work/62916211",
+                            "display-index": "0"
+                        }
+                    ]
+                },
+                {
+                    "last-modified-date": {
+                        "value": 1437417224168
+                    },
+                    "external-ids": {
+                        "external-id": [
+                            {
+                                "external-id-type": "doi",
+                                "external-id-value": "10.1089/gtmb.2011.0257",
+                                "external-id-url": {
+                                    "value": ""
+                                },
+                                "external-id-relationship": "SELF"
+                            }
+                        ]
+                    },
+                    "work-summary": [
+                        {
+                            "put-code": 11441797,
+                            "created-date": {
+                                "value": 1388785073600
+                            },
+                            "last-modified-date": {
+                                "value": 1437417224168
+                            },
+                            "source": {
+                                "source-orcid": null,
+                                "source-client-id": {
+                                    "uri": "http://orcid.org/client/0000-0002-5982-8983",
+                                    "path": "0000-0002-5982-8983",
+                                    "host": "orcid.org"
+                                },
+                                "source-name": {
+                                    "value": "Scopus - Elsevier"
+                                }
+                            },
+                            "title": {
+                                "title": {
+                                    "value": "BHMT G742A and MTHFD1 G1958A polymorphisms and Down syndrome risk in the Brazilian population"
+                                },
+                                "subtitle": null,
+                                "translated-title": null
+                            },
+                            "external-ids": {
+                                "external-id": [
+                                    {
+                                        "external-id-type": "doi",
+                                        "external-id-value": "10.1089/gtmb.2011.0257",
+                                        "external-id-url": {
+                                            "value": ""
+                                        },
+                                        "external-id-relationship": "SELF"
+                                    }
+                                ]
+                            },
+                            "type": "JOURNAL_ARTICLE",
+                            "publication-date": {
+                                "year": {
+                                    "value": "2012"
+                                },
+                                "month": null,
+                                "day": null,
+                                "media-type": null
+                            },
+                            "visibility": "PUBLIC",
+                            "path": "/0000-0003-0091-1894/work/11441797",
+                            "display-index": "0"
+                        }
+                    ]
+                },
+                {
+                    "last-modified-date": {
+                        "value": 1437417224124
+                    },
+                    "external-ids": {
+                        "external-id": [
+                            {
+                                "external-id-type": "doi",
+                                "external-id-value": "10.1007/s11033-012-1629-5",
+                                "external-id-url": {
+                                    "value": ""
+                                },
+                                "external-id-relationship": "SELF"
+                            }
+                        ]
+                    },
+                    "work-summary": [
+                        {
+                            "put-code": 11441796,
+                            "created-date": {
+                                "value": 1388785073511
+                            },
+                            "last-modified-date": {
+                                "value": 1437417224124
+                            },
+                            "source": {
+                                "source-orcid": null,
+                                "source-client-id": {
+                                    "uri": "http://orcid.org/client/0000-0002-5982-8983",
+                                    "path": "0000-0002-5982-8983",
+                                    "host": "orcid.org"
+                                },
+                                "source-name": {
+                                    "value": "Scopus - Elsevier"
+                                }
+                            },
+                            "title": {
+                                "title": {
+                                    "value": "Genetic polymorphisms modulate the folate metabolism of Brazilian individuals with Down syndrome"
+                                },
+                                "subtitle": null,
+                                "translated-title": null
+                            },
+                            "external-ids": {
+                                "external-id": [
+                                    {
+                                        "external-id-type": "doi",
+                                        "external-id-value": "10.1007/s11033-012-1629-5",
+                                        "external-id-url": {
+                                            "value": ""
+                                        },
+                                        "external-id-relationship": "SELF"
+                                    }
+                                ]
+                            },
+                            "type": "JOURNAL_ARTICLE",
+                            "publication-date": {
+                                "year": {
+                                    "value": "2012"
+                                },
+                                "month": null,
+                                "day": null,
+                                "media-type": null
+                            },
+                            "visibility": "PUBLIC",
+                            "path": "/0000-0003-0091-1894/work/11441796",
+                            "display-index": "0"
+                        }
+                    ]
+                },
+                {
+                    "last-modified-date": {
+                        "value": 1437417224214
+                    },
+                    "external-ids": {
+                        "external-id": [
+                            {
+                                "external-id-type": "doi",
+                                "external-id-value": "10.3233/DMA-2011-0869",
+                                "external-id-url": {
+                                    "value": ""
+                                },
+                                "external-id-relationship": "SELF"
+                            }
+                        ]
+                    },
+                    "work-summary": [
+                        {
+                            "put-code": 11441798,
+                            "created-date": {
+                                "value": 1388785073681
+                            },
+                            "last-modified-date": {
+                                "value": 1437417224214
+                            },
+                            "source": {
+                                "source-orcid": null,
+                                "source-client-id": {
+                                    "uri": "http://orcid.org/client/0000-0002-5982-8983",
+                                    "path": "0000-0002-5982-8983",
+                                    "host": "orcid.org"
+                                },
+                                "source-name": {
+                                    "value": "Scopus - Elsevier"
+                                }
+                            },
+                            "title": {
+                                "title": {
+                                    "value": "Maternal risk for Down syndrome is modulated by genes involved in folate metabolism"
+                                },
+                                "subtitle": null,
+                                "translated-title": null
+                            },
+                            "external-ids": {
+                                "external-id": [
+                                    {
+                                        "external-id-type": "doi",
+                                        "external-id-value": "10.3233/DMA-2011-0869",
+                                        "external-id-url": {
+                                            "value": ""
+                                        },
+                                        "external-id-relationship": "SELF"
+                                    }
+                                ]
+                            },
+                            "type": "JOURNAL_ARTICLE",
+                            "publication-date": {
+                                "year": {
+                                    "value": "2012"
+                                },
+                                "month": null,
+                                "day": null,
+                                "media-type": null
+                            },
+                            "visibility": "PUBLIC",
+                            "path": "/0000-0003-0091-1894/work/11441798",
+                            "display-index": "0"
+                        }
+                    ]
+                },
+                {
+                    "last-modified-date": {
+                        "value": 1570713083517
+                    },
+                    "external-ids": {
+                        "external-id": [
+                            {
+                                "external-id-type": "eid",
+                                "external-id-value": "2-s2.0-84895370361",
+                                "external-id-url": null,
+                                "external-id-relationship": "SELF"
+                            }
+                        ]
+                    },
+                    "work-summary": [
+                        {
+                            "put-code": 62916204,
+                            "created-date": {
+                                "value": 1570713083517
+                            },
+                            "last-modified-date": {
+                                "value": 1570713083517
+                            },
+                            "source": {
+                                "source-orcid": null,
+                                "source-client-id": {
+                                    "uri": "http://orcid.org/client/0000-0002-5982-8983",
+                                    "path": "0000-0002-5982-8983",
+                                    "host": "orcid.org"
+                                },
+                                "source-name": {
+                                    "value": "Scopus - Elsevier"
+                                }
+                            },
+                            "title": {
+                                "title": {
+                                    "value": "Metabolic and functional changes in Down syndrome individuals"
+                                },
+                                "subtitle": null,
+                                "translated-title": null
+                            },
+                            "external-ids": {
+                                "external-id": [
+                                    {
+                                        "external-id-type": "eid",
+                                        "external-id-value": "2-s2.0-84895370361",
+                                        "external-id-url": null,
+                                        "external-id-relationship": "SELF"
+                                    }
+                                ]
+                            },
+                            "type": "BOOK_CHAPTER",
+                            "publication-date": {
+                                "year": {
+                                    "value": "2012"
+                                },
+                                "month": null,
+                                "day": null,
+                                "media-type": null
+                            },
+                            "visibility": "PUBLIC",
+                            "path": "/0000-0003-0091-1894/work/62916204",
+                            "display-index": "0"
+                        }
+                    ]
+                },
+                {
+                    "last-modified-date": {
+                        "value": 1437417224256
+                    },
+                    "external-ids": {
+                        "external-id": [
+                            {
+                                "external-id-type": "doi",
+                                "external-id-value": "10.1007/s11033-011-1008-7",
+                                "external-id-url": {
+                                    "value": ""
+                                },
+                                "external-id-relationship": "SELF"
+                            }
+                        ]
+                    },
+                    "work-summary": [
+                        {
+                            "put-code": 11441799,
+                            "created-date": {
+                                "value": 1388785073762
+                            },
+                            "last-modified-date": {
+                                "value": 1437417224256
+                            },
+                            "source": {
+                                "source-orcid": null,
+                                "source-client-id": {
+                                    "uri": "http://orcid.org/client/0000-0002-5982-8983",
+                                    "path": "0000-0002-5982-8983",
+                                    "host": "orcid.org"
+                                },
+                                "source-name": {
+                                    "value": "Scopus - Elsevier"
+                                }
+                            },
+                            "title": {
+                                "title": {
+                                    "value": "Polymorphism C1420T of Serine hydroxymethyltransferase gene on maternal risk for Down syndrome"
+                                },
+                                "subtitle": null,
+                                "translated-title": null
+                            },
+                            "external-ids": {
+                                "external-id": [
+                                    {
+                                        "external-id-type": "doi",
+                                        "external-id-value": "10.1007/s11033-011-1008-7",
+                                        "external-id-url": {
+                                            "value": ""
+                                        },
+                                        "external-id-relationship": "SELF"
+                                    }
+                                ]
+                            },
+                            "type": "JOURNAL_ARTICLE",
+                            "publication-date": {
+                                "year": {
+                                    "value": "2012"
+                                },
+                                "month": null,
+                                "day": null,
+                                "media-type": null
+                            },
+                            "visibility": "PUBLIC",
+                            "path": "/0000-0003-0091-1894/work/11441799",
+                            "display-index": "0"
+                        }
+                    ]
+                },
+                {
+                    "last-modified-date": {
+                        "value": 1437611813686
+                    },
+                    "external-ids": {
+                        "external-id": [
+                            {
+                                "external-id-type": "isbn",
+                                "external-id-value": "978-953-307-631-7",
+                                "external-id-url": {
+                                    "value": ""
+                                },
+                                "external-id-relationship": "SELF"
+                            },
+                            {
+                                "external-id-type": "doi",
+                                "external-id-value": "10.5772/19373",
+                                "external-id-url": {
+                                    "value": ""
+                                },
+                                "external-id-relationship": "SELF"
+                            }
+                        ]
+                    },
+                    "work-summary": [
+                        {
+                            "put-code": 13810313,
+                            "created-date": {
+                                "value": 1411399092810
+                            },
+                            "last-modified-date": {
+                                "value": 1437611813686
+                            },
+                            "source": {
+                                "source-orcid": null,
+                                "source-client-id": {
+                                    "uri": "http://orcid.org/client/0000-0002-3054-1567",
+                                    "path": "0000-0002-3054-1567",
+                                    "host": "orcid.org"
+                                },
+                                "source-name": {
+                                    "value": "Crossref Metadata Search"
+                                }
+                            },
+                            "title": {
+                                "title": {
+                                    "value": "Abnormal Folate Metabolism and Maternal Risk for Down Syndrome"
+                                },
+                                "subtitle": null,
+                                "translated-title": null
+                            },
+                            "external-ids": {
+                                "external-id": [
+                                    {
+                                        "external-id-type": "doi",
+                                        "external-id-value": "10.5772/19373",
+                                        "external-id-url": {
+                                            "value": ""
+                                        },
+                                        "external-id-relationship": "SELF"
+                                    },
+                                    {
+                                        "external-id-type": "isbn",
+                                        "external-id-value": "978-953-307-631-7",
+                                        "external-id-url": {
+                                            "value": ""
+                                        },
+                                        "external-id-relationship": "SELF"
+                                    }
+                                ]
+                            },
+                            "type": "OTHER",
+                            "publication-date": {
+                                "year": {
+                                    "value": "2011"
+                                },
+                                "month": {
+                                    "value": "08"
+                                },
+                                "day": null,
+                                "media-type": null
+                            },
+                            "visibility": "PUBLIC",
+                            "path": "/0000-0003-0091-1894/work/13810313",
+                            "display-index": "0"
+                        }
+                    ]
+                },
+                {
+                    "last-modified-date": {
+                        "value": 1436486172875
+                    },
+                    "external-ids": {
+                        "external-id": []
+                    },
+                    "work-summary": [
+                        {
+                            "put-code": 10855435,
+                            "created-date": {
+                                "value": 1385404661638
+                            },
+                            "last-modified-date": {
+                                "value": 1436486172875
+                            },
+                            "source": {
+                                "source-orcid": null,
+                                "source-client-id": {
+                                    "uri": "http://orcid.org/client/0000-0003-1377-5676",
+                                    "path": "0000-0003-1377-5676",
+                                    "host": "orcid.org"
+                                },
+                                "source-name": {
+                                    "value": "ResearcherID"
+                                }
+                            },
+                            "title": {
+                                "title": {
+                                    "value": "19-base pair deletion polymorphism of the dihydrofolate reductase (DHFR) gene: maternal risk of Down syndrome and folate metabolism"
+                                },
+                                "subtitle": null,
+                                "translated-title": null
+                            },
+                            "external-ids": null,
+                            "type": "JOURNAL_ARTICLE",
+                            "publication-date": {
+                                "year": {
+                                    "value": "2010"
+                                },
+                                "month": null,
+                                "day": null,
+                                "media-type": null
+                            },
+                            "visibility": "PUBLIC",
+                            "path": "/0000-0003-0091-1894/work/10855435",
+                            "display-index": "0"
+                        }
+                    ]
+                },
+                {
+                    "last-modified-date": {
+                        "value": 1436549467283
+                    },
+                    "external-ids": {
+                        "external-id": [
+                            {
+                                "external-id-type": "eid",
+                                "external-id-value": "2-s2.0-70350180124",
+                                "external-id-url": {
+                                    "value": "http://www.scopus.com/inward/record.url?eid=2-s2.0-70350180124&partnerID=MN8TOARS"
+                                },
+                                "external-id-relationship": "SELF"
+                            }
+                        ]
+                    },
+                    "work-summary": [
+                        {
+                            "put-code": 11441801,
+                            "created-date": {
+                                "value": 1388785073961
+                            },
+                            "last-modified-date": {
+                                "value": 1436549467283
+                            },
+                            "source": {
+                                "source-orcid": null,
+                                "source-client-id": {
+                                    "uri": "http://orcid.org/client/0000-0002-5982-8983",
+                                    "path": "0000-0002-5982-8983",
+                                    "host": "orcid.org"
+                                },
+                                "source-name": {
+                                    "value": "Scopus - Elsevier"
+                                }
+                            },
+                            "title": {
+                                "title": {
+                                    "value": "Double aneuploidy (48,XXY,+21) of maternal origin in a child born to a 13-year-old mother: Evaluation of the maternal folate metabolism"
+                                },
+                                "subtitle": null,
+                                "translated-title": null
+                            },
+                            "external-ids": {
+                                "external-id": [
+                                    {
+                                        "external-id-type": "eid",
+                                        "external-id-value": "2-s2.0-70350180124",
+                                        "external-id-url": {
+                                            "value": "http://www.scopus.com/inward/record.url?eid=2-s2.0-70350180124&partnerID=MN8TOARS"
+                                        },
+                                        "external-id-relationship": "SELF"
+                                    }
+                                ]
+                            },
+                            "type": "JOURNAL_ARTICLE",
+                            "publication-date": {
+                                "year": {
+                                    "value": "2009"
+                                },
+                                "month": null,
+                                "day": null,
+                                "media-type": null
+                            },
+                            "visibility": "PUBLIC",
+                            "path": "/0000-0003-0091-1894/work/11441801",
+                            "display-index": "0"
+                        }
+                    ]
+                },
+                {
+                    "last-modified-date": {
+                        "value": 1436549467304
+                    },
+                    "external-ids": {
+                        "external-id": [
+                            {
+                                "external-id-type": "eid",
+                                "external-id-value": "2-s2.0-68749118561",
+                                "external-id-url": {
+                                    "value": "http://www.scopus.com/inward/record.url?eid=2-s2.0-68749118561&partnerID=MN8TOARS"
+                                },
+                                "external-id-relationship": "SELF"
+                            }
+                        ]
+                    },
+                    "work-summary": [
+                        {
+                            "put-code": 11441802,
+                            "created-date": {
+                                "value": 1388785074047
+                            },
+                            "last-modified-date": {
+                                "value": 1436549467304
+                            },
+                            "source": {
+                                "source-orcid": null,
+                                "source-client-id": {
+                                    "uri": "http://orcid.org/client/0000-0002-5982-8983",
+                                    "path": "0000-0002-5982-8983",
+                                    "host": "orcid.org"
+                                },
+                                "source-name": {
+                                    "value": "Scopus - Elsevier"
+                                }
+                            },
+                            "title": {
+                                "title": {
+                                    "value": "A80G polymorphism of reduced folate carrier 1 (RFC1) and C776G polymorphism of transcobalamin 2 (TC2) genes in Down's syndrome etiology"
+                                },
+                                "subtitle": null,
+                                "translated-title": null
+                            },
+                            "external-ids": {
+                                "external-id": [
+                                    {
+                                        "external-id-type": "eid",
+                                        "external-id-value": "2-s2.0-68749118561",
+                                        "external-id-url": {
+                                            "value": "http://www.scopus.com/inward/record.url?eid=2-s2.0-68749118561&partnerID=MN8TOARS"
+                                        },
+                                        "external-id-relationship": "SELF"
+                                    }
+                                ]
+                            },
+                            "type": "JOURNAL_ARTICLE",
+                            "publication-date": {
+                                "year": {
+                                    "value": "2008"
+                                },
+                                "month": null,
+                                "day": null,
+                                "media-type": null
+                            },
+                            "visibility": "PUBLIC",
+                            "path": "/0000-0003-0091-1894/work/11441802",
+                            "display-index": "0"
+                        }
+                    ]
+                },
+                {
+                    "last-modified-date": {
+                        "value": 1436549467323
+                    },
+                    "external-ids": {
+                        "external-id": [
+                            {
+                                "external-id-type": "eid",
+                                "external-id-value": "2-s2.0-40749124471",
+                                "external-id-url": {
+                                    "value": "http://www.scopus.com/inward/record.url?eid=2-s2.0-40749124471&partnerID=MN8TOARS"
+                                },
+                                "external-id-relationship": "SELF"
+                            }
+                        ]
+                    },
+                    "work-summary": [
+                        {
+                            "put-code": 11441803,
+                            "created-date": {
+                                "value": 1388785074138
+                            },
+                            "last-modified-date": {
+                                "value": 1436549467323
+                            },
+                            "source": {
+                                "source-orcid": null,
+                                "source-client-id": {
+                                    "uri": "http://orcid.org/client/0000-0002-5982-8983",
+                                    "path": "0000-0002-5982-8983",
+                                    "host": "orcid.org"
+                                },
+                                "source-name": {
+                                    "value": "Scopus - Elsevier"
+                                }
+                            },
+                            "title": {
+                                "title": {
+                                    "value": "Genetic polymorphisms involved in folate metabolism and elevated plasma concentrations of homocysteine: Maternal risk factors for Down syndrome in Brazil"
+                                },
+                                "subtitle": null,
+                                "translated-title": null
+                            },
+                            "external-ids": {
+                                "external-id": [
+                                    {
+                                        "external-id-type": "eid",
+                                        "external-id-value": "2-s2.0-40749124471",
+                                        "external-id-url": {
+                                            "value": "http://www.scopus.com/inward/record.url?eid=2-s2.0-40749124471&partnerID=MN8TOARS"
+                                        },
+                                        "external-id-relationship": "SELF"
+                                    }
+                                ]
+                            },
+                            "type": "JOURNAL_ARTICLE",
+                            "publication-date": {
+                                "year": {
+                                    "value": "2008"
+                                },
+                                "month": null,
+                                "day": null,
+                                "media-type": null
+                            },
+                            "visibility": "PUBLIC",
+                            "path": "/0000-0003-0091-1894/work/11441803",
+                            "display-index": "0"
+                        }
+                    ]
+                }
+            ],
+            "path": "/0000-0003-0091-1894/works"
+        },
+        "path": "/0000-0003-0091-1894/activities"
+    },
+    "path": "/0000-0003-0091-1894"
+}
