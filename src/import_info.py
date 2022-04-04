@@ -27,22 +27,33 @@ last_name = personal_data["name"]["family-name"]["value"]
 
 employment_institutions = [a["organization"]["name"] for a in employment_data]
 
-qs = f"""
-CREATE
-LAST|Len|"{first_name} {last_name}"
-LAST|Den|"researcher"
-LAST|P31|Q5
-LAST|P106|Q1650915
-LAST|P496|"{orcid}"
+s = lookup_orcid(orcid)
+
+if s == "LAST":
+    qs = "CREATE"
+else:
+    qs = ""
+qs = (
+    qs
+    + f"""
+{s}|Len|"{first_name} {last_name}"
+{s}|Den|"researcher"
+{s}|P31|Q5
+{s}|P106|Q1650915
+{s}|P496|"{orcid}"
 """
+)
 
 property_id = "P108"
 key = "institutions"
 target_list = employment_institutions
 
-qs = process_item(qs, property_id, key, target_list)
+qs = process_item(qs, property_id, key, target_list, subject_qid=s)
 
 with open("sample.json", "w+") as f:
     f.write(json.dumps(data, indent=4))
 
 print(qs)
+
+item = lookup_orcid(orcid)
+print(item)
