@@ -1,120 +1,1560 @@
 {
     "orcid-identifier": {
-        "uri": "http://orcid.org/0000-0002-6365-8673",
-        "path": "0000-0002-6365-8673",
+        "uri": "http://orcid.org/0000-0003-2473-2313",
+        "path": "0000-0003-2473-2313",
         "host": "orcid.org"
     },
     "preferences": {
         "locale": "EN"
     },
     "history": {
-        "creation-method": "API",
-        "completion-date": {
-            "value": 1605538540898
-        },
+        "creation-method": "DIRECT",
+        "completion-date": null,
         "submission-date": {
-            "value": 1439902039432
+            "value": 1461189437633
         },
         "last-modified-date": {
-            "value": 1643637942640
+            "value": 1649091211541
         },
         "claimed": true,
-        "source": {
-            "source-orcid": null,
-            "source-client-id": {
-                "uri": "http://orcid.org/client/APP-4I2KH866G1I6UEQ3",
-                "path": "APP-4I2KH866G1I6UEQ3",
-                "host": "orcid.org"
-            },
-            "source-name": null
-        },
+        "source": null,
         "deactivation-date": null,
         "verified-email": true,
         "verified-primary-email": true
     },
     "person": {
-        "last-modified-date": null,
+        "last-modified-date": {
+            "value": 1605650824055
+        },
         "name": {
             "created-date": {
-                "value": 1460760627812
+                "value": 1461189437853
             },
             "last-modified-date": {
-                "value": 1460760627812
+                "value": 1595648367114
             },
             "given-names": {
-                "value": "Myriam"
+                "value": "Tiago"
             },
             "family-name": {
-                "value": "Heiman"
+                "value": "Lubiana Alves"
             },
             "credit-name": {
-                "value": "Myriam Heiman"
+                "value": "Tiago Lubiana"
             },
             "source": null,
             "visibility": "PUBLIC",
-            "path": "0000-0002-6365-8673"
+            "path": "0000-0003-2473-2313"
         },
         "other-names": {
             "last-modified-date": null,
             "other-name": [],
-            "path": "/0000-0002-6365-8673/other-names"
+            "path": "/0000-0003-2473-2313/other-names"
         },
         "biography": null,
         "researcher-urls": {
             "last-modified-date": null,
             "researcher-url": [],
-            "path": "/0000-0002-6365-8673/researcher-urls"
+            "path": "/0000-0003-2473-2313/researcher-urls"
         },
         "emails": {
-            "last-modified-date": null,
-            "email": [],
-            "path": "/0000-0002-6365-8673/email"
+            "last-modified-date": {
+                "value": 1596162423857
+            },
+            "email": [
+                {
+                    "created-date": {
+                        "value": 1595971031446
+                    },
+                    "last-modified-date": {
+                        "value": 1596162423857
+                    },
+                    "source": {
+                        "source-orcid": {
+                            "uri": "http://orcid.org/0000-0003-2473-2313",
+                            "path": "0000-0003-2473-2313",
+                            "host": "orcid.org"
+                        },
+                        "source-client-id": null,
+                        "source-name": {
+                            "value": "Tiago Lubiana"
+                        }
+                    },
+                    "email": "tiago.lubiana.alves@usp.br",
+                    "path": null,
+                    "visibility": "PUBLIC",
+                    "verified": true,
+                    "primary": false,
+                    "put-code": null
+                }
+            ],
+            "path": "/0000-0003-2473-2313/email"
         },
         "addresses": {
-            "last-modified-date": null,
-            "address": [],
-            "path": "/0000-0002-6365-8673/address"
+            "last-modified-date": {
+                "value": 1605650824055
+            },
+            "address": [
+                {
+                    "created-date": {
+                        "value": 1605650824055
+                    },
+                    "last-modified-date": {
+                        "value": 1605650824055
+                    },
+                    "source": {
+                        "source-orcid": {
+                            "uri": "http://orcid.org/0000-0003-2473-2313",
+                            "path": "0000-0003-2473-2313",
+                            "host": "orcid.org"
+                        },
+                        "source-client-id": null,
+                        "source-name": {
+                            "value": "Tiago Lubiana"
+                        }
+                    },
+                    "country": {
+                        "value": "BR"
+                    },
+                    "visibility": "PUBLIC",
+                    "path": "/0000-0003-2473-2313/address/1875660",
+                    "put-code": 1875660,
+                    "display-index": 1
+                }
+            ],
+            "path": "/0000-0003-2473-2313/address"
         },
         "keywords": {
             "last-modified-date": null,
             "keyword": [],
-            "path": "/0000-0002-6365-8673/keywords"
+            "path": "/0000-0003-2473-2313/keywords"
         },
         "external-identifiers": {
             "last-modified-date": null,
             "external-identifier": [],
-            "path": "/0000-0002-6365-8673/external-identifiers"
+            "path": "/0000-0003-2473-2313/external-identifiers"
         },
-        "path": "/0000-0002-6365-8673/person"
+        "path": "/0000-0003-2473-2313/person"
     },
     "activities-summary": {
-        "last-modified-date": null,
+        "last-modified-date": {
+            "value": 1644226578935
+        },
         "educations": {
-            "last-modified-date": null,
-            "education-summary": [],
-            "path": "/0000-0002-6365-8673/educations"
+            "last-modified-date": {
+                "value": 1605651764237
+            },
+            "education-summary": [
+                {
+                    "created-date": {
+                        "value": 1605642491385
+                    },
+                    "last-modified-date": {
+                        "value": 1605651745543
+                    },
+                    "source": {
+                        "source-orcid": {
+                            "uri": "http://orcid.org/0000-0003-2473-2313",
+                            "path": "0000-0003-2473-2313",
+                            "host": "orcid.org"
+                        },
+                        "source-client-id": null,
+                        "source-name": {
+                            "value": "Tiago Lubiana"
+                        }
+                    },
+                    "department-name": "Bioinformatics Program",
+                    "role-title": "PhD",
+                    "start-date": {
+                        "year": {
+                            "value": "2020"
+                        },
+                        "month": {
+                            "value": "07"
+                        },
+                        "day": {
+                            "value": "21"
+                        }
+                    },
+                    "end-date": null,
+                    "organization": {
+                        "name": "Universidade de S\u00e3o Paulo",
+                        "address": {
+                            "city": "S\u00e3o Paulo",
+                            "region": "SP",
+                            "country": "BR"
+                        },
+                        "disambiguated-organization": {
+                            "disambiguated-organization-identifier": "http://dx.doi.org/10.13039/501100005639",
+                            "disambiguation-source": "FUNDREF"
+                        }
+                    },
+                    "visibility": "PUBLIC",
+                    "put-code": 13254544,
+                    "path": "/0000-0003-2473-2313/education/13254544"
+                },
+                {
+                    "created-date": {
+                        "value": 1605642438765
+                    },
+                    "last-modified-date": {
+                        "value": 1605651764237
+                    },
+                    "source": {
+                        "source-orcid": {
+                            "uri": "http://orcid.org/0000-0003-2473-2313",
+                            "path": "0000-0003-2473-2313",
+                            "host": "orcid.org"
+                        },
+                        "source-client-id": null,
+                        "source-name": {
+                            "value": "Tiago Lubiana"
+                        }
+                    },
+                    "department-name": "Bioinformatics Program",
+                    "role-title": "Master of Sciences",
+                    "start-date": {
+                        "year": {
+                            "value": "2018"
+                        },
+                        "month": {
+                            "value": "01"
+                        },
+                        "day": {
+                            "value": "17"
+                        }
+                    },
+                    "end-date": {
+                        "year": {
+                            "value": "2020"
+                        },
+                        "month": {
+                            "value": "03"
+                        },
+                        "day": {
+                            "value": "31"
+                        }
+                    },
+                    "organization": {
+                        "name": "Universidade de S\u00e3o Paulo",
+                        "address": {
+                            "city": "S\u00e3o Paulo",
+                            "region": "SP",
+                            "country": "BR"
+                        },
+                        "disambiguated-organization": {
+                            "disambiguated-organization-identifier": "http://dx.doi.org/10.13039/501100005639",
+                            "disambiguation-source": "FUNDREF"
+                        }
+                    },
+                    "visibility": "PUBLIC",
+                    "put-code": 13254538,
+                    "path": "/0000-0003-2473-2313/education/13254538"
+                },
+                {
+                    "created-date": {
+                        "value": 1461294587096
+                    },
+                    "last-modified-date": {
+                        "value": 1580243691727
+                    },
+                    "source": {
+                        "source-orcid": {
+                            "uri": "http://orcid.org/0000-0003-2473-2313",
+                            "path": "0000-0003-2473-2313",
+                            "host": "orcid.org"
+                        },
+                        "source-client-id": null,
+                        "source-name": {
+                            "value": "Tiago Lubiana"
+                        }
+                    },
+                    "department-name": null,
+                    "role-title": "Biomedical Sciences",
+                    "start-date": {
+                        "year": {
+                            "value": "2014"
+                        },
+                        "month": {
+                            "value": "02"
+                        },
+                        "day": {
+                            "value": "17"
+                        }
+                    },
+                    "end-date": {
+                        "year": {
+                            "value": "2017"
+                        },
+                        "month": {
+                            "value": "12"
+                        },
+                        "day": {
+                            "value": "03"
+                        }
+                    },
+                    "organization": {
+                        "name": "Universidade de S\u00e3o Paulo",
+                        "address": {
+                            "city": "Sao Paulo",
+                            "region": "SP",
+                            "country": "BR"
+                        },
+                        "disambiguated-organization": {
+                            "disambiguated-organization-identifier": "67887",
+                            "disambiguation-source": "RINGGOLD"
+                        }
+                    },
+                    "visibility": "PUBLIC",
+                    "put-code": 1770256,
+                    "path": "/0000-0003-2473-2313/education/1770256"
+                }
+            ],
+            "path": "/0000-0003-2473-2313/educations"
         },
         "employments": {
             "last-modified-date": null,
             "employment-summary": [],
-            "path": "/0000-0002-6365-8673/employments"
+            "path": "/0000-0003-2473-2313/employments"
         },
         "fundings": {
-            "last-modified-date": null,
-            "group": [],
-            "path": "/0000-0002-6365-8673/fundings"
+            "last-modified-date": {
+                "value": 1605651076408
+            },
+            "group": [
+                {
+                    "last-modified-date": {
+                        "value": 1605651076408
+                    },
+                    "external-ids": {
+                        "external-id": [
+                            {
+                                "external-id-type": "grant_number",
+                                "external-id-value": "19/26284-1",
+                                "external-id-url": {
+                                    "value": "https://bv.fapesp.br/en/bolsas/193825/building-a-biological-knowledge-graph-via-wikidata-with-a-focus-on-the-human-cell-atlas/"
+                                },
+                                "external-id-relationship": "SELF"
+                            }
+                        ]
+                    },
+                    "funding-summary": [
+                        {
+                            "created-date": {
+                                "value": 1605643104587
+                            },
+                            "last-modified-date": {
+                                "value": 1605651076408
+                            },
+                            "source": {
+                                "source-orcid": {
+                                    "uri": "http://orcid.org/0000-0003-2473-2313",
+                                    "path": "0000-0003-2473-2313",
+                                    "host": "orcid.org"
+                                },
+                                "source-client-id": null,
+                                "source-name": {
+                                    "value": "Tiago Lubiana"
+                                }
+                            },
+                            "title": {
+                                "title": {
+                                    "value": "Building a biological knowledge graph via Wikidata with a focus on the Human Cell Atlas"
+                                },
+                                "translated-title": {
+                                    "value": "-",
+                                    "language-code": "zu"
+                                }
+                            },
+                            "external-ids": {
+                                "external-id": [
+                                    {
+                                        "external-id-type": "grant_number",
+                                        "external-id-value": "19/26284-1",
+                                        "external-id-url": {
+                                            "value": "https://bv.fapesp.br/en/bolsas/193825/building-a-biological-knowledge-graph-via-wikidata-with-a-focus-on-the-human-cell-atlas/"
+                                        },
+                                        "external-id-relationship": "SELF"
+                                    }
+                                ]
+                            },
+                            "type": "GRANT",
+                            "start-date": null,
+                            "end-date": null,
+                            "organization": {
+                                "name": "Funda\u00e7\u00e3o de Amparo \u00e0 Pesquisa do Estado de S\u00e3o Paulo",
+                                "address": {
+                                    "city": "S\u00e3o Paulo",
+                                    "region": null,
+                                    "country": "BR"
+                                },
+                                "disambiguated-organization": {
+                                    "disambiguated-organization-identifier": "http://dx.doi.org/10.13039/501100001807",
+                                    "disambiguation-source": "FUNDREF"
+                                }
+                            },
+                            "visibility": "PUBLIC",
+                            "put-code": 997914,
+                            "path": "/0000-0003-2473-2313/funding/997914",
+                            "display-index": "1"
+                        }
+                    ]
+                }
+            ],
+            "path": "/0000-0003-2473-2313/fundings"
         },
         "peer-reviews": {
-            "last-modified-date": null,
-            "group": [],
-            "path": "/0000-0002-6365-8673/peer-reviews"
+            "last-modified-date": {
+                "value": 1606716851682
+            },
+            "group": [
+                {
+                    "last-modified-date": {
+                        "value": 1606716851682
+                    },
+                    "external-ids": {
+                        "external-id": [
+                            {
+                                "external-id-type": "peer-review",
+                                "external-id-value": "issn:1758-2946",
+                                "external-id-url": null,
+                                "external-id-relationship": null
+                            }
+                        ]
+                    },
+                    "peer-review-summary": [
+                        {
+                            "created-date": {
+                                "value": 1606716851682
+                            },
+                            "last-modified-date": {
+                                "value": 1606716851682
+                            },
+                            "source": {
+                                "source-orcid": null,
+                                "source-client-id": {
+                                    "uri": "http://orcid.org/client/APP-945VYTN20C7BZXYT",
+                                    "path": "APP-945VYTN20C7BZXYT",
+                                    "host": "orcid.org"
+                                },
+                                "source-name": {
+                                    "value": "Springer Nature"
+                                }
+                            },
+                            "external-ids": {
+                                "external-id": [
+                                    {
+                                        "external-id-type": "source-work-id",
+                                        "external-id-value": "694f5cf4-bb3a-48fa-a93f-c67628e565e0",
+                                        "external-id-url": {
+                                            "value": ""
+                                        },
+                                        "external-id-relationship": "SELF"
+                                    }
+                                ]
+                            },
+                            "completion-date": {
+                                "year": {
+                                    "value": "2020"
+                                },
+                                "month": null,
+                                "day": null
+                            },
+                            "review-group-id": "issn:1758-2946",
+                            "convening-organization": {
+                                "name": "Springer Nature",
+                                "address": {
+                                    "city": "New York",
+                                    "region": null,
+                                    "country": "US"
+                                },
+                                "disambiguated-organization": {
+                                    "disambiguated-organization-identifier": "grid.467660.5",
+                                    "disambiguation-source": "GRID"
+                                }
+                            },
+                            "visibility": "PUBLIC",
+                            "put-code": 2968989,
+                            "path": "/0000-0003-2473-2313/peer-review/2968989",
+                            "display-index": "0"
+                        }
+                    ]
+                }
+            ],
+            "path": "/0000-0003-2473-2313/peer-reviews"
         },
         "works": {
-            "last-modified-date": null,
-            "group": [],
-            "path": "/0000-0002-6365-8673/works"
+            "last-modified-date": {
+                "value": 1644226578935
+            },
+            "group": [
+                {
+                    "last-modified-date": {
+                        "value": 1644226578935
+                    },
+                    "external-ids": {
+                        "external-id": [
+                            {
+                                "external-id-type": "doi",
+                                "external-id-value": "10.3233/SW-210444",
+                                "external-id-url": {
+                                    "value": "https://doi.org/10.3233/SW-210444"
+                                },
+                                "external-id-relationship": "SELF"
+                            }
+                        ]
+                    },
+                    "work-summary": [
+                        {
+                            "put-code": 100684203,
+                            "created-date": {
+                                "value": 1632867980876
+                            },
+                            "last-modified-date": {
+                                "value": 1644226578935
+                            },
+                            "source": {
+                                "source-orcid": null,
+                                "source-client-id": {
+                                    "uri": "http://orcid.org/client/0000-0001-9884-1913",
+                                    "path": "0000-0001-9884-1913",
+                                    "host": "orcid.org"
+                                },
+                                "source-name": {
+                                    "value": "Crossref"
+                                }
+                            },
+                            "title": {
+                                "title": {
+                                    "value": "Representing COVID-19 information in collaborative knowledge graphs: The case of Wikidata"
+                                },
+                                "subtitle": null,
+                                "translated-title": null
+                            },
+                            "external-ids": {
+                                "external-id": [
+                                    {
+                                        "external-id-type": "doi",
+                                        "external-id-value": "10.3233/SW-210444",
+                                        "external-id-url": {
+                                            "value": "https://doi.org/10.3233/SW-210444"
+                                        },
+                                        "external-id-relationship": "SELF"
+                                    }
+                                ]
+                            },
+                            "type": "JOURNAL_ARTICLE",
+                            "publication-date": {
+                                "year": {
+                                    "value": "2022"
+                                },
+                                "month": {
+                                    "value": "02"
+                                },
+                                "day": {
+                                    "value": "03"
+                                },
+                                "media-type": null
+                            },
+                            "visibility": "PUBLIC",
+                            "path": "/0000-0003-2473-2313/work/100684203",
+                            "display-index": "0"
+                        }
+                    ]
+                },
+                {
+                    "last-modified-date": {
+                        "value": 1639081182577
+                    },
+                    "external-ids": {
+                        "external-id": [
+                            {
+                                "external-id-type": "doi",
+                                "external-id-value": "10.1101/2021.12.07.471603",
+                                "external-id-url": {
+                                    "value": "https://doi.org/10.1101/2021.12.07.471603"
+                                },
+                                "external-id-relationship": "SELF"
+                            }
+                        ]
+                    },
+                    "work-summary": [
+                        {
+                            "put-code": 104508015,
+                            "created-date": {
+                                "value": 1639081182577
+                            },
+                            "last-modified-date": {
+                                "value": 1639081182577
+                            },
+                            "source": {
+                                "source-orcid": null,
+                                "source-client-id": {
+                                    "uri": "http://orcid.org/client/0000-0001-9884-1913",
+                                    "path": "0000-0001-9884-1913",
+                                    "host": "orcid.org"
+                                },
+                                "source-name": {
+                                    "value": "Crossref"
+                                }
+                            },
+                            "title": {
+                                "title": {
+                                    "value": "Using coexpression to explore cell-type diversity with the fcoex package"
+                                },
+                                "subtitle": null,
+                                "translated-title": null
+                            },
+                            "external-ids": {
+                                "external-id": [
+                                    {
+                                        "external-id-type": "doi",
+                                        "external-id-value": "10.1101/2021.12.07.471603",
+                                        "external-id-url": {
+                                            "value": "https://doi.org/10.1101/2021.12.07.471603"
+                                        },
+                                        "external-id-relationship": "SELF"
+                                    }
+                                ]
+                            },
+                            "type": "OTHER",
+                            "publication-date": {
+                                "year": {
+                                    "value": "2021"
+                                },
+                                "month": {
+                                    "value": "12"
+                                },
+                                "day": {
+                                    "value": "09"
+                                },
+                                "media-type": null
+                            },
+                            "visibility": "PUBLIC",
+                            "path": "/0000-0003-2473-2313/work/104508015",
+                            "display-index": "0"
+                        }
+                    ]
+                },
+                {
+                    "last-modified-date": {
+                        "value": 1638393156107
+                    },
+                    "external-ids": {
+                        "external-id": [
+                            {
+                                "external-id-type": "doi",
+                                "external-id-value": "10.31222/osf.io/vbwa9",
+                                "external-id-url": {
+                                    "value": "https://doi.org/10.31222/osf.io/vbwa9"
+                                },
+                                "external-id-relationship": "SELF"
+                            }
+                        ]
+                    },
+                    "work-summary": [
+                        {
+                            "put-code": 103922002,
+                            "created-date": {
+                                "value": 1638203127705
+                            },
+                            "last-modified-date": {
+                                "value": 1638393156107
+                            },
+                            "source": {
+                                "source-orcid": null,
+                                "source-client-id": {
+                                    "uri": "http://orcid.org/client/0000-0001-9884-1913",
+                                    "path": "0000-0001-9884-1913",
+                                    "host": "orcid.org"
+                                },
+                                "source-name": {
+                                    "value": "Crossref"
+                                }
+                            },
+                            "title": {
+                                "title": {
+                                    "value": "Sharing intermediate datasets from systematic reviews"
+                                },
+                                "subtitle": null,
+                                "translated-title": null
+                            },
+                            "external-ids": {
+                                "external-id": [
+                                    {
+                                        "external-id-type": "doi",
+                                        "external-id-value": "10.31222/osf.io/vbwa9",
+                                        "external-id-url": {
+                                            "value": "https://doi.org/10.31222/osf.io/vbwa9"
+                                        },
+                                        "external-id-relationship": "SELF"
+                                    }
+                                ]
+                            },
+                            "type": "OTHER",
+                            "publication-date": {
+                                "year": {
+                                    "value": "2021"
+                                },
+                                "month": {
+                                    "value": "11"
+                                },
+                                "day": {
+                                    "value": "26"
+                                },
+                                "media-type": null
+                            },
+                            "visibility": "PUBLIC",
+                            "path": "/0000-0003-2473-2313/work/103922002",
+                            "display-index": "0"
+                        }
+                    ]
+                },
+                {
+                    "last-modified-date": {
+                        "value": 1616519079150
+                    },
+                    "external-ids": {
+                        "external-id": [
+                            {
+                                "external-id-type": "doi",
+                                "external-id-value": "10.5281/ZENODO.4630965",
+                                "external-id-url": {
+                                    "value": "https://doi.org/10.5281/ZENODO.4630965"
+                                },
+                                "external-id-relationship": "SELF"
+                            }
+                        ]
+                    },
+                    "work-summary": [
+                        {
+                            "put-code": 91087551,
+                            "created-date": {
+                                "value": 1616519079150
+                            },
+                            "last-modified-date": {
+                                "value": 1616519079150
+                            },
+                            "source": {
+                                "source-orcid": {
+                                    "uri": "http://orcid.org/0000-0003-2473-2313",
+                                    "path": "0000-0003-2473-2313",
+                                    "host": "orcid.org"
+                                },
+                                "source-client-id": null,
+                                "source-name": {
+                                    "value": "Tiago Lubiana"
+                                }
+                            },
+                            "title": {
+                                "title": {
+                                    "value": "Paratransgenesis - Candidate Chassis for iGEM USP-Brazil 2017"
+                                },
+                                "subtitle": null,
+                                "translated-title": null
+                            },
+                            "external-ids": {
+                                "external-id": [
+                                    {
+                                        "external-id-type": "doi",
+                                        "external-id-value": "10.5281/ZENODO.4630965",
+                                        "external-id-url": {
+                                            "value": "https://doi.org/10.5281/ZENODO.4630965"
+                                        },
+                                        "external-id-relationship": "SELF"
+                                    }
+                                ]
+                            },
+                            "type": "DATA_SET",
+                            "publication-date": {
+                                "year": {
+                                    "value": "2021"
+                                },
+                                "month": {
+                                    "value": "03"
+                                },
+                                "day": {
+                                    "value": "23"
+                                },
+                                "media-type": null
+                            },
+                            "visibility": "PUBLIC",
+                            "path": "/0000-0003-2473-2313/work/91087551",
+                            "display-index": "1"
+                        }
+                    ]
+                },
+                {
+                    "last-modified-date": {
+                        "value": 1614703894618
+                    },
+                    "external-ids": {
+                        "external-id": [
+                            {
+                                "external-id-type": "doi",
+                                "external-id-value": "10.5281/ZENODO.4573573",
+                                "external-id-url": {
+                                    "value": "https://doi.org/10.5281/ZENODO.4573573"
+                                },
+                                "external-id-relationship": "SELF"
+                            }
+                        ]
+                    },
+                    "work-summary": [
+                        {
+                            "put-code": 89778754,
+                            "created-date": {
+                                "value": 1614703894618
+                            },
+                            "last-modified-date": {
+                                "value": 1614703894618
+                            },
+                            "source": {
+                                "source-orcid": {
+                                    "uri": "http://orcid.org/0000-0003-2473-2313",
+                                    "path": "0000-0003-2473-2313",
+                                    "host": "orcid.org"
+                                },
+                                "source-client-id": null,
+                                "source-name": {
+                                    "value": "Tiago Lubiana"
+                                }
+                            },
+                            "title": {
+                                "title": {
+                                    "value": "Studies on GEO related to neurogeneration or infections diseases"
+                                },
+                                "subtitle": null,
+                                "translated-title": null
+                            },
+                            "external-ids": {
+                                "external-id": [
+                                    {
+                                        "external-id-type": "doi",
+                                        "external-id-value": "10.5281/ZENODO.4573573",
+                                        "external-id-url": {
+                                            "value": "https://doi.org/10.5281/ZENODO.4573573"
+                                        },
+                                        "external-id-relationship": "SELF"
+                                    }
+                                ]
+                            },
+                            "type": "DATA_SET",
+                            "publication-date": {
+                                "year": {
+                                    "value": "2021"
+                                },
+                                "month": {
+                                    "value": "03"
+                                },
+                                "day": {
+                                    "value": "02"
+                                },
+                                "media-type": null
+                            },
+                            "visibility": "PUBLIC",
+                            "path": "/0000-0003-2473-2313/work/89778754",
+                            "display-index": "1"
+                        }
+                    ]
+                },
+                {
+                    "last-modified-date": {
+                        "value": 1609795755175
+                    },
+                    "external-ids": {
+                        "external-id": [
+                            {
+                                "external-id-type": "doi",
+                                "external-id-value": "10.22541/au.160979530.02627436/v1",
+                                "external-id-url": {
+                                    "value": "https://doi.org/10.22541/au.160979530.02627436/v1"
+                                },
+                                "external-id-relationship": "SELF"
+                            }
+                        ]
+                    },
+                    "work-summary": [
+                        {
+                            "put-code": 86224080,
+                            "created-date": {
+                                "value": 1609795755175
+                            },
+                            "last-modified-date": {
+                                "value": 1609795755175
+                            },
+                            "source": {
+                                "source-orcid": null,
+                                "source-client-id": {
+                                    "uri": "http://orcid.org/client/0000-0001-9884-1913",
+                                    "path": "0000-0001-9884-1913",
+                                    "host": "orcid.org"
+                                },
+                                "source-name": {
+                                    "value": "Crossref"
+                                }
+                            },
+                            "title": {
+                                "title": {
+                                    "value": "Towards a pragmatic definition of cell type"
+                                },
+                                "subtitle": null,
+                                "translated-title": null
+                            },
+                            "external-ids": {
+                                "external-id": [
+                                    {
+                                        "external-id-type": "doi",
+                                        "external-id-value": "10.22541/au.160979530.02627436/v1",
+                                        "external-id-url": {
+                                            "value": "https://doi.org/10.22541/au.160979530.02627436/v1"
+                                        },
+                                        "external-id-relationship": "SELF"
+                                    }
+                                ]
+                            },
+                            "type": "OTHER",
+                            "publication-date": {
+                                "year": {
+                                    "value": "2021"
+                                },
+                                "month": {
+                                    "value": "01"
+                                },
+                                "day": {
+                                    "value": "04"
+                                },
+                                "media-type": null
+                            },
+                            "visibility": "PUBLIC",
+                            "path": "/0000-0003-2473-2313/work/86224080",
+                            "display-index": "0"
+                        }
+                    ]
+                },
+                {
+                    "last-modified-date": {
+                        "value": 1605651275644
+                    },
+                    "external-ids": {
+                        "external-id": [
+                            {
+                                "external-id-type": "doi",
+                                "external-id-value": "10.5281/ZENODO.4033382",
+                                "external-id-url": {
+                                    "value": "https://doi.org/10.5281/ZENODO.4033382"
+                                },
+                                "external-id-relationship": "SELF"
+                            }
+                        ]
+                    },
+                    "work-summary": [
+                        {
+                            "put-code": 83630046,
+                            "created-date": {
+                                "value": 1605651275644
+                            },
+                            "last-modified-date": {
+                                "value": 1605651275644
+                            },
+                            "source": {
+                                "source-orcid": {
+                                    "uri": "http://orcid.org/0000-0003-2473-2313",
+                                    "path": "0000-0003-2473-2313",
+                                    "host": "orcid.org"
+                                },
+                                "source-client-id": null,
+                                "source-name": {
+                                    "value": "Tiago Lubiana"
+                                }
+                            },
+                            "title": {
+                                "title": {
+                                    "value": "Representing COVID-19 information in collaborative knowledge graphs: a study of Wikidata"
+                                },
+                                "subtitle": null,
+                                "translated-title": null
+                            },
+                            "external-ids": {
+                                "external-id": [
+                                    {
+                                        "external-id-type": "doi",
+                                        "external-id-value": "10.5281/ZENODO.4033382",
+                                        "external-id-url": {
+                                            "value": "https://doi.org/10.5281/ZENODO.4033382"
+                                        },
+                                        "external-id-relationship": "SELF"
+                                    }
+                                ]
+                            },
+                            "type": "JOURNAL_ARTICLE",
+                            "publication-date": {
+                                "year": {
+                                    "value": "2020"
+                                },
+                                "month": {
+                                    "value": "09"
+                                },
+                                "day": {
+                                    "value": "14"
+                                },
+                                "media-type": null
+                            },
+                            "visibility": "PUBLIC",
+                            "path": "/0000-0003-2473-2313/work/83630046",
+                            "display-index": "1"
+                        }
+                    ]
+                },
+                {
+                    "last-modified-date": {
+                        "value": 1605651194554
+                    },
+                    "external-ids": {
+                        "external-id": [
+                            {
+                                "external-id-type": "doi",
+                                "external-id-value": "10.5281/ZENODO.4008359",
+                                "external-id-url": {
+                                    "value": "https://doi.org/10.5281/ZENODO.4008359"
+                                },
+                                "external-id-relationship": "SELF"
+                            }
+                        ]
+                    },
+                    "work-summary": [
+                        {
+                            "put-code": 83630028,
+                            "created-date": {
+                                "value": 1605651194554
+                            },
+                            "last-modified-date": {
+                                "value": 1605651194554
+                            },
+                            "source": {
+                                "source-orcid": {
+                                    "uri": "http://orcid.org/0000-0003-2473-2313",
+                                    "path": "0000-0003-2473-2313",
+                                    "host": "orcid.org"
+                                },
+                                "source-client-id": null,
+                                "source-name": {
+                                    "value": "Tiago Lubiana"
+                                }
+                            },
+                            "title": {
+                                "title": {
+                                    "value": "Using logical constraints to validate information in collaborative knowledge graphs: a study of COVID-19 on Wikidata"
+                                },
+                                "subtitle": null,
+                                "translated-title": null
+                            },
+                            "external-ids": {
+                                "external-id": [
+                                    {
+                                        "external-id-type": "doi",
+                                        "external-id-value": "10.5281/ZENODO.4008359",
+                                        "external-id-url": {
+                                            "value": "https://doi.org/10.5281/ZENODO.4008359"
+                                        },
+                                        "external-id-relationship": "SELF"
+                                    }
+                                ]
+                            },
+                            "type": "JOURNAL_ARTICLE",
+                            "publication-date": {
+                                "year": {
+                                    "value": "2020"
+                                },
+                                "month": {
+                                    "value": "08"
+                                },
+                                "day": {
+                                    "value": "30"
+                                },
+                                "media-type": null
+                            },
+                            "visibility": "PUBLIC",
+                            "path": "/0000-0003-2473-2313/work/83630028",
+                            "display-index": "1"
+                        }
+                    ]
+                },
+                {
+                    "last-modified-date": {
+                        "value": 1614714194088
+                    },
+                    "external-ids": {
+                        "external-id": [
+                            {
+                                "external-id-type": "doi",
+                                "external-id-value": "10.7490/F1000RESEARCH.1118155.1",
+                                "external-id-url": {
+                                    "value": "https://doi.org/10.7490/F1000RESEARCH.1118155.1"
+                                },
+                                "external-id-relationship": "SELF"
+                            }
+                        ]
+                    },
+                    "work-summary": [
+                        {
+                            "put-code": 89791675,
+                            "created-date": {
+                                "value": 1614714194088
+                            },
+                            "last-modified-date": {
+                                "value": 1614714194088
+                            },
+                            "source": {
+                                "source-orcid": {
+                                    "uri": "http://orcid.org/0000-0003-2473-2313",
+                                    "path": "0000-0003-2473-2313",
+                                    "host": "orcid.org"
+                                },
+                                "source-client-id": null,
+                                "source-name": {
+                                    "value": "Tiago Lubiana"
+                                }
+                            },
+                            "title": {
+                                "title": {
+                                    "value": "Wikidata WikiProject COVID-19 : a community effort to integrate biomedical knowledge"
+                                },
+                                "subtitle": null,
+                                "translated-title": null
+                            },
+                            "external-ids": {
+                                "external-id": [
+                                    {
+                                        "external-id-type": "doi",
+                                        "external-id-value": "10.7490/F1000RESEARCH.1118155.1",
+                                        "external-id-url": {
+                                            "value": "https://doi.org/10.7490/F1000RESEARCH.1118155.1"
+                                        },
+                                        "external-id-relationship": "SELF"
+                                    }
+                                ]
+                            },
+                            "type": "CONFERENCE_POSTER",
+                            "publication-date": {
+                                "year": {
+                                    "value": "2020"
+                                },
+                                "month": null,
+                                "day": null,
+                                "media-type": null
+                            },
+                            "visibility": "PUBLIC",
+                            "path": "/0000-0003-2473-2313/work/89791675",
+                            "display-index": "1"
+                        }
+                    ]
+                },
+                {
+                    "last-modified-date": {
+                        "value": 1569346576552
+                    },
+                    "external-ids": {
+                        "external-id": [
+                            {
+                                "external-id-type": "doi",
+                                "external-id-value": "10.1371/journal.ppat.1007651",
+                                "external-id-url": {
+                                    "value": "https://doi.org/10.1371/journal.ppat.1007651"
+                                },
+                                "external-id-relationship": "SELF"
+                            }
+                        ]
+                    },
+                    "work-summary": [
+                        {
+                            "put-code": 61543165,
+                            "created-date": {
+                                "value": 1568313527647
+                            },
+                            "last-modified-date": {
+                                "value": 1569346576552
+                            },
+                            "source": {
+                                "source-orcid": null,
+                                "source-client-id": {
+                                    "uri": "http://orcid.org/client/0000-0001-9884-1913",
+                                    "path": "0000-0001-9884-1913",
+                                    "host": "orcid.org"
+                                },
+                                "source-name": {
+                                    "value": "Crossref"
+                                }
+                            },
+                            "title": {
+                                "title": {
+                                    "value": "The opportunistic pathogen Stenotrophomonas maltophilia utilizes a type IV secretion system for interbacterial killing"
+                                },
+                                "subtitle": null,
+                                "translated-title": null
+                            },
+                            "external-ids": {
+                                "external-id": [
+                                    {
+                                        "external-id-type": "doi",
+                                        "external-id-value": "10.1371/journal.ppat.1007651",
+                                        "external-id-url": {
+                                            "value": "https://doi.org/10.1371/journal.ppat.1007651"
+                                        },
+                                        "external-id-relationship": "SELF"
+                                    }
+                                ]
+                            },
+                            "type": "JOURNAL_ARTICLE",
+                            "publication-date": {
+                                "year": {
+                                    "value": "2019"
+                                },
+                                "month": {
+                                    "value": "09"
+                                },
+                                "day": {
+                                    "value": "12"
+                                },
+                                "media-type": null
+                            },
+                            "visibility": "PUBLIC",
+                            "path": "/0000-0003-2473-2313/work/61543165",
+                            "display-index": "0"
+                        }
+                    ]
+                },
+                {
+                    "last-modified-date": {
+                        "value": 1580243659264
+                    },
+                    "external-ids": {
+                        "external-id": [
+                            {
+                                "external-id-type": "doi",
+                                "external-id-value": "10.1016/j.ydbio.2018.01.021",
+                                "external-id-url": {
+                                    "value": "https://doi.org/10.1016/j.ydbio.2018.01.021"
+                                },
+                                "external-id-relationship": "SELF"
+                            }
+                        ]
+                    },
+                    "work-summary": [
+                        {
+                            "put-code": 68058255,
+                            "created-date": {
+                                "value": 1580243659264
+                            },
+                            "last-modified-date": {
+                                "value": 1580243659264
+                            },
+                            "source": {
+                                "source-orcid": {
+                                    "uri": "http://orcid.org/0000-0003-2473-2313",
+                                    "path": "0000-0003-2473-2313",
+                                    "host": "orcid.org"
+                                },
+                                "source-client-id": null,
+                                "source-name": {
+                                    "value": "Tiago Lubiana"
+                                }
+                            },
+                            "title": {
+                                "title": {
+                                    "value": "Zebrafish sp7 mutants show tooth cycling independent of attachment, eruption and poor differentiation of teeth"
+                                },
+                                "subtitle": null,
+                                "translated-title": null
+                            },
+                            "external-ids": {
+                                "external-id": [
+                                    {
+                                        "external-id-type": "doi",
+                                        "external-id-value": "10.1016/j.ydbio.2018.01.021",
+                                        "external-id-url": {
+                                            "value": "https://doi.org/10.1016/j.ydbio.2018.01.021"
+                                        },
+                                        "external-id-relationship": "SELF"
+                                    },
+                                    {
+                                        "external-id-type": "issn",
+                                        "external-id-value": "0012-1606",
+                                        "external-id-url": {
+                                            "value": "https://portal.issn.org/resource/ISSN/0012-1606"
+                                        },
+                                        "external-id-relationship": "PART_OF"
+                                    }
+                                ]
+                            },
+                            "type": "JOURNAL_ARTICLE",
+                            "publication-date": {
+                                "year": {
+                                    "value": "2018"
+                                },
+                                "month": {
+                                    "value": "03"
+                                },
+                                "day": null,
+                                "media-type": null
+                            },
+                            "visibility": "PUBLIC",
+                            "path": "/0000-0003-2473-2313/work/68058255",
+                            "display-index": "1"
+                        }
+                    ]
+                },
+                {
+                    "last-modified-date": {
+                        "value": 1557327138980
+                    },
+                    "external-ids": {
+                        "external-id": [
+                            {
+                                "external-id-type": "doi",
+                                "external-id-value": "10.3897/rio.2.e9342",
+                                "external-id-url": null,
+                                "external-id-relationship": "SELF"
+                            }
+                        ]
+                    },
+                    "work-summary": [
+                        {
+                            "put-code": 57209215,
+                            "created-date": {
+                                "value": 1557327138980
+                            },
+                            "last-modified-date": {
+                                "value": 1557327138980
+                            },
+                            "source": {
+                                "source-orcid": null,
+                                "source-client-id": {
+                                    "uri": "http://orcid.org/client/0000-0002-3054-1567",
+                                    "path": "0000-0002-3054-1567",
+                                    "host": "orcid.org"
+                                },
+                                "source-name": {
+                                    "value": "Crossref Metadata Search"
+                                }
+                            },
+                            "title": {
+                                "title": {
+                                    "value": "Chimeric spider silk production in microalgae: a modular bionanomaterial"
+                                },
+                                "subtitle": null,
+                                "translated-title": null
+                            },
+                            "external-ids": {
+                                "external-id": [
+                                    {
+                                        "external-id-type": "doi",
+                                        "external-id-value": "10.3897/rio.2.e9342",
+                                        "external-id-url": null,
+                                        "external-id-relationship": "SELF"
+                                    },
+                                    {
+                                        "external-id-type": "issn",
+                                        "external-id-value": "2367-7163",
+                                        "external-id-url": null,
+                                        "external-id-relationship": "PART_OF"
+                                    }
+                                ]
+                            },
+                            "type": "JOURNAL_ARTICLE",
+                            "publication-date": {
+                                "year": {
+                                    "value": "2016"
+                                },
+                                "month": {
+                                    "value": "06"
+                                },
+                                "day": null,
+                                "media-type": null
+                            },
+                            "visibility": "PUBLIC",
+                            "path": "/0000-0003-2473-2313/work/57209215",
+                            "display-index": "0"
+                        }
+                    ]
+                },
+                {
+                    "last-modified-date": {
+                        "value": 1563826583118
+                    },
+                    "external-ids": {
+                        "external-id": [
+                            {
+                                "external-id-type": "doi",
+                                "external-id-value": "10.1101/484147",
+                                "external-id-url": null,
+                                "external-id-relationship": "SELF"
+                            }
+                        ]
+                    },
+                    "work-summary": [
+                        {
+                            "put-code": 57209199,
+                            "created-date": {
+                                "value": 1557327103151
+                            },
+                            "last-modified-date": {
+                                "value": 1557327103151
+                            },
+                            "source": {
+                                "source-orcid": null,
+                                "source-client-id": {
+                                    "uri": "http://orcid.org/client/0000-0002-3054-1567",
+                                    "path": "0000-0002-3054-1567",
+                                    "host": "orcid.org"
+                                },
+                                "source-name": {
+                                    "value": "Crossref Metadata Search"
+                                }
+                            },
+                            "title": {
+                                "title": {
+                                    "value": "Science Family skills: An Alexa Assistant Tailored for Laboratory Routine"
+                                },
+                                "subtitle": null,
+                                "translated-title": null
+                            },
+                            "external-ids": {
+                                "external-id": [
+                                    {
+                                        "external-id-type": "doi",
+                                        "external-id-value": "10.1101/484147",
+                                        "external-id-url": null,
+                                        "external-id-relationship": "SELF"
+                                    }
+                                ]
+                            },
+                            "type": "OTHER",
+                            "publication-date": null,
+                            "visibility": "PUBLIC",
+                            "path": "/0000-0003-2473-2313/work/57209199",
+                            "display-index": "0"
+                        },
+                        {
+                            "put-code": 57209207,
+                            "created-date": {
+                                "value": 1557327115643
+                            },
+                            "last-modified-date": {
+                                "value": 1563826583118
+                            },
+                            "source": {
+                                "source-orcid": null,
+                                "source-client-id": {
+                                    "uri": "http://orcid.org/client/0000-0001-9884-1913",
+                                    "path": "0000-0001-9884-1913",
+                                    "host": "orcid.org"
+                                },
+                                "source-name": {
+                                    "value": "Crossref"
+                                }
+                            },
+                            "title": {
+                                "title": {
+                                    "value": "Science Family skills: An Alexa Assistant Tailored for Laboratory Routine"
+                                },
+                                "subtitle": null,
+                                "translated-title": null
+                            },
+                            "external-ids": {
+                                "external-id": [
+                                    {
+                                        "external-id-type": "doi",
+                                        "external-id-value": "10.1101/484147",
+                                        "external-id-url": {
+                                            "value": "https://doi.org/10.1101/484147"
+                                        },
+                                        "external-id-relationship": "SELF"
+                                    }
+                                ]
+                            },
+                            "type": "OTHER",
+                            "publication-date": {
+                                "year": {
+                                    "value": "2018"
+                                },
+                                "month": {
+                                    "value": "11"
+                                },
+                                "day": {
+                                    "value": "30"
+                                },
+                                "media-type": null
+                            },
+                            "visibility": "PUBLIC",
+                            "path": "/0000-0003-2473-2313/work/57209207",
+                            "display-index": "0"
+                        }
+                    ]
+                },
+                {
+                    "last-modified-date": {
+                        "value": 1557327106547
+                    },
+                    "external-ids": {
+                        "external-id": [
+                            {
+                                "external-id-type": "doi",
+                                "external-id-value": "10.17504/protocols.io.rr3d58n",
+                                "external-id-url": null,
+                                "external-id-relationship": "SELF"
+                            }
+                        ]
+                    },
+                    "work-summary": [
+                        {
+                            "put-code": 57209201,
+                            "created-date": {
+                                "value": 1557327106547
+                            },
+                            "last-modified-date": {
+                                "value": 1557327106547
+                            },
+                            "source": {
+                                "source-orcid": null,
+                                "source-client-id": {
+                                    "uri": "http://orcid.org/client/0000-0002-3054-1567",
+                                    "path": "0000-0002-3054-1567",
+                                    "host": "orcid.org"
+                                },
+                                "source-name": {
+                                    "value": "Crossref Metadata Search"
+                                }
+                            },
+                            "title": {
+                                "title": {
+                                    "value": "iGEM Registry Bacterial Transformation v1 (protocols.io.rr3d58n)"
+                                },
+                                "subtitle": null,
+                                "translated-title": null
+                            },
+                            "external-ids": {
+                                "external-id": [
+                                    {
+                                        "external-id-type": "doi",
+                                        "external-id-value": "10.17504/protocols.io.rr3d58n",
+                                        "external-id-url": null,
+                                        "external-id-relationship": "SELF"
+                                    }
+                                ]
+                            },
+                            "type": "OTHER",
+                            "publication-date": null,
+                            "visibility": "PUBLIC",
+                            "path": "/0000-0003-2473-2313/work/57209201",
+                            "display-index": "0"
+                        }
+                    ]
+                }
+            ],
+            "path": "/0000-0003-2473-2313/works"
         },
-        "path": "/0000-0002-6365-8673/activities"
+        "path": "/0000-0003-2473-2313/activities"
     },
-    "path": "/0000-0002-6365-8673"
+    "path": "/0000-0003-2473-2313"
 }
