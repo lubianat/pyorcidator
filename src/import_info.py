@@ -30,7 +30,7 @@ last_name = personal_data["name"]["family-name"]["value"]
 
 
 employment_institutions = get_organization_list(employment_data)
-education_institutions, qualifier_nested_dictionary = get_education_info(education_data)
+education_entries = get_education_info(education_data)
 
 s = lookup_id(orcid, property="P496", default="LAST")
 
@@ -59,21 +59,7 @@ qs = process_item(
     qs, property_id, original_dict=key, target_list=target_list, subject_qid=s, ref=ref
 )
 
-property_id = "P69"
-target_list = education_institutions
-
-print(qualifier_nested_dictionary)
-print(target_list)
-qs = process_item(
-    qs,
-    property_id,
-    original_dict=key,
-    target_list=target_list,
-    subject_qid=s,
-    ref=ref,
-    qualifier_nested_dictionary=qualifier_nested_dictionary,
-)
-
+qs = process_education_entries(qs,subject_qid=s, ref=ref,education_entries=education_entries,property_id="P69")
 clipboard.copy(qs)
 print(qs)
 
