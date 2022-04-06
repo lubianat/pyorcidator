@@ -1,13 +1,34 @@
 import clipboard
 from dictionaries.all import *
 from SPARQLWrapper import SPARQLWrapper, JSON
+from wikidata_lookup import search_wikidata
 import re
 
 
 def add_key(dictionary, string):
     clipboard.copy(string)
-    qid = input(f"What is the qid for: {string} ?")
-    dictionary[string] = qid
+
+    predicted_id = search_wikidata(string)
+
+    annotated = False
+
+    while annotated == False:
+
+        answer = input(
+            f"Is the QID for '{string}' {predicted_id['id']}"
+            f" ({predicted_id['url']}) ? (y/n) "
+        )
+
+        if answer == "y":
+            dictionary[string] = predicted_id["id"]
+            annotated = True
+        elif answer == "n":
+            qid = input(f"What is the qid for: '{string}' ? ")
+            dictionary[string] = qid
+            annotated = True
+        else:
+            print("Answer must be either 'y' or 'n'")
+
     return
 
 
