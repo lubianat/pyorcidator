@@ -3,6 +3,7 @@ import sys
 import requests
 import json
 from helper import *
+from urllib.parse import quote
 
 if len(sys.argv) > 1:
     orcid = sys.argv[1]
@@ -75,3 +76,10 @@ qs = process_item(
 
 clipboard.copy(qs)
 print(qs)
+
+
+quoted_qs = quote(qs.replace('\t', '|').replace('\n', '||'), safe="")
+url = f"https://quickstatements.toolforge.org/#/v1={quoted_qs}\\"
+
+print(url)
+
