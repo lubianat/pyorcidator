@@ -37,7 +37,7 @@ s = lookup_id(orcid, property="P496", default="LAST")
 ref = f'|S854|"https://orcid.org/{str(orcid)}"'
 
 if s == "LAST":
-    qs = """CREATE
+    qs = f"""CREATE
     {s}|Len|"{first_name} {last_name}"
 {s}|Den|"researcher"
 """
