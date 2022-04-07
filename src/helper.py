@@ -108,6 +108,8 @@ def get_organization_list(data):
     for a in data:
         a = a["organization"]
         name = a["name"]
+        if a["disambiguated-organization"] is None:
+            continue
         if a["disambiguated-organization"]["disambiguation-source"] == "GRID":
             grid = a["disambiguated-organization"][
                 "disambiguated-organization-identifier"
