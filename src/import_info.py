@@ -78,8 +78,7 @@ clipboard.copy(qs)
 print(qs)
 
 
-quoted_qs = quote(qs.replace('\t', '|').replace('\n', '||'), safe="")
+quoted_qs = quote(qs.replace("\t", "|").replace("\n", "||"), safe="")
 url = f"https://quickstatements.toolforge.org/#/v1={quoted_qs}\\"
 
 print(url)
-
