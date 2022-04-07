@@ -1,7 +1,7 @@
 {
     "orcid-identifier": {
-        "uri": "http://orcid.org/0000-0002-0723-1835",
-        "path": "0000-0002-0723-1835",
+        "uri": "http://orcid.org/0000-0001-9790-9568",
+        "path": "0000-0001-9790-9568",
         "host": "orcid.org"
     },
     "preferences": {
@@ -11,10 +11,10 @@
         "creation-method": "DIRECT",
         "completion-date": null,
         "submission-date": {
-            "value": 1479293908473
+            "value": 1548699119250
         },
         "last-modified-date": {
-            "value": 1480001058923
+            "value": 1648567172523
         },
         "claimed": true,
         "source": null,
@@ -24,184 +24,882 @@
     },
     "person": {
         "last-modified-date": {
-            "value": 1479294093333
+            "value": 1553261643375
         },
         "name": {
             "created-date": {
-                "value": 1479293908779
+                "value": 1548699119250
             },
             "last-modified-date": {
-                "value": 1479293908779
+                "value": 1611280528877
             },
             "given-names": {
-                "value": "Antoni"
+                "value": "Pedro"
             },
             "family-name": {
-                "value": "Cort\u00e9s"
+                "value": "Batista Tan"
             },
             "credit-name": null,
             "source": null,
             "visibility": "PUBLIC",
-            "path": "0000-0002-0723-1835"
+            "path": "0000-0001-9790-9568"
         },
         "other-names": {
-            "last-modified-date": {
-                "value": 1479293952301
-            },
-            "other-name": [
-                {
-                    "created-date": {
-                        "value": 1479293952301
-                    },
-                    "last-modified-date": {
-                        "value": 1479293952301
-                    },
-                    "source": {
-                        "source-orcid": {
-                            "uri": "http://orcid.org/0000-0002-0723-1835",
-                            "path": "0000-0002-0723-1835",
-                            "host": "orcid.org"
-                        },
-                        "source-client-id": null,
-                        "source-name": {
-                            "value": "Antoni Cort\u00e9s"
-                        }
-                    },
-                    "content": "Antonio Cort\u00e9s",
-                    "visibility": "PUBLIC",
-                    "path": "/0000-0002-0723-1835/other-names/847678",
-                    "put-code": 847678,
-                    "display-index": 1
-                }
-            ],
-            "path": "/0000-0002-0723-1835/other-names"
+            "last-modified-date": null,
+            "other-name": [],
+            "path": "/0000-0001-9790-9568/other-names"
         },
         "biography": null,
         "researcher-urls": {
             "last-modified-date": null,
             "researcher-url": [],
-            "path": "/0000-0002-0723-1835/researcher-urls"
+            "path": "/0000-0001-9790-9568/researcher-urls"
         },
         "emails": {
             "last-modified-date": null,
             "email": [],
-            "path": "/0000-0002-0723-1835/email"
+            "path": "/0000-0001-9790-9568/email"
         },
         "addresses": {
-            "last-modified-date": null,
-            "address": [],
-            "path": "/0000-0002-0723-1835/address"
-        },
-        "keywords": {
             "last-modified-date": {
-                "value": 1479294093333
+                "value": 1553261643375
             },
-            "keyword": [
+            "address": [
                 {
                     "created-date": {
-                        "value": 1479293986967
+                        "value": 1553261643374
                     },
                     "last-modified-date": {
-                        "value": 1479294093333
+                        "value": 1553261643375
                     },
                     "source": {
                         "source-orcid": {
-                            "uri": "http://orcid.org/0000-0002-0723-1835",
-                            "path": "0000-0002-0723-1835",
+                            "uri": "http://orcid.org/0000-0001-9790-9568",
+                            "path": "0000-0001-9790-9568",
                             "host": "orcid.org"
                         },
                         "source-client-id": null,
                         "source-name": {
-                            "value": "Antoni Cort\u00e9s"
+                            "value": "Pedro Batista Tan"
                         }
                     },
-                    "content": "enzyme, GPCR, dimer, heteromer, ADA, adenosine receptor, dopamine receptor",
+                    "country": {
+                        "value": "BR"
+                    },
                     "visibility": "PUBLIC",
-                    "path": "/0000-0002-0723-1835/keywords/573723",
-                    "put-code": 573723,
+                    "path": "/0000-0001-9790-9568/address/1211857",
+                    "put-code": 1211857,
                     "display-index": 1
                 }
             ],
-            "path": "/0000-0002-0723-1835/keywords"
+            "path": "/0000-0001-9790-9568/address"
+        },
+        "keywords": {
+            "last-modified-date": null,
+            "keyword": [],
+            "path": "/0000-0001-9790-9568/keywords"
         },
         "external-identifiers": {
             "last-modified-date": null,
             "external-identifier": [],
-            "path": "/0000-0002-0723-1835/external-identifiers"
+            "path": "/0000-0001-9790-9568/external-identifiers"
         },
-        "path": "/0000-0002-0723-1835/person"
+        "path": "/0000-0001-9790-9568/person"
     },
     "activities-summary": {
         "last-modified-date": {
-            "value": 1479294241623
+            "value": 1648567172621
         },
         "educations": {
             "last-modified-date": {
-                "value": 1479294241623
+                "value": 1627563375317
             },
             "education-summary": [
                 {
                     "created-date": {
-                        "value": 1479294241623
+                        "value": 1579267153638
                     },
                     "last-modified-date": {
-                        "value": 1479294241623
+                        "value": 1627563375317
                     },
                     "source": {
                         "source-orcid": {
-                            "uri": "http://orcid.org/0000-0002-0723-1835",
-                            "path": "0000-0002-0723-1835",
+                            "uri": "http://orcid.org/0000-0001-9790-9568",
+                            "path": "0000-0001-9790-9568",
                             "host": "orcid.org"
                         },
                         "source-client-id": null,
                         "source-name": {
-                            "value": "Antoni Cort\u00e9s"
+                            "value": "Pedro Batista Tan"
                         }
                     },
-                    "department-name": "Bioqu\u00edmica i Biomedicina Molecular",
-                    "role-title": "Dr. Qu\u00edmica",
-                    "start-date": null,
+                    "department-name": null,
+                    "role-title": "MSc Bioinformatics and Systems Biology",
+                    "start-date": {
+                        "year": {
+                            "value": "2019"
+                        },
+                        "month": {
+                            "value": "09"
+                        },
+                        "day": {
+                            "value": "02"
+                        }
+                    },
                     "end-date": null,
                     "organization": {
-                        "name": "Universitat de Barcelona",
+                        "name": "Universiteit van Amsterdam",
                         "address": {
-                            "city": "Barcelona",
-                            "region": "Catalunya",
-                            "country": "ES"
+                            "city": "Amsterdam",
+                            "region": "Noord-Holland",
+                            "country": "NL"
                         },
                         "disambiguated-organization": {
-                            "disambiguated-organization-identifier": "16724",
+                            "disambiguated-organization-identifier": "1234",
                             "disambiguation-source": "RINGGOLD"
                         }
                     },
                     "visibility": "PUBLIC",
-                    "put-code": 2607965,
-                    "path": "/0000-0002-0723-1835/education/2607965"
+                    "put-code": 9576338,
+                    "path": "/0000-0001-9790-9568/education/9576338"
+                },
+                {
+                    "created-date": {
+                        "value": 1553261193111
+                    },
+                    "last-modified-date": {
+                        "value": 1553261193111
+                    },
+                    "source": {
+                        "source-orcid": {
+                            "uri": "http://orcid.org/0000-0001-9790-9568",
+                            "path": "0000-0001-9790-9568",
+                            "host": "orcid.org"
+                        },
+                        "source-client-id": null,
+                        "source-name": {
+                            "value": "Pedro Batista Tan"
+                        }
+                    },
+                    "department-name": "Institute of Biomedical Sciences",
+                    "role-title": "Biological Sciences Course: Medical Modality",
+                    "start-date": {
+                        "year": {
+                            "value": "2015"
+                        },
+                        "month": {
+                            "value": "02"
+                        },
+                        "day": {
+                            "value": "27"
+                        }
+                    },
+                    "end-date": {
+                        "year": {
+                            "value": "2018"
+                        },
+                        "month": {
+                            "value": "12"
+                        },
+                        "day": {
+                            "value": "21"
+                        }
+                    },
+                    "organization": {
+                        "name": "Universidade Federal do Rio de Janeiro",
+                        "address": {
+                            "city": "Rio de Janeiro",
+                            "region": "RJ",
+                            "country": "BR"
+                        },
+                        "disambiguated-organization": {
+                            "disambiguated-organization-identifier": "28125",
+                            "disambiguation-source": "RINGGOLD"
+                        }
+                    },
+                    "visibility": "PUBLIC",
+                    "put-code": 7547965,
+                    "path": "/0000-0001-9790-9568/education/7547965"
+                },
+                {
+                    "created-date": {
+                        "value": 1553261426500
+                    },
+                    "last-modified-date": {
+                        "value": 1553261426500
+                    },
+                    "source": {
+                        "source-orcid": {
+                            "uri": "http://orcid.org/0000-0001-9790-9568",
+                            "path": "0000-0001-9790-9568",
+                            "host": "orcid.org"
+                        },
+                        "source-client-id": null,
+                        "source-name": {
+                            "value": "Pedro Batista Tan"
+                        }
+                    },
+                    "department-name": "Center for Integrative Genomics",
+                    "role-title": "Summer Undergraduate Research Program - Summer Course",
+                    "start-date": {
+                        "year": {
+                            "value": "2018"
+                        },
+                        "month": {
+                            "value": "07"
+                        },
+                        "day": {
+                            "value": "04"
+                        }
+                    },
+                    "end-date": {
+                        "year": {
+                            "value": "2018"
+                        },
+                        "month": {
+                            "value": "08"
+                        },
+                        "day": {
+                            "value": "29"
+                        }
+                    },
+                    "organization": {
+                        "name": "Universit\u00e9 de Lausanne",
+                        "address": {
+                            "city": "Lausanne",
+                            "region": "Vaud",
+                            "country": "CH"
+                        },
+                        "disambiguated-organization": {
+                            "disambiguated-organization-identifier": "http://dx.doi.org/10.13039/501100006390",
+                            "disambiguation-source": "FUNDREF"
+                        }
+                    },
+                    "visibility": "PUBLIC",
+                    "put-code": 7548002,
+                    "path": "/0000-0001-9790-9568/education/7548002"
                 }
             ],
-            "path": "/0000-0002-0723-1835/educations"
+            "path": "/0000-0001-9790-9568/educations"
         },
         "employments": {
-            "last-modified-date": null,
-            "employment-summary": [],
-            "path": "/0000-0002-0723-1835/employments"
+            "last-modified-date": {
+                "value": 1627563809452
+            },
+            "employment-summary": [
+                {
+                    "created-date": {
+                        "value": 1553261609918
+                    },
+                    "last-modified-date": {
+                        "value": 1627563809452
+                    },
+                    "source": {
+                        "source-orcid": {
+                            "uri": "http://orcid.org/0000-0001-9790-9568",
+                            "path": "0000-0001-9790-9568",
+                            "host": "orcid.org"
+                        },
+                        "source-client-id": null,
+                        "source-name": {
+                            "value": "Pedro Batista Tan"
+                        }
+                    },
+                    "department-name": null,
+                    "role-title": "Member of the coordinating team",
+                    "start-date": {
+                        "year": {
+                            "value": "2019"
+                        },
+                        "month": {
+                            "value": "01"
+                        },
+                        "day": {
+                            "value": "16"
+                        }
+                    },
+                    "end-date": {
+                        "year": {
+                            "value": "2019"
+                        },
+                        "month": {
+                            "value": "09"
+                        },
+                        "day": {
+                            "value": "02"
+                        }
+                    },
+                    "organization": {
+                        "name": "Brazilian Reproducibility Initiative",
+                        "address": {
+                            "city": "Rio de Janeiro",
+                            "region": "RJ",
+                            "country": "BR"
+                        },
+                        "disambiguated-organization": null
+                    },
+                    "visibility": "PUBLIC",
+                    "put-code": 7548024,
+                    "path": "/0000-0001-9790-9568/employment/7548024"
+                }
+            ],
+            "path": "/0000-0001-9790-9568/employments"
         },
         "fundings": {
             "last-modified-date": null,
             "group": [],
-            "path": "/0000-0002-0723-1835/fundings"
+            "path": "/0000-0001-9790-9568/fundings"
         },
         "peer-reviews": {
             "last-modified-date": null,
             "group": [],
-            "path": "/0000-0002-0723-1835/peer-reviews"
+            "path": "/0000-0001-9790-9568/peer-reviews"
         },
         "works": {
-            "last-modified-date": null,
-            "group": [],
-            "path": "/0000-0002-0723-1835/works"
+            "last-modified-date": {
+                "value": 1648567172621
+            },
+            "group": [
+                {
+                    "last-modified-date": {
+                        "value": 1648567172621
+                    },
+                    "external-ids": {
+                        "external-id": [
+                            {
+                                "external-id-type": "doi",
+                                "external-id-value": "10.31222/osf.io/5r36g",
+                                "external-id-url": {
+                                    "value": "https://doi.org/10.31222/osf.io/5r36g"
+                                },
+                                "external-id-relationship": "SELF"
+                            }
+                        ]
+                    },
+                    "work-summary": [
+                        {
+                            "put-code": 110523690,
+                            "created-date": {
+                                "value": 1648567172621
+                            },
+                            "last-modified-date": {
+                                "value": 1648567172621
+                            },
+                            "source": {
+                                "source-orcid": null,
+                                "source-client-id": {
+                                    "uri": "http://orcid.org/client/0000-0001-9884-1913",
+                                    "path": "0000-0001-9884-1913",
+                                    "host": "orcid.org"
+                                },
+                                "source-name": {
+                                    "value": "Crossref"
+                                }
+                            },
+                            "title": {
+                                "title": {
+                                    "value": "A metric of knowledge as information compression reflects reproducibility predictions in biomedical experiments"
+                                },
+                                "subtitle": null,
+                                "translated-title": null
+                            },
+                            "external-ids": {
+                                "external-id": [
+                                    {
+                                        "external-id-type": "doi",
+                                        "external-id-value": "10.31222/osf.io/5r36g",
+                                        "external-id-url": {
+                                            "value": "https://doi.org/10.31222/osf.io/5r36g"
+                                        },
+                                        "external-id-relationship": "SELF"
+                                    }
+                                ]
+                            },
+                            "type": "OTHER",
+                            "publication-date": {
+                                "year": {
+                                    "value": "2022"
+                                },
+                                "month": {
+                                    "value": "03"
+                                },
+                                "day": {
+                                    "value": "26"
+                                },
+                                "media-type": null
+                            },
+                            "visibility": "PUBLIC",
+                            "path": "/0000-0001-9790-9568/work/110523690",
+                            "display-index": "0"
+                        }
+                    ]
+                },
+                {
+                    "last-modified-date": {
+                        "value": 1614956161328
+                    },
+                    "external-ids": {
+                        "external-id": [
+                            {
+                                "external-id-type": "doi",
+                                "external-id-value": "10.31222/osf.io/jk7sa",
+                                "external-id-url": {
+                                    "value": "https://doi.org/10.31222/osf.io/jk7sa"
+                                },
+                                "external-id-relationship": "SELF"
+                            }
+                        ]
+                    },
+                    "work-summary": [
+                        {
+                            "put-code": 90021034,
+                            "created-date": {
+                                "value": 1614956161328
+                            },
+                            "last-modified-date": {
+                                "value": 1614956161328
+                            },
+                            "source": {
+                                "source-orcid": null,
+                                "source-client-id": {
+                                    "uri": "http://orcid.org/client/0000-0001-9884-1913",
+                                    "path": "0000-0001-9884-1913",
+                                    "host": "orcid.org"
+                                },
+                                "source-name": {
+                                    "value": "Crossref"
+                                }
+                            },
+                            "title": {
+                                "title": {
+                                    "value": "Are Most Published Research Findings False In A Continuous Universe?"
+                                },
+                                "subtitle": null,
+                                "translated-title": null
+                            },
+                            "external-ids": {
+                                "external-id": [
+                                    {
+                                        "external-id-type": "doi",
+                                        "external-id-value": "10.31222/osf.io/jk7sa",
+                                        "external-id-url": {
+                                            "value": "https://doi.org/10.31222/osf.io/jk7sa"
+                                        },
+                                        "external-id-relationship": "SELF"
+                                    }
+                                ]
+                            },
+                            "type": "OTHER",
+                            "publication-date": {
+                                "year": {
+                                    "value": "2021"
+                                },
+                                "month": {
+                                    "value": "03"
+                                },
+                                "day": {
+                                    "value": "05"
+                                },
+                                "media-type": null
+                            },
+                            "visibility": "PUBLIC",
+                            "path": "/0000-0001-9790-9568/work/90021034",
+                            "display-index": "0"
+                        }
+                    ]
+                },
+                {
+                    "last-modified-date": {
+                        "value": 1610401145848
+                    },
+                    "external-ids": {
+                        "external-id": [
+                            {
+                                "external-id-type": "doi",
+                                "external-id-value": "10.1186/s41073-020-00101-3",
+                                "external-id-url": {
+                                    "value": "https://doi.org/10.1186/s41073-020-00101-3"
+                                },
+                                "external-id-relationship": "SELF"
+                            }
+                        ]
+                    },
+                    "work-summary": [
+                        {
+                            "put-code": 86631181,
+                            "created-date": {
+                                "value": 1610401145848
+                            },
+                            "last-modified-date": {
+                                "value": 1610401145848
+                            },
+                            "source": {
+                                "source-orcid": {
+                                    "uri": "http://orcid.org/0000-0001-9790-9568",
+                                    "path": "0000-0001-9790-9568",
+                                    "host": "orcid.org"
+                                },
+                                "source-client-id": null,
+                                "source-name": {
+                                    "value": "Pedro Batista Tan"
+                                }
+                            },
+                            "title": {
+                                "title": {
+                                    "value": "Comparing quality of reporting between preprints and peer-reviewed articles in the biomedical literature"
+                                },
+                                "subtitle": null,
+                                "translated-title": null
+                            },
+                            "external-ids": {
+                                "external-id": [
+                                    {
+                                        "external-id-type": "doi",
+                                        "external-id-value": "10.1186/s41073-020-00101-3",
+                                        "external-id-url": {
+                                            "value": "https://doi.org/10.1186/s41073-020-00101-3"
+                                        },
+                                        "external-id-relationship": "SELF"
+                                    },
+                                    {
+                                        "external-id-type": "issn",
+                                        "external-id-value": "2058-8615",
+                                        "external-id-url": {
+                                            "value": "https://portal.issn.org/resource/ISSN/2058-8615"
+                                        },
+                                        "external-id-relationship": "PART_OF"
+                                    }
+                                ]
+                            },
+                            "type": "JOURNAL_ARTICLE",
+                            "publication-date": {
+                                "year": {
+                                    "value": "2020"
+                                },
+                                "month": {
+                                    "value": "12"
+                                },
+                                "day": null,
+                                "media-type": null
+                            },
+                            "visibility": "PUBLIC",
+                            "path": "/0000-0001-9790-9568/work/86631181",
+                            "display-index": "1"
+                        }
+                    ]
+                },
+                {
+                    "last-modified-date": {
+                        "value": 1592965002888
+                    },
+                    "external-ids": {
+                        "external-id": [
+                            {
+                                "external-id-type": "doi",
+                                "external-id-value": "10.31222/osf.io/njs6k",
+                                "external-id-url": {
+                                    "value": "https://doi.org/10.31222/osf.io/njs6k"
+                                },
+                                "external-id-relationship": "SELF"
+                            }
+                        ]
+                    },
+                    "work-summary": [
+                        {
+                            "put-code": 76149455,
+                            "created-date": {
+                                "value": 1592965002888
+                            },
+                            "last-modified-date": {
+                                "value": 1592965002888
+                            },
+                            "source": {
+                                "source-orcid": null,
+                                "source-client-id": {
+                                    "uri": "http://orcid.org/client/0000-0001-9884-1913",
+                                    "path": "0000-0001-9884-1913",
+                                    "host": "orcid.org"
+                                },
+                                "source-name": {
+                                    "value": "Crossref"
+                                }
+                            },
+                            "title": {
+                                "title": {
+                                    "value": "Two years into the Brazilian Reproducibility Initiative: reflections on conducting a large-scale replication of Brazilian biomedical science"
+                                },
+                                "subtitle": null,
+                                "translated-title": null
+                            },
+                            "external-ids": {
+                                "external-id": [
+                                    {
+                                        "external-id-type": "doi",
+                                        "external-id-value": "10.31222/osf.io/njs6k",
+                                        "external-id-url": {
+                                            "value": "https://doi.org/10.31222/osf.io/njs6k"
+                                        },
+                                        "external-id-relationship": "SELF"
+                                    }
+                                ]
+                            },
+                            "type": "OTHER",
+                            "publication-date": {
+                                "year": {
+                                    "value": "2020"
+                                },
+                                "month": {
+                                    "value": "06"
+                                },
+                                "day": {
+                                    "value": "19"
+                                },
+                                "media-type": null
+                            },
+                            "visibility": "PUBLIC",
+                            "path": "/0000-0001-9790-9568/work/76149455",
+                            "display-index": "0"
+                        }
+                    ]
+                },
+                {
+                    "last-modified-date": {
+                        "value": 1621378356706
+                    },
+                    "external-ids": {
+                        "external-id": [
+                            {
+                                "external-id-type": "doi",
+                                "external-id-value": "10.1242/dmm.045807",
+                                "external-id-url": {
+                                    "value": "https://doi.org/10.1242/dmm.045807"
+                                },
+                                "external-id-relationship": "SELF"
+                            }
+                        ]
+                    },
+                    "work-summary": [
+                        {
+                            "put-code": 80025632,
+                            "created-date": {
+                                "value": 1599576155460
+                            },
+                            "last-modified-date": {
+                                "value": 1621378356706
+                            },
+                            "source": {
+                                "source-orcid": null,
+                                "source-client-id": {
+                                    "uri": "http://orcid.org/client/0000-0001-9884-1913",
+                                    "path": "0000-0001-9884-1913",
+                                    "host": "orcid.org"
+                                },
+                                "source-name": {
+                                    "value": "Crossref"
+                                }
+                            },
+                            "title": {
+                                "title": {
+                                    "value": "Progenitor death drives retinal dysplasia and neuronal degeneration in a mouse model of Atrip-Seckel syndrome"
+                                },
+                                "subtitle": null,
+                                "translated-title": null
+                            },
+                            "external-ids": {
+                                "external-id": [
+                                    {
+                                        "external-id-type": "doi",
+                                        "external-id-value": "10.1242/dmm.045807",
+                                        "external-id-url": {
+                                            "value": "https://doi.org/10.1242/dmm.045807"
+                                        },
+                                        "external-id-relationship": "SELF"
+                                    }
+                                ]
+                            },
+                            "type": "JOURNAL_ARTICLE",
+                            "publication-date": {
+                                "year": {
+                                    "value": "2020"
+                                },
+                                "month": {
+                                    "value": "01"
+                                },
+                                "day": {
+                                    "value": "01"
+                                },
+                                "media-type": null
+                            },
+                            "visibility": "PUBLIC",
+                            "path": "/0000-0001-9790-9568/work/80025632",
+                            "display-index": "0"
+                        }
+                    ]
+                },
+                {
+                    "last-modified-date": {
+                        "value": 1610402161483
+                    },
+                    "external-ids": {
+                        "external-id": [
+                            {
+                                "external-id-type": "doi",
+                                "external-id-value": "10.1590/0074-02760200328",
+                                "external-id-url": {
+                                    "value": "https://doi.org/10.1590/0074-02760200328"
+                                },
+                                "external-id-relationship": "SELF"
+                            }
+                        ]
+                    },
+                    "work-summary": [
+                        {
+                            "put-code": 86631973,
+                            "created-date": {
+                                "value": 1610402161483
+                            },
+                            "last-modified-date": {
+                                "value": 1610402161483
+                            },
+                            "source": {
+                                "source-orcid": {
+                                    "uri": "http://orcid.org/0000-0001-9790-9568",
+                                    "path": "0000-0001-9790-9568",
+                                    "host": "orcid.org"
+                                },
+                                "source-client-id": null,
+                                "source-name": {
+                                    "value": "Pedro Batista Tan"
+                                }
+                            },
+                            "title": {
+                                "title": {
+                                    "value": "Two years into the Brazilian Reproducibility Initiative: reflections on conducting a large-scale replication of Brazilian biomedical science"
+                                },
+                                "subtitle": null,
+                                "translated-title": null
+                            },
+                            "external-ids": {
+                                "external-id": [
+                                    {
+                                        "external-id-type": "doi",
+                                        "external-id-value": "10.1590/0074-02760200328",
+                                        "external-id-url": {
+                                            "value": "https://doi.org/10.1590/0074-02760200328"
+                                        },
+                                        "external-id-relationship": "SELF"
+                                    },
+                                    {
+                                        "external-id-type": "issn",
+                                        "external-id-value": "1678-8060",
+                                        "external-id-url": {
+                                            "value": "https://portal.issn.org/resource/ISSN/1678-8060"
+                                        },
+                                        "external-id-relationship": "PART_OF"
+                                    },
+                                    {
+                                        "external-id-type": "issn",
+                                        "external-id-value": "0074-0276",
+                                        "external-id-url": {
+                                            "value": "https://portal.issn.org/resource/ISSN/0074-0276"
+                                        },
+                                        "external-id-relationship": "PART_OF"
+                                    }
+                                ]
+                            },
+                            "type": "JOURNAL_ARTICLE",
+                            "publication-date": {
+                                "year": {
+                                    "value": "2020"
+                                },
+                                "month": null,
+                                "day": null,
+                                "media-type": null
+                            },
+                            "visibility": "PUBLIC",
+                            "path": "/0000-0001-9790-9568/work/86631973",
+                            "display-index": "1"
+                        }
+                    ]
+                },
+                {
+                    "last-modified-date": {
+                        "value": 1600190910788
+                    },
+                    "external-ids": {
+                        "external-id": [
+                            {
+                                "external-id-type": "doi",
+                                "external-id-value": "10.1101/581892",
+                                "external-id-url": {
+                                    "value": "https://doi.org/10.1101/581892"
+                                },
+                                "external-id-relationship": "SELF"
+                            }
+                        ]
+                    },
+                    "work-summary": [
+                        {
+                            "put-code": 80384803,
+                            "created-date": {
+                                "value": 1600190849646
+                            },
+                            "last-modified-date": {
+                                "value": 1600190910788
+                            },
+                            "source": {
+                                "source-orcid": {
+                                    "uri": "http://orcid.org/0000-0001-9790-9568",
+                                    "path": "0000-0001-9790-9568",
+                                    "host": "orcid.org"
+                                },
+                                "source-client-id": null,
+                                "source-name": {
+                                    "value": "Pedro Batista Tan"
+                                }
+                            },
+                            "title": {
+                                "title": {
+                                    "value": "Comparing quality of reporting between preprints and peer-reviewed articles in the biomedical literature"
+                                },
+                                "subtitle": null,
+                                "translated-title": null
+                            },
+                            "external-ids": {
+                                "external-id": [
+                                    {
+                                        "external-id-type": "doi",
+                                        "external-id-value": "10.1101/581892",
+                                        "external-id-url": {
+                                            "value": "https://doi.org/10.1101/581892"
+                                        },
+                                        "external-id-relationship": "SELF"
+                                    }
+                                ]
+                            },
+                            "type": "OTHER",
+                            "publication-date": {
+                                "year": {
+                                    "value": "2019"
+                                },
+                                "month": {
+                                    "value": "03"
+                                },
+                                "day": {
+                                    "value": "22"
+                                },
+                                "media-type": null
+                            },
+                            "visibility": "PUBLIC",
+                            "path": "/0000-0001-9790-9568/work/80384803",
+                            "display-index": "1"
+                        }
+                    ]
+                }
+            ],
+            "path": "/0000-0001-9790-9568/works"
         },
-        "path": "/0000-0002-0723-1835/activities"
+        "path": "/0000-0001-9790-9568/activities"
     },
-    "path": "/0000-0002-0723-1835"
+    "path": "/0000-0001-9790-9568"
 }

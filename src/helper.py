@@ -129,7 +129,7 @@ def get_date(entry, start_or_end="start"):
     month = date["month"]["value"]
     day = date["day"]["value"]
 
-    return f"+{year}-{month}-{day}T00:00:00/11"
+    return f"+{year}-{month}-{day}T00:00:00Z/11"
 
 
 def get_education_info(data):
@@ -185,6 +185,6 @@ def process_education_entries(
             qs = (
                 qs
                 + f"""
-            {subject_qid}|{property_id}|{entry.institution}|P512|{entry.degree}|P580|"{entry.start_date}"|P582|"{entry.end_date}"{ref}"""
+            {subject_qid}|{property_id}|{entry.institution}|P512|{entry.degree}|P580|{entry.start_date}|P582|{entry.end_date}{ref}"""
             )
     return qs
