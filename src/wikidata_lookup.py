@@ -28,14 +28,15 @@ def parse_wikidata_result(wikidata_result):
         return {
             "id": "NONE",
             "label": "NONE",
+            "description": "NONE",
             "url": f"https://www.wikidata.org/wiki/NONE",
         }
 
     first_item = wikidata_result["search"][0]
-    print(first_item)
 
     return {
         "id": first_item["id"],
         "label": first_item["label"],
+        "description": first_item["description"],
         "url": f"https://www.wikidata.org/wiki/{first_item['id']}",
     }

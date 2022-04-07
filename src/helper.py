@@ -24,8 +24,9 @@ def add_key(dictionary, string):
 
     while annotated == False:
         answer = input(
-            f"Is the QID for '{string}' {predicted_id['id']} ({predicted_id['label']})"
-            f" ({predicted_id['url']}) ? (y/n) "
+            f"Is the QID for '{string}'  \n "
+            f"{predicted_id['id']} - {predicted_id['label']} "
+            f"({predicted_id['description']}) ? (y/n) "
         )
 
         if answer == "y":
@@ -122,6 +123,8 @@ def get_organization_list(data):
 
 def get_date(entry, start_or_end="start"):
     date = entry[f"{start_or_end}-date"]
+    if date is None:
+        return ""
     year = date["year"]["value"]
     month = date["month"]["value"]
     day = date["day"]["value"]
@@ -170,10 +173,18 @@ def process_education_entries(
 
     # Quickstatements fails in the case of same institution for multliple degrees.
     # See https://www.wikidata.org/wiki/Help:QuickStatements#Limitation
+
     for entry in education_entries:
-        qs = (
-            qs
-            + f"""
-        {subject_qid}|{property_id}|{entry.institution}|P512|{entry.degree}|P580|"{entry.start_date}"|P582|"{entry.end_date}"{ref}"""
-        )
+        if entry.start_date == "":
+            qs = (
+                qs
+                + f"""
+        {subject_qid}|{property_id}|{entry.institution}|P512|{entry.degree}{ref}"""
+            )
+        else:
+            qs = (
+                qs
+                + f"""
+            {subject_qid}|{property_id}|{entry.institution}|P512|{entry.degree}|P580|"{entry.start_date}"|P582|"{entry.end_date}"{ref}"""
+            )
     return qs
