@@ -125,11 +125,23 @@ def get_date(entry, start_or_end="start"):
     date = entry[f"{start_or_end}-date"]
     if date is None:
         return ""
-    year = date["year"]["value"]
-    month = date["month"]["value"]
-    day = date["day"]["value"]
 
-    return f"+{year}-{month}-{day}T00:00:00Z/11"
+    month = "00"
+    day = "00"
+
+    if date["year"] is not None:
+        year = date["year"]["value"]
+        precision = 9
+
+    if date["month"] is not None:
+        month = date["month"]["value"]
+        precision = 10
+
+    if date["day"] is not None:
+        day = date["day"]["value"]
+        precision = 11
+
+    return f"+{year}-{month}-{day}T00:00:00Z/{str(precision)}"
 
 
 def get_education_info(data):

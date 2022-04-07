@@ -1,7 +1,7 @@
 {
     "orcid-identifier": {
-        "uri": "http://orcid.org/0000-0001-9790-9568",
-        "path": "0000-0001-9790-9568",
+        "uri": "http://orcid.org/0000-0001-9655-3870",
+        "path": "0000-0001-9655-3870",
         "host": "orcid.org"
     },
     "preferences": {
@@ -11,10 +11,10 @@
         "creation-method": "DIRECT",
         "completion-date": null,
         "submission-date": {
-            "value": 1548699119250
+            "value": 1546792485901
         },
         "last-modified-date": {
-            "value": 1648567172523
+            "value": 1629742434183
         },
         "claimed": true,
         "source": null,
@@ -24,353 +24,416 @@
     },
     "person": {
         "last-modified-date": {
-            "value": 1553261643375
+            "value": 1622480936304
         },
         "name": {
             "created-date": {
-                "value": 1548699119250
+                "value": 1546792485901
             },
             "last-modified-date": {
-                "value": 1611280528877
+                "value": 1622480906393
             },
             "given-names": {
-                "value": "Pedro"
+                "value": "Karina"
             },
             "family-name": {
-                "value": "Batista Tan"
+                "value": "Hajdu"
             },
-            "credit-name": null,
+            "credit-name": {
+                "value": "Hajdu, Karina"
+            },
             "source": null,
             "visibility": "PUBLIC",
-            "path": "0000-0001-9790-9568"
+            "path": "0000-0001-9655-3870"
         },
         "other-names": {
             "last-modified-date": null,
             "other-name": [],
-            "path": "/0000-0001-9790-9568/other-names"
+            "path": "/0000-0001-9655-3870/other-names"
         },
         "biography": null,
         "researcher-urls": {
             "last-modified-date": null,
             "researcher-url": [],
-            "path": "/0000-0001-9790-9568/researcher-urls"
+            "path": "/0000-0001-9655-3870/researcher-urls"
         },
         "emails": {
             "last-modified-date": null,
             "email": [],
-            "path": "/0000-0001-9790-9568/email"
+            "path": "/0000-0001-9655-3870/email"
         },
         "addresses": {
             "last-modified-date": {
-                "value": 1553261643375
+                "value": 1546792969221
             },
             "address": [
                 {
                     "created-date": {
-                        "value": 1553261643374
+                        "value": 1546792969220
                     },
                     "last-modified-date": {
-                        "value": 1553261643375
+                        "value": 1546792969221
                     },
                     "source": {
                         "source-orcid": {
-                            "uri": "http://orcid.org/0000-0001-9790-9568",
-                            "path": "0000-0001-9790-9568",
+                            "uri": "http://orcid.org/0000-0001-9655-3870",
+                            "path": "0000-0001-9655-3870",
                             "host": "orcid.org"
                         },
                         "source-client-id": null,
                         "source-name": {
-                            "value": "Pedro Batista Tan"
+                            "value": "Hajdu, Karina"
                         }
                     },
                     "country": {
                         "value": "BR"
                     },
                     "visibility": "PUBLIC",
-                    "path": "/0000-0001-9790-9568/address/1211857",
-                    "put-code": 1211857,
+                    "path": "/0000-0001-9655-3870/address/1147062",
+                    "put-code": 1147062,
                     "display-index": 1
                 }
             ],
-            "path": "/0000-0001-9790-9568/address"
+            "path": "/0000-0001-9655-3870/address"
         },
         "keywords": {
-            "last-modified-date": null,
-            "keyword": [],
-            "path": "/0000-0001-9790-9568/keywords"
+            "last-modified-date": {
+                "value": 1622480936304
+            },
+            "keyword": [
+                {
+                    "created-date": {
+                        "value": 1546793003761
+                    },
+                    "last-modified-date": {
+                        "value": 1622480936304
+                    },
+                    "source": {
+                        "source-orcid": {
+                            "uri": "http://orcid.org/0000-0001-9655-3870",
+                            "path": "0000-0001-9655-3870",
+                            "host": "orcid.org"
+                        },
+                        "source-client-id": null,
+                        "source-name": {
+                            "value": "Hajdu, Karina"
+                        }
+                    },
+                    "content": "Immunotherapy",
+                    "visibility": "PUBLIC",
+                    "path": "/0000-0001-9655-3870/keywords/1162400",
+                    "put-code": 1162400,
+                    "display-index": 4
+                },
+                {
+                    "created-date": {
+                        "value": 1546793003763
+                    },
+                    "last-modified-date": {
+                        "value": 1622480936304
+                    },
+                    "source": {
+                        "source-orcid": {
+                            "uri": "http://orcid.org/0000-0001-9655-3870",
+                            "path": "0000-0001-9655-3870",
+                            "host": "orcid.org"
+                        },
+                        "source-client-id": null,
+                        "source-name": {
+                            "value": "Hajdu, Karina"
+                        }
+                    },
+                    "content": "CAR-T cells",
+                    "visibility": "PUBLIC",
+                    "path": "/0000-0001-9655-3870/keywords/1162401",
+                    "put-code": 1162401,
+                    "display-index": 3
+                },
+                {
+                    "created-date": {
+                        "value": 1546793003764
+                    },
+                    "last-modified-date": {
+                        "value": 1622480936304
+                    },
+                    "source": {
+                        "source-orcid": {
+                            "uri": "http://orcid.org/0000-0001-9655-3870",
+                            "path": "0000-0001-9655-3870",
+                            "host": "orcid.org"
+                        },
+                        "source-client-id": null,
+                        "source-name": {
+                            "value": "Hajdu, Karina"
+                        }
+                    },
+                    "content": "T cell exhaustion",
+                    "visibility": "PUBLIC",
+                    "path": "/0000-0001-9655-3870/keywords/1162402",
+                    "put-code": 1162402,
+                    "display-index": 2
+                }
+            ],
+            "path": "/0000-0001-9655-3870/keywords"
         },
         "external-identifiers": {
             "last-modified-date": null,
             "external-identifier": [],
-            "path": "/0000-0001-9790-9568/external-identifiers"
+            "path": "/0000-0001-9655-3870/external-identifiers"
         },
-        "path": "/0000-0001-9790-9568/person"
+        "path": "/0000-0001-9655-3870/person"
     },
     "activities-summary": {
         "last-modified-date": {
-            "value": 1648567172621
+            "value": 1629742434244
         },
         "educations": {
             "last-modified-date": {
-                "value": 1627563375317
+                "value": 1622480688088
             },
             "education-summary": [
                 {
                     "created-date": {
-                        "value": 1579267153638
+                        "value": 1546793045937
                     },
                     "last-modified-date": {
-                        "value": 1627563375317
+                        "value": 1622480688088
                     },
                     "source": {
                         "source-orcid": {
-                            "uri": "http://orcid.org/0000-0001-9790-9568",
-                            "path": "0000-0001-9790-9568",
+                            "uri": "http://orcid.org/0000-0001-9655-3870",
+                            "path": "0000-0001-9655-3870",
                             "host": "orcid.org"
                         },
                         "source-client-id": null,
                         "source-name": {
-                            "value": "Pedro Batista Tan"
+                            "value": "Hajdu, Karina"
                         }
                     },
-                    "department-name": null,
-                    "role-title": "MSc Bioinformatics and Systems Biology",
-                    "start-date": {
-                        "year": {
-                            "value": "2019"
-                        },
-                        "month": {
-                            "value": "09"
-                        },
-                        "day": {
-                            "value": "02"
-                        }
-                    },
-                    "end-date": null,
-                    "organization": {
-                        "name": "Universiteit van Amsterdam",
-                        "address": {
-                            "city": "Amsterdam",
-                            "region": "Noord-Holland",
-                            "country": "NL"
-                        },
-                        "disambiguated-organization": {
-                            "disambiguated-organization-identifier": "1234",
-                            "disambiguation-source": "RINGGOLD"
-                        }
-                    },
-                    "visibility": "PUBLIC",
-                    "put-code": 9576338,
-                    "path": "/0000-0001-9790-9568/education/9576338"
-                },
-                {
-                    "created-date": {
-                        "value": 1553261193111
-                    },
-                    "last-modified-date": {
-                        "value": 1553261193111
-                    },
-                    "source": {
-                        "source-orcid": {
-                            "uri": "http://orcid.org/0000-0001-9790-9568",
-                            "path": "0000-0001-9790-9568",
-                            "host": "orcid.org"
-                        },
-                        "source-client-id": null,
-                        "source-name": {
-                            "value": "Pedro Batista Tan"
-                        }
-                    },
-                    "department-name": "Institute of Biomedical Sciences",
-                    "role-title": "Biological Sciences Course: Medical Modality",
+                    "department-name": "Biology Institute",
+                    "role-title": "Bachelor of Science - Genetics",
                     "start-date": {
                         "year": {
                             "value": "2015"
                         },
                         "month": {
-                            "value": "02"
+                            "value": "03"
                         },
-                        "day": {
-                            "value": "27"
-                        }
+                        "day": null
                     },
                     "end-date": {
                         "year": {
-                            "value": "2018"
+                            "value": "2019"
+                        },
+                        "month": {
+                            "value": "07"
+                        },
+                        "day": null
+                    },
+                    "organization": {
+                        "name": "Federal University of Rio de Janeiro",
+                        "address": {
+                            "city": "Rio de Janeiro",
+                            "region": "Rio de Janeiro",
+                            "country": "BR"
+                        },
+                        "disambiguated-organization": {
+                            "disambiguated-organization-identifier": "grid.8536.8",
+                            "disambiguation-source": "GRID"
+                        }
+                    },
+                    "visibility": "PUBLIC",
+                    "put-code": 7064082,
+                    "path": "/0000-0001-9655-3870/education/7064082"
+                },
+                {
+                    "created-date": {
+                        "value": 1546793100613
+                    },
+                    "last-modified-date": {
+                        "value": 1546793115824
+                    },
+                    "source": {
+                        "source-orcid": {
+                            "uri": "http://orcid.org/0000-0001-9655-3870",
+                            "path": "0000-0001-9655-3870",
+                            "host": "orcid.org"
+                        },
+                        "source-client-id": null,
+                        "source-name": {
+                            "value": "Hajdu, Karina"
+                        }
+                    },
+                    "department-name": null,
+                    "role-title": "Technical Degree in Biotechnology",
+                    "start-date": {
+                        "year": {
+                            "value": "2012"
+                        },
+                        "month": {
+                            "value": "02"
+                        },
+                        "day": null
+                    },
+                    "end-date": {
+                        "year": {
+                            "value": "2014"
                         },
                         "month": {
                             "value": "12"
                         },
-                        "day": {
-                            "value": "21"
-                        }
+                        "day": null
                     },
                     "organization": {
-                        "name": "Universidade Federal do Rio de Janeiro",
+                        "name": "ORT Institute of Technology",
                         "address": {
                             "city": "Rio de Janeiro",
                             "region": "RJ",
                             "country": "BR"
                         },
                         "disambiguated-organization": {
-                            "disambiguated-organization-identifier": "28125",
+                            "disambiguated-organization-identifier": "406297",
                             "disambiguation-source": "RINGGOLD"
                         }
                     },
                     "visibility": "PUBLIC",
-                    "put-code": 7547965,
-                    "path": "/0000-0001-9790-9568/education/7547965"
-                },
-                {
-                    "created-date": {
-                        "value": 1553261426500
-                    },
-                    "last-modified-date": {
-                        "value": 1553261426500
-                    },
-                    "source": {
-                        "source-orcid": {
-                            "uri": "http://orcid.org/0000-0001-9790-9568",
-                            "path": "0000-0001-9790-9568",
-                            "host": "orcid.org"
-                        },
-                        "source-client-id": null,
-                        "source-name": {
-                            "value": "Pedro Batista Tan"
-                        }
-                    },
-                    "department-name": "Center for Integrative Genomics",
-                    "role-title": "Summer Undergraduate Research Program - Summer Course",
-                    "start-date": {
-                        "year": {
-                            "value": "2018"
-                        },
-                        "month": {
-                            "value": "07"
-                        },
-                        "day": {
-                            "value": "04"
-                        }
-                    },
-                    "end-date": {
-                        "year": {
-                            "value": "2018"
-                        },
-                        "month": {
-                            "value": "08"
-                        },
-                        "day": {
-                            "value": "29"
-                        }
-                    },
-                    "organization": {
-                        "name": "Universit\u00e9 de Lausanne",
-                        "address": {
-                            "city": "Lausanne",
-                            "region": "Vaud",
-                            "country": "CH"
-                        },
-                        "disambiguated-organization": {
-                            "disambiguated-organization-identifier": "http://dx.doi.org/10.13039/501100006390",
-                            "disambiguation-source": "FUNDREF"
-                        }
-                    },
-                    "visibility": "PUBLIC",
-                    "put-code": 7548002,
-                    "path": "/0000-0001-9790-9568/education/7548002"
+                    "put-code": 7064086,
+                    "path": "/0000-0001-9655-3870/education/7064086"
                 }
             ],
-            "path": "/0000-0001-9790-9568/educations"
+            "path": "/0000-0001-9655-3870/educations"
         },
         "employments": {
             "last-modified-date": {
-                "value": 1627563809452
+                "value": 1622480775430
             },
             "employment-summary": [
                 {
                     "created-date": {
-                        "value": 1553261609918
+                        "value": 1622480775430
                     },
                     "last-modified-date": {
-                        "value": 1627563809452
+                        "value": 1622480775430
                     },
                     "source": {
                         "source-orcid": {
-                            "uri": "http://orcid.org/0000-0001-9790-9568",
-                            "path": "0000-0001-9790-9568",
+                            "uri": "http://orcid.org/0000-0001-9655-3870",
+                            "path": "0000-0001-9655-3870",
                             "host": "orcid.org"
                         },
                         "source-client-id": null,
                         "source-name": {
-                            "value": "Pedro Batista Tan"
+                            "value": "Hajdu, Karina"
                         }
                     },
-                    "department-name": null,
-                    "role-title": "Member of the coordinating team",
+                    "department-name": "Immunology and Tumor Biology",
+                    "role-title": "Master's student",
                     "start-date": {
                         "year": {
-                            "value": "2019"
+                            "value": "2020"
                         },
                         "month": {
-                            "value": "01"
+                            "value": "03"
                         },
-                        "day": {
-                            "value": "16"
-                        }
+                        "day": null
                     },
-                    "end-date": {
-                        "year": {
-                            "value": "2019"
-                        },
-                        "month": {
-                            "value": "09"
-                        },
-                        "day": {
-                            "value": "02"
-                        }
-                    },
+                    "end-date": null,
                     "organization": {
-                        "name": "Brazilian Reproducibility Initiative",
+                        "name": "Brazilian National Cancer Institute",
                         "address": {
                             "city": "Rio de Janeiro",
-                            "region": "RJ",
+                            "region": "Rio de Janeiro",
                             "country": "BR"
                         },
                         "disambiguated-organization": null
                     },
                     "visibility": "PUBLIC",
-                    "put-code": 7548024,
-                    "path": "/0000-0001-9790-9568/employment/7548024"
+                    "put-code": 14942095,
+                    "path": "/0000-0001-9655-3870/employment/14942095"
+                },
+                {
+                    "created-date": {
+                        "value": 1546792746933
+                    },
+                    "last-modified-date": {
+                        "value": 1622480643878
+                    },
+                    "source": {
+                        "source-orcid": {
+                            "uri": "http://orcid.org/0000-0001-9655-3870",
+                            "path": "0000-0001-9655-3870",
+                            "host": "orcid.org"
+                        },
+                        "source-client-id": null,
+                        "source-name": {
+                            "value": "Hajdu, Karina"
+                        }
+                    },
+                    "department-name": "Biomedical Sciences Institute",
+                    "role-title": "Research Intern",
+                    "start-date": {
+                        "year": {
+                            "value": "2015"
+                        },
+                        "month": {
+                            "value": "05"
+                        },
+                        "day": null
+                    },
+                    "end-date": {
+                        "year": {
+                            "value": "2019"
+                        },
+                        "month": {
+                            "value": "07"
+                        },
+                        "day": null
+                    },
+                    "organization": {
+                        "name": "Federal University of Rio de Janeiro",
+                        "address": {
+                            "city": "Rio de Janeiro",
+                            "region": "Rio de Janeiro RJ",
+                            "country": "BR"
+                        },
+                        "disambiguated-organization": {
+                            "disambiguated-organization-identifier": "grid.8536.8",
+                            "disambiguation-source": "GRID"
+                        }
+                    },
+                    "visibility": "PUBLIC",
+                    "put-code": 7064059,
+                    "path": "/0000-0001-9655-3870/employment/7064059"
                 }
             ],
-            "path": "/0000-0001-9790-9568/employments"
+            "path": "/0000-0001-9655-3870/employments"
         },
         "fundings": {
             "last-modified-date": null,
             "group": [],
-            "path": "/0000-0001-9790-9568/fundings"
+            "path": "/0000-0001-9655-3870/fundings"
         },
         "peer-reviews": {
             "last-modified-date": null,
             "group": [],
-            "path": "/0000-0001-9790-9568/peer-reviews"
+            "path": "/0000-0001-9655-3870/peer-reviews"
         },
         "works": {
             "last-modified-date": {
-                "value": 1648567172621
+                "value": 1629742434244
             },
             "group": [
                 {
                     "last-modified-date": {
-                        "value": 1648567172621
+                        "value": 1622480861080
                     },
                     "external-ids": {
                         "external-id": [
                             {
                                 "external-id-type": "doi",
-                                "external-id-value": "10.31222/osf.io/5r36g",
+                                "external-id-value": "10.1093/immadv/ltaa006",
                                 "external-id-url": {
-                                    "value": "https://doi.org/10.31222/osf.io/5r36g"
+                                    "value": "https://doi.org/10.1093/immadv/ltaa006"
                                 },
                                 "external-id-relationship": "SELF"
                             }
@@ -378,27 +441,27 @@
                     },
                     "work-summary": [
                         {
-                            "put-code": 110523690,
+                            "put-code": 94731150,
                             "created-date": {
-                                "value": 1648567172621
+                                "value": 1622480861080
                             },
                             "last-modified-date": {
-                                "value": 1648567172621
+                                "value": 1622480861080
                             },
                             "source": {
-                                "source-orcid": null,
-                                "source-client-id": {
-                                    "uri": "http://orcid.org/client/0000-0001-9884-1913",
-                                    "path": "0000-0001-9884-1913",
+                                "source-orcid": {
+                                    "uri": "http://orcid.org/0000-0001-9655-3870",
+                                    "path": "0000-0001-9655-3870",
                                     "host": "orcid.org"
                                 },
+                                "source-client-id": null,
                                 "source-name": {
-                                    "value": "Crossref"
+                                    "value": "Hajdu, Karina"
                                 }
                             },
                             "title": {
                                 "title": {
-                                    "value": "A metric of knowledge as information compression reflects reproducibility predictions in biomedical experiments"
+                                    "value": "CAR-T cells leave the comfort zone: current and future applications beyond cancer"
                                 },
                                 "subtitle": null,
                                 "translated-title": null
@@ -407,110 +470,44 @@
                                 "external-id": [
                                     {
                                         "external-id-type": "doi",
-                                        "external-id-value": "10.31222/osf.io/5r36g",
+                                        "external-id-value": "10.1093/immadv/ltaa006",
                                         "external-id-url": {
-                                            "value": "https://doi.org/10.31222/osf.io/5r36g"
+                                            "value": "https://doi.org/10.1093/immadv/ltaa006"
                                         },
                                         "external-id-relationship": "SELF"
-                                    }
-                                ]
-                            },
-                            "type": "OTHER",
-                            "publication-date": {
-                                "year": {
-                                    "value": "2022"
-                                },
-                                "month": {
-                                    "value": "03"
-                                },
-                                "day": {
-                                    "value": "26"
-                                },
-                                "media-type": null
-                            },
-                            "visibility": "PUBLIC",
-                            "path": "/0000-0001-9790-9568/work/110523690",
-                            "display-index": "0"
-                        }
-                    ]
-                },
-                {
-                    "last-modified-date": {
-                        "value": 1614956161328
-                    },
-                    "external-ids": {
-                        "external-id": [
-                            {
-                                "external-id-type": "doi",
-                                "external-id-value": "10.31222/osf.io/jk7sa",
-                                "external-id-url": {
-                                    "value": "https://doi.org/10.31222/osf.io/jk7sa"
-                                },
-                                "external-id-relationship": "SELF"
-                            }
-                        ]
-                    },
-                    "work-summary": [
-                        {
-                            "put-code": 90021034,
-                            "created-date": {
-                                "value": 1614956161328
-                            },
-                            "last-modified-date": {
-                                "value": 1614956161328
-                            },
-                            "source": {
-                                "source-orcid": null,
-                                "source-client-id": {
-                                    "uri": "http://orcid.org/client/0000-0001-9884-1913",
-                                    "path": "0000-0001-9884-1913",
-                                    "host": "orcid.org"
-                                },
-                                "source-name": {
-                                    "value": "Crossref"
-                                }
-                            },
-                            "title": {
-                                "title": {
-                                    "value": "Are Most Published Research Findings False In A Continuous Universe?"
-                                },
-                                "subtitle": null,
-                                "translated-title": null
-                            },
-                            "external-ids": {
-                                "external-id": [
+                                    },
                                     {
-                                        "external-id-type": "doi",
-                                        "external-id-value": "10.31222/osf.io/jk7sa",
+                                        "external-id-type": "issn",
+                                        "external-id-value": "2732-4303",
                                         "external-id-url": {
-                                            "value": "https://doi.org/10.31222/osf.io/jk7sa"
+                                            "value": "https://portal.issn.org/resource/ISSN/2732-4303"
                                         },
-                                        "external-id-relationship": "SELF"
+                                        "external-id-relationship": "PART_OF"
                                     }
                                 ]
                             },
-                            "type": "OTHER",
+                            "type": "JOURNAL_ARTICLE",
                             "publication-date": {
                                 "year": {
                                     "value": "2021"
                                 },
                                 "month": {
-                                    "value": "03"
+                                    "value": "01"
                                 },
                                 "day": {
-                                    "value": "05"
+                                    "value": "01"
                                 },
                                 "media-type": null
                             },
                             "visibility": "PUBLIC",
-                            "path": "/0000-0001-9790-9568/work/90021034",
-                            "display-index": "0"
+                            "path": "/0000-0001-9655-3870/work/94731150",
+                            "display-index": "1"
                         }
                     ]
                 },
                 {
                     "last-modified-date": {
-                        "value": 1610401145848
+                        "value": 1622480887720
                     },
                     "external-ids": {
                         "external-id": [
@@ -526,22 +523,22 @@
                     },
                     "work-summary": [
                         {
-                            "put-code": 86631181,
+                            "put-code": 94731173,
                             "created-date": {
-                                "value": 1610401145848
+                                "value": 1622480887720
                             },
                             "last-modified-date": {
-                                "value": 1610401145848
+                                "value": 1622480887720
                             },
                             "source": {
                                 "source-orcid": {
-                                    "uri": "http://orcid.org/0000-0001-9790-9568",
-                                    "path": "0000-0001-9790-9568",
+                                    "uri": "http://orcid.org/0000-0001-9655-3870",
+                                    "path": "0000-0001-9655-3870",
                                     "host": "orcid.org"
                                 },
                                 "source-client-id": null,
                                 "source-name": {
-                                    "value": "Pedro Batista Tan"
+                                    "value": "Hajdu, Karina"
                                 }
                             },
                             "title": {
@@ -583,22 +580,22 @@
                                 "media-type": null
                             },
                             "visibility": "PUBLIC",
-                            "path": "/0000-0001-9790-9568/work/86631181",
+                            "path": "/0000-0001-9655-3870/work/94731173",
                             "display-index": "1"
                         }
                     ]
                 },
                 {
                     "last-modified-date": {
-                        "value": 1592965002888
+                        "value": 1629742434244
                     },
                     "external-ids": {
                         "external-id": [
                             {
                                 "external-id-type": "doi",
-                                "external-id-value": "10.31222/osf.io/njs6k",
+                                "external-id-value": "10.1111/imcb.12391",
                                 "external-id-url": {
-                                    "value": "https://doi.org/10.31222/osf.io/njs6k"
+                                    "value": "https://doi.org/10.1111/imcb.12391"
                                 },
                                 "external-id-relationship": "SELF"
                             }
@@ -606,175 +603,27 @@
                     },
                     "work-summary": [
                         {
-                            "put-code": 76149455,
+                            "put-code": 94731135,
                             "created-date": {
-                                "value": 1592965002888
+                                "value": 1622480832890
                             },
                             "last-modified-date": {
-                                "value": 1592965002888
-                            },
-                            "source": {
-                                "source-orcid": null,
-                                "source-client-id": {
-                                    "uri": "http://orcid.org/client/0000-0001-9884-1913",
-                                    "path": "0000-0001-9884-1913",
-                                    "host": "orcid.org"
-                                },
-                                "source-name": {
-                                    "value": "Crossref"
-                                }
-                            },
-                            "title": {
-                                "title": {
-                                    "value": "Two years into the Brazilian Reproducibility Initiative: reflections on conducting a large-scale replication of Brazilian biomedical science"
-                                },
-                                "subtitle": null,
-                                "translated-title": null
-                            },
-                            "external-ids": {
-                                "external-id": [
-                                    {
-                                        "external-id-type": "doi",
-                                        "external-id-value": "10.31222/osf.io/njs6k",
-                                        "external-id-url": {
-                                            "value": "https://doi.org/10.31222/osf.io/njs6k"
-                                        },
-                                        "external-id-relationship": "SELF"
-                                    }
-                                ]
-                            },
-                            "type": "OTHER",
-                            "publication-date": {
-                                "year": {
-                                    "value": "2020"
-                                },
-                                "month": {
-                                    "value": "06"
-                                },
-                                "day": {
-                                    "value": "19"
-                                },
-                                "media-type": null
-                            },
-                            "visibility": "PUBLIC",
-                            "path": "/0000-0001-9790-9568/work/76149455",
-                            "display-index": "0"
-                        }
-                    ]
-                },
-                {
-                    "last-modified-date": {
-                        "value": 1621378356706
-                    },
-                    "external-ids": {
-                        "external-id": [
-                            {
-                                "external-id-type": "doi",
-                                "external-id-value": "10.1242/dmm.045807",
-                                "external-id-url": {
-                                    "value": "https://doi.org/10.1242/dmm.045807"
-                                },
-                                "external-id-relationship": "SELF"
-                            }
-                        ]
-                    },
-                    "work-summary": [
-                        {
-                            "put-code": 80025632,
-                            "created-date": {
-                                "value": 1599576155460
-                            },
-                            "last-modified-date": {
-                                "value": 1621378356706
-                            },
-                            "source": {
-                                "source-orcid": null,
-                                "source-client-id": {
-                                    "uri": "http://orcid.org/client/0000-0001-9884-1913",
-                                    "path": "0000-0001-9884-1913",
-                                    "host": "orcid.org"
-                                },
-                                "source-name": {
-                                    "value": "Crossref"
-                                }
-                            },
-                            "title": {
-                                "title": {
-                                    "value": "Progenitor death drives retinal dysplasia and neuronal degeneration in a mouse model of Atrip-Seckel syndrome"
-                                },
-                                "subtitle": null,
-                                "translated-title": null
-                            },
-                            "external-ids": {
-                                "external-id": [
-                                    {
-                                        "external-id-type": "doi",
-                                        "external-id-value": "10.1242/dmm.045807",
-                                        "external-id-url": {
-                                            "value": "https://doi.org/10.1242/dmm.045807"
-                                        },
-                                        "external-id-relationship": "SELF"
-                                    }
-                                ]
-                            },
-                            "type": "JOURNAL_ARTICLE",
-                            "publication-date": {
-                                "year": {
-                                    "value": "2020"
-                                },
-                                "month": {
-                                    "value": "01"
-                                },
-                                "day": {
-                                    "value": "01"
-                                },
-                                "media-type": null
-                            },
-                            "visibility": "PUBLIC",
-                            "path": "/0000-0001-9790-9568/work/80025632",
-                            "display-index": "0"
-                        }
-                    ]
-                },
-                {
-                    "last-modified-date": {
-                        "value": 1610402161483
-                    },
-                    "external-ids": {
-                        "external-id": [
-                            {
-                                "external-id-type": "doi",
-                                "external-id-value": "10.1590/0074-02760200328",
-                                "external-id-url": {
-                                    "value": "https://doi.org/10.1590/0074-02760200328"
-                                },
-                                "external-id-relationship": "SELF"
-                            }
-                        ]
-                    },
-                    "work-summary": [
-                        {
-                            "put-code": 86631973,
-                            "created-date": {
-                                "value": 1610402161483
-                            },
-                            "last-modified-date": {
-                                "value": 1610402161483
+                                "value": 1622480832890
                             },
                             "source": {
                                 "source-orcid": {
-                                    "uri": "http://orcid.org/0000-0001-9790-9568",
-                                    "path": "0000-0001-9790-9568",
+                                    "uri": "http://orcid.org/0000-0001-9655-3870",
+                                    "path": "0000-0001-9655-3870",
                                     "host": "orcid.org"
                                 },
                                 "source-client-id": null,
                                 "source-name": {
-                                    "value": "Pedro Batista Tan"
+                                    "value": "Hajdu, Karina"
                                 }
                             },
                             "title": {
                                 "title": {
-                                    "value": "Two years into the Brazilian Reproducibility Initiative: reflections on conducting a large-scale replication of Brazilian biomedical science"
+                                    "value": "Senolytic chimeric antigen receptor (CAR) T cell: driving the immune system to fight cell senescence"
                                 },
                                 "subtitle": null,
                                 "translated-title": null
@@ -783,25 +632,25 @@
                                 "external-id": [
                                     {
                                         "external-id-type": "doi",
-                                        "external-id-value": "10.1590/0074-02760200328",
+                                        "external-id-value": "10.1111/imcb.12391",
                                         "external-id-url": {
-                                            "value": "https://doi.org/10.1590/0074-02760200328"
+                                            "value": "https://doi.org/10.1111/imcb.12391"
                                         },
                                         "external-id-relationship": "SELF"
                                     },
                                     {
                                         "external-id-type": "issn",
-                                        "external-id-value": "1678-8060",
+                                        "external-id-value": "0818-9641",
                                         "external-id-url": {
-                                            "value": "https://portal.issn.org/resource/ISSN/1678-8060"
+                                            "value": "https://portal.issn.org/resource/ISSN/0818-9641"
                                         },
                                         "external-id-relationship": "PART_OF"
                                     },
                                     {
                                         "external-id-type": "issn",
-                                        "external-id-value": "0074-0276",
+                                        "external-id-value": "1440-1711",
                                         "external-id-url": {
-                                            "value": "https://portal.issn.org/resource/ISSN/0074-0276"
+                                            "value": "https://portal.issn.org/resource/ISSN/1440-1711"
                                         },
                                         "external-id-relationship": "PART_OF"
                                     }
@@ -812,55 +661,38 @@
                                 "year": {
                                     "value": "2020"
                                 },
-                                "month": null,
+                                "month": {
+                                    "value": "10"
+                                },
                                 "day": null,
                                 "media-type": null
                             },
                             "visibility": "PUBLIC",
-                            "path": "/0000-0001-9790-9568/work/86631973",
+                            "path": "/0000-0001-9655-3870/work/94731135",
                             "display-index": "1"
-                        }
-                    ]
-                },
-                {
-                    "last-modified-date": {
-                        "value": 1600190910788
-                    },
-                    "external-ids": {
-                        "external-id": [
-                            {
-                                "external-id-type": "doi",
-                                "external-id-value": "10.1101/581892",
-                                "external-id-url": {
-                                    "value": "https://doi.org/10.1101/581892"
-                                },
-                                "external-id-relationship": "SELF"
-                            }
-                        ]
-                    },
-                    "work-summary": [
+                        },
                         {
-                            "put-code": 80384803,
+                            "put-code": 98844445,
                             "created-date": {
-                                "value": 1600190849646
+                                "value": 1629742434244
                             },
                             "last-modified-date": {
-                                "value": 1600190910788
+                                "value": 1629742434244
                             },
                             "source": {
-                                "source-orcid": {
-                                    "uri": "http://orcid.org/0000-0001-9790-9568",
-                                    "path": "0000-0001-9790-9568",
+                                "source-orcid": null,
+                                "source-client-id": {
+                                    "uri": "http://orcid.org/client/0000-0001-9884-1913",
+                                    "path": "0000-0001-9884-1913",
                                     "host": "orcid.org"
                                 },
-                                "source-client-id": null,
                                 "source-name": {
-                                    "value": "Pedro Batista Tan"
+                                    "value": "Crossref"
                                 }
                             },
                             "title": {
                                 "title": {
-                                    "value": "Comparing quality of reporting between preprints and peer-reviewed articles in the biomedical literature"
+                                    "value": "Senolytic chimeric antigen receptor (CAR) T cell: driving the immune system to fight cell senescence"
                                 },
                                 "subtitle": null,
                                 "translated-title": null
@@ -869,37 +701,109 @@
                                 "external-id": [
                                     {
                                         "external-id-type": "doi",
-                                        "external-id-value": "10.1101/581892",
+                                        "external-id-value": "10.1111/imcb.12391",
                                         "external-id-url": {
-                                            "value": "https://doi.org/10.1101/581892"
+                                            "value": "https://doi.org/10.1111/imcb.12391"
                                         },
                                         "external-id-relationship": "SELF"
                                     }
                                 ]
                             },
-                            "type": "OTHER",
+                            "type": "JOURNAL_ARTICLE",
                             "publication-date": {
                                 "year": {
-                                    "value": "2019"
+                                    "value": "2020"
                                 },
                                 "month": {
-                                    "value": "03"
+                                    "value": "10"
+                                },
+                                "day": null,
+                                "media-type": null
+                            },
+                            "visibility": "PUBLIC",
+                            "path": "/0000-0001-9655-3870/work/98844445",
+                            "display-index": "0"
+                        }
+                    ]
+                },
+                {
+                    "last-modified-date": {
+                        "value": 1546792943446
+                    },
+                    "external-ids": {
+                        "external-id": [
+                            {
+                                "external-id-type": "doi",
+                                "external-id-value": "https://doi.org/10.2217/fon-2018-0339",
+                                "external-id-url": {
+                                    "value": "https://doi.org/10.2217/fon-2018-0339"
+                                },
+                                "external-id-relationship": "SELF"
+                            }
+                        ]
+                    },
+                    "work-summary": [
+                        {
+                            "put-code": 52285599,
+                            "created-date": {
+                                "value": 1546792943446
+                            },
+                            "last-modified-date": {
+                                "value": 1546792943446
+                            },
+                            "source": {
+                                "source-orcid": {
+                                    "uri": "http://orcid.org/0000-0001-9655-3870",
+                                    "path": "0000-0001-9655-3870",
+                                    "host": "orcid.org"
+                                },
+                                "source-client-id": null,
+                                "source-name": {
+                                    "value": "Hajdu, Karina"
+                                }
+                            },
+                            "title": {
+                                "title": {
+                                    "value": "Could combinations of new and old drugs enhance tumor cell death?"
+                                },
+                                "subtitle": null,
+                                "translated-title": null
+                            },
+                            "external-ids": {
+                                "external-id": [
+                                    {
+                                        "external-id-type": "doi",
+                                        "external-id-value": "https://doi.org/10.2217/fon-2018-0339",
+                                        "external-id-url": {
+                                            "value": "https://doi.org/10.2217/fon-2018-0339"
+                                        },
+                                        "external-id-relationship": "SELF"
+                                    }
+                                ]
+                            },
+                            "type": "JOURNAL_ARTICLE",
+                            "publication-date": {
+                                "year": {
+                                    "value": "2018"
+                                },
+                                "month": {
+                                    "value": "08"
                                 },
                                 "day": {
-                                    "value": "22"
+                                    "value": "24"
                                 },
                                 "media-type": null
                             },
                             "visibility": "PUBLIC",
-                            "path": "/0000-0001-9790-9568/work/80384803",
+                            "path": "/0000-0001-9655-3870/work/52285599",
                             "display-index": "1"
                         }
                     ]
                 }
             ],
-            "path": "/0000-0001-9790-9568/works"
+            "path": "/0000-0001-9655-3870/works"
         },
-        "path": "/0000-0001-9790-9568/activities"
+        "path": "/0000-0001-9655-3870/activities"
     },
-    "path": "/0000-0001-9790-9568"
+    "path": "/0000-0001-9655-3870"
 }
