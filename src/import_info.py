@@ -59,13 +59,14 @@ qs = process_item(
     qs, property_id, original_dict=key, target_list=target_list, subject_qid=s, ref=ref
 )
 
-qs = process_education_entries(qs,subject_qid=s, ref=ref,education_entries=education_entries,property_id="P69")
+qs = process_education_entries(
+    qs, subject_qid=s, ref=ref, education_entries=education_entries, property_id="P69"
+)
 clipboard.copy(qs)
 print(qs)
 
 
-quoted_qs = quote(qs.replace('\t', '|').replace('\n', '||'), safe="")
+quoted_qs = quote(qs.replace("\t", "|").replace("\n", "||"), safe="")
 url = f"https://quickstatements.toolforge.org/#/v1={quoted_qs}\\"
 
 print(url)
-
