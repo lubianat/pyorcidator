@@ -6,26 +6,25 @@ import re
 from dataclasses import dataclass
 
 
-
 @dataclass
 class EducationEntry:
     """Class for capturing the info for an education entry on ORCID."""
+
     institution: str
     degree: str
     start_date: str = None
     end_date: str = None
 
+
 def add_key(dictionary, string):
     clipboard.copy(string)
 
     predicted_id = search_wikidata(string)
-
     annotated = False
 
     while annotated == False:
-
         answer = input(
-            f"Is the QID for '{string}' {predicted_id['id']}"
+            f"Is the QID for '{string}' {predicted_id['id']} ({predicted_id['label']})"
             f" ({predicted_id['url']}) ? (y/n) "
         )
 
@@ -57,9 +56,12 @@ def process_item(
             qid = target_item
         else:
             qid = get_qid_for_item(original_dict, target_item)
-        qs = qs + f"""
+        qs = (
+            qs
+            + f"""
         {subject_qid}|{property_id}|{qid}"""
-       
+        )
+
         if qualifier_nested_dictionary != {}:
             qualifier_pairs = qualifier_nested_dictionary[target_item]
 
@@ -116,9 +118,8 @@ def get_organization_list(data):
     return organization_list
 
 
-
-def get_date(entry, start_or_end ="start"):
-    date =  entry[f"{start_or_end}-date"]
+def get_date(entry, start_or_end="start"):
+    date = entry[f"{start_or_end}-date"]
     year = date["year"]["value"]
     month = date["month"]["value"]
     day = date["day"]["value"]
@@ -138,7 +139,6 @@ def get_education_info(data):
         start_date = get_date(a, "start")
         end_date = get_date(a, "end")
 
-
         a = a["organization"]
         name = a["name"]
         if a["disambiguated-organization"]["disambiguation-source"] == "GRID":
@@ -150,8 +150,12 @@ def get_education_info(data):
         else:
             institution_qid = get_qid_for_item("institutions", name)
 
-        
-        entry = EducationEntry(degree=degree_qid, institution =institution_qid, start_date=start_date, end_date=end_date )
+        entry = EducationEntry(
+            degree=degree_qid,
+            institution=institution_qid,
+            start_date=start_date,
+            end_date=end_date,
+        )
 
         organization_list.append(entry)
 
@@ -159,16 +163,15 @@ def get_education_info(data):
 
 
 def process_education_entries(
-    qs,
-    subject_qid,
-    ref,
-    education_entries,
-        property_id="P69"
+    qs, subject_qid, ref, education_entries, property_id="P69"
 ):
 
-    # Quickstatements fails in the case of same institution for multliple degrees. 
+    # Quickstatements fails in the case of same institution for multliple degrees.
     # See https://www.wikidata.org/wiki/Help:QuickStatements#Limitation
-    for entry in education_entries:      
-        qs = qs + f"""
+    for entry in education_entries:
+        qs = (
+            qs
+            + f"""
         {subject_qid}|{property_id}|{entry.institution}|P512|{entry.degree}|P580|"{entry.start_date}"|P582|"{entry.end_date}"{ref}"""
+        )
     return qs

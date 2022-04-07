@@ -36,7 +36,6 @@ s = lookup_id(orcid, property="P496", default="LAST")
 
 ref = f'|S854|"https://orcid.org/{str(orcid)}"'
 
-
 if s == "LAST":
     qs = "CREATE"
 else:
@@ -62,11 +61,9 @@ qs = process_item(
 qs = process_education_entries(
     qs, subject_qid=s, ref=ref, education_entries=education_entries, property_id="P69"
 )
-clipboard.copy(qs)
-print(qs)
-
 
 quoted_qs = quote(qs.replace("\t", "|").replace("\n", "||"), safe="")
 url = f"https://quickstatements.toolforge.org/#/v1={quoted_qs}\\"
 
+print(qs)
 print(url)

@@ -2,6 +2,9 @@ import requests
 
 
 def search_wikidata(search_term):
+    """
+    Looks up string for institution on Wikidata
+    """
 
     base_url = "https://www.wikidata.org/w/api.php"
     payload = {
