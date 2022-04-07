@@ -1,13 +1,7 @@
 {
-<<<<<<< HEAD
-    "Bachelor Degree in Pharmacy": "Q4838816",
-    "Master": "Q183816",
-    "Master's Degree in Science": "Q183816",
-    "Ph.D. in Sciences": "Q4618975",
-    "PhD": "Q849697"
-}
-=======
+  "Bachelor Degree in Pharmacy": "Q4838816",
   "Master": "Q183816",
+  "Master's Degree in Science": "Q183816",
+  "Ph.D. in Sciences": "Q4618975",
   "PhD": "Q849697"
 }
->>>>>>> 6ec456c6b12ddb1e1bc22d4d70009620079f52f1
