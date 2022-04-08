@@ -1,7 +1,7 @@
 import clipboard
-from dictionaries.all import *
+from .dictionaries.all import dicts
 from SPARQLWrapper import SPARQLWrapper, JSON
-from wikidata_lookup import search_wikidata
+from .wikidata_lookup import search_wikidata
 import re
 from dataclasses import dataclass
 from pathlib import Path
@@ -181,7 +181,11 @@ def get_education_info(data):
 
         a = a["organization"]
         name = a["name"]
-        if a["disambiguated-organization"]["disambiguation-source"] == "GRID":
+        if (
+            a["disambiguated-organization"]
+            and "disambiguation-source" in a["disambiguated-organization"]
+            and a["disambiguated-organization"].get("disambiguation-source") == "GRID"
+        ):
             grid = a["disambiguated-organization"][
                 "disambiguated-organization-identifier"
             ]
