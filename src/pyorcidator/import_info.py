@@ -1,7 +1,7 @@
+import webbrowser
 from urllib.parse import quote
 
 import click
-import requests
 
 from .helper import *
 
@@ -13,7 +13,7 @@ from .helper import *
     is_flag=True,
     help="Automatically open browser with QuickStatements",
 )
-def main(orcid: str):
+def main(orcid: str, open_browser: bool):
     qs = render_orcid_qs(orcid)
     quoted_qs = quote(qs.replace("\t", "|").replace("\n", "||"), safe="")
     url = f"https://quickstatements.toolforge.org/#/v1={quoted_qs}\\"

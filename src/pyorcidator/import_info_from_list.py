@@ -1,7 +1,9 @@
-from .helper import *
-from urllib.parse import quote
-import click
 from pathlib import Path
+from urllib.parse import quote
+
+import click
+
+from .helper import *
 
 
 @click.command(name="import_list")

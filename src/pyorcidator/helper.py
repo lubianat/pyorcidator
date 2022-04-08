@@ -1,15 +1,16 @@
-import clipboard
-from .dictionaries.all import dicts
-from SPARQLWrapper import SPARQLWrapper, JSON
-from .wikidata_lookup import search_wikidata
-import re
-from dataclasses import dataclass
-from pathlib import Path
 import json
 import os
+import re
 import sys
+from dataclasses import dataclass
+from pathlib import Path
+
+import clipboard
 import requests
-import json
+from SPARQLWrapper import JSON, SPARQLWrapper
+
+from .dictionaries.all import dicts
+from .wikidata_lookup import search_wikidata
 
 HERE = Path(__file__).parent.resolve()
 DICTIONARIES_PATH = HERE.joinpath("dictionaries")
@@ -118,7 +119,7 @@ def add_key(dictionary, string):
             dictionary[string] = predicted_id["id"]
             annotated = True
         elif answer == "n":
-            qid = input(f"What is the qid for: '{string}' ? ")
+            qid = input(f"What is the QID for: '{string}' ? ")
             dictionary[string] = qid
             annotated = True
         else:
@@ -205,9 +206,7 @@ def get_organization_list(data):
         if a["disambiguated-organization"] is None:
             continue
         if a["disambiguated-organization"]["disambiguation-source"] == "GRID":
-            grid = a["disambiguated-organization"][
-                "disambiguated-organization-identifier"
-            ]
+            grid = a["disambiguated-organization"]["disambiguated-organization-identifier"]
             id = lookup_id(grid, "P2427", name)
             name = id
         organization_list.append(name)
@@ -256,9 +255,7 @@ def get_education_info(data):
             and "disambiguation-source" in a["disambiguated-organization"]
             and a["disambiguated-organization"].get("disambiguation-source") == "GRID"
         ):
-            grid = a["disambiguated-organization"][
-                "disambiguated-organization-identifier"
-            ]
+            grid = a["disambiguated-organization"]["disambiguated-organization-identifier"]
 
             institution_qid = lookup_id(grid, "P2427", name)
         else:
@@ -276,9 +273,7 @@ def get_education_info(data):
     return organization_list
 
 
-def process_education_entries(
-    qs, subject_qid, ref, education_entries, property_id="P69"
-):
+def process_education_entries(qs, subject_qid, ref, education_entries, property_id="P69"):
 
     # Quickstatements fails in the case of same institution for multliple degrees.
     # See https://www.wikidata.org/wiki/Help:QuickStatements#Limitation
