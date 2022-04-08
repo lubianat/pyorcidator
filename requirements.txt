@@ -1,3 +1,0 @@
-clipboard==0.0.4
-requests==2.27.1
-SPARQLWrapper==2.0.0

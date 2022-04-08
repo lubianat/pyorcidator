@@ -1,9 +1,14 @@
 import clipboard
-from dictionaries.all import *
+from .dictionaries.all import dicts
 from SPARQLWrapper import SPARQLWrapper, JSON
-from wikidata_lookup import search_wikidata
+from .wikidata_lookup import search_wikidata
 import re
 from dataclasses import dataclass
+from pathlib import Path
+import json
+
+HERE = Path(__file__).parent.resolve()
+DEGREE_PATH = HERE.joinpath("dictionaries", "degree.json")
 
 
 @dataclass
@@ -49,7 +54,7 @@ def add_key(dictionary, string):
         else:
             print("Answer must be either 'y' or 'n'")
 
-    return
+    return dictionary
 
 
 def process_item(
@@ -90,7 +95,7 @@ def get_qid_for_item(original_dict_name, target_item):
     """
     if target_item not in dicts[original_dict_name]:
         add_key(dicts[original_dict_name], target_item)
-        with open(f"src/dictionaries/{original_dict_name}.json", "w+") as f:
+        with DEGREE_PATH.open("w") as f:
             f.write(json.dumps(dicts[original_dict_name], indent=4, sort_keys=True))
 
     qid = dicts[original_dict_name][target_item]
@@ -176,7 +181,11 @@ def get_education_info(data):
 
         a = a["organization"]
         name = a["name"]
-        if a["disambiguated-organization"]["disambiguation-source"] == "GRID":
+        if (
+            a["disambiguated-organization"]
+            and "disambiguation-source" in a["disambiguated-organization"]
+            and a["disambiguated-organization"].get("disambiguation-source") == "GRID"
+        ):
             grid = a["disambiguated-organization"][
                 "disambiguated-organization-identifier"
             ]
