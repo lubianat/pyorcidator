@@ -17,8 +17,18 @@ class EducationEntry:
 
 
 def add_key(dictionary, string):
-    clipboard.copy(string)
+    """
+    Prompts the user for adding a key to the target dictionary.
 
+    Args:
+        dictionary (dict): A reference dictionary containing strings as keys and Wikidata QIDs as values.
+        string (str): A new key to add to the dictionary.
+
+    Returns:
+        dict: The updated dictionary.
+    """
+
+    clipboard.copy(string)
     predicted_id = search_wikidata(string)
     annotated = False
 
@@ -74,6 +84,10 @@ def process_item(
 
 
 def get_qid_for_item(original_dict_name, target_item):
+    """
+    Looks up a qid in a global dict of dicts.
+    If it is not present, it lets the user update the dict.
+    """
     if target_item not in dicts[original_dict_name]:
         add_key(dicts[original_dict_name], target_item)
         with open(f"src/dictionaries/{original_dict_name}.json", "w+") as f:
@@ -84,6 +98,10 @@ def get_qid_for_item(original_dict_name, target_item):
 
 
 def lookup_id(id, property, default):
+    """
+    Looks up a foreign ID on Wikidata based on its specific property.
+    """
+
     sparql = SPARQLWrapper("https://query.wikidata.org/sparql")
     query = f"""
     SELECT ?item ?itemLabel
