@@ -9,7 +9,6 @@ def main(orcid: str):
     qs = render_orcid_qs(orcid)
     quoted_qs = quote(qs.replace("\t", "|").replace("\n", "||"), safe="")
     url = f"https://quickstatements.toolforge.org/#/v1={quoted_qs}\\"
-
     print(qs)
     print(url)
 
