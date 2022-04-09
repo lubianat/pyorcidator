@@ -8,7 +8,8 @@ from pathlib import Path
 import json
 
 HERE = Path(__file__).parent.resolve()
-DEGREE_PATH = HERE.joinpath("dictionaries", "degree.json")
+DICTIONARIES_PATH = HERE.joinpath("dictionaries")
+DEGREE_PATH = DICTIONARIES_PATH.joinpath("degree.json")
 
 
 @dataclass
@@ -95,7 +96,7 @@ def get_qid_for_item(original_dict_name, target_item):
     """
     if target_item not in dicts[original_dict_name]:
         add_key(dicts[original_dict_name], target_item)
-        with DEGREE_PATH.open("w") as f:
+        with DICTIONARIES_PATH.joinpath(f"{original_dict_name}.json").open("w") as f:
             f.write(json.dumps(dicts[original_dict_name], indent=4, sort_keys=True))
 
     qid = dicts[original_dict_name][target_item]
