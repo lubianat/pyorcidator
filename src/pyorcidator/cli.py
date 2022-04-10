@@ -9,7 +9,6 @@ def cli():
 
 
 cli.add_command(import_info.main)
-cli.add_command(import_info_from_list.main)
 
 if __name__ == "__main__":
     cli()

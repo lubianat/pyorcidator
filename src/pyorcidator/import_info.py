@@ -2,6 +2,7 @@ import webbrowser
 from urllib.parse import quote
 
 import click
+from pathlib import Path
 
 from .helper import *
 
