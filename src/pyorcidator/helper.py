@@ -2,9 +2,12 @@ import json
 import os
 import re
 import sys
+import webbrowser
 from dataclasses import dataclass
 from pathlib import Path
+from urllib.parse import quote
 
+import click
 import clipboard
 import requests
 from SPARQLWrapper import JSON, SPARQLWrapper
@@ -80,6 +83,15 @@ def render_orcid_qs(orcid):
     )
 
     return qs
+
+
+def create_qs_url(qs: str, open_browser: str) -> None:
+    quoted_qs = quote(qs.replace("\t", "|").replace("\n", "||"), safe="")
+    url = f"https://quickstatements.toolforge.org/#/v1={quoted_qs}\\"
+    click.echo(qs)
+    click.echo(url)
+    if open_browser:
+        webbrowser.open_new_tab(url)
 
 
 @dataclass

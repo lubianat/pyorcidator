@@ -1,8 +1,4 @@
-import webbrowser
-from urllib.parse import quote
-
 import click
-from pathlib import Path
 
 from .helper import *
 
@@ -16,12 +12,7 @@ from .helper import *
 )
 def main(orcid: str, open_browser: bool):
     qs = render_orcid_qs(orcid)
-    quoted_qs = quote(qs.replace("\t", "|").replace("\n", "||"), safe="")
-    url = f"https://quickstatements.toolforge.org/#/v1={quoted_qs}\\"
-    print(qs)
-    print(url)
-    if open_browser:
-        webbrowser.open_new_tab(url)
+    create_qs_url(qs, open_browser)
 
 
 if __name__ == "__main__":
