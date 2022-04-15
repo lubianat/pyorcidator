@@ -4,9 +4,15 @@ from . import import_info, import_info_from_list
 
 
 @click.group()
-def cli():
+@click.option(
+    "--open-browser",
+    is_flag=True,
+    help="Automatically open browser with QuickStatements",
+)
+@click.pass_context
+def cli(ctx: click.Context, open_browser: bool):
     """PyORCIDator."""
-    pass
+    ctx.obj = {"open_browser": open_browser}
 
 
 cli.add_command(import_info.main)

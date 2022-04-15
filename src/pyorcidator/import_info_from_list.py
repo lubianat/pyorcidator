@@ -12,17 +12,13 @@ from .helper import *
     type=click.Path(exists=True, readable=True, path_type=Path),
     help="The path for a txt file containing one ORCID per line",
 )
-@click.option(
-    "--open-browser",
-    is_flag=True,
-    help="Automatically open browser with QuickStatements",
-)
-def main(orcid_list: str, open_browser: bool):
+@click.pass_context
+def main(ctx: click.Context, orcid_list: str):
     list_of_orcids = orcid_list.read_text().split("\n")
     qs = ""
     for orcid in list_of_orcids:
         qs = qs + render_orcid_qs(orcid)
-    create_qs_url(qs, open_browser)
+    create_qs_url(qs, ctx.obj["open_browser"])
 
 
 if __name__ == "__main__":
