@@ -8,6 +8,7 @@ from pathlib import Path
 import clipboard
 import requests
 from SPARQLWrapper import JSON, SPARQLWrapper
+from wdcuration import add_key
 
 from .dictionaries.all import dicts
 from .wikidata_lookup import search_wikidata
@@ -90,42 +91,6 @@ class EducationEntry:
     degree: str
     start_date: str = None
     end_date: str = None
-
-
-def add_key(dictionary, string):
-    """
-    Prompts the user for adding a key to the target dictionary.
-
-    Args:
-        dictionary (dict): A reference dictionary containing strings as keys and Wikidata QIDs as values.
-        string (str): A new key to add to the dictionary.
-
-    Returns:
-        dict: The updated dictionary.
-    """
-
-    clipboard.copy(string)
-    predicted_id = search_wikidata(string)
-    annotated = False
-
-    while annotated == False:
-        answer = input(
-            f"Is the QID for '{string}'  \n "
-            f"{predicted_id['id']} - {predicted_id['label']} "
-            f"({predicted_id['description']}) ? (y/n) "
-        )
-
-        if answer == "y":
-            dictionary[string] = predicted_id["id"]
-            annotated = True
-        elif answer == "n":
-            qid = input(f"What is the QID for: '{string}' ? ")
-            dictionary[string] = qid
-            annotated = True
-        else:
-            print("Answer must be either 'y' or 'n'")
-
-    return dictionary
 
 
 def process_item(
