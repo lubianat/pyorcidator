@@ -143,7 +143,10 @@ def lookup_id(id, property, default):
     Looks up a foreign ID on Wikidata based on its specific property.
     """
 
-    sparql = SPARQLWrapper("https://query.wikidata.org/sparql")
+    sparql = SPARQLWrapper(
+        "https://query.wikidata.org/sparql",
+        agent="PyORCIDator (https://github.com/lubianat/pyorcidator)",
+    )
     query = f"""
     SELECT ?item ?itemLabel
     WHERE
