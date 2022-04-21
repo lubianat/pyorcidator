@@ -1,20 +1,20 @@
 {
     "orcid-identifier": {
-        "uri": "http://orcid.org/0000-0001-7513-7376",
-        "path": "0000-0001-7513-7376",
+        "uri": "http://orcid.org/0000-0002-4700-1671",
+        "path": "0000-0002-4700-1671",
         "host": "orcid.org"
     },
     "preferences": {
         "locale": "EN"
     },
     "history": {
-        "creation-method": "DIRECT",
+        "creation-method": "MEMBER_REFERRED",
         "completion-date": null,
         "submission-date": {
-            "value": 1573125577197
+            "value": 1553463014644
         },
         "last-modified-date": {
-            "value": 1647367165841
+            "value": 1648085343198
         },
         "claimed": true,
         "source": null,
@@ -24,119 +24,63 @@
     },
     "person": {
         "last-modified-date": {
-            "value": 1644941537325
+            "value": 1619628654481
         },
         "name": {
             "created-date": {
-                "value": 1573125577432
+                "value": 1553463014644
             },
             "last-modified-date": {
-                "value": 1573125728427
+                "value": 1647551117847
             },
             "given-names": {
-                "value": "Jo\u00e3o Vitor"
+                "value": "Ana Paula"
             },
             "family-name": {
-                "value": "Ferreira Cavalcante"
+                "value": "Barbosa Nascimento de Oliveira"
             },
             "credit-name": null,
             "source": null,
             "visibility": "PUBLIC",
-            "path": "0000-0001-7513-7376"
+            "path": "0000-0002-4700-1671"
         },
         "other-names": {
-            "last-modified-date": {
-                "value": 1630842132581
-            },
-            "other-name": [
-                {
-                    "created-date": {
-                        "value": 1630842132581
-                    },
-                    "last-modified-date": {
-                        "value": 1630842132581
-                    },
-                    "source": {
-                        "source-orcid": {
-                            "uri": "http://orcid.org/0000-0001-7513-7376",
-                            "path": "0000-0001-7513-7376",
-                            "host": "orcid.org"
-                        },
-                        "source-client-id": null,
-                        "source-name": {
-                            "value": "Jo\u00e3o Vitor Ferreira Cavalcante"
-                        }
-                    },
-                    "content": "Jo\u00e3o Vitor F. Cavalcante",
-                    "visibility": "PUBLIC",
-                    "path": "/0000-0001-7513-7376/other-names/1660495",
-                    "put-code": 1660495,
-                    "display-index": 1
-                }
-            ],
-            "path": "/0000-0001-7513-7376/other-names"
+            "last-modified-date": null,
+            "other-name": [],
+            "path": "/0000-0002-4700-1671/other-names"
         },
         "biography": null,
         "researcher-urls": {
             "last-modified-date": null,
             "researcher-url": [],
-            "path": "/0000-0001-7513-7376/researcher-urls"
+            "path": "/0000-0002-4700-1671/researcher-urls"
         },
         "emails": {
             "last-modified-date": null,
             "email": [],
-            "path": "/0000-0001-7513-7376/email"
+            "path": "/0000-0002-4700-1671/email"
         },
         "addresses": {
-            "last-modified-date": {
-                "value": 1584827368816
-            },
-            "address": [
-                {
-                    "created-date": {
-                        "value": 1584827368816
-                    },
-                    "last-modified-date": {
-                        "value": 1584827368816
-                    },
-                    "source": {
-                        "source-orcid": {
-                            "uri": "http://orcid.org/0000-0001-7513-7376",
-                            "path": "0000-0001-7513-7376",
-                            "host": "orcid.org"
-                        },
-                        "source-client-id": null,
-                        "source-name": {
-                            "value": "Jo\u00e3o Vitor Ferreira Cavalcante"
-                        }
-                    },
-                    "country": {
-                        "value": "BR"
-                    },
-                    "visibility": "PUBLIC",
-                    "path": "/0000-0001-7513-7376/address/1563995",
-                    "put-code": 1563995,
-                    "display-index": 1
-                }
-            ],
-            "path": "/0000-0001-7513-7376/address"
+            "last-modified-date": null,
+            "address": [],
+            "path": "/0000-0002-4700-1671/address"
         },
         "keywords": {
             "last-modified-date": null,
             "keyword": [],
-            "path": "/0000-0001-7513-7376/keywords"
+            "path": "/0000-0002-4700-1671/keywords"
         },
         "external-identifiers": {
             "last-modified-date": {
-                "value": 1644941537325
+                "value": 1619628654481
             },
             "external-identifier": [
                 {
                     "created-date": {
-                        "value": 1644941537325
+                        "value": 1619628654481
                     },
                     "last-modified-date": {
-                        "value": 1644941537325
+                        "value": 1619628654481
                     },
                     "source": {
                         "source-orcid": null,
@@ -150,507 +94,1161 @@
                         }
                     },
                     "external-id-type": "Loop profile",
-                    "external-id-value": "1651810",
+                    "external-id-value": "380102",
                     "external-id-url": {
-                        "value": "http://loop.frontiersin.org/people/1651810/overview?referrer=orcid_profile"
+                        "value": "http://loop.frontiersin.org/people/380102/overview?referrer=orcid_profile"
                     },
                     "external-id-relationship": "SELF",
                     "visibility": "PUBLIC",
-                    "path": "/0000-0001-7513-7376/external-identifiers/2361374",
-                    "put-code": 2361374,
+                    "path": "/0000-0002-4700-1671/external-identifiers/2059104",
+                    "put-code": 2059104,
                     "display-index": 0
                 }
             ],
-            "path": "/0000-0001-7513-7376/external-identifiers"
+            "path": "/0000-0002-4700-1671/external-identifiers"
         },
-        "path": "/0000-0001-7513-7376/person"
+        "path": "/0000-0002-4700-1671/person"
     },
     "activities-summary": {
         "last-modified-date": {
-            "value": 1647367165843
+            "value": 1647551077375
         },
         "educations": {
             "last-modified-date": {
-                "value": 1630841944738
+                "value": 1647548898941
             },
             "education-summary": [
                 {
                     "created-date": {
-                        "value": 1584827256778
+                        "value": 1647547399569
                     },
                     "last-modified-date": {
-                        "value": 1630841944738
+                        "value": 1647548898941
                     },
                     "source": {
                         "source-orcid": {
-                            "uri": "http://orcid.org/0000-0001-7513-7376",
-                            "path": "0000-0001-7513-7376",
+                            "uri": "http://orcid.org/0000-0002-4700-1671",
+                            "path": "0000-0002-4700-1671",
                             "host": "orcid.org"
                         },
                         "source-client-id": null,
                         "source-name": {
-                            "value": "Jo\u00e3o Vitor Ferreira Cavalcante"
+                            "value": "Ana Paula Barbosa Nascimento de Oliveira"
                         }
                     },
-                    "department-name": "Bioinformatics Multidisciplinary Enviroment",
-                    "role-title": "Biomedical Sciences",
+                    "department-name": "Biochemistry",
+                    "role-title": null,
                     "start-date": {
                         "year": {
-                            "value": "2018"
+                            "value": "2008"
                         },
                         "month": {
                             "value": "02"
                         },
-                        "day": {
-                            "value": "04"
-                        }
+                        "day": null
                     },
-                    "end-date": null,
+                    "end-date": {
+                        "year": {
+                            "value": "2014"
+                        },
+                        "month": {
+                            "value": "06"
+                        },
+                        "day": null
+                    },
                     "organization": {
-                        "name": "Universidade Federal do Rio Grande do Norte",
+                        "name": "Universidade de S\u00e3o Paulo",
                         "address": {
-                            "city": "Natal",
-                            "region": "RN",
+                            "city": "Sao Paulo",
+                            "region": "S\u00e3o Paulo",
                             "country": "BR"
                         },
                         "disambiguated-organization": {
-                            "disambiguated-organization-identifier": "28123",
+                            "disambiguated-organization-identifier": "28133",
                             "disambiguation-source": "RINGGOLD"
                         }
                     },
                     "visibility": "PUBLIC",
-                    "put-code": 10095211,
-                    "path": "/0000-0001-7513-7376/education/10095211"
+                    "put-code": 17256864,
+                    "path": "/0000-0002-4700-1671/education/17256864"
                 }
             ],
-            "path": "/0000-0001-7513-7376/educations"
+            "path": "/0000-0002-4700-1671/educations"
         },
         "employments": {
-            "last-modified-date": null,
-            "employment-summary": [],
-            "path": "/0000-0001-7513-7376/employments"
+            "last-modified-date": {
+                "value": 1647548879924
+            },
+            "employment-summary": [
+                {
+                    "created-date": {
+                        "value": 1647548864630
+                    },
+                    "last-modified-date": {
+                        "value": 1647548879924
+                    },
+                    "source": {
+                        "source-orcid": {
+                            "uri": "http://orcid.org/0000-0002-4700-1671",
+                            "path": "0000-0002-4700-1671",
+                            "host": "orcid.org"
+                        },
+                        "source-client-id": null,
+                        "source-name": {
+                            "value": "Ana Paula Barbosa Nascimento de Oliveira"
+                        }
+                    },
+                    "department-name": "Clinical and Toxicological Analyses",
+                    "role-title": "Postdoctoral Researcher",
+                    "start-date": {
+                        "year": {
+                            "value": "2021"
+                        },
+                        "month": {
+                            "value": "09"
+                        },
+                        "day": null
+                    },
+                    "end-date": null,
+                    "organization": {
+                        "name": "Universidade de S\u00e3o Paulo",
+                        "address": {
+                            "city": "Sao Paulo",
+                            "region": "S\u00e3o Paulo",
+                            "country": "BR"
+                        },
+                        "disambiguated-organization": {
+                            "disambiguated-organization-identifier": "28133",
+                            "disambiguation-source": "RINGGOLD"
+                        }
+                    },
+                    "visibility": "PUBLIC",
+                    "put-code": 17256987,
+                    "path": "/0000-0002-4700-1671/employment/17256987"
+                },
+                {
+                    "created-date": {
+                        "value": 1647548583814
+                    },
+                    "last-modified-date": {
+                        "value": 1647548583814
+                    },
+                    "source": {
+                        "source-orcid": {
+                            "uri": "http://orcid.org/0000-0002-4700-1671",
+                            "path": "0000-0002-4700-1671",
+                            "host": "orcid.org"
+                        },
+                        "source-client-id": null,
+                        "source-name": {
+                            "value": "Ana Paula Barbosa Nascimento de Oliveira"
+                        }
+                    },
+                    "department-name": "Systems and Computational Biology",
+                    "role-title": "Postdoctoral Researcher",
+                    "start-date": {
+                        "year": {
+                            "value": "2019"
+                        },
+                        "month": {
+                            "value": "03"
+                        },
+                        "day": null
+                    },
+                    "end-date": {
+                        "year": {
+                            "value": "2021"
+                        },
+                        "month": {
+                            "value": "06"
+                        },
+                        "day": null
+                    },
+                    "organization": {
+                        "name": "Funda\u00e7\u00e3o Oswaldo Cruz",
+                        "address": {
+                            "city": "Rio de Janeiro",
+                            "region": "RJ",
+                            "country": "BR"
+                        },
+                        "disambiguated-organization": {
+                            "disambiguated-organization-identifier": "37903",
+                            "disambiguation-source": "RINGGOLD"
+                        }
+                    },
+                    "visibility": "PUBLIC",
+                    "put-code": 17256964,
+                    "path": "/0000-0002-4700-1671/employment/17256964"
+                },
+                {
+                    "created-date": {
+                        "value": 1647548489654
+                    },
+                    "last-modified-date": {
+                        "value": 1647548489654
+                    },
+                    "source": {
+                        "source-orcid": {
+                            "uri": "http://orcid.org/0000-0002-4700-1671",
+                            "path": "0000-0002-4700-1671",
+                            "host": "orcid.org"
+                        },
+                        "source-client-id": null,
+                        "source-name": {
+                            "value": "Ana Paula Barbosa Nascimento de Oliveira"
+                        }
+                    },
+                    "department-name": "Biochemistry",
+                    "role-title": "Adjunct Professor",
+                    "start-date": {
+                        "year": {
+                            "value": "2016"
+                        },
+                        "month": {
+                            "value": "01"
+                        },
+                        "day": null
+                    },
+                    "end-date": {
+                        "year": {
+                            "value": "2016"
+                        },
+                        "month": {
+                            "value": "08"
+                        },
+                        "day": null
+                    },
+                    "organization": {
+                        "name": "Universidade Federal de Juiz de Fora",
+                        "address": {
+                            "city": "Juiz de Fora",
+                            "region": "MG",
+                            "country": "BR"
+                        },
+                        "disambiguated-organization": {
+                            "disambiguated-organization-identifier": "28113",
+                            "disambiguation-source": "RINGGOLD"
+                        }
+                    },
+                    "visibility": "PUBLIC",
+                    "put-code": 17256956,
+                    "path": "/0000-0002-4700-1671/employment/17256956"
+                },
+                {
+                    "created-date": {
+                        "value": 1647547534716
+                    },
+                    "last-modified-date": {
+                        "value": 1647547534716
+                    },
+                    "source": {
+                        "source-orcid": {
+                            "uri": "http://orcid.org/0000-0002-4700-1671",
+                            "path": "0000-0002-4700-1671",
+                            "host": "orcid.org"
+                        },
+                        "source-client-id": null,
+                        "source-name": {
+                            "value": "Ana Paula Barbosa Nascimento de Oliveira"
+                        }
+                    },
+                    "department-name": "Bioinformatics",
+                    "role-title": "Postdoctoral Researcher",
+                    "start-date": {
+                        "year": {
+                            "value": "2014"
+                        },
+                        "month": {
+                            "value": "06"
+                        },
+                        "day": null
+                    },
+                    "end-date": {
+                        "year": {
+                            "value": "2016"
+                        },
+                        "month": {
+                            "value": "01"
+                        },
+                        "day": null
+                    },
+                    "organization": {
+                        "name": "Laborat\u00f3rio Nacional de Computa\u00e7\u00e3o Cient\u00edfica",
+                        "address": {
+                            "city": "Petropolis",
+                            "region": "Rio de Janeiro",
+                            "country": "BR"
+                        },
+                        "disambiguated-organization": {
+                            "disambiguated-organization-identifier": "42493",
+                            "disambiguation-source": "RINGGOLD"
+                        }
+                    },
+                    "visibility": "PUBLIC",
+                    "put-code": 17256872,
+                    "path": "/0000-0002-4700-1671/employment/17256872"
+                }
+            ],
+            "path": "/0000-0002-4700-1671/employments"
         },
         "fundings": {
-            "last-modified-date": null,
-            "group": [],
-            "path": "/0000-0001-7513-7376/fundings"
-        },
-        "peer-reviews": {
-            "last-modified-date": null,
-            "group": [],
-            "path": "/0000-0001-7513-7376/peer-reviews"
-        },
-        "works": {
             "last-modified-date": {
-                "value": 1647367165843
+                "value": 1647551077375
             },
             "group": [
                 {
                     "last-modified-date": {
-                        "value": 1647367165843
+                        "value": 1647549509943
                     },
                     "external-ids": {
                         "external-id": [
                             {
-                                "external-id-type": "doi",
-                                "external-id-value": "10.3389/fgene.2022.814437",
-                                "external-id-url": {
-                                    "value": "https://doi.org/10.3389/fgene.2022.814437"
-                                },
+                                "external-id-type": "grant_number",
+                                "external-id-value": "2008/03004-9",
+                                "external-id-url": null,
                                 "external-id-relationship": "SELF"
                             }
                         ]
                     },
-                    "work-summary": [
+                    "funding-summary": [
                         {
-                            "put-code": 109892841,
                             "created-date": {
-                                "value": 1647367165843
+                                "value": 1647549338513
                             },
                             "last-modified-date": {
-                                "value": 1647367165843
+                                "value": 1647549509943
                             },
                             "source": {
                                 "source-orcid": {
-                                    "uri": "http://orcid.org/0000-0001-7513-7376",
-                                    "path": "0000-0001-7513-7376",
+                                    "uri": "http://orcid.org/0000-0002-4700-1671",
+                                    "path": "0000-0002-4700-1671",
                                     "host": "orcid.org"
                                 },
                                 "source-client-id": null,
                                 "source-name": {
-                                    "value": "Jo\u00e3o Vitor Ferreira Cavalcante"
+                                    "value": "Ana Paula Barbosa Nascimento de Oliveira"
                                 }
                             },
                             "title": {
                                 "title": {
-                                    "value": "MEDUSA: A Pipeline for Sensitive Taxonomic Classification and Flexible Functional Annotation of Metagenomic Shotgun Sequences"
+                                    "value": "Um novo gene de Pseudomonas aeruginosa envolvido em percep\u00e7\u00e3o de quorum"
                                 },
-                                "subtitle": null,
                                 "translated-title": null
                             },
                             "external-ids": {
                                 "external-id": [
                                     {
-                                        "external-id-type": "doi",
-                                        "external-id-value": "10.3389/fgene.2022.814437",
-                                        "external-id-url": {
-                                            "value": "https://doi.org/10.3389/fgene.2022.814437"
-                                        },
+                                        "external-id-type": "grant_number",
+                                        "external-id-value": "2008/03004-9",
+                                        "external-id-url": null,
                                         "external-id-relationship": "SELF"
-                                    },
-                                    {
-                                        "external-id-type": "issn",
-                                        "external-id-value": "1664-8021",
-                                        "external-id-url": {
-                                            "value": "https://portal.issn.org/resource/ISSN/1664-8021"
-                                        },
-                                        "external-id-relationship": "PART_OF"
                                     }
                                 ]
                             },
-                            "type": "JOURNAL_ARTICLE",
-                            "publication-date": {
-                                "year": {
-                                    "value": "2022"
+                            "type": "GRANT",
+                            "start-date": null,
+                            "end-date": null,
+                            "organization": {
+                                "name": "Funda\u00e7\u00e3o de Amparo \u00e0 Pesquisa do Estado de S\u00e3o Paulo",
+                                "address": {
+                                    "city": "S\u00e3o Paulo",
+                                    "region": "S\u00e3o Paulo",
+                                    "country": "BR"
                                 },
-                                "month": {
-                                    "value": "03"
-                                },
-                                "day": {
-                                    "value": "07"
-                                },
-                                "media-type": null
+                                "disambiguated-organization": {
+                                    "disambiguated-organization-identifier": "http://dx.doi.org/10.13039/501100001807",
+                                    "disambiguation-source": "FUNDREF"
+                                }
                             },
                             "visibility": "PUBLIC",
-                            "path": "/0000-0001-7513-7376/work/109892841",
+                            "put-code": 1323376,
+                            "path": "/0000-0002-4700-1671/funding/1323376",
                             "display-index": "1"
                         }
                     ]
                 },
                 {
                     "last-modified-date": {
-                        "value": 1636432825964
+                        "value": 1647549773198
                     },
                     "external-ids": {
                         "external-id": [
                             {
-                                "external-id-type": "doi",
-                                "external-id-value": "10.21105/joss.03622",
-                                "external-id-url": {
-                                    "value": "https://doi.org/10.21105/joss.03622"
-                                },
+                                "external-id-type": "grant_number",
+                                "external-id-value": "312864/2015-9",
+                                "external-id-url": null,
                                 "external-id-relationship": "SELF"
                             }
                         ]
                     },
-                    "work-summary": [
+                    "funding-summary": [
                         {
-                            "put-code": 102824372,
                             "created-date": {
-                                "value": 1636432825964
+                                "value": 1647549773198
                             },
                             "last-modified-date": {
-                                "value": 1636432825964
-                            },
-                            "source": {
-                                "source-orcid": null,
-                                "source-client-id": {
-                                    "uri": "http://orcid.org/client/0000-0001-9884-1913",
-                                    "path": "0000-0001-9884-1913",
-                                    "host": "orcid.org"
-                                },
-                                "source-name": {
-                                    "value": "Crossref"
-                                }
-                            },
-                            "title": {
-                                "title": {
-                                    "value": "BioProv - A provenance library for bioinformatics workflows"
-                                },
-                                "subtitle": null,
-                                "translated-title": null
-                            },
-                            "external-ids": {
-                                "external-id": [
-                                    {
-                                        "external-id-type": "doi",
-                                        "external-id-value": "10.21105/joss.03622",
-                                        "external-id-url": {
-                                            "value": "https://doi.org/10.21105/joss.03622"
-                                        },
-                                        "external-id-relationship": "SELF"
-                                    }
-                                ]
-                            },
-                            "type": "JOURNAL_ARTICLE",
-                            "publication-date": {
-                                "year": {
-                                    "value": "2021"
-                                },
-                                "month": {
-                                    "value": "11"
-                                },
-                                "day": {
-                                    "value": "09"
-                                },
-                                "media-type": null
-                            },
-                            "visibility": "PUBLIC",
-                            "path": "/0000-0001-7513-7376/work/102824372",
-                            "display-index": "0"
-                        }
-                    ]
-                },
-                {
-                    "last-modified-date": {
-                        "value": 1635849080859
-                    },
-                    "external-ids": {
-                        "external-id": [
-                            {
-                                "external-id-type": "doi",
-                                "external-id-value": "10.1093/nar/gkab991",
-                                "external-id-url": {
-                                    "value": "https://doi.org/10.1093/nar/gkab991"
-                                },
-                                "external-id-relationship": "SELF"
-                            }
-                        ]
-                    },
-                    "work-summary": [
-                        {
-                            "put-code": 102465389,
-                            "created-date": {
-                                "value": 1635849080859
-                            },
-                            "last-modified-date": {
-                                "value": 1635849080859
+                                "value": 1647549773198
                             },
                             "source": {
                                 "source-orcid": {
-                                    "uri": "http://orcid.org/0000-0001-7513-7376",
-                                    "path": "0000-0001-7513-7376",
+                                    "uri": "http://orcid.org/0000-0002-4700-1671",
+                                    "path": "0000-0002-4700-1671",
                                     "host": "orcid.org"
                                 },
                                 "source-client-id": null,
                                 "source-name": {
-                                    "value": "Jo\u00e3o Vitor Ferreira Cavalcante"
+                                    "value": "Ana Paula Barbosa Nascimento de Oliveira"
                                 }
                             },
                             "title": {
                                 "title": {
-                                    "value": "Complex Portal 2022: new curation frontiers"
+                                    "value": "Modelagem e Simula\u00e7\u00e3o Computacional de Sistemas Complexos Fase III"
                                 },
-                                "subtitle": null,
                                 "translated-title": null
                             },
                             "external-ids": {
                                 "external-id": [
                                     {
-                                        "external-id-type": "doi",
-                                        "external-id-value": "10.1093/nar/gkab991",
-                                        "external-id-url": {
-                                            "value": "https://doi.org/10.1093/nar/gkab991"
-                                        },
+                                        "external-id-type": "grant_number",
+                                        "external-id-value": "312864/2015-9",
+                                        "external-id-url": null,
                                         "external-id-relationship": "SELF"
-                                    },
-                                    {
-                                        "external-id-type": "issn",
-                                        "external-id-value": "0305-1048",
-                                        "external-id-url": {
-                                            "value": "https://portal.issn.org/resource/ISSN/0305-1048"
-                                        },
-                                        "external-id-relationship": "PART_OF"
-                                    },
-                                    {
-                                        "external-id-type": "issn",
-                                        "external-id-value": "1362-4962",
-                                        "external-id-url": {
-                                            "value": "https://portal.issn.org/resource/ISSN/1362-4962"
-                                        },
-                                        "external-id-relationship": "PART_OF"
                                     }
                                 ]
                             },
-                            "type": "JOURNAL_ARTICLE",
-                            "publication-date": {
-                                "year": {
-                                    "value": "2021"
+                            "type": "GRANT",
+                            "start-date": null,
+                            "end-date": null,
+                            "organization": {
+                                "name": "Coordena\u00e7\u00e3o de Aperfei\u00e7oamento de Pessoal de N\u00edvel Superior",
+                                "address": {
+                                    "city": "Bras\u00edlia",
+                                    "region": null,
+                                    "country": "BR"
                                 },
-                                "month": {
-                                    "value": "10"
-                                },
-                                "day": {
-                                    "value": "29"
-                                },
-                                "media-type": null
+                                "disambiguated-organization": {
+                                    "disambiguated-organization-identifier": "http://dx.doi.org/10.13039/501100002322",
+                                    "disambiguation-source": "FUNDREF"
+                                }
                             },
                             "visibility": "PUBLIC",
-                            "path": "/0000-0001-7513-7376/work/102465389",
+                            "put-code": 1323377,
+                            "path": "/0000-0002-4700-1671/funding/1323377",
                             "display-index": "1"
                         }
                     ]
                 },
                 {
                     "last-modified-date": {
-                        "value": 1633347830663
+                        "value": 1647550741903
                     },
                     "external-ids": {
                         "external-id": [
                             {
-                                "external-id-type": "doi",
-                                "external-id-value": "10.3390/biomedicines9101297",
-                                "external-id-url": {
-                                    "value": "https://doi.org/10.3390/biomedicines9101297"
-                                },
+                                "external-id-type": "grant_number",
+                                "external-id-value": "VPPCB-007-FIO-18-2-29",
+                                "external-id-url": null,
                                 "external-id-relationship": "SELF"
                             }
                         ]
                     },
-                    "work-summary": [
+                    "funding-summary": [
                         {
-                            "put-code": 100933669,
                             "created-date": {
-                                "value": 1633347830663
+                                "value": 1647550077041
                             },
                             "last-modified-date": {
-                                "value": 1633347830663
+                                "value": 1647550741903
                             },
                             "source": {
                                 "source-orcid": {
-                                    "uri": "http://orcid.org/0000-0001-7513-7376",
-                                    "path": "0000-0001-7513-7376",
+                                    "uri": "http://orcid.org/0000-0002-4700-1671",
+                                    "path": "0000-0002-4700-1671",
                                     "host": "orcid.org"
                                 },
                                 "source-client-id": null,
                                 "source-name": {
-                                    "value": "Jo\u00e3o Vitor Ferreira Cavalcante"
+                                    "value": "Ana Paula Barbosa Nascimento de Oliveira"
                                 }
                             },
                             "title": {
                                 "title": {
-                                    "value": "Reverse Engineering of the Pediatric Sepsis Regulatory Network and Identification of Master Regulators"
+                                    "value": "An\u00e1lise dos principais determinantes de forma\u00e7\u00e3o de biofilme atrav\u00e9s da modelagem computacional da Pseudomonas aeruginosa multirresistente produtora de SPM-1 (ST277)"
                                 },
-                                "subtitle": null,
                                 "translated-title": null
                             },
                             "external-ids": {
                                 "external-id": [
                                     {
-                                        "external-id-type": "doi",
-                                        "external-id-value": "10.3390/biomedicines9101297",
-                                        "external-id-url": {
-                                            "value": "https://doi.org/10.3390/biomedicines9101297"
-                                        },
+                                        "external-id-type": "grant_number",
+                                        "external-id-value": "VPPCB-007-FIO-18-2-29",
+                                        "external-id-url": null,
                                         "external-id-relationship": "SELF"
-                                    },
-                                    {
-                                        "external-id-type": "issn",
-                                        "external-id-value": "2227-9059",
-                                        "external-id-url": {
-                                            "value": "https://portal.issn.org/resource/ISSN/2227-9059"
-                                        },
-                                        "external-id-relationship": "PART_OF"
                                     }
                                 ]
                             },
-                            "type": "JOURNAL_ARTICLE",
-                            "publication-date": {
-                                "year": {
-                                    "value": "2021"
+                            "type": "GRANT",
+                            "start-date": null,
+                            "end-date": null,
+                            "organization": {
+                                "name": "Funda\u00e7\u00e3o para o Desenvolvimento Cient\u00edfico e Tecnol\u00f3gico em Sa\u00fade - FIOTEC",
+                                "address": {
+                                    "city": "Rio de Janeiro",
+                                    "region": "Rio de Janeiro",
+                                    "country": "BR"
                                 },
-                                "month": {
-                                    "value": "09"
-                                },
-                                "day": {
-                                    "value": "23"
-                                },
-                                "media-type": null
+                                "disambiguated-organization": null
                             },
                             "visibility": "PUBLIC",
-                            "path": "/0000-0001-7513-7376/work/100933669",
+                            "put-code": 1323378,
+                            "path": "/0000-0002-4700-1671/funding/1323378",
                             "display-index": "1"
                         }
                     ]
                 },
                 {
                     "last-modified-date": {
-                        "value": 1626945898397
+                        "value": 1647551077375
                     },
                     "external-ids": {
-                        "external-id": [
-                            {
-                                "external-id-type": "doi",
-                                "external-id-value": "10.1007/s10142-021-00794-9",
-                                "external-id-url": {
-                                    "value": "https://doi.org/10.1007/s10142-021-00794-9"
-                                },
-                                "external-id-relationship": "SELF"
-                            }
-                        ]
+                        "external-id": []
                     },
-                    "work-summary": [
+                    "funding-summary": [
                         {
-                            "put-code": 97170896,
                             "created-date": {
-                                "value": 1626698109124
+                                "value": 1647550540132
                             },
                             "last-modified-date": {
-                                "value": 1626945898397
+                                "value": 1647551077375
                             },
                             "source": {
-                                "source-orcid": null,
-                                "source-client-id": {
-                                    "uri": "http://orcid.org/client/0000-0001-9884-1913",
-                                    "path": "0000-0001-9884-1913",
+                                "source-orcid": {
+                                    "uri": "http://orcid.org/0000-0002-4700-1671",
+                                    "path": "0000-0002-4700-1671",
                                     "host": "orcid.org"
                                 },
+                                "source-client-id": null,
                                 "source-name": {
-                                    "value": "Crossref"
+                                    "value": "Ana Paula Barbosa Nascimento de Oliveira"
                                 }
                             },
                             "title": {
                                 "title": {
-                                    "value": "Ancestry analysis indicates two different sets of essential genes in eukaryotic model species"
+                                    "value": "Biologia integrativa da resposta humana \u00e0 vacina rVSV\u0394G\u2010ZEBOV-GP"
                                 },
-                                "subtitle": null,
                                 "translated-title": null
                             },
                             "external-ids": {
                                 "external-id": [
                                     {
-                                        "external-id-type": "doi",
-                                        "external-id-value": "10.1007/s10142-021-00794-9",
-                                        "external-id-url": {
-                                            "value": "https://doi.org/10.1007/s10142-021-00794-9"
-                                        },
-                                        "external-id-relationship": "SELF"
+                                        "external-id-type": "grant_number",
+                                        "external-id-value": "Projeto 98",
+                                        "external-id-url": null,
+                                        "external-id-relationship": "PART_OF"
                                     }
                                 ]
                             },
-                            "type": "JOURNAL_ARTICLE",
-                            "publication-date": {
-                                "year": {
-                                    "value": "2021"
+                            "type": "GRANT",
+                            "start-date": null,
+                            "end-date": null,
+                            "organization": {
+                                "name": "Funda\u00e7\u00e3o Instituto de Pesquisas Farmac\u00eauticas",
+                                "address": {
+                                    "city": "S\u00e3o Paulo",
+                                    "region": "S\u00e3o Paulo",
+                                    "country": "BR"
                                 },
-                                "month": {
-                                    "value": "07"
-                                },
-                                "day": {
-                                    "value": "19"
-                                },
-                                "media-type": null
+                                "disambiguated-organization": null
                             },
                             "visibility": "PUBLIC",
-                            "path": "/0000-0001-7513-7376/work/97170896",
-                            "display-index": "0"
+                            "put-code": 1323382,
+                            "path": "/0000-0002-4700-1671/funding/1323382",
+                            "display-index": "1"
                         }
                     ]
                 }
             ],
-            "path": "/0000-0001-7513-7376/works"
+            "path": "/0000-0002-4700-1671/fundings"
         },
-        "path": "/0000-0001-7513-7376/activities"
+        "peer-reviews": {
+            "last-modified-date": null,
+            "group": [],
+            "path": "/0000-0002-4700-1671/peer-reviews"
+        },
+        "works": {
+            "last-modified-date": {
+                "value": 1632500093636
+            },
+            "group": [
+                {
+                    "last-modified-date": {
+                        "value": 1632500093636
+                    },
+                    "external-ids": {
+                        "external-id": [
+                            {
+                                "external-id-type": "doi",
+                                "external-id-value": "10.3389/fmolb.2021.728129",
+                                "external-id-url": {
+                                    "value": "https://doi.org/10.3389/fmolb.2021.728129"
+                                },
+                                "external-id-relationship": "SELF"
+                            }
+                        ]
+                    },
+                    "work-summary": [
+                        {
+                            "put-code": 100487706,
+                            "created-date": {
+                                "value": 1632500093636
+                            },
+                            "last-modified-date": {
+                                "value": 1632500093636
+                            },
+                            "source": {
+                                "source-orcid": {
+                                    "uri": "http://orcid.org/0000-0002-4700-1671",
+                                    "path": "0000-0002-4700-1671",
+                                    "host": "orcid.org"
+                                },
+                                "source-client-id": null,
+                                "source-name": {
+                                    "value": "Ana Paula Barbosa Nascimento de Oliveira"
+                                }
+                            },
+                            "title": {
+                                "title": {
+                                    "value": "A Systematic Strategy to Find Potential Therapeutic Targets for Pseudomonas aeruginosa Using Integrated Computational Models"
+                                },
+                                "subtitle": null,
+                                "translated-title": null
+                            },
+                            "external-ids": {
+                                "external-id": [
+                                    {
+                                        "external-id-type": "doi",
+                                        "external-id-value": "10.3389/fmolb.2021.728129",
+                                        "external-id-url": {
+                                            "value": "https://doi.org/10.3389/fmolb.2021.728129"
+                                        },
+                                        "external-id-relationship": "SELF"
+                                    },
+                                    {
+                                        "external-id-type": "issn",
+                                        "external-id-value": "2296-889X",
+                                        "external-id-url": {
+                                            "value": "https://portal.issn.org/resource/ISSN/2296-889X"
+                                        },
+                                        "external-id-relationship": "PART_OF"
+                                    }
+                                ]
+                            },
+                            "type": "JOURNAL_ARTICLE",
+                            "publication-date": {
+                                "year": {
+                                    "value": "2021"
+                                },
+                                "month": {
+                                    "value": "09"
+                                },
+                                "day": {
+                                    "value": "20"
+                                },
+                                "media-type": null
+                            },
+                            "visibility": "PUBLIC",
+                            "path": "/0000-0002-4700-1671/work/100487706",
+                            "display-index": "1"
+                        }
+                    ]
+                },
+                {
+                    "last-modified-date": {
+                        "value": 1624586549310
+                    },
+                    "external-ids": {
+                        "external-id": [
+                            {
+                                "external-id-type": "doi",
+                                "external-id-value": "10.1038/s41598-020-69944-6",
+                                "external-id-url": {
+                                    "value": "https://doi.org/10.1038/s41598-020-69944-6"
+                                },
+                                "external-id-relationship": "SELF"
+                            }
+                        ]
+                    },
+                    "work-summary": [
+                        {
+                            "put-code": 96050087,
+                            "created-date": {
+                                "value": 1624586549310
+                            },
+                            "last-modified-date": {
+                                "value": 1624586549310
+                            },
+                            "source": {
+                                "source-orcid": {
+                                    "uri": "http://orcid.org/0000-0002-4700-1671",
+                                    "path": "0000-0002-4700-1671",
+                                    "host": "orcid.org"
+                                },
+                                "source-client-id": null,
+                                "source-name": {
+                                    "value": "Ana Paula Barbosa Nascimento de Oliveira"
+                                }
+                            },
+                            "title": {
+                                "title": {
+                                    "value": "Characterization of a SPM-1 metallo-beta-lactamase-producing Pseudomonas aeruginosa by comparative genomics and phenotypic analysis"
+                                },
+                                "subtitle": null,
+                                "translated-title": null
+                            },
+                            "external-ids": {
+                                "external-id": [
+                                    {
+                                        "external-id-type": "doi",
+                                        "external-id-value": "10.1038/s41598-020-69944-6",
+                                        "external-id-url": {
+                                            "value": "https://doi.org/10.1038/s41598-020-69944-6"
+                                        },
+                                        "external-id-relationship": "SELF"
+                                    },
+                                    {
+                                        "external-id-type": "issn",
+                                        "external-id-value": "2045-2322",
+                                        "external-id-url": {
+                                            "value": "https://portal.issn.org/resource/ISSN/2045-2322"
+                                        },
+                                        "external-id-relationship": "PART_OF"
+                                    }
+                                ]
+                            },
+                            "type": "JOURNAL_ARTICLE",
+                            "publication-date": {
+                                "year": {
+                                    "value": "2020"
+                                },
+                                "month": {
+                                    "value": "12"
+                                },
+                                "day": null,
+                                "media-type": null
+                            },
+                            "visibility": "PUBLIC",
+                            "path": "/0000-0002-4700-1671/work/96050087",
+                            "display-index": "1"
+                        }
+                    ]
+                },
+                {
+                    "last-modified-date": {
+                        "value": 1582205105815
+                    },
+                    "external-ids": {
+                        "external-id": [
+                            {
+                                "external-id-type": "doi",
+                                "external-id-value": "10.1590/0074-02760190105",
+                                "external-id-url": {
+                                    "value": "https://doi.org/10.1590/0074-02760190105"
+                                },
+                                "external-id-relationship": "SELF"
+                            }
+                        ]
+                    },
+                    "work-summary": [
+                        {
+                            "put-code": 69323707,
+                            "created-date": {
+                                "value": 1582205105815
+                            },
+                            "last-modified-date": {
+                                "value": 1582205105815
+                            },
+                            "source": {
+                                "source-orcid": null,
+                                "source-client-id": {
+                                    "uri": "http://orcid.org/client/0000-0001-9884-1913",
+                                    "path": "0000-0001-9884-1913",
+                                    "host": "orcid.org"
+                                },
+                                "source-name": {
+                                    "value": "Crossref"
+                                }
+                            },
+                            "title": {
+                                "title": {
+                                    "value": "Gene regulatory network inference and analysis of multidrug-resistant Pseudomonas aeruginosa"
+                                },
+                                "subtitle": null,
+                                "translated-title": null
+                            },
+                            "external-ids": {
+                                "external-id": [
+                                    {
+                                        "external-id-type": "doi",
+                                        "external-id-value": "10.1590/0074-02760190105",
+                                        "external-id-url": {
+                                            "value": "https://doi.org/10.1590/0074-02760190105"
+                                        },
+                                        "external-id-relationship": "SELF"
+                                    }
+                                ]
+                            },
+                            "type": "JOURNAL_ARTICLE",
+                            "publication-date": {
+                                "year": {
+                                    "value": "2019"
+                                },
+                                "month": null,
+                                "day": null,
+                                "media-type": null
+                            },
+                            "visibility": "PUBLIC",
+                            "path": "/0000-0002-4700-1671/work/69323707",
+                            "display-index": "0"
+                        }
+                    ]
+                },
+                {
+                    "last-modified-date": {
+                        "value": 1624587341980
+                    },
+                    "external-ids": {
+                        "external-id": [
+                            {
+                                "external-id-type": "doi",
+                                "external-id-value": "10.1007/978-3-319-74974-7_11",
+                                "external-id-url": {
+                                    "value": "https://doi.org/10.1007/978-3-319-74974-7_11"
+                                },
+                                "external-id-relationship": "SELF"
+                            }
+                        ]
+                    },
+                    "work-summary": [
+                        {
+                            "put-code": 96050434,
+                            "created-date": {
+                                "value": 1624587341980
+                            },
+                            "last-modified-date": {
+                                "value": 1624587341980
+                            },
+                            "source": {
+                                "source-orcid": {
+                                    "uri": "http://orcid.org/0000-0002-4700-1671",
+                                    "path": "0000-0002-4700-1671",
+                                    "host": "orcid.org"
+                                },
+                                "source-client-id": null,
+                                "source-name": {
+                                    "value": "Ana Paula Barbosa Nascimento de Oliveira"
+                                }
+                            },
+                            "title": {
+                                "title": {
+                                    "value": "Computational Modeling of Multidrug-Resistant Bacteria"
+                                },
+                                "subtitle": null,
+                                "translated-title": null
+                            },
+                            "external-ids": {
+                                "external-id": [
+                                    {
+                                        "external-id-type": "doi",
+                                        "external-id-value": "10.1007/978-3-319-74974-7_11",
+                                        "external-id-url": {
+                                            "value": "https://doi.org/10.1007/978-3-319-74974-7_11"
+                                        },
+                                        "external-id-relationship": "SELF"
+                                    },
+                                    {
+                                        "external-id-type": "isbn",
+                                        "external-id-value": "9783319749730",
+                                        "external-id-url": {
+                                            "value": "https://www.worldcat.org/isbn/9783319749730"
+                                        },
+                                        "external-id-relationship": "PART_OF"
+                                    },
+                                    {
+                                        "external-id-type": "isbn",
+                                        "external-id-value": "9783319749747",
+                                        "external-id-url": {
+                                            "value": "https://www.worldcat.org/isbn/9783319749747"
+                                        },
+                                        "external-id-relationship": "PART_OF"
+                                    },
+                                    {
+                                        "external-id-type": "issn",
+                                        "external-id-value": "1568-2684",
+                                        "external-id-url": {
+                                            "value": "https://portal.issn.org/resource/ISSN/1568-2684"
+                                        },
+                                        "external-id-relationship": "PART_OF"
+                                    }
+                                ]
+                            },
+                            "type": "BOOK_CHAPTER",
+                            "publication-date": {
+                                "year": {
+                                    "value": "2018"
+                                },
+                                "month": null,
+                                "day": null,
+                                "media-type": null
+                            },
+                            "visibility": "PUBLIC",
+                            "path": "/0000-0002-4700-1671/work/96050434",
+                            "display-index": "1"
+                        }
+                    ]
+                },
+                {
+                    "last-modified-date": {
+                        "value": 1624587286775
+                    },
+                    "external-ids": {
+                        "external-id": [
+                            {
+                                "external-id-type": "doi",
+                                "external-id-value": "10.1007/978-3-319-74974-7_2",
+                                "external-id-url": {
+                                    "value": "https://doi.org/10.1007/978-3-319-74974-7_2"
+                                },
+                                "external-id-relationship": "SELF"
+                            }
+                        ]
+                    },
+                    "work-summary": [
+                        {
+                            "put-code": 96050425,
+                            "created-date": {
+                                "value": 1624587286775
+                            },
+                            "last-modified-date": {
+                                "value": 1624587286775
+                            },
+                            "source": {
+                                "source-orcid": {
+                                    "uri": "http://orcid.org/0000-0002-4700-1671",
+                                    "path": "0000-0002-4700-1671",
+                                    "host": "orcid.org"
+                                },
+                                "source-client-id": null,
+                                "source-name": {
+                                    "value": "Ana Paula Barbosa Nascimento de Oliveira"
+                                }
+                            },
+                            "title": {
+                                "title": {
+                                    "value": "Modeling Gene Transcriptional Regulation: A Primer"
+                                },
+                                "subtitle": null,
+                                "translated-title": null
+                            },
+                            "external-ids": {
+                                "external-id": [
+                                    {
+                                        "external-id-type": "doi",
+                                        "external-id-value": "10.1007/978-3-319-74974-7_2",
+                                        "external-id-url": {
+                                            "value": "https://doi.org/10.1007/978-3-319-74974-7_2"
+                                        },
+                                        "external-id-relationship": "SELF"
+                                    },
+                                    {
+                                        "external-id-type": "isbn",
+                                        "external-id-value": "9783319749730",
+                                        "external-id-url": {
+                                            "value": "https://www.worldcat.org/isbn/9783319749730"
+                                        },
+                                        "external-id-relationship": "PART_OF"
+                                    },
+                                    {
+                                        "external-id-type": "isbn",
+                                        "external-id-value": "9783319749747",
+                                        "external-id-url": {
+                                            "value": "https://www.worldcat.org/isbn/9783319749747"
+                                        },
+                                        "external-id-relationship": "PART_OF"
+                                    },
+                                    {
+                                        "external-id-type": "issn",
+                                        "external-id-value": "1568-2684",
+                                        "external-id-url": {
+                                            "value": "https://portal.issn.org/resource/ISSN/1568-2684"
+                                        },
+                                        "external-id-relationship": "PART_OF"
+                                    }
+                                ]
+                            },
+                            "type": "BOOK_CHAPTER",
+                            "publication-date": {
+                                "year": {
+                                    "value": "2018"
+                                },
+                                "month": null,
+                                "day": null,
+                                "media-type": null
+                            },
+                            "visibility": "PUBLIC",
+                            "path": "/0000-0002-4700-1671/work/96050425",
+                            "display-index": "1"
+                        }
+                    ]
+                },
+                {
+                    "last-modified-date": {
+                        "value": 1624586464309
+                    },
+                    "external-ids": {
+                        "external-id": [
+                            {
+                                "external-id-type": "doi",
+                                "external-id-value": "10.3389/fmicb.2016.01946",
+                                "external-id-url": {
+                                    "value": "https://doi.org/10.3389/fmicb.2016.01946"
+                                },
+                                "external-id-relationship": "SELF"
+                            }
+                        ]
+                    },
+                    "work-summary": [
+                        {
+                            "put-code": 96050067,
+                            "created-date": {
+                                "value": 1624586464309
+                            },
+                            "last-modified-date": {
+                                "value": 1624586464309
+                            },
+                            "source": {
+                                "source-orcid": {
+                                    "uri": "http://orcid.org/0000-0002-4700-1671",
+                                    "path": "0000-0002-4700-1671",
+                                    "host": "orcid.org"
+                                },
+                                "source-client-id": null,
+                                "source-name": {
+                                    "value": "Ana Paula Barbosa Nascimento de Oliveira"
+                                }
+                            },
+                            "title": {
+                                "title": {
+                                    "value": "Intraclonal Genome Stability of the Metallo-\u03b2-lactamase SPM-1-producing Pseudomonas aeruginosa ST277, an Endemic Clone Disseminated in Brazilian Hospitals"
+                                },
+                                "subtitle": null,
+                                "translated-title": null
+                            },
+                            "external-ids": {
+                                "external-id": [
+                                    {
+                                        "external-id-type": "doi",
+                                        "external-id-value": "10.3389/fmicb.2016.01946",
+                                        "external-id-url": {
+                                            "value": "https://doi.org/10.3389/fmicb.2016.01946"
+                                        },
+                                        "external-id-relationship": "SELF"
+                                    },
+                                    {
+                                        "external-id-type": "issn",
+                                        "external-id-value": "1664-302X",
+                                        "external-id-url": {
+                                            "value": "https://portal.issn.org/resource/ISSN/1664-302X"
+                                        },
+                                        "external-id-relationship": "PART_OF"
+                                    }
+                                ]
+                            },
+                            "type": "JOURNAL_ARTICLE",
+                            "publication-date": {
+                                "year": {
+                                    "value": "2016"
+                                },
+                                "month": {
+                                    "value": "12"
+                                },
+                                "day": {
+                                    "value": "05"
+                                },
+                                "media-type": null
+                            },
+                            "visibility": "PUBLIC",
+                            "path": "/0000-0002-4700-1671/work/96050067",
+                            "display-index": "1"
+                        }
+                    ]
+                },
+                {
+                    "last-modified-date": {
+                        "value": 1624587496436
+                    },
+                    "external-ids": {
+                        "external-id": [
+                            {
+                                "external-id-type": "doi",
+                                "external-id-value": "10.11606/t.46.2014.tde-30092014-143752",
+                                "external-id-url": {
+                                    "value": "https://doi.org/10.11606/t.46.2014.tde-30092014-143752"
+                                },
+                                "external-id-relationship": "SELF"
+                            }
+                        ]
+                    },
+                    "work-summary": [
+                        {
+                            "put-code": 96050449,
+                            "created-date": {
+                                "value": 1624587396470
+                            },
+                            "last-modified-date": {
+                                "value": 1624587496436
+                            },
+                            "source": {
+                                "source-orcid": {
+                                    "uri": "http://orcid.org/0000-0002-4700-1671",
+                                    "path": "0000-0002-4700-1671",
+                                    "host": "orcid.org"
+                                },
+                                "source-client-id": null,
+                                "source-name": {
+                                    "value": "Ana Paula Barbosa Nascimento de Oliveira"
+                                }
+                            },
+                            "title": {
+                                "title": {
+                                    "value": "Um novo gene de Pseudomonas aeruginosa envolvido em percep\u00e7\u00e3o de qu\u00f3rum"
+                                },
+                                "subtitle": null,
+                                "translated-title": null
+                            },
+                            "external-ids": {
+                                "external-id": [
+                                    {
+                                        "external-id-type": "doi",
+                                        "external-id-value": "10.11606/t.46.2014.tde-30092014-143752",
+                                        "external-id-url": {
+                                            "value": "https://doi.org/10.11606/t.46.2014.tde-30092014-143752"
+                                        },
+                                        "external-id-relationship": "SELF"
+                                    }
+                                ]
+                            },
+                            "type": "DISSERTATION",
+                            "publication-date": null,
+                            "visibility": "PUBLIC",
+                            "path": "/0000-0002-4700-1671/work/96050449",
+                            "display-index": "1"
+                        }
+                    ]
+                }
+            ],
+            "path": "/0000-0002-4700-1671/works"
+        },
+        "path": "/0000-0002-4700-1671/activities"
     },
-    "path": "/0000-0001-7513-7376"
+    "path": "/0000-0002-4700-1671"
 }
