@@ -1,14 +1,10 @@
 import json
-import os
 import re
-import sys
 from dataclasses import dataclass
 from pathlib import Path
-
 import clipboard
 import requests
 from SPARQLWrapper import JSON, SPARQLWrapper
-
 from .dictionaries.all import dicts
 from .wikidata_lookup import search_wikidata
 
