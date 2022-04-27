@@ -169,4 +169,4 @@ cython_debug/
 
 
 # Última amostra
-sample.json
+./sample.json
