@@ -16,7 +16,12 @@ DEGREE_PATH = DICTIONARIES_PATH.joinpath("degree.json")
 
 
 def render_orcid_qs(orcid):
-    """Import info from ORCID for Wikidata."""
+    """
+    Import info from ORCID for Wikidata.
+
+    Args:
+        orcid: The ORCID of the researcher to reconcile to Wikidata.
+    """
     # From https://pub.orcid.org/v3.0/#!/Public_API_v2.0/viewRecord
     url = "https://pub.orcid.org/v2.0/"
     header = {"Accept": "application/json"}
@@ -123,8 +128,15 @@ def process_item(
 
 def get_qid_for_item(original_dict_name, target_item):
     """
-    Looks up a qid in a global dict of dicts.
+    Looks up the qid given a key using global dict of dicts.
     If it is not present, it lets the user update the dict.
+
+    Args:
+        original_dict_name (str): The dict name
+        target_item (str): The string to lookup in the dict
+
+    Returns:
+        qid:str
     """
     if target_item not in dicts[original_dict_name]:
         add_key(dicts[original_dict_name], target_item)
@@ -257,3 +269,16 @@ def process_education_entries(qs, subject_qid, ref, education_entries, property_
             {subject_qid}|{property_id}|{entry.institution}|P512|{entry.degree}|P580|{entry.start_date}|P582|{entry.end_date}{ref}"""
             )
     return qs
+
+
+def get_paper_dois(group_of_works_from_orcid):
+    """ """
+
+    dois = []
+
+    for work in group_of_works_from_orcid:
+        for external_id in work["external-ids"]["external-id"]:
+            if external_id["external-id-type"] == "doi":
+                dois.append(external_id["external-id-value"])
+    print(dois)
+    return dois

@@ -3,7 +3,7 @@ Tests for the helper module
 """
 
 
-from pyorcidator.helper import get_date, get_papers_doi, lookup_id
+from pyorcidator.helper import get_date, get_paper_dois, lookup_id
 
 
 def test_lookup_id():
@@ -23,9 +23,8 @@ def test_get_date(sample_data):
     assert test_end_date == "+2017-10-27T00:00:00Z/11"
 
 
-def test_get_papers_doi(sample_data):
+def test_get_paper_dois(sample_data):
     test_papers = sample_data["activities-summary"]["works"]["group"]
 
-    test_dois = get_papers_doi(test_papers)
-
+    test_dois = get_paper_dois(test_papers)
     assert test_dois[0] == "10.3233/jad-201397"
