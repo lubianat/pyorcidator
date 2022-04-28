@@ -1,14 +1,14 @@
 import json
 import re
+import webbrowser
 from dataclasses import dataclass
 from pathlib import Path
-import clipboard
+from urllib.parse import quote
+
+import click
 import requests
 from SPARQLWrapper import JSON, SPARQLWrapper
 from wdcuration import add_key
-
-from .dictionaries.all import dicts
-from .wikidata_lookup import search_wikidata
 
 HERE = Path(__file__).parent.resolve()
 DICTIONARIES_PATH = HERE.joinpath("dictionaries")
@@ -83,6 +83,15 @@ def render_orcid_qs(orcid):
     )
 
     return qs
+
+
+def create_qs_url(qs: str, open_browser: str) -> None:
+    quoted_qs = quote(qs.replace("\t", "|").replace("\n", "||"), safe="")
+    url = f"https://quickstatements.toolforge.org/#/v1={quoted_qs}\\"
+    click.echo(qs)
+    click.echo(url)
+    if open_browser:
+        webbrowser.open_new_tab(url)
 
 
 @dataclass
@@ -251,7 +260,6 @@ def get_education_info(data):
 
 
 def process_education_entries(qs, subject_qid, ref, education_entries, property_id="P69"):
-
     # Quickstatements fails in the case of same institution for multliple degrees.
     # See https://www.wikidata.org/wiki/Help:QuickStatements#Limitation
 
