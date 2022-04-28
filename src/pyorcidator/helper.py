@@ -1,19 +1,14 @@
 import json
-import os
 import re
-import sys
 import webbrowser
 from dataclasses import dataclass
 from pathlib import Path
 from urllib.parse import quote
 
 import click
-import clipboard
 import requests
 from SPARQLWrapper import JSON, SPARQLWrapper
-
-from .dictionaries.all import dicts
-from .wikidata_lookup import search_wikidata
+from wdcuration import add_key
 
 HERE = Path(__file__).parent.resolve()
 DICTIONARIES_PATH = HERE.joinpath("dictionaries")
@@ -21,7 +16,12 @@ DEGREE_PATH = DICTIONARIES_PATH.joinpath("degree.json")
 
 
 def render_orcid_qs(orcid):
-    """Import info from ORCID for Wikidata."""
+    """
+    Import info from ORCID for Wikidata.
+
+    Args:
+        orcid: The ORCID of the researcher to reconcile to Wikidata.
+    """
     # From https://pub.orcid.org/v3.0/#!/Public_API_v2.0/viewRecord
     url = "https://pub.orcid.org/v2.0/"
     header = {"Accept": "application/json"}
@@ -104,42 +104,6 @@ class EducationEntry:
     end_date: str = None
 
 
-def add_key(dictionary, string):
-    """
-    Prompts the user for adding a key to the target dictionary.
-
-    Args:
-        dictionary (dict): A reference dictionary containing strings as keys and Wikidata QIDs as values.
-        string (str): A new key to add to the dictionary.
-
-    Returns:
-        dict: The updated dictionary.
-    """
-
-    clipboard.copy(string)
-    predicted_id = search_wikidata(string)
-    annotated = False
-
-    while annotated == False:
-        answer = input(
-            f"Is the QID for '{string}'  \n "
-            f"{predicted_id['id']} - {predicted_id['label']} "
-            f"({predicted_id['description']}) ? (y/n) "
-        )
-
-        if answer == "y":
-            dictionary[string] = predicted_id["id"]
-            annotated = True
-        elif answer == "n":
-            qid = input(f"What is the QID for: '{string}' ? ")
-            dictionary[string] = qid
-            annotated = True
-        else:
-            print("Answer must be either 'y' or 'n'")
-
-    return dictionary
-
-
 def process_item(
     qs,
     property_id,
@@ -173,8 +137,15 @@ def process_item(
 
 def get_qid_for_item(original_dict_name, target_item):
     """
-    Looks up a qid in a global dict of dicts.
+    Looks up the qid given a key using global dict of dicts.
     If it is not present, it lets the user update the dict.
+
+    Args:
+        original_dict_name (str): The dict name
+        target_item (str): The string to lookup in the dict
+
+    Returns:
+        qid:str
     """
     if target_item not in dicts[original_dict_name]:
         add_key(dicts[original_dict_name], target_item)
@@ -190,7 +161,10 @@ def lookup_id(id, property, default):
     Looks up a foreign ID on Wikidata based on its specific property.
     """
 
-    sparql = SPARQLWrapper("https://query.wikidata.org/sparql")
+    sparql = SPARQLWrapper(
+        "https://query.wikidata.org/sparql",
+        agent="PyORCIDator (https://github.com/lubianat/pyorcidator)",
+    )
     query = f"""
     SELECT ?item ?itemLabel
     WHERE
@@ -286,7 +260,6 @@ def get_education_info(data):
 
 
 def process_education_entries(qs, subject_qid, ref, education_entries, property_id="P69"):
-
     # Quickstatements fails in the case of same institution for multliple degrees.
     # See https://www.wikidata.org/wiki/Help:QuickStatements#Limitation
 
@@ -304,3 +277,16 @@ def process_education_entries(qs, subject_qid, ref, education_entries, property_
             {subject_qid}|{property_id}|{entry.institution}|P512|{entry.degree}|P580|{entry.start_date}|P582|{entry.end_date}{ref}"""
             )
     return qs
+
+
+def get_paper_dois(group_of_works_from_orcid):
+    """ """
+
+    dois = []
+
+    for work in group_of_works_from_orcid:
+        for external_id in work["external-ids"]["external-id"]:
+            if external_id["external-id-type"] == "doi":
+                dois.append(external_id["external-id-value"])
+    print(dois)
+    return dois
