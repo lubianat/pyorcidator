@@ -2,7 +2,7 @@
 Tests for the helper module
 """
 
-from pyorcidator.helper import get_date, get_paper_dois, lookup_id
+from pyorcidator.helper import get_date, get_organization_list, get_paper_dois, lookup_id
 
 
 def test_lookup_id():
@@ -27,3 +27,18 @@ def test_get_paper_dois(sample_orcid_data):
 
     test_dois = get_paper_dois(test_papers)
     assert test_dois[0] == "10.3233/jad-201397"
+
+
+def test_get_org_list(sample_orcid_data):
+    employment_data = sample_orcid_data["activities-summary"]["employments"]["employment-summary"]
+
+    data = get_organization_list(employment_data)
+
+    # Q152171 = "University of Bonn" on the sample dataset
+    # Returns QID because this instance has a GRID disambiguator
+    assert data == [
+        "Harvard Medical School",
+        "Enveda Biosciences",
+        "Q152171",
+        "Fraunhofer SCAI",
+    ]
