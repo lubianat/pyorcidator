@@ -7,8 +7,11 @@ authors:
 - family-names: "Hoyt"
   given-names: "Charles Tapley"
   orcid: "https://orcid.org/0000-0003-4423-4370"
+- family-names: "Cavalcante"
+  given-names: "João Vitor"
+  orcid: "https://orcid.org/0000-0001-7513-7376"
 title: "pyorcidator"
 version: 0.0.1-dev
-doi: 
+doi:
 date-released: 2022-06-02
 url: "https://github.com/lubianat/pyorcidator"
