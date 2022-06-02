@@ -4,6 +4,9 @@ authors:
 - family-names: "Lubiana"
   given-names: "Tiago"
   orcid: "https://orcid.org/0000-0003-2473-2313"
+- family-names: "Hoyt"
+  given-names: "Charles Tapley"
+  orcid: "https://orcid.org/0000-0003-4423-4370"
 title: "pyorcidator"
 version: 0.0.1-dev
 doi: 
