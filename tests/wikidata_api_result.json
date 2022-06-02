@@ -1,0 +1,177 @@
+{
+  "searchinfo": { "search": "Universidade de S\u00e3o Paulo" },
+  "search": [
+    {
+      "id": "Q835960",
+      "title": "Q835960",
+      "pageid": 788585,
+      "display": {
+        "label": { "value": "University of S\u00e3o Paulo", "language": "en" },
+        "description": {
+          "value": "public state university in Brazil",
+          "language": "en"
+        }
+      },
+      "repository": "wikidata",
+      "url": "//www.wikidata.org/wiki/Q835960",
+      "concepturi": "http://www.wikidata.org/entity/Q835960",
+      "label": "University of S\u00e3o Paulo",
+      "description": "public state university in Brazil",
+      "match": {
+        "type": "alias",
+        "language": "en",
+        "text": "Universidade de S\u00e3o Paulo"
+      },
+      "aliases": ["Universidade de S\u00e3o Paulo"]
+    },
+    {
+      "id": "Q74535814",
+      "title": "Q74535814",
+      "pageid": 74154441,
+      "display": {
+        "label": {
+          "value": "Universidade de S\u00e3o Paulo, Instituto de Psicologia",
+          "language": "en"
+        },
+        "description": {
+          "value": "organisation involved in scholarly research",
+          "language": "en"
+        }
+      },
+      "repository": "wikidata",
+      "url": "//www.wikidata.org/wiki/Q74535814",
+      "concepturi": "http://www.wikidata.org/entity/Q74535814",
+      "label": "Universidade de S\u00e3o Paulo, Instituto de Psicologia",
+      "description": "organisation involved in scholarly research",
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "Universidade de S\u00e3o Paulo, Instituto de Psicologia"
+      }
+    },
+    {
+      "id": "Q52634033",
+      "title": "Q52634033",
+      "pageid": 53450123,
+      "display": {
+        "label": {
+          "value": "Universidade de S\u00e3o Paulo, Faculdade de Filosofia, Letras e Ci\u00eancias Humanas",
+          "language": "en"
+        },
+        "description": {
+          "value": "Academic publisher based in Brazil",
+          "language": "en"
+        }
+      },
+      "repository": "wikidata",
+      "url": "//www.wikidata.org/wiki/Q52634033",
+      "concepturi": "http://www.wikidata.org/entity/Q52634033",
+      "label": "Universidade de S\u00e3o Paulo, Faculdade de Filosofia, Letras e Ci\u00eancias Humanas",
+      "description": "Academic publisher based in Brazil",
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "Universidade de S\u00e3o Paulo, Faculdade de Filosofia, Letras e Ci\u00eancias Humanas"
+      }
+    },
+    {
+      "id": "Q52608055",
+      "title": "Q52608055",
+      "pageid": 53431624,
+      "display": {
+        "label": {
+          "value": "Universidade de S\u00e3o Paulo - FM/USP",
+          "language": "en"
+        },
+        "description": {
+          "value": "Academic publisher based in Brazil",
+          "language": "en"
+        }
+      },
+      "repository": "wikidata",
+      "url": "//www.wikidata.org/wiki/Q52608055",
+      "concepturi": "http://www.wikidata.org/entity/Q52608055",
+      "label": "Universidade de S\u00e3o Paulo - FM/USP",
+      "description": "Academic publisher based in Brazil",
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "Universidade de S\u00e3o Paulo - FM/USP"
+      }
+    },
+    {
+      "id": "Q55213768",
+      "title": "Q55213768",
+      "pageid": 55263010,
+      "display": {
+        "label": {
+          "value": "Universidade de S\u00e3o Paulo - Faculdade de Filosofia, Ci\u00eancias e Letras - Departamento de Geografia. Mapa Mundi em Proje\u00e7\u00e3o Azimutal, Obliqua e Equidistante, Tendo como Centro a Cidade de S\u00e3o Paulo Elaborado Por Jo\u00e3o Soukup",
+          "language": "en"
+        },
+        "description": { "value": "Work by Jo\u00e3o Soukup", "language": "en" }
+      },
+      "repository": "wikidata",
+      "url": "//www.wikidata.org/wiki/Q55213768",
+      "concepturi": "http://www.wikidata.org/entity/Q55213768",
+      "label": "Universidade de S\u00e3o Paulo - Faculdade de Filosofia, Ci\u00eancias e Letras - Departamento de Geografia. Mapa Mundi em Proje\u00e7\u00e3o Azimutal, Obliqua e Equidistante, Tendo como Centro a Cidade de S\u00e3o Paulo Elaborado Por Jo\u00e3o Soukup",
+      "description": "Work by Jo\u00e3o Soukup",
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "Universidade de S\u00e3o Paulo - Faculdade de Filosofia, Ci\u00eancias e Letras - Departamento de Geografia. Mapa Mundi em Proje\u00e7\u00e3o Azimutal, Obliqua e Equidistante, Tendo como Centro a Cidade de S\u00e3o Paulo Elaborado Por Jo\u00e3o Soukup"
+      }
+    },
+    {
+      "id": "Q52659927",
+      "title": "Q52659927",
+      "pageid": 53473073,
+      "display": {
+        "label": {
+          "value": "Universidade de S\u00e3o Paulo, Museu Paulista",
+          "language": "en"
+        },
+        "description": {
+          "value": "Academic publisher based in Brazil",
+          "language": "en"
+        }
+      },
+      "repository": "wikidata",
+      "url": "//www.wikidata.org/wiki/Q52659927",
+      "concepturi": "http://www.wikidata.org/entity/Q52659927",
+      "label": "Universidade de S\u00e3o Paulo, Museu Paulista",
+      "description": "Academic publisher based in Brazil",
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "Universidade de S\u00e3o Paulo, Museu Paulista"
+      }
+    },
+    {
+      "id": "Q52633653",
+      "title": "Q52633653",
+      "pageid": 53449835,
+      "display": {
+        "label": {
+          "value": "Universidade de S\u00e3o Paulo. Instituto de Estudos Brasileiros",
+          "language": "en"
+        },
+        "description": {
+          "value": "Academic publisher based in Brazil",
+          "language": "en"
+        }
+      },
+      "repository": "wikidata",
+      "url": "//www.wikidata.org/wiki/Q52633653",
+      "concepturi": "http://www.wikidata.org/entity/Q52633653",
+      "label": "Universidade de S\u00e3o Paulo. Instituto de Estudos Brasileiros",
+      "description": "Academic publisher based in Brazil",
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "Universidade de S\u00e3o Paulo. Instituto de Estudos Brasileiros"
+      }
+    }
+  ],
+  "search-continue": 7,
+  "success": 1
+}

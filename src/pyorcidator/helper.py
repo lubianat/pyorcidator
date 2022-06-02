@@ -2,6 +2,7 @@ import json
 import re
 from dataclasses import dataclass
 from pathlib import Path
+
 import clipboard
 import requests
 from SPARQLWrapper import JSON, SPARQLWrapper
@@ -180,12 +181,11 @@ def get_organization_list(data):
     for a in data:
         a = a["organization"]
         name = a["name"]
-        if a["disambiguated-organization"] is None:
-            continue
-        if a["disambiguated-organization"]["disambiguation-source"] == "GRID":
-            grid = a["disambiguated-organization"]["disambiguated-organization-identifier"]
-            id = lookup_id(grid, "P2427", name)
-            name = id
+        if a["disambiguated-organization"] is not None:
+            if a["disambiguated-organization"]["disambiguation-source"] == "GRID":
+                grid = a["disambiguated-organization"]["disambiguated-organization-identifier"]
+                id = lookup_id(grid, "P2427", name)
+                name = id
         organization_list.append(name)
     return organization_list
 
