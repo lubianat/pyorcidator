@@ -1,0 +1,291 @@
+{
+    "orcid-identifier": {
+        "uri": "http://orcid.org/0000-0003-0369-424X",
+        "path": "0000-0003-0369-424X",
+        "host": "orcid.org"
+    },
+    "preferences": {
+        "locale": "EN"
+    },
+    "history": {
+        "creation-method": "DIRECT",
+        "completion-date": null,
+        "submission-date": {
+            "value": 1442991943582
+        },
+        "last-modified-date": {
+            "value": 1651667549104
+        },
+        "claimed": true,
+        "source": null,
+        "deactivation-date": null,
+        "verified-email": true,
+        "verified-primary-email": true
+    },
+    "person": {
+        "last-modified-date": {
+            "value": 1597907032419
+        },
+        "name": {
+            "created-date": {
+                "value": 1460763022523
+            },
+            "last-modified-date": {
+                "value": 1460763022523
+            },
+            "given-names": {
+                "value": "Shohreh"
+            },
+            "family-name": {
+                "value": "Issazadeh-Navikas"
+            },
+            "credit-name": null,
+            "source": null,
+            "visibility": "PUBLIC",
+            "path": "0000-0003-0369-424X"
+        },
+        "other-names": {
+            "last-modified-date": null,
+            "other-name": [],
+            "path": "/0000-0003-0369-424X/other-names"
+        },
+        "biography": null,
+        "researcher-urls": {
+            "last-modified-date": null,
+            "researcher-url": [],
+            "path": "/0000-0003-0369-424X/researcher-urls"
+        },
+        "emails": {
+            "last-modified-date": null,
+            "email": [],
+            "path": "/0000-0003-0369-424X/email"
+        },
+        "addresses": {
+            "last-modified-date": null,
+            "address": [],
+            "path": "/0000-0003-0369-424X/address"
+        },
+        "keywords": {
+            "last-modified-date": null,
+            "keyword": [],
+            "path": "/0000-0003-0369-424X/keywords"
+        },
+        "external-identifiers": {
+            "last-modified-date": {
+                "value": 1597907032419
+            },
+            "external-identifier": [
+                {
+                    "created-date": {
+                        "value": 1597907032419
+                    },
+                    "last-modified-date": {
+                        "value": 1597907032419
+                    },
+                    "source": {
+                        "source-orcid": null,
+                        "source-client-id": {
+                            "uri": "http://orcid.org/client/APP-4DPEW6SVSNQHKC8G",
+                            "path": "APP-4DPEW6SVSNQHKC8G",
+                            "host": "orcid.org"
+                        },
+                        "source-name": {
+                            "value": "Loop"
+                        }
+                    },
+                    "external-id-type": "Loop profile",
+                    "external-id-value": "157713",
+                    "external-id-url": {
+                        "value": "http://loop.frontiersin.org/people/157713/overview?referrer=orcid_profile"
+                    },
+                    "external-id-relationship": "SELF",
+                    "visibility": "PUBLIC",
+                    "path": "/0000-0003-0369-424X/external-identifiers/1785320",
+                    "put-code": 1785320,
+                    "display-index": 0
+                }
+            ],
+            "path": "/0000-0003-0369-424X/external-identifiers"
+        },
+        "path": "/0000-0003-0369-424X/person"
+    },
+    "activities-summary": {
+        "last-modified-date": {
+            "value": 1641824240794
+        },
+        "educations": {
+            "last-modified-date": null,
+            "education-summary": [],
+            "path": "/0000-0003-0369-424X/educations"
+        },
+        "employments": {
+            "last-modified-date": null,
+            "employment-summary": [],
+            "path": "/0000-0003-0369-424X/employments"
+        },
+        "fundings": {
+            "last-modified-date": null,
+            "group": [],
+            "path": "/0000-0003-0369-424X/fundings"
+        },
+        "peer-reviews": {
+            "last-modified-date": null,
+            "group": [],
+            "path": "/0000-0003-0369-424X/peer-reviews"
+        },
+        "works": {
+            "last-modified-date": {
+                "value": 1641824240794
+            },
+            "group": [
+                {
+                    "last-modified-date": {
+                        "value": 1641824240794
+                    },
+                    "external-ids": {
+                        "external-id": [
+                            {
+                                "external-id-type": "doi",
+                                "external-id-value": "10.15252/embj.2020106868",
+                                "external-id-url": {
+                                    "value": "https://doi.org/10.15252/embj.2020106868"
+                                },
+                                "external-id-relationship": "SELF"
+                            }
+                        ]
+                    },
+                    "work-summary": [
+                        {
+                            "put-code": 93024101,
+                            "created-date": {
+                                "value": 1619686783126
+                            },
+                            "last-modified-date": {
+                                "value": 1641824240794
+                            },
+                            "source": {
+                                "source-orcid": null,
+                                "source-client-id": {
+                                    "uri": "http://orcid.org/client/0000-0001-9884-1913",
+                                    "path": "0000-0001-9884-1913",
+                                    "host": "orcid.org"
+                                },
+                                "source-name": {
+                                    "value": "Crossref"
+                                }
+                            },
+                            "title": {
+                                "title": {
+                                    "value": "IFN\u2010\u03b2 rescues neurodegeneration by regulating mitochondrial fission via STAT5, PGAM5, and Drp1"
+                                },
+                                "subtitle": null,
+                                "translated-title": null
+                            },
+                            "external-ids": {
+                                "external-id": [
+                                    {
+                                        "external-id-type": "doi",
+                                        "external-id-value": "10.15252/embj.2020106868",
+                                        "external-id-url": {
+                                            "value": "https://doi.org/10.15252/embj.2020106868"
+                                        },
+                                        "external-id-relationship": "SELF"
+                                    }
+                                ]
+                            },
+                            "type": "JOURNAL_ARTICLE",
+                            "publication-date": {
+                                "year": {
+                                    "value": "2021"
+                                },
+                                "month": {
+                                    "value": "06"
+                                },
+                                "day": null,
+                                "media-type": null
+                            },
+                            "visibility": "PUBLIC",
+                            "path": "/0000-0003-0369-424X/work/93024101",
+                            "display-index": "0"
+                        }
+                    ]
+                },
+                {
+                    "last-modified-date": {
+                        "value": 1599034562460
+                    },
+                    "external-ids": {
+                        "external-id": [
+                            {
+                                "external-id-type": "doi",
+                                "external-id-value": "10.1016/j.ebiom.2020.102868",
+                                "external-id-url": {
+                                    "value": "https://doi.org/10.1016/j.ebiom.2020.102868"
+                                },
+                                "external-id-relationship": "SELF"
+                            }
+                        ]
+                    },
+                    "work-summary": [
+                        {
+                            "put-code": 79716915,
+                            "created-date": {
+                                "value": 1599034562460
+                            },
+                            "last-modified-date": {
+                                "value": 1599034562460
+                            },
+                            "source": {
+                                "source-orcid": null,
+                                "source-client-id": {
+                                    "uri": "http://orcid.org/client/0000-0001-9884-1913",
+                                    "path": "0000-0001-9884-1913",
+                                    "host": "orcid.org"
+                                },
+                                "source-name": {
+                                    "value": "Crossref"
+                                }
+                            },
+                            "title": {
+                                "title": {
+                                    "value": "Identification of unique and shared mitochondrial DNA mutations in neurodegeneration and cancer by single-cell mitochondrial DNA structural variation sequencing (MitoSV-seq)"
+                                },
+                                "subtitle": null,
+                                "translated-title": null
+                            },
+                            "external-ids": {
+                                "external-id": [
+                                    {
+                                        "external-id-type": "doi",
+                                        "external-id-value": "10.1016/j.ebiom.2020.102868",
+                                        "external-id-url": {
+                                            "value": "https://doi.org/10.1016/j.ebiom.2020.102868"
+                                        },
+                                        "external-id-relationship": "SELF"
+                                    }
+                                ]
+                            },
+                            "type": "JOURNAL_ARTICLE",
+                            "publication-date": {
+                                "year": {
+                                    "value": "2020"
+                                },
+                                "month": {
+                                    "value": "07"
+                                },
+                                "day": null,
+                                "media-type": null
+                            },
+                            "visibility": "PUBLIC",
+                            "path": "/0000-0003-0369-424X/work/79716915",
+                            "display-index": "0"
+                        }
+                    ]
+                }
+            ],
+            "path": "/0000-0003-0369-424X/works"
+        },
+        "path": "/0000-0003-0369-424X/activities"
+    },
+    "path": "/0000-0003-0369-424X"
+}
