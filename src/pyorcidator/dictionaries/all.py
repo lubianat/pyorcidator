@@ -1,3 +1,5 @@
+""" Loads all JSON files into a single mother dict"""
+
 import json
 from pathlib import Path
 

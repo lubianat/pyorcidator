@@ -1,15 +1,12 @@
 import json
 import re
-from dataclasses import dataclass
 from pathlib import Path
-
-import clipboard
 import requests
 from SPARQLWrapper import JSON, SPARQLWrapper
 from wdcuration import add_key
-
 from .dictionaries.all import dicts
-from .wikidata_lookup import search_wikidata
+from .classes import EducationEntry
+
 
 HERE = Path(__file__).parent.resolve()
 DICTIONARIES_PATH = HERE.joinpath("dictionaries")
@@ -23,77 +20,75 @@ def render_orcid_qs(orcid):
     Args:
         orcid: The ORCID of the researcher to reconcile to Wikidata.
     """
-    # From https://pub.orcid.org/v3.0/#!/Public_API_v2.0/viewRecord
-    url = "https://pub.orcid.org/v2.0/"
-    header = {"Accept": "application/json"}
-    payload = {"orcid": orcid}
-    r = requests.get(f"{url}{orcid}", headers=header)
-    data = r.json()
+    data = get_orcid_data(orcid)
+
     with open("sample.json", "w+") as f:
         f.write(json.dumps(data, indent=4))
 
-    personal_data = data["person"]
-    employment_data = data["activities-summary"]["employments"]["employment-summary"]
-    education_data = data["activities-summary"]["educations"]["education-summary"]
-    publication_data = data["activities-summary"]["works"]
-
-    first_name = personal_data["name"]["given-names"]["value"]
-    last_name = personal_data["name"]["family-name"]["value"]
-
-    employment_institutions = get_organization_list(employment_data)
-    education_entries = get_education_info(education_data)
-
-    s = lookup_id(orcid, property="P496", default="LAST")
-
+    researcher_qid = lookup_id(orcid, property="P496", default="LAST")
     ref = f'|S854|"https://orcid.org/{str(orcid)}"'
 
-    if s == "LAST":
-        qs = f"""CREATE
-        {s}|Len|"{first_name} {last_name}"
-    {s}|Den|"researcher"
-    """
-    else:
-        qs = ""
-    qs = (
-        qs
-        + f"""
-    {s}|P31|Q5{ref}
-    {s}|P106|Q1650915{ref}
-    {s}|P496|"{orcid}"{ref}
-    """
-    )
+    qs = get_base_qs(orcid, data, researcher_qid, ref)
 
-    property_id = "P108"
-    key = "institutions"
-    target_list = employment_institutions
+    employment_data = data["activities-summary"]["employments"]["employment-summary"]
+    employment_institutions = get_organization_list(employment_data)
     qs = process_item(
         qs,
-        property_id,
-        original_dict=key,
-        target_list=target_list,
-        subject_qid=s,
+        property_id="P108",  # Property for employer
+        original_dict="institutions",  # Handles institutions.json
+        target_list=employment_institutions,
+        subject_qid=researcher_qid,
         ref=ref,
     )
 
+    education_data = data["activities-summary"]["educations"]["education-summary"]
+    education_entries = get_education_info(education_data)
     qs = process_education_entries(
         qs,
-        subject_qid=s,
+        subject_qid=researcher_qid,
         ref=ref,
         education_entries=education_entries,
-        property_id="P69",
+        property_id="P69",  # Property for educated at
     )
 
     return qs
 
 
-@dataclass
-class EducationEntry:
-    """Class for capturing the info for an education entry on ORCID."""
+def get_base_qs(orcid, data, researcher_qid, ref):
+    """Returns the first lines for the new Quickstatements"""
 
-    institution: str
-    degree: str
-    start_date: str = None
-    end_date: str = None
+    personal_data = data["person"]
+    first_name = personal_data["name"]["given-names"]["value"]
+    last_name = personal_data["name"]["family-name"]["value"]
+
+    if researcher_qid == "LAST":
+        # Creates a new item
+        qs = f"""CREATE
+{researcher_qid}|Len|"{first_name} {last_name}"
+{researcher_qid}|Den|"researcher"
+    """
+    else:
+        # Updates an existing item
+        qs = ""
+    qs = (
+        qs
+        + f"""
+{researcher_qid}|P31|Q5{ref}
+{researcher_qid}|P106|Q1650915{ref}
+{researcher_qid}|P496|"{orcid}"{ref}
+    """
+    )
+    return qs
+
+
+def get_orcid_data(orcid):
+    """Pulls data from the ORCID API"""
+    # From https://pub.orcid.org/v3.0/#!/Public_API_v2.0/viewRecord
+    url = "https://pub.orcid.org/v2.0/"
+    header = {"Accept": "application/json"}
+    r = requests.get(f"{url}{orcid}", headers=header)
+    data = r.json()
+    return data
 
 
 def process_item(
@@ -214,32 +209,23 @@ def get_date(entry, start_or_end="start"):
 
 
 def get_education_info(data):
+    """
+    Parses ORCID data and returns a list of EducationEntry objects.
+    """
     organization_list = []
 
-    for a in data:
-        qualifiers = {}
+    for data_entry in data:
 
-        title = a["role-title"]
-        degree_qid = get_qid_for_item("degree", title)
-
-        start_date = get_date(a, "start")
-        end_date = get_date(a, "end")
-
-        a = a["organization"]
-        name = a["name"]
-        if (
-            a["disambiguated-organization"]
-            and "disambiguation-source" in a["disambiguated-organization"]
-            and a["disambiguated-organization"].get("disambiguation-source") == "GRID"
-        ):
-            grid = a["disambiguated-organization"]["disambiguated-organization-identifier"]
-
-            institution_qid = lookup_id(grid, "P2427", name)
-        else:
-            institution_qid = get_qid_for_item("institutions", name)
+        title = data_entry["role-title"]
+        role_qid = get_qid_for_item("degree", title)
+        start_date = get_date(data_entry, "start")
+        end_date = get_date(data_entry, "end")
+        data_entry = data_entry["organization"]
+        name = data_entry["name"]
+        institution_qid = get_institution_qid(data_entry, name)
 
         entry = EducationEntry(
-            degree=degree_qid,
+            degree=role_qid,
             institution=institution_qid,
             start_date=start_date,
             end_date=end_date,
@@ -250,24 +236,38 @@ def get_education_info(data):
     return organization_list
 
 
-def process_education_entries(qs, subject_qid, ref, education_entries, property_id="P69"):
+def get_institution_qid(data_entry, name):
+    """Gets the QID for an academic institution"""
 
+    # Tries to get it from GRID: Global Research Identifier Database
+    if (
+        data_entry["disambiguated-organization"]
+        and "disambiguation-source" in data_entry["disambiguated-organization"]
+        and data_entry["disambiguated-organization"].get("disambiguation-source") == "GRID"
+    ):
+        grid = data_entry["disambiguated-organization"]["disambiguated-organization-identifier"]
+        institution_qid = lookup_id(grid, "P2427", name)
+    else:
+        # Gets the QID from the controlled vocabullary dict
+        institution_qid = get_qid_for_item("institutions", name)
+    return institution_qid
+
+
+def process_education_entries(qs, subject_qid, ref, education_entries, property_id="P69"):
+    """
+    From a list of EducationEntry objects, renders quickstatements for the QID.
+    """
     # Quickstatements fails in the case of same institution for multliple degrees.
     # See https://www.wikidata.org/wiki/Help:QuickStatements#Limitation
 
     for entry in education_entries:
-        if entry.start_date == "":
-            qs = (
-                qs
-                + f"""
-        {subject_qid}|{property_id}|{entry.institution}|P512|{entry.degree}{ref}"""
-            )
-        else:
-            qs = (
-                qs
-                + f"""
+        if entry.start_date != "":
+            qs += f"""
             {subject_qid}|{property_id}|{entry.institution}|P512|{entry.degree}|P580|{entry.start_date}|P582|{entry.end_date}{ref}"""
-            )
+        else:
+            qs += f"""
+{subject_qid}|{property_id}|{entry.institution}|P512|{entry.degree}{ref}"""
+
     return qs
 
 

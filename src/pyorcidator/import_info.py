@@ -1,8 +1,6 @@
 import webbrowser
 from urllib.parse import quote
-
 import click
-
 from .helper import *
 
 
