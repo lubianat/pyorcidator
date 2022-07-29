@@ -75,8 +75,7 @@ def get_base_qs(orcid, data, researcher_qid, ref):
         + f"""
 {researcher_qid}|P31|Q5{ref}
 {researcher_qid}|P106|Q1650915{ref}
-{researcher_qid}|P496|"{orcid}"{ref}
-    """
+{researcher_qid}|P496|"{orcid}"{ref} """
     )
     return qs
 
@@ -109,7 +108,7 @@ def process_item(
         qs = (
             qs
             + f"""
-        {subject_qid}|{property_id}|{qid}"""
+{subject_qid}|{property_id}|{qid}"""
         )
 
         if qualifier_nested_dictionary != {}:
@@ -217,7 +216,10 @@ def get_education_info(data):
     for data_entry in data:
 
         title = data_entry["role-title"]
-        role_qid = get_qid_for_item("degree", title)
+        if title is not None:
+            role_qid = get_qid_for_item("degree", title)
+        else:
+            role_qid = None
         start_date = get_date(data_entry, "start")
         end_date = get_date(data_entry, "end")
         data_entry = data_entry["organization"]
@@ -261,13 +263,16 @@ def process_education_entries(qs, subject_qid, ref, education_entries, property_
     # See https://www.wikidata.org/wiki/Help:QuickStatements#Limitation
 
     for entry in education_entries:
-        if entry.start_date != "":
-            qs += f"""
-            {subject_qid}|{property_id}|{entry.institution}|P512|{entry.degree}|P580|{entry.start_date}|P582|{entry.end_date}{ref}"""
-        else:
-            qs += f"""
-{subject_qid}|{property_id}|{entry.institution}|P512|{entry.degree}{ref}"""
 
+        qs += f"""
+        {subject_qid}|{property_id}|{entry.institution}"""
+
+        if entry.degree is not None:
+            qs += f"|P512|{entry.degree}"
+        if entry.start_date != "":
+            qs += "|P580|{entry.start_date}|P582|{entry.end_date}"
+
+        qs += f"{ref}"
     return qs
 
 
