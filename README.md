@@ -30,6 +30,11 @@ pip install -e .
 ```
 
 ## Usage
+To run PyORCIDator, interactively, run:
+```bash
+pyorcidator import
+```
+
 To run a simple query, just run:
 ```bash
 pyorcidator import --orcid 0000-0003-2473-2313
@@ -38,6 +43,6 @@ pyorcidator import --orcid 0000-0003-2473-2313
 To run a query with a list of ORCIDs, run:
 ```bash
 # here orcids.txt is a file containing one ORCID per line
-pyorcidator import --orcid-list orcids.txt
+pyorcidator import_list --orcid-list orcids.txt
 ```
 
