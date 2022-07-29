@@ -170,3 +170,6 @@ cython_debug/
 
 # Última amostra
 ./sample.json
+
+# VS Code files
+.vscode/launch.json

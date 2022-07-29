@@ -16,12 +16,33 @@ The current features are on the development list:
 - Adding authorship (P50) statements for all listed articles. 
 - Extract Google Scholar and Twitter IDs 
 
-## Usage
+## Installation
+To install PyORCIDator, run the easiest way is to clone the repository with:
 
+```bash
+git clone https://github.com/lubianat/pyorcidator.git
 ```
-pip install -e .
 
+Then, install it from the project's root directory with:
+
+```bash
+pip install -e .
+```
+
+## Usage
+To run PyORCIDator, interactively, run:
+```bash
+pyorcidator import
+```
+
+To run a simple query, just run:
+```bash
 pyorcidator import --orcid 0000-0003-2473-2313
 ```
 
-(in construction)
+To run a query with a list of ORCIDs, run:
+```bash
+# here orcids.txt is a file containing one ORCID per line
+pyorcidator import_list --orcid-list orcids.txt
+```
+
