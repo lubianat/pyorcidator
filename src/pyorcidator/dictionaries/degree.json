@@ -1,6 +1,7 @@
 {
     "B.S.": "Q787674",
     "Bachelor Degree in Pharmacy": "Q4838816",
+    "Bachelor in Computer Science": "Q1087882",
     "Bachelor of Information Technology ": "Q2613886",
     "Bachelor of Science": "Q787674",
     "Bachelor of Science - Genetics": "Q66092476",
@@ -15,6 +16,7 @@
     "Lic. Sc.": "0",
     "MS in Biological Sciences": "Q6785273",
     "MSc Bioinformatics and Systems Biology": "Q183816",
+    "MSc in Computer Science": "Q950900",
     "Master": "Q183816",
     "Master of Science": "Q950900",
     "Master of Science (MS) with Specialisation in Distributed Systems": "Q950900",
@@ -29,8 +31,10 @@
     "Ph.D. in Sciences": "Q4618975",
     "PhD": "Q849697",
     "PhD Computer Science": "Q97592191",
+    "PhD in Computer Science and Applied Math": "Q97592191",
     "Post-Doc Mocelular Cardiology": "Q1125292",
     "Post-doc Molecular Cardiology": "Q1125292",
+    "Post-doctorate in Computer Science and Applied Math": "Q43048930",
     "P\u00f3s Doutorado": "Q43048930",
     "Summer Undergraduate Research Program - Summer Course": "Q111519728",
     "Technical Degree in Biotechnology": "Q111519910"
