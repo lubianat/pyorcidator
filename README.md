@@ -46,3 +46,5 @@ To run a query with a list of ORCIDs, run:
 pyorcidator import_list --orcid-list orcids.txt
 ```
 
+# Related Work
+* https://pure.mpg.de/rest/items/item_3367602_1/component/file_3367603/content 
