@@ -2,7 +2,13 @@
 Tests for the helper module
 """
 
-from pyorcidator.helper import get_date, get_organization_list, get_paper_dois, lookup_id
+from pyorcidator.helper import (
+    get_date,
+    get_organization_list,
+    get_paper_dois,
+    lookup_id,
+    get_external_ids,
+)
 
 
 def test_lookup_id():
@@ -42,3 +48,9 @@ def test_get_org_list(sample_orcid_data):
         "Q152171",
         "Fraunhofer SCAI",
     ]
+
+
+def test_get_loop_id(sample_orcid_data):
+    goal = "827476"
+    result = get_external_ids(sample_orcid_data)
+    assert result["Loop profile"] == goal

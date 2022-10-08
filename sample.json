@@ -1,20 +1,20 @@
 {
     "orcid-identifier": {
-        "uri": "http://orcid.org/0000-0002-7139-0865",
-        "path": "0000-0002-7139-0865",
+        "uri": "http://orcid.org/0000-0001-7513-7376",
+        "path": "0000-0001-7513-7376",
         "host": "orcid.org"
     },
     "preferences": {
-        "locale": "PT"
+        "locale": "EN"
     },
     "history": {
         "creation-method": "DIRECT",
         "completion-date": null,
         "submission-date": {
-            "value": 1472850427627
+            "value": 1573125577197
         },
         "last-modified-date": {
-            "value": 1653964118699
+            "value": 1654190739536
         },
         "claimed": true,
         "source": null,
@@ -24,212 +24,262 @@
     },
     "person": {
         "last-modified-date": {
-            "value": 1513966443274
+            "value": 1654190739542
         },
         "name": {
             "created-date": {
-                "value": 1472850427870
+                "value": 1573125577432
             },
             "last-modified-date": {
-                "value": 1481816113756
+                "value": 1654190739317
             },
             "given-names": {
-                "value": "Raquel"
+                "value": "Jo\u00e3o Vitor"
             },
             "family-name": {
-                "value": "Lopes Costa"
+                "value": "Ferreira Cavalcante"
             },
-            "credit-name": {
-                "value": "Costa, R. L."
-            },
+            "credit-name": null,
             "source": null,
             "visibility": "PUBLIC",
-            "path": "0000-0002-7139-0865"
+            "path": "0000-0001-7513-7376"
         },
         "other-names": {
-            "last-modified-date": null,
-            "other-name": [],
-            "path": "/0000-0002-7139-0865/other-names"
+            "last-modified-date": {
+                "value": 1654190739542
+            },
+            "other-name": [
+                {
+                    "created-date": {
+                        "value": 1630842132581
+                    },
+                    "last-modified-date": {
+                        "value": 1654190739542
+                    },
+                    "source": {
+                        "source-orcid": {
+                            "uri": "http://orcid.org/0000-0001-7513-7376",
+                            "path": "0000-0001-7513-7376",
+                            "host": "orcid.org"
+                        },
+                        "source-client-id": null,
+                        "source-name": {
+                            "value": "Jo\u00e3o Vitor Ferreira Cavalcante"
+                        }
+                    },
+                    "content": "Jo\u00e3o Vitor F. Cavalcante",
+                    "visibility": "PUBLIC",
+                    "path": "/0000-0001-7513-7376/other-names/1660495",
+                    "put-code": 1660495,
+                    "display-index": 2
+                },
+                {
+                    "created-date": {
+                        "value": 1654190739539
+                    },
+                    "last-modified-date": {
+                        "value": 1654190739539
+                    },
+                    "source": {
+                        "source-orcid": {
+                            "uri": "http://orcid.org/0000-0001-7513-7376",
+                            "path": "0000-0001-7513-7376",
+                            "host": "orcid.org"
+                        },
+                        "source-client-id": null,
+                        "source-name": {
+                            "value": "Jo\u00e3o Vitor Ferreira Cavalcante"
+                        }
+                    },
+                    "content": "Jo\u00e3o Vitor Cavalcante",
+                    "visibility": "PUBLIC",
+                    "path": "/0000-0001-7513-7376/other-names/1762281",
+                    "put-code": 1762281,
+                    "display-index": 1
+                }
+            ],
+            "path": "/0000-0001-7513-7376/other-names"
         },
         "biography": null,
         "researcher-urls": {
             "last-modified-date": null,
             "researcher-url": [],
-            "path": "/0000-0002-7139-0865/researcher-urls"
+            "path": "/0000-0001-7513-7376/researcher-urls"
         },
         "emails": {
             "last-modified-date": null,
             "email": [],
-            "path": "/0000-0002-7139-0865/email"
+            "path": "/0000-0001-7513-7376/email"
         },
         "addresses": {
-            "last-modified-date": null,
-            "address": [],
-            "path": "/0000-0002-7139-0865/address"
+            "last-modified-date": {
+                "value": 1584827368816
+            },
+            "address": [
+                {
+                    "created-date": {
+                        "value": 1584827368816
+                    },
+                    "last-modified-date": {
+                        "value": 1584827368816
+                    },
+                    "source": {
+                        "source-orcid": {
+                            "uri": "http://orcid.org/0000-0001-7513-7376",
+                            "path": "0000-0001-7513-7376",
+                            "host": "orcid.org"
+                        },
+                        "source-client-id": null,
+                        "source-name": {
+                            "value": "Jo\u00e3o Vitor Ferreira Cavalcante"
+                        }
+                    },
+                    "country": {
+                        "value": "BR"
+                    },
+                    "visibility": "PUBLIC",
+                    "path": "/0000-0001-7513-7376/address/1563995",
+                    "put-code": 1563995,
+                    "display-index": 1
+                }
+            ],
+            "path": "/0000-0001-7513-7376/address"
         },
         "keywords": {
             "last-modified-date": null,
             "keyword": [],
-            "path": "/0000-0002-7139-0865/keywords"
+            "path": "/0000-0001-7513-7376/keywords"
         },
         "external-identifiers": {
             "last-modified-date": {
-                "value": 1513966443274
+                "value": 1644941537325
             },
             "external-identifier": [
                 {
                     "created-date": {
-                        "value": 1513966443274
+                        "value": 1644941537325
                     },
                     "last-modified-date": {
-                        "value": 1513966443274
+                        "value": 1644941537325
                     },
                     "source": {
                         "source-orcid": null,
                         "source-client-id": {
-                            "uri": "http://orcid.org/client/0000-0003-1377-5676",
-                            "path": "0000-0003-1377-5676",
+                            "uri": "http://orcid.org/client/APP-4DPEW6SVSNQHKC8G",
+                            "path": "APP-4DPEW6SVSNQHKC8G",
                             "host": "orcid.org"
                         },
                         "source-name": {
-                            "value": "ResearcherID"
+                            "value": "Loop"
                         }
                     },
-                    "external-id-type": "ResearcherID",
-                    "external-id-value": "W-1412-2017",
+                    "external-id-type": "Loop profile",
+                    "external-id-value": "1651810",
                     "external-id-url": {
-                        "value": "http://www.researcherid.com/rid/W-1412-2017"
+                        "value": "http://loop.frontiersin.org/people/1651810/overview?referrer=orcid_profile"
                     },
                     "external-id-relationship": "SELF",
                     "visibility": "PUBLIC",
-                    "path": "/0000-0002-7139-0865/external-identifiers/900814",
-                    "put-code": 900814,
+                    "path": "/0000-0001-7513-7376/external-identifiers/2361374",
+                    "put-code": 2361374,
                     "display-index": 0
                 }
             ],
-            "path": "/0000-0002-7139-0865/external-identifiers"
+            "path": "/0000-0001-7513-7376/external-identifiers"
         },
-        "path": "/0000-0002-7139-0865/person"
+        "path": "/0000-0001-7513-7376/person"
     },
     "activities-summary": {
         "last-modified-date": {
-            "value": 1653964118696
+            "value": 1654157738314
         },
         "educations": {
             "last-modified-date": {
-                "value": 1496948883250
+                "value": 1630841944738
             },
             "education-summary": [
                 {
                     "created-date": {
-                        "value": 1481816285220
+                        "value": 1584827256778
                     },
                     "last-modified-date": {
-                        "value": 1496948883250
+                        "value": 1630841944738
                     },
                     "source": {
                         "source-orcid": {
-                            "uri": "http://orcid.org/0000-0002-7139-0865",
-                            "path": "0000-0002-7139-0865",
+                            "uri": "http://orcid.org/0000-0001-7513-7376",
+                            "path": "0000-0001-7513-7376",
                             "host": "orcid.org"
                         },
                         "source-client-id": null,
                         "source-name": {
-                            "value": "Costa, R. L."
+                            "value": "Jo\u00e3o Vitor Ferreira Cavalcante"
                         }
                     },
-                    "department-name": "Coordination of Mathematical and Computational Methods",
-                    "role-title": null,
-                    "start-date": null,
-                    "end-date": null,
-                    "organization": {
-                        "name": "National Laboratory for Scientific Computing, LNCC",
-                        "address": {
-                            "city": "Petr\u00f3polis",
-                            "region": "Rio de Janeiro",
-                            "country": "BR"
+                    "department-name": "Bioinformatics Multidisciplinary Enviroment",
+                    "role-title": "Biomedical Sciences",
+                    "start-date": {
+                        "year": {
+                            "value": "2018"
                         },
-                        "disambiguated-organization": null
-                    },
-                    "visibility": "PUBLIC",
-                    "put-code": 2787587,
-                    "path": "/0000-0002-7139-0865/education/2787587"
-                }
-            ],
-            "path": "/0000-0002-7139-0865/educations"
-        },
-        "employments": {
-            "last-modified-date": {
-                "value": 1496948811363
-            },
-            "employment-summary": [
-                {
-                    "created-date": {
-                        "value": 1481816087345
-                    },
-                    "last-modified-date": {
-                        "value": 1496948811363
-                    },
-                    "source": {
-                        "source-orcid": {
-                            "uri": "http://orcid.org/0000-0002-7139-0865",
-                            "path": "0000-0002-7139-0865",
-                            "host": "orcid.org"
+                        "month": {
+                            "value": "02"
                         },
-                        "source-client-id": null,
-                        "source-name": {
-                            "value": "Costa, R. L."
+                        "day": {
+                            "value": "04"
                         }
                     },
-                    "department-name": "Oncovirology Program",
-                    "role-title": null,
-                    "start-date": null,
                     "end-date": null,
                     "organization": {
-                        "name": "Instituto Nacional de C\u00e2ncer",
+                        "name": "Universidade Federal do Rio Grande do Norte",
                         "address": {
-                            "city": "Rio de Janeiro",
-                            "region": "RJ",
+                            "city": "Natal",
+                            "region": "RN",
                             "country": "BR"
                         },
                         "disambiguated-organization": {
-                            "disambiguated-organization-identifier": "37908",
+                            "disambiguated-organization-identifier": "28123",
                             "disambiguation-source": "RINGGOLD"
                         }
                     },
                     "visibility": "PUBLIC",
-                    "put-code": 2787559,
-                    "path": "/0000-0002-7139-0865/employment/2787559"
+                    "put-code": 10095211,
+                    "path": "/0000-0001-7513-7376/education/10095211"
                 }
             ],
-            "path": "/0000-0002-7139-0865/employments"
+            "path": "/0000-0001-7513-7376/educations"
+        },
+        "employments": {
+            "last-modified-date": null,
+            "employment-summary": [],
+            "path": "/0000-0001-7513-7376/employments"
         },
         "fundings": {
             "last-modified-date": null,
             "group": [],
-            "path": "/0000-0002-7139-0865/fundings"
+            "path": "/0000-0001-7513-7376/fundings"
         },
         "peer-reviews": {
             "last-modified-date": null,
             "group": [],
-            "path": "/0000-0002-7139-0865/peer-reviews"
+            "path": "/0000-0001-7513-7376/peer-reviews"
         },
         "works": {
             "last-modified-date": {
-                "value": 1653964118696
+                "value": 1654157738314
             },
             "group": [
                 {
                     "last-modified-date": {
-                        "value": 1653964118696
+                        "value": 1647367165843
                     },
                     "external-ids": {
                         "external-id": [
                             {
                                 "external-id-type": "doi",
-                                "external-id-value": "10.5753/isys.2020.830",
+                                "external-id-value": "10.3389/fgene.2022.814437",
                                 "external-id-url": {
-                                    "value": "https://doi.org/10.5753/isys.2020.830"
+                                    "value": "https://doi.org/10.3389/fgene.2022.814437"
                                 },
                                 "external-id-relationship": "SELF"
                             }
@@ -237,323 +287,27 @@
                     },
                     "work-summary": [
                         {
-                            "put-code": 80734101,
+                            "put-code": 109892841,
                             "created-date": {
-                                "value": 1600787531319
+                                "value": 1647367165843
                             },
                             "last-modified-date": {
-                                "value": 1653964118696
-                            },
-                            "source": {
-                                "source-orcid": null,
-                                "source-client-id": {
-                                    "uri": "http://orcid.org/client/0000-0001-9884-1913",
-                                    "path": "0000-0001-9884-1913",
-                                    "host": "orcid.org"
-                                },
-                                "source-name": {
-                                    "value": "Crossref"
-                                }
-                            },
-                            "title": {
-                                "title": {
-                                    "value": "Minerando Regras de Associa\u00e7\u00e3o de Multirrela\u00e7\u00e3o na Web de Dados"
-                                },
-                                "subtitle": null,
-                                "translated-title": null
-                            },
-                            "external-ids": {
-                                "external-id": [
-                                    {
-                                        "external-id-type": "doi",
-                                        "external-id-value": "10.5753/isys.2020.830",
-                                        "external-id-url": {
-                                            "value": "https://doi.org/10.5753/isys.2020.830"
-                                        },
-                                        "external-id-relationship": "SELF"
-                                    }
-                                ]
-                            },
-                            "type": "JOURNAL_ARTICLE",
-                            "publication-date": {
-                                "year": {
-                                    "value": "2020"
-                                },
-                                "month": {
-                                    "value": "07"
-                                },
-                                "day": {
-                                    "value": "31"
-                                },
-                                "media-type": null
-                            },
-                            "visibility": "PUBLIC",
-                            "path": "/0000-0002-7139-0865/work/80734101",
-                            "display-index": "0"
-                        }
-                    ]
-                },
-                {
-                    "last-modified-date": {
-                        "value": 1653640766301
-                    },
-                    "external-ids": {
-                        "external-id": [
-                            {
-                                "external-id-type": "doi",
-                                "external-id-value": "10.1038/s41598-018-33498-5",
-                                "external-id-url": {
-                                    "value": "https://doi.org/10.1038/s41598-018-33498-5"
-                                },
-                                "external-id-relationship": "SELF"
-                            }
-                        ]
-                    },
-                    "work-summary": [
-                        {
-                            "put-code": 49127052,
-                            "created-date": {
-                                "value": 1539080679556
-                            },
-                            "last-modified-date": {
-                                "value": 1653640766301
-                            },
-                            "source": {
-                                "source-orcid": null,
-                                "source-client-id": {
-                                    "uri": "http://orcid.org/client/0000-0001-9884-1913",
-                                    "path": "0000-0001-9884-1913",
-                                    "host": "orcid.org"
-                                },
-                                "source-name": {
-                                    "value": "Crossref"
-                                }
-                            },
-                            "title": {
-                                "title": {
-                                    "value": "Distinct co-expression networks using multi-omic data reveal novel interventional targets in HPV-positive and negative head-and-neck squamous cell cancer"
-                                },
-                                "subtitle": null,
-                                "translated-title": null
-                            },
-                            "external-ids": {
-                                "external-id": [
-                                    {
-                                        "external-id-type": "doi",
-                                        "external-id-value": "10.1038/s41598-018-33498-5",
-                                        "external-id-url": {
-                                            "value": "https://doi.org/10.1038/s41598-018-33498-5"
-                                        },
-                                        "external-id-relationship": "SELF"
-                                    }
-                                ]
-                            },
-                            "type": "JOURNAL_ARTICLE",
-                            "publication-date": {
-                                "year": {
-                                    "value": "2018"
-                                },
-                                "month": {
-                                    "value": "12"
-                                },
-                                "day": null,
-                                "media-type": null
-                            },
-                            "visibility": "PUBLIC",
-                            "path": "/0000-0002-7139-0865/work/49127052",
-                            "display-index": "0"
-                        }
-                    ]
-                },
-                {
-                    "last-modified-date": {
-                        "value": 1653559146981
-                    },
-                    "external-ids": {
-                        "external-id": [
-                            {
-                                "external-id-type": "doi",
-                                "external-id-value": "10.1101/236133",
-                                "external-id-url": {
-                                    "value": "https://doi.org/10.1101/236133"
-                                },
-                                "external-id-relationship": "SELF"
-                            }
-                        ]
-                    },
-                    "work-summary": [
-                        {
-                            "put-code": 39771707,
-                            "created-date": {
-                                "value": 1513664247640
-                            },
-                            "last-modified-date": {
-                                "value": 1653559146981
-                            },
-                            "source": {
-                                "source-orcid": null,
-                                "source-client-id": {
-                                    "uri": "http://orcid.org/client/0000-0001-9884-1913",
-                                    "path": "0000-0001-9884-1913",
-                                    "host": "orcid.org"
-                                },
-                                "source-name": {
-                                    "value": "Crossref"
-                                }
-                            },
-                            "title": {
-                                "title": {
-                                    "value": "Distinct co-expression networks using multi-omic data reveal novel interventional targets in HPV-positive and negative head-and-neck squamous cell cancer"
-                                },
-                                "subtitle": null,
-                                "translated-title": null
-                            },
-                            "external-ids": {
-                                "external-id": [
-                                    {
-                                        "external-id-type": "doi",
-                                        "external-id-value": "10.1101/236133",
-                                        "external-id-url": {
-                                            "value": "https://doi.org/10.1101/236133"
-                                        },
-                                        "external-id-relationship": "SELF"
-                                    }
-                                ]
-                            },
-                            "type": "OTHER",
-                            "publication-date": {
-                                "year": {
-                                    "value": "2017"
-                                },
-                                "month": {
-                                    "value": "12"
-                                },
-                                "day": {
-                                    "value": "18"
-                                },
-                                "media-type": null
-                            },
-                            "visibility": "PUBLIC",
-                            "path": "/0000-0002-7139-0865/work/39771707",
-                            "display-index": "0"
-                        }
-                    ]
-                },
-                {
-                    "last-modified-date": {
-                        "value": 1653556629017
-                    },
-                    "external-ids": {
-                        "external-id": [
-                            {
-                                "external-id-type": "doi",
-                                "external-id-value": "10.1038/s41598-017-17351-9",
-                                "external-id-url": {
-                                    "value": "https://doi.org/10.1038/s41598-017-17351-9"
-                                },
-                                "external-id-relationship": "SELF"
-                            }
-                        ]
-                    },
-                    "work-summary": [
-                        {
-                            "put-code": 39362715,
-                            "created-date": {
-                                "value": 1512555689194
-                            },
-                            "last-modified-date": {
-                                "value": 1653556629017
-                            },
-                            "source": {
-                                "source-orcid": null,
-                                "source-client-id": {
-                                    "uri": "http://orcid.org/client/0000-0001-9884-1913",
-                                    "path": "0000-0001-9884-1913",
-                                    "host": "orcid.org"
-                                },
-                                "source-name": {
-                                    "value": "Crossref"
-                                }
-                            },
-                            "title": {
-                                "title": {
-                                    "value": "Analysis of the cervical microbiome and potential biomarkers from postpartum HIV-positive women displaying cervical intraepithelial lesions"
-                                },
-                                "subtitle": null,
-                                "translated-title": null
-                            },
-                            "external-ids": {
-                                "external-id": [
-                                    {
-                                        "external-id-type": "doi",
-                                        "external-id-value": "10.1038/s41598-017-17351-9",
-                                        "external-id-url": {
-                                            "value": "https://doi.org/10.1038/s41598-017-17351-9"
-                                        },
-                                        "external-id-relationship": "SELF"
-                                    }
-                                ]
-                            },
-                            "type": "JOURNAL_ARTICLE",
-                            "publication-date": {
-                                "year": {
-                                    "value": "2017"
-                                },
-                                "month": {
-                                    "value": "12"
-                                },
-                                "day": null,
-                                "media-type": null
-                            },
-                            "visibility": "PUBLIC",
-                            "path": "/0000-0002-7139-0865/work/39362715",
-                            "display-index": "0"
-                        }
-                    ]
-                },
-                {
-                    "last-modified-date": {
-                        "value": 1512563063505
-                    },
-                    "external-ids": {
-                        "external-id": [
-                            {
-                                "external-id-type": "pmid",
-                                "external-id-value": "28695067",
-                                "external-id-url": null,
-                                "external-id-relationship": "SELF"
-                            },
-                            {
-                                "external-id-type": "doi",
-                                "external-id-value": "10.7717/peerj.3509",
-                                "external-id-url": null,
-                                "external-id-relationship": "SELF"
-                            }
-                        ]
-                    },
-                    "work-summary": [
-                        {
-                            "put-code": 39367904,
-                            "created-date": {
-                                "value": 1512563063505
-                            },
-                            "last-modified-date": {
-                                "value": 1512563063505
+                                "value": 1647367165843
                             },
                             "source": {
                                 "source-orcid": {
-                                    "uri": "http://orcid.org/0000-0002-7139-0865",
-                                    "path": "0000-0002-7139-0865",
+                                    "uri": "http://orcid.org/0000-0001-7513-7376",
+                                    "path": "0000-0001-7513-7376",
                                     "host": "orcid.org"
                                 },
                                 "source-client-id": null,
                                 "source-name": {
-                                    "value": "Costa, R. L."
+                                    "value": "Jo\u00e3o Vitor Ferreira Cavalcante"
                                 }
                             },
                             "title": {
                                 "title": {
-                                    "value": "GeNNet: an integrated platform for unifying scientific workflows and graph databases for transcriptome data analysis"
+                                    "value": "MEDUSA: A Pipeline for Sensitive Taxonomic Classification and Flexible Functional Annotation of Metagenomic Shotgun Sequences"
                                 },
                                 "subtitle": null,
                                 "translated-title": null
@@ -562,20 +316,18 @@
                                 "external-id": [
                                     {
                                         "external-id-type": "doi",
-                                        "external-id-value": "10.7717/peerj.3509",
-                                        "external-id-url": null,
+                                        "external-id-value": "10.3389/fgene.2022.814437",
+                                        "external-id-url": {
+                                            "value": "https://doi.org/10.3389/fgene.2022.814437"
+                                        },
                                         "external-id-relationship": "SELF"
                                     },
                                     {
-                                        "external-id-type": "pmid",
-                                        "external-id-value": "28695067",
-                                        "external-id-url": null,
-                                        "external-id-relationship": "SELF"
-                                    },
-                                    {
-                                        "external-id-type": "isbn",
-                                        "external-id-value": "2167-8359 (Linking)",
-                                        "external-id-url": null,
+                                        "external-id-type": "issn",
+                                        "external-id-value": "1664-8021",
+                                        "external-id-url": {
+                                            "value": "https://portal.issn.org/resource/ISSN/1664-8021"
+                                        },
                                         "external-id-relationship": "PART_OF"
                                     }
                                 ]
@@ -583,256 +335,346 @@
                             "type": "JOURNAL_ARTICLE",
                             "publication-date": {
                                 "year": {
-                                    "value": "2017"
-                                },
-                                "month": {
-                                    "value": "07"
-                                },
-                                "day": null,
-                                "media-type": null
-                            },
-                            "visibility": "PUBLIC",
-                            "path": "/0000-0002-7139-0865/work/39367904",
-                            "display-index": "1"
-                        }
-                    ]
-                },
-                {
-                    "last-modified-date": {
-                        "value": 1653498756563
-                    },
-                    "external-ids": {
-                        "external-id": [
-                            {
-                                "external-id-type": "doi",
-                                "external-id-value": "10.1016/j.apgeog.2017.03.006",
-                                "external-id-url": {
-                                    "value": "http://dx.doi.org/10.1016/j.apgeog.2017.03.006"
-                                },
-                                "external-id-relationship": "SELF"
-                            }
-                        ]
-                    },
-                    "work-summary": [
-                        {
-                            "put-code": 32849851,
-                            "created-date": {
-                                "value": 1495069904932
-                            },
-                            "last-modified-date": {
-                                "value": 1653498756563
-                            },
-                            "source": {
-                                "source-orcid": null,
-                                "source-client-id": {
-                                    "uri": "http://orcid.org/client/0000-0001-9884-1913",
-                                    "path": "0000-0001-9884-1913",
-                                    "host": "orcid.org"
-                                },
-                                "source-name": {
-                                    "value": "Crossref"
-                                }
-                            },
-                            "title": {
-                                "title": {
-                                    "value": "Forest transitions in tropical landscapes: A test in the Atlantic Forest biodiversity hotspot"
-                                },
-                                "subtitle": null,
-                                "translated-title": null
-                            },
-                            "external-ids": {
-                                "external-id": [
-                                    {
-                                        "external-id-type": "doi",
-                                        "external-id-value": "10.1016/j.apgeog.2017.03.006",
-                                        "external-id-url": {
-                                            "value": "http://dx.doi.org/10.1016/j.apgeog.2017.03.006"
-                                        },
-                                        "external-id-relationship": "SELF"
-                                    }
-                                ]
-                            },
-                            "type": "JOURNAL_ARTICLE",
-                            "publication-date": {
-                                "year": {
-                                    "value": "2017"
-                                },
-                                "month": {
-                                    "value": "05"
-                                },
-                                "day": null,
-                                "media-type": null
-                            },
-                            "visibility": "PUBLIC",
-                            "path": "/0000-0002-7139-0865/work/32849851",
-                            "display-index": "0"
-                        }
-                    ]
-                },
-                {
-                    "last-modified-date": {
-                        "value": 1653774586645
-                    },
-                    "external-ids": {
-                        "external-id": [
-                            {
-                                "external-id-type": "doi",
-                                "external-id-value": "10.1101/095257",
-                                "external-id-url": {
-                                    "value": "https://doi.org/10.1101/095257"
-                                },
-                                "external-id-relationship": "SELF"
-                            }
-                        ]
-                    },
-                    "work-summary": [
-                        {
-                            "put-code": 59554651,
-                            "created-date": {
-                                "value": 1563309746133
-                            },
-                            "last-modified-date": {
-                                "value": 1653774586645
-                            },
-                            "source": {
-                                "source-orcid": null,
-                                "source-client-id": {
-                                    "uri": "http://orcid.org/client/0000-0001-9884-1913",
-                                    "path": "0000-0001-9884-1913",
-                                    "host": "orcid.org"
-                                },
-                                "source-name": {
-                                    "value": "Crossref"
-                                }
-                            },
-                            "title": {
-                                "title": {
-                                    "value": "GeNNet: An Integrated Platform for Unifying Scientific Workflow Management and Graph Databases for Transcriptome Data Analysis"
-                                },
-                                "subtitle": null,
-                                "translated-title": null
-                            },
-                            "external-ids": {
-                                "external-id": [
-                                    {
-                                        "external-id-type": "doi",
-                                        "external-id-value": "10.1101/095257",
-                                        "external-id-url": {
-                                            "value": "https://doi.org/10.1101/095257"
-                                        },
-                                        "external-id-relationship": "SELF"
-                                    }
-                                ]
-                            },
-                            "type": "OTHER",
-                            "publication-date": {
-                                "year": {
-                                    "value": "2016"
-                                },
-                                "month": {
-                                    "value": "12"
-                                },
-                                "day": {
-                                    "value": "18"
-                                },
-                                "media-type": null
-                            },
-                            "visibility": "PUBLIC",
-                            "path": "/0000-0002-7139-0865/work/59554651",
-                            "display-index": "0"
-                        }
-                    ]
-                },
-                {
-                    "last-modified-date": {
-                        "value": 1512563132234
-                    },
-                    "external-ids": {
-                        "external-id": [
-                            {
-                                "external-id-type": "pmid",
-                                "external-id-value": "22226705",
-                                "external-id-url": null,
-                                "external-id-relationship": "SELF"
-                            },
-                            {
-                                "external-id-type": "doi",
-                                "external-id-value": "10.1016/j.meegid.2011.12.011",
-                                "external-id-url": null,
-                                "external-id-relationship": "SELF"
-                            }
-                        ]
-                    },
-                    "work-summary": [
-                        {
-                            "put-code": 39367925,
-                            "created-date": {
-                                "value": 1512563132234
-                            },
-                            "last-modified-date": {
-                                "value": 1512563132234
-                            },
-                            "source": {
-                                "source-orcid": {
-                                    "uri": "http://orcid.org/0000-0002-7139-0865",
-                                    "path": "0000-0002-7139-0865",
-                                    "host": "orcid.org"
-                                },
-                                "source-client-id": null,
-                                "source-name": {
-                                    "value": "Costa, R. L."
-                                }
-                            },
-                            "title": {
-                                "title": {
-                                    "value": "Comparative evolutionary epidemiology of dengue virus serotypes"
-                                },
-                                "subtitle": null,
-                                "translated-title": null
-                            },
-                            "external-ids": {
-                                "external-id": [
-                                    {
-                                        "external-id-type": "doi",
-                                        "external-id-value": "10.1016/j.meegid.2011.12.011",
-                                        "external-id-url": null,
-                                        "external-id-relationship": "SELF"
-                                    },
-                                    {
-                                        "external-id-type": "pmid",
-                                        "external-id-value": "22226705",
-                                        "external-id-url": null,
-                                        "external-id-relationship": "SELF"
-                                    },
-                                    {
-                                        "external-id-type": "isbn",
-                                        "external-id-value": "1567-7257 (Electronic)$\\backslash$r1567-1348 (Linking)",
-                                        "external-id-url": null,
-                                        "external-id-relationship": "PART_OF"
-                                    }
-                                ]
-                            },
-                            "type": "JOURNAL_ARTICLE",
-                            "publication-date": {
-                                "year": {
-                                    "value": "2012"
+                                    "value": "2022"
                                 },
                                 "month": {
                                     "value": "03"
                                 },
-                                "day": null,
+                                "day": {
+                                    "value": "07"
+                                },
                                 "media-type": null
                             },
                             "visibility": "PUBLIC",
-                            "path": "/0000-0002-7139-0865/work/39367925",
+                            "path": "/0000-0001-7513-7376/work/109892841",
                             "display-index": "1"
+                        }
+                    ]
+                },
+                {
+                    "last-modified-date": {
+                        "value": 1654157738314
+                    },
+                    "external-ids": {
+                        "external-id": [
+                            {
+                                "external-id-type": "doi",
+                                "external-id-value": "10.21105/joss.03622",
+                                "external-id-url": {
+                                    "value": "https://doi.org/10.21105/joss.03622"
+                                },
+                                "external-id-relationship": "SELF"
+                            }
+                        ]
+                    },
+                    "work-summary": [
+                        {
+                            "put-code": 102824372,
+                            "created-date": {
+                                "value": 1636432825964
+                            },
+                            "last-modified-date": {
+                                "value": 1654157738314
+                            },
+                            "source": {
+                                "source-orcid": null,
+                                "source-client-id": {
+                                    "uri": "http://orcid.org/client/0000-0001-9884-1913",
+                                    "path": "0000-0001-9884-1913",
+                                    "host": "orcid.org"
+                                },
+                                "source-name": {
+                                    "value": "Crossref"
+                                }
+                            },
+                            "title": {
+                                "title": {
+                                    "value": "BioProv - A provenance library for bioinformatics workflows"
+                                },
+                                "subtitle": null,
+                                "translated-title": null
+                            },
+                            "external-ids": {
+                                "external-id": [
+                                    {
+                                        "external-id-type": "doi",
+                                        "external-id-value": "10.21105/joss.03622",
+                                        "external-id-url": {
+                                            "value": "https://doi.org/10.21105/joss.03622"
+                                        },
+                                        "external-id-relationship": "SELF"
+                                    }
+                                ]
+                            },
+                            "type": "JOURNAL_ARTICLE",
+                            "publication-date": {
+                                "year": {
+                                    "value": "2021"
+                                },
+                                "month": {
+                                    "value": "11"
+                                },
+                                "day": {
+                                    "value": "09"
+                                },
+                                "media-type": null
+                            },
+                            "visibility": "PUBLIC",
+                            "path": "/0000-0001-7513-7376/work/102824372",
+                            "display-index": "0"
+                        }
+                    ]
+                },
+                {
+                    "last-modified-date": {
+                        "value": 1635849080859
+                    },
+                    "external-ids": {
+                        "external-id": [
+                            {
+                                "external-id-type": "doi",
+                                "external-id-value": "10.1093/nar/gkab991",
+                                "external-id-url": {
+                                    "value": "https://doi.org/10.1093/nar/gkab991"
+                                },
+                                "external-id-relationship": "SELF"
+                            }
+                        ]
+                    },
+                    "work-summary": [
+                        {
+                            "put-code": 102465389,
+                            "created-date": {
+                                "value": 1635849080859
+                            },
+                            "last-modified-date": {
+                                "value": 1635849080859
+                            },
+                            "source": {
+                                "source-orcid": {
+                                    "uri": "http://orcid.org/0000-0001-7513-7376",
+                                    "path": "0000-0001-7513-7376",
+                                    "host": "orcid.org"
+                                },
+                                "source-client-id": null,
+                                "source-name": {
+                                    "value": "Jo\u00e3o Vitor Ferreira Cavalcante"
+                                }
+                            },
+                            "title": {
+                                "title": {
+                                    "value": "Complex Portal 2022: new curation frontiers"
+                                },
+                                "subtitle": null,
+                                "translated-title": null
+                            },
+                            "external-ids": {
+                                "external-id": [
+                                    {
+                                        "external-id-type": "doi",
+                                        "external-id-value": "10.1093/nar/gkab991",
+                                        "external-id-url": {
+                                            "value": "https://doi.org/10.1093/nar/gkab991"
+                                        },
+                                        "external-id-relationship": "SELF"
+                                    },
+                                    {
+                                        "external-id-type": "issn",
+                                        "external-id-value": "0305-1048",
+                                        "external-id-url": {
+                                            "value": "https://portal.issn.org/resource/ISSN/0305-1048"
+                                        },
+                                        "external-id-relationship": "PART_OF"
+                                    },
+                                    {
+                                        "external-id-type": "issn",
+                                        "external-id-value": "1362-4962",
+                                        "external-id-url": {
+                                            "value": "https://portal.issn.org/resource/ISSN/1362-4962"
+                                        },
+                                        "external-id-relationship": "PART_OF"
+                                    }
+                                ]
+                            },
+                            "type": "JOURNAL_ARTICLE",
+                            "publication-date": {
+                                "year": {
+                                    "value": "2021"
+                                },
+                                "month": {
+                                    "value": "10"
+                                },
+                                "day": {
+                                    "value": "29"
+                                },
+                                "media-type": null
+                            },
+                            "visibility": "PUBLIC",
+                            "path": "/0000-0001-7513-7376/work/102465389",
+                            "display-index": "1"
+                        }
+                    ]
+                },
+                {
+                    "last-modified-date": {
+                        "value": 1633347830663
+                    },
+                    "external-ids": {
+                        "external-id": [
+                            {
+                                "external-id-type": "doi",
+                                "external-id-value": "10.3390/biomedicines9101297",
+                                "external-id-url": {
+                                    "value": "https://doi.org/10.3390/biomedicines9101297"
+                                },
+                                "external-id-relationship": "SELF"
+                            }
+                        ]
+                    },
+                    "work-summary": [
+                        {
+                            "put-code": 100933669,
+                            "created-date": {
+                                "value": 1633347830663
+                            },
+                            "last-modified-date": {
+                                "value": 1633347830663
+                            },
+                            "source": {
+                                "source-orcid": {
+                                    "uri": "http://orcid.org/0000-0001-7513-7376",
+                                    "path": "0000-0001-7513-7376",
+                                    "host": "orcid.org"
+                                },
+                                "source-client-id": null,
+                                "source-name": {
+                                    "value": "Jo\u00e3o Vitor Ferreira Cavalcante"
+                                }
+                            },
+                            "title": {
+                                "title": {
+                                    "value": "Reverse Engineering of the Pediatric Sepsis Regulatory Network and Identification of Master Regulators"
+                                },
+                                "subtitle": null,
+                                "translated-title": null
+                            },
+                            "external-ids": {
+                                "external-id": [
+                                    {
+                                        "external-id-type": "doi",
+                                        "external-id-value": "10.3390/biomedicines9101297",
+                                        "external-id-url": {
+                                            "value": "https://doi.org/10.3390/biomedicines9101297"
+                                        },
+                                        "external-id-relationship": "SELF"
+                                    },
+                                    {
+                                        "external-id-type": "issn",
+                                        "external-id-value": "2227-9059",
+                                        "external-id-url": {
+                                            "value": "https://portal.issn.org/resource/ISSN/2227-9059"
+                                        },
+                                        "external-id-relationship": "PART_OF"
+                                    }
+                                ]
+                            },
+                            "type": "JOURNAL_ARTICLE",
+                            "publication-date": {
+                                "year": {
+                                    "value": "2021"
+                                },
+                                "month": {
+                                    "value": "09"
+                                },
+                                "day": {
+                                    "value": "23"
+                                },
+                                "media-type": null
+                            },
+                            "visibility": "PUBLIC",
+                            "path": "/0000-0001-7513-7376/work/100933669",
+                            "display-index": "1"
+                        }
+                    ]
+                },
+                {
+                    "last-modified-date": {
+                        "value": 1654120720611
+                    },
+                    "external-ids": {
+                        "external-id": [
+                            {
+                                "external-id-type": "doi",
+                                "external-id-value": "10.1007/s10142-021-00794-9",
+                                "external-id-url": {
+                                    "value": "https://doi.org/10.1007/s10142-021-00794-9"
+                                },
+                                "external-id-relationship": "SELF"
+                            }
+                        ]
+                    },
+                    "work-summary": [
+                        {
+                            "put-code": 97170896,
+                            "created-date": {
+                                "value": 1626698109124
+                            },
+                            "last-modified-date": {
+                                "value": 1654120720611
+                            },
+                            "source": {
+                                "source-orcid": null,
+                                "source-client-id": {
+                                    "uri": "http://orcid.org/client/0000-0001-9884-1913",
+                                    "path": "0000-0001-9884-1913",
+                                    "host": "orcid.org"
+                                },
+                                "source-name": {
+                                    "value": "Crossref"
+                                }
+                            },
+                            "title": {
+                                "title": {
+                                    "value": "Ancestry analysis indicates two different sets of essential genes in eukaryotic model species"
+                                },
+                                "subtitle": null,
+                                "translated-title": null
+                            },
+                            "external-ids": {
+                                "external-id": [
+                                    {
+                                        "external-id-type": "doi",
+                                        "external-id-value": "10.1007/s10142-021-00794-9",
+                                        "external-id-url": {
+                                            "value": "https://doi.org/10.1007/s10142-021-00794-9"
+                                        },
+                                        "external-id-relationship": "SELF"
+                                    }
+                                ]
+                            },
+                            "type": "JOURNAL_ARTICLE",
+                            "publication-date": {
+                                "year": {
+                                    "value": "2021"
+                                },
+                                "month": {
+                                    "value": "07"
+                                },
+                                "day": {
+                                    "value": "19"
+                                },
+                                "media-type": null
+                            },
+                            "visibility": "PUBLIC",
+                            "path": "/0000-0001-7513-7376/work/97170896",
+                            "display-index": "0"
                         }
                     ]
                 }
             ],
-            "path": "/0000-0002-7139-0865/works"
+            "path": "/0000-0001-7513-7376/works"
         },
-        "path": "/0000-0002-7139-0865/activities"
+        "path": "/0000-0001-7513-7376/activities"
     },
-    "path": "/0000-0002-7139-0865"
+    "path": "/0000-0001-7513-7376"
 }

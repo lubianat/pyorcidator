@@ -1,3 +1,6 @@
+"""
+Helper functions for pyorcidator
+"""
 import json
 import re
 from pathlib import Path
@@ -11,6 +14,14 @@ from .classes import EducationEntry
 HERE = Path(__file__).parent.resolve()
 DICTIONARIES_PATH = HERE.joinpath("dictionaries")
 DEGREE_PATH = DICTIONARIES_PATH.joinpath("degree.json")
+
+
+def get_external_ids(data):
+    id_list = data["person"]["external-identifiers"]["external-identifier"]
+    id_dict = {}
+    for id in id_list:
+        id_dict[id["external-id-type"]] = id["external-id-value"]
+    return id_dict
 
 
 def render_orcid_qs(orcid):
@@ -50,6 +61,13 @@ def render_orcid_qs(orcid):
         education_entries=education_entries,
         property_id="P69",  # Property for educated at
     )
+
+    external_ids = get_external_ids(data)
+
+    external_id_properties = {"Loop profile": "P2798"}
+    for key, value in external_ids.items():
+        if key in external_id_properties:
+            qs += f'{researcher_qid}|{external_id_properties[key]}|"{value}"|{ref}'
 
     return qs
 
@@ -270,7 +288,7 @@ def process_education_entries(qs, subject_qid, ref, education_entries, property_
         if entry.degree is not None:
             qs += f"|P512|{entry.degree}"
         if entry.start_date != "":
-            qs += "|P580|{entry.start_date}|P582|{entry.end_date}"
+            qs += f"|P580|{entry.start_date}|P582|{entry.end_date}"
 
         qs += f"{ref}"
     return qs
