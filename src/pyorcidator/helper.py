@@ -67,7 +67,7 @@ def render_orcid_qs(orcid):
     external_id_properties = {"Loop profile": "P2798"}
     for key, value in external_ids.items():
         if key in external_id_properties:
-            qs += f'{researcher_qid}|{external_id_properties[key]}|"{value}"|{ref}'
+            qs += f'\n{researcher_qid}|{external_id_properties[key]}|"{value}"{ref}'
 
     return qs
 
