@@ -5,22 +5,22 @@ Helper functions for pyorcidator
 import json
 import logging
 import re
+from typing import Mapping
+
 import requests
 from SPARQLWrapper import JSON, SPARQLWrapper
 from wdcuration import add_key
 from .classes import EducationEntry
 from .dictionaries import dicts, stem_to_path
-
+from .pyorcid import get_orcid_data, Response
 
 logger = logging.getLogger(__name__)
 
-
-def get_external_ids(data):
-    id_list = data["person"]["external-identifiers"]["external-identifier"]
-    id_dict = {}
-    for id in id_list:
-        id_dict[id["external-id-type"]] = id["external-id-value"]
-    return id_dict
+EXTERNAL_ID_PROPERTIES = {
+    "Loop profile": "P2798",
+    "Scopus Author ID": "P1153",
+    "ResearcherID": "P2038",
+}
 
 
 def render_orcid_qs(orcid):
@@ -63,20 +63,25 @@ def render_orcid_qs(orcid):
 
     external_ids = get_external_ids(data)
 
-    external_id_properties = {"Loop profile": "P2798", "Scopus Author ID": "P1153"}
     for key, value in external_ids.items():
-        if key in external_id_properties:
-            qs += f'\n{researcher_qid}|{external_id_properties[key]}|"{value}"{ref}'
+        if key in EXTERNAL_ID_PROPERTIES:
+            qs += f'\n{researcher_qid}|{EXTERNAL_ID_PROPERTIES[key]}|"{value}"{ref}'
 
     return qs
 
 
-def get_base_qs(orcid, data, researcher_qid, ref):
-    """Returns the first lines for the new Quickstatements"""
+def get_external_ids(data: Response) -> Mapping[str, str]:
+    return {
+        eid.type: eid.value
+        for eid in data.person.external_identifiers.external_identifier
+    }
 
-    personal_data = data["person"]
-    first_name = personal_data["name"]["given-names"]["value"]
-    last_name = personal_data["name"]["family-name"]["value"]
+
+def get_base_qs(orcid: str, data: Response, researcher_qid, ref):
+    """Returns the first lines for the new Quickstatements"""
+    personal_data = data.person
+    first_name = personal_data.name.given_names.value
+    last_name = personal_data.name.family_name.value
 
     if researcher_qid == "LAST":
         # Creates a new item
@@ -95,16 +100,6 @@ def get_base_qs(orcid, data, researcher_qid, ref):
 {researcher_qid}|P496|"{orcid}"{ref} """
     )
     return qs
-
-
-def get_orcid_data(orcid):
-    """Pulls data from the ORCID API"""
-    # From https://pub.orcid.org/v3.0/#!/Public_API_v2.0/viewRecord
-    url = "https://pub.orcid.org/v2.0/"
-    header = {"Accept": "application/json"}
-    r = requests.get(f"{url}{orcid}", headers=header)
-    data = r.json()
-    return data
 
 
 def process_item(
