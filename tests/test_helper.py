@@ -31,7 +31,7 @@ def test_get_paper_dois(sample_orcid_data):
     test_papers = sample_orcid_data["activities-summary"]["works"]["group"]
 
     test_dois = get_paper_dois(test_papers)
-    assert test_dois[0] == "10.3233/jad-201397"
+    assert "10.3233/jad-201397" in test_dois
 
 
 def test_get_org_list(sample_orcid_data):
