@@ -63,7 +63,7 @@ def render_orcid_qs(orcid):
 
     external_ids = get_external_ids(data)
 
-    external_id_properties = {"Loop profile": "P2798"}
+    external_id_properties = {"Loop profile": "P2798", "Scopus Author ID": "P1153"}
     for key, value in external_ids.items():
         if key in external_id_properties:
             qs += f'\n{researcher_qid}|{external_id_properties[key]}|"{value}"{ref}'

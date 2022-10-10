@@ -12,9 +12,7 @@ from pyorcidator.helper import (
 
 
 def test_lookup_id():
-
     tiago = lookup_id("0000-0003-2473-2313", "P496", "LAST")
-
     assert tiago == "Q90076935"
 
 
