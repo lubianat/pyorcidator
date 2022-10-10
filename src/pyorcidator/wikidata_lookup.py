@@ -1,5 +1,10 @@
 import requests
 
+__all__ = [
+    "search_wikidata",
+    "parse_wikidata_result",
+]
+
 
 def search_wikidata(search_term):
     """

@@ -1,19 +1,18 @@
 """
 Helper functions for pyorcidator
 """
+
 import json
+import logging
 import re
-from pathlib import Path
 import requests
 from SPARQLWrapper import JSON, SPARQLWrapper
 from wdcuration import add_key
-from .dictionaries.all import dicts
 from .classes import EducationEntry
+from .dictionaries import dicts, stem_to_path
 
 
-HERE = Path(__file__).parent.resolve()
-DICTIONARIES_PATH = HERE.joinpath("dictionaries")
-DEGREE_PATH = DICTIONARIES_PATH.joinpath("degree.json")
+logger = logging.getLogger(__name__)
 
 
 def get_external_ids(data):
@@ -34,7 +33,7 @@ def render_orcid_qs(orcid):
     data = get_orcid_data(orcid)
 
     with open("sample.json", "w+") as f:
-        f.write(json.dumps(data, indent=4))
+        f.write(json.dumps(data, indent=2, sort_keys=True, ensure_ascii=False))
 
     researcher_qid = lookup_id(orcid, property="P496", default="LAST")
     ref = f'|S854|"https://orcid.org/{str(orcid)}"'
@@ -115,9 +114,8 @@ def process_item(
     target_list,
     subject_qid,
     ref,
-    qualifier_nested_dictionary={},
+    qualifier_nested_dictionary=None,
 ):
-    global dicts
     for target_item in target_list:
         if re.findall("Q[0-9]*", target_item):
             qid = target_item
@@ -129,7 +127,7 @@ def process_item(
 {subject_qid}|{property_id}|{qid}"""
         )
 
-        if qualifier_nested_dictionary != {}:
+        if qualifier_nested_dictionary is not None:
             qualifier_pairs = qualifier_nested_dictionary[target_item]
 
             for key, value in qualifier_pairs.items():
@@ -139,24 +137,24 @@ def process_item(
     return qs
 
 
-def get_qid_for_item(original_dict_name, target_item):
+def get_qid_for_item(key, target_item):
     """
     Looks up the qid given a key using global dict of dicts.
     If it is not present, it lets the user update the dict.
 
     Args:
-        original_dict_name (str): The dict name
+        key (str): The stem f the file path (e.g., `degree` for
+        `degree.json`, `institutions` for `institutions.json`)
         target_item (str): The string to lookup in the dict
 
     Returns:
         qid:str
     """
-    if target_item not in dicts[original_dict_name]:
-        add_key(dicts[original_dict_name], target_item)
-        with DICTIONARIES_PATH.joinpath(f"{original_dict_name}.json").open("w") as f:
-            f.write(json.dumps(dicts[original_dict_name], indent=4, sort_keys=True))
-
-    qid = dicts[original_dict_name][target_item]
+    data = dicts[key]
+    if target_item not in data:
+        add_key(data, target_item)
+        stem_to_path[key].write_text(json.dumps(data, indent=2, sort_keys=True, ensure_ascii=False))
+    qid = data[target_item]
     return qid
 
 
@@ -296,12 +294,10 @@ def process_education_entries(qs, subject_qid, ref, education_entries, property_
 
 def get_paper_dois(group_of_works_from_orcid):
     """ """
-
     dois = []
-
     for work in group_of_works_from_orcid:
         for external_id in work["external-ids"]["external-id"]:
             if external_id["external-id-type"] == "doi":
                 dois.append(external_id["external-id-value"])
-    print(dois)
+    logger.info("got paper DOIs: %s", dois)
     return dois
