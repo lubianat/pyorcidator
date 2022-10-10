@@ -8,6 +8,7 @@ from pyorcidator.helper import (
     get_paper_dois,
     lookup_id,
     get_external_ids,
+    render_orcid_qs,
 )
 
 
@@ -52,3 +53,7 @@ def test_get_loop_id(sample_orcid_data):
     goal = "827476"
     result = get_external_ids(sample_orcid_data)
     assert result["Loop profile"] == goal
+
+
+def test_render_orcid_runs():
+    render_orcid_qs("0000-0003-4423-4370")
