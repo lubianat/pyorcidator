@@ -15,6 +15,11 @@ from .dictionaries import dicts, stem_to_path
 from .pyorcid import get_orcid_data, Response
 
 logger = logging.getLogger(__name__)
+EXTERNAL_ID_PROPERTIES = {
+    "Loop profile": "P2798",
+    "Scopus Author ID": "P1153",
+    "ResearcherID": "P2038",
+}
 
 EXTERNAL_ID_PROPERTIES = {
     "Loop profile": "P2798",
@@ -62,7 +67,6 @@ def render_orcid_qs(orcid):
     )
 
     external_ids = get_external_ids(data)
-
     for key, value in external_ids.items():
         if key in EXTERNAL_ID_PROPERTIES:
             qs += f'\n{researcher_qid}|{EXTERNAL_ID_PROPERTIES[key]}|"{value}"{ref}'

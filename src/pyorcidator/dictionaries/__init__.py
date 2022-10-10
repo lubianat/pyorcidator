@@ -15,7 +15,7 @@ logger = logging.getLogger(__name__)
 HERE = Path(__file__).parent.resolve()
 DEGREE_PATH = HERE.joinpath("degree.json")
 
-JSON_PATHS = HERE.glob("*.json")
+JSON_PATHS = sorted(HERE.glob("*.json"))
 for path in JSON_PATHS:
     logger.info("loading PyORCIDator data from %", path)
 
