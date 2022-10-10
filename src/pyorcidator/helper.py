@@ -33,7 +33,7 @@ def render_orcid_qs(orcid):
     data = get_orcid_data(orcid)
 
     with open("sample.json", "w+") as f:
-        f.write(json.dumps(data, indent=4))
+        f.write(json.dumps(data, indent=2, sort_keys=True, ensure_ascii=False))
 
     researcher_qid = lookup_id(orcid, property="P496", default="LAST")
     ref = f'|S854|"https://orcid.org/{str(orcid)}"'
@@ -153,7 +153,7 @@ def get_qid_for_item(key, target_item):
     data = dicts[key]
     if target_item not in data:
         add_key(data, target_item)
-        stem_to_path[key].write_text(json.dumps(data, indent=4, sort_keys=True))
+        stem_to_path[key].write_text(json.dumps(data, indent=2, sort_keys=True, ensure_ascii=False))
     qid = data[target_item]
     return qid
 
