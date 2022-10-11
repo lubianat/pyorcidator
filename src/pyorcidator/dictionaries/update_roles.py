@@ -39,7 +39,10 @@ def main(parent):
     """)
     data = json.loads(DEGREE_PATH.read_text())
     it = (
-        (record["itemLabel"]["value"], _removeprefix(record["item"]["value"], "http://www.wikidata.org/entity/"))
+        (
+            record["itemLabel"]["value"].strip().replace("  ", " "),
+            _removeprefix(record["item"]["value"], "http://www.wikidata.org/entity/")
+        )
         for record in query_wikidata(query)
     )
     data.update(
