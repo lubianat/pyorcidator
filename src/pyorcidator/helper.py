@@ -5,6 +5,7 @@ Helper functions for pyorcidator
 import json
 import logging
 import re
+from typing import Mapping
 
 import requests
 
@@ -22,7 +23,8 @@ EXTERNAL_ID_PROPERTIES = {
 }
 
 
-def get_external_ids(data):
+def get_external_ids(data) -> Mapping[str, str]:
+    """Get external identifiers that can be mapped to Wikidata properties."""
     rv = {}
     for d in data["person"]["external-identifiers"]["external-identifier"]:
         rv[d["external-id-type"]] = d["external-id-value"]
