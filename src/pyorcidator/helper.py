@@ -30,7 +30,7 @@ def get_external_ids(data) -> Mapping[str, str]:
         rv[d["external-id-type"]] = d["external-id-value"]
     for d in data["person"]["researcher-urls"].get("researcher-url", []):
         url_name = d["url-name"].lower().replace(" ", "")
-        url = d["url"]["value"]
+        url = d["url"]["value"].rstrip("/")
         if url_name == "github" and "github.com" in url:
             github = url[len("https://github.com/")]
             if "/" in github or " " in github:
