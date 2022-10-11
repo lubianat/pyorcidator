@@ -52,8 +52,8 @@ Qualifier = Union[EntityQualifier, DateQualifier, TextQualifier]
 
 class BaseLine(BaseModel):
     subject: str = Field(regex=r"^(LAST)|(Q\d+)$")
-    predicate: str = Field(regex=r"^(P\d+)|(Len)|(Des)$")
-    qualifiers: List[Qualifier]
+    predicate: str = Field(regex=r"^(P\d+)|(Len)|(Den)$")
+    qualifiers: List[Qualifier] = Field(default_factory=list)
 
     def get_target(self):
         return self.target
