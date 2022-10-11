@@ -55,12 +55,12 @@ class BaseLine(BaseModel):
     predicate: str = Field(regex=r"^P\d+$")
     qualifiers: List[Qualifier]
 
-    def _prepare_target(self):
+    def get_target(self):
         return self.target
 
     def get_line(self) -> str:
         """Get the quickstatement as a line."""
-        parts = [self.subject, self.predicate, self._prepare_target()]
+        parts = [self.subject, self.predicate, self.get_target()]
         for qualifier in self.qualifiers:
             parts.append(qualifier.predicate)
             parts.append(qualifier.get_target())
@@ -85,7 +85,7 @@ class TextLine(BaseLine):
 
     target: str
 
-    def _prepare_target(self):
+    def get_target(self):
         return f'"{self.target}"'
 
 

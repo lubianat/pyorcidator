@@ -56,13 +56,13 @@ def get_orcid_quickstatements(orcid: str) -> List[Line]:
         TextQualifier(predicate="S854", target=f'https://orcid.org/{orcid}'),
     ]
 
-    lines: List[Line] = get_base_qs(orcid, data, researcher_qid, ref=qualifiers)
+    lines: List[Line] = get_base_qs(orcid, data, researcher_qid, qualifiers=qualifiers)
 
     employment_data = data["activities-summary"]["employments"]["employment-summary"]
     employment_entries = get_affiliation_info(employment_data)
     lines.extend(process_affiliation_entries(
         subject_qid=researcher_qid,
-        ref=qualifiers,
+        qualifiers=qualifiers,
         affiliation_entries=employment_entries,
         role_property_id="P2868",  # subject has role
         property_id="P108",  # Property for employer
@@ -72,7 +72,7 @@ def get_orcid_quickstatements(orcid: str) -> List[Line]:
     education_entries = get_affiliation_info(education_data)
     lines.extend(process_affiliation_entries(
         subject_qid=researcher_qid,
-        ref=qualifiers,
+        qualifiers=qualifiers,
         affiliation_entries=education_entries,
         role_property_id="P512",  # academic degree
         property_id="P69",  # Property for educated at
@@ -91,7 +91,7 @@ def get_orcid_quickstatements(orcid: str) -> List[Line]:
     return lines
 
 
-def get_base_qs(orcid, data, researcher_qid, ref: List[Qualifier]) -> List[Line]:
+def get_base_qs(orcid, data, researcher_qid, qualifiers: List[Qualifier]) -> List[Line]:
     """Returns the first lines for the new Quickstatements"""
     rv = []
 
@@ -104,9 +104,9 @@ def get_base_qs(orcid, data, researcher_qid, ref: List[Qualifier]) -> List[Line]
         rv.append(TextLine(subject=researcher_qid, predicate="Len", target=f"{first_name} {last_name}"))
         rv.append(TextLine(subject=researcher_qid, predicate="Den", target="researcher"))
     else:
-        rv.append(EntityLine(subject=researcher_qid, predicate="P31", target="Q5", qualifiers=ref))
-        rv.append(EntityLine(subject=researcher_qid, predicate="P106", target="Q1650915", qualifiers=ref))
-        rv.append(TextLine(subject=researcher_qid, predicate="P496", target=orcid, qualifiers=ref))
+        rv.append(EntityLine(subject=researcher_qid, predicate="P31", target="Q5", qualifiers=qualifiers))
+        rv.append(EntityLine(subject=researcher_qid, predicate="P106", target="Q1650915", qualifiers=qualifiers))
+        rv.append(TextLine(subject=researcher_qid, predicate="P496", target=orcid, qualifiers=qualifiers))
     return rv
 
 
@@ -279,7 +279,7 @@ def get_institution_qid(data_entry, name) -> Optional[str]:
 
 
 def process_affiliation_entries(
-    subject_qid, ref, affiliation_entries, property_id, role_property_id
+    subject_qid, qualifiers, affiliation_entries, property_id, role_property_id
 ):
     """
     From a list of EducationEntry objects, renders quickstatements for the QID.
@@ -288,14 +288,14 @@ def process_affiliation_entries(
     # See https://www.wikidata.org/wiki/Help:QuickStatements#Limitation
     rv = []
     for entry in affiliation_entries:
-        qualifiers = ref.copy()
+        _qualifiers = qualifiers.copy()
         if entry.role is not None:
-            qualifiers.append(EntityQualifier(predicate=role_property_id, target=entry.role))
+            _qualifiers.append(EntityQualifier(predicate=role_property_id, target=entry.role))
         if entry.start_date:
-            qualifiers.append(DateQualifier(predicate="P580", target=entry.start_date))
+            _qualifiers.append(DateQualifier(predicate="P580", target=entry.start_date))
             if entry.end_date:
-                qualifiers.append(DateQualifier(predicate="P580", target=entry.end_date))
-        line = EntityLine(subject=subject_qid, predicate=property_id, target=entry.institution, qualifiers=qualifiers)
+                _qualifiers.append(DateQualifier(predicate="P580", target=entry.end_date))
+        line = EntityLine(subject=subject_qid, predicate=property_id, target=entry.institution, qualifiers=_qualifiers)
         rv.append(line)
     return rv
 
