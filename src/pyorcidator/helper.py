@@ -5,6 +5,7 @@ Helper functions for pyorcidator
 import json
 import logging
 import re
+from typing import List, Optional
 
 import requests
 
@@ -12,6 +13,7 @@ from wdcuration import add_key
 from .classes import AffiliationEntry
 from .dictionaries import dicts, stem_to_path
 from .wikidata_lookup import query_wikidata
+from .quickstatements import TextQualifier, DateQualifier, Annotated, EntityQualifier,CreateLine, BaseLine, TextLine, EntityLine, Line, Qualifier
 
 logger = logging.getLogger(__name__)
 EXTERNAL_ID_PROPERTIES = {
@@ -29,77 +31,81 @@ def get_external_ids(data):
     return id_dict
 
 
-def render_orcid_qs(orcid):
+def render_orcid_qs(orcid: str) -> str:
     """
     Import info from ORCID for Wikidata.
 
     Args:
         orcid: The ORCID of the researcher to reconcile to Wikidata.
     """
+    return "\n".join(
+        line.get_text()
+        for line in get_orcid_quickstatements(orcid)
+    )
+
+
+def get_orcid_quickstatements(orcid: str) -> List[Line]:
+    """Get a list of quickstatement line objects."""
     data = get_orcid_data(orcid)
 
-    with open("sample.json", "w+") as f:
-        f.write(json.dumps(data, indent=2, sort_keys=True, ensure_ascii=False))
-
     researcher_qid = lookup_id(orcid, property="P496", default="LAST")
-    ref = f'|S854|"https://orcid.org/{str(orcid)}"'
 
-    qs = get_base_qs(orcid, data, researcher_qid, ref)
+    qualifiers = [
+        TextQualifier(predicate="S854", target=f'https://orcid.org/{orcid}'),
+    ]
+
+    lines: List[Line] = get_base_qs(orcid, data, researcher_qid, ref=qualifiers)
 
     employment_data = data["activities-summary"]["employments"]["employment-summary"]
     employment_entries = get_affiliation_info(employment_data)
-    qs = process_affiliation_entries(
-        qs,
+    lines.extend(process_affiliation_entries(
         subject_qid=researcher_qid,
-        ref=ref,
+        ref=qualifiers,
         affiliation_entries=employment_entries,
-        role_property_id="P2868",
-        property_id="P108",  # Property for educated at
-    )
+        role_property_id="P2868",  # subject has role
+        property_id="P108",  # Property for employer
+    ))
 
     education_data = data["activities-summary"]["educations"]["education-summary"]
     education_entries = get_affiliation_info(education_data)
-    qs = process_affiliation_entries(
-        qs,
+    lines.extend(process_affiliation_entries(
         subject_qid=researcher_qid,
-        ref=ref,
+        ref=qualifiers,
         affiliation_entries=education_entries,
-        role_property_id="P512",
+        role_property_id="P512",  # academic degree
         property_id="P69",  # Property for educated at
-    )
+    ))
 
     external_ids = get_external_ids(data)
     for key, value in external_ids.items():
         if key in EXTERNAL_ID_PROPERTIES:
-            qs += f'\n{researcher_qid}|{EXTERNAL_ID_PROPERTIES[key]}|"{value}"{ref}'
+            lines.append(TextLine(
+                subject=researcher_qid,
+                predicate=EXTERNAL_ID_PROPERTIES[key],
+                target=value,
+                qualifiers=qualifiers,
+            ))
 
-    return qs
+    return lines
 
 
-def get_base_qs(orcid, data, researcher_qid, ref):
+def get_base_qs(orcid, data, researcher_qid, ref: List[Qualifier]) -> List[Line]:
     """Returns the first lines for the new Quickstatements"""
+    rv = []
 
     personal_data = data["person"]
     first_name = personal_data["name"]["given-names"]["value"]
     last_name = personal_data["name"]["family-name"]["value"]
 
     if researcher_qid == "LAST":
-        # Creates a new item
-        qs = f"""CREATE
-{researcher_qid}|Len|"{first_name} {last_name}"
-{researcher_qid}|Den|"researcher"
-    """
+        rv.append(CreateLine())
+        rv.append(TextLine(subject=researcher_qid, predicate="Len", object=f"{first_name} {last_name}"))
+        rv.append(TextLine(subject=researcher_qid, predicate="Den", object="researcher"))
     else:
-        # Updates an existing item
-        qs = ""
-    qs = (
-        qs
-        + f"""
-{researcher_qid}|P31|Q5{ref}
-{researcher_qid}|P106|Q1650915{ref}
-{researcher_qid}|P496|"{orcid}"{ref} """
-    )
-    return qs
+        rv.append(EntityLine(subject=researcher_qid, predicate="P31", object="Q5", qualifiers=ref))
+        rv.append(EntityLine(subject=researcher_qid, predicate="P106", object="Q1650915", qualifiers=ref))
+        rv.append(TextLine(subject=researcher_qid, predicate="P496", object=orcid, qualifiers=ref))
+    return rv
 
 
 def get_orcid_data(orcid):
@@ -121,16 +127,18 @@ def process_item(
     ref,
     qualifier_nested_dictionary=None,
 ):
+    # FIXME this is unused, delete?
     for target_item in target_list:
         if re.findall("Q[0-9]*", target_item):
             qid = target_item
         else:
             qid = get_qid_for_item(original_dict, target_item)
-        qs = (
-            qs
-            + f"""
-{subject_qid}|{property_id}|{qid}"""
-        )
+        if qid:
+            qs = (
+                qs
+                + f"""
+    {subject_qid}|{property_id}|{qid}"""
+            )
 
         if qualifier_nested_dictionary is not None:
             qualifier_pairs = qualifier_nested_dictionary[target_item]
@@ -142,7 +150,7 @@ def process_item(
     return qs
 
 
-def get_qid_for_item(key: str, name: str):
+def get_qid_for_item(key: str, name: str) -> Optional[str]:
     """
     Looks up the qid given a key using global dict of dicts.
     If it is not present, it lets the user update the dict.
@@ -155,14 +163,13 @@ def get_qid_for_item(key: str, name: str):
     Returns:
         qid:str
     """
-    try:
-        data = dicts[key]
-    except KeyError:
-        raise KeyError(f"{key} was not in keys: {dicts.keys()}")
-    if name not in data:
-        add_key(data, name)
+    data = dicts[key]
+    if name in data:
+        return data[name]
+    add_key(data, name)
+    qid = data.get(name)
+    if qid:
         stem_to_path[key].write_text(json.dumps(data, indent=2, sort_keys=True, ensure_ascii=False))
-    qid = data[name]
     return qid
 
 
@@ -222,7 +229,7 @@ def get_date(entry, start_or_end="start"):
     return f"+{year}-{month}-{day}T00:00:00Z/{str(precision)}"
 
 
-def get_affiliation_info(data):
+def get_affiliation_info(data) -> List[AffiliationEntry]:
     """
     Parses ORCID data and returns a list of AffiliationEntry objects.
     """
@@ -252,7 +259,7 @@ def get_affiliation_info(data):
     return organization_list
 
 
-def get_institution_qid(data_entry, name):
+def get_institution_qid(data_entry, name) -> Optional[str]:
     """Gets the QID for an academic institution"""
 
     # Tries to get it from GRID: Global Research Identifier Database
@@ -270,28 +277,25 @@ def get_institution_qid(data_entry, name):
 
 
 def process_affiliation_entries(
-    qs, subject_qid, ref, affiliation_entries, property_id, role_property_id
+    subject_qid, ref, affiliation_entries, property_id, role_property_id
 ):
     """
     From a list of EducationEntry objects, renders quickstatements for the QID.
     """
     # Quickstatements fails in the case of same institution for multliple roles.
     # See https://www.wikidata.org/wiki/Help:QuickStatements#Limitation
-
+    rv = []
     for entry in affiliation_entries:
-
-        qs += f"""
-        {subject_qid}|{property_id}|{entry.institution}"""
-
+        qualifiers = ref.copy()
         if entry.role is not None:
-            qs += f"|{role_property_id}|{entry.role}"
-        if entry.start_date != "":
-            qs += f"|P580|{entry.start_date}"
-            if entry.end_date != "":
-                qs += f"|P582|{entry.end_date}"
-
-        qs += f"{ref}"
-    return qs
+            qualifiers.append(EntityQualifier(predicate=role_property_id, target=entry.role))
+        if entry.start_date:
+            qualifiers.append(DateQualifier(predicate="P580", target=entry.start_date))
+            if entry.end_date:
+                qualifiers.append(DateQualifier(predicate="P580", target=entry.end_date))
+        line = EntityLine(subject=subject_qid, predicate=property_id, target=entry.institution, qualifiers=qualifiers)
+        rv.append(line)
+    return rv
 
 
 def get_paper_dois(group_of_works_from_orcid):
