@@ -8,7 +8,7 @@ import re
 import requests
 from SPARQLWrapper import JSON, SPARQLWrapper
 from wdcuration import add_key
-from .classes import EducationEntry
+from .classes import AffiliationEntry
 from .dictionaries import dicts, stem_to_path
 
 
@@ -46,23 +46,24 @@ def render_orcid_qs(orcid):
     qs = get_base_qs(orcid, data, researcher_qid, ref)
 
     employment_data = data["activities-summary"]["employments"]["employment-summary"]
-    employment_institutions = get_organization_list(employment_data)
-    qs = process_item(
+    employment_entries = get_affiliation_info(employment_data)
+    qs = process_affiliation_entries(
         qs,
-        property_id="P108",  # Property for employer
-        original_dict="institutions",  # Handles institutions.json
-        target_list=employment_institutions,
         subject_qid=researcher_qid,
         ref=ref,
+        affiliation_entries=employment_entries,
+        role_property_id="P2868",
+        property_id="P108",  # Property for educated at
     )
 
     education_data = data["activities-summary"]["educations"]["education-summary"]
-    education_entries = get_education_info(education_data)
-    qs = process_education_entries(
+    education_entries = get_affiliation_info(education_data)
+    qs = process_affiliation_entries(
         qs,
         subject_qid=researcher_qid,
         ref=ref,
-        education_entries=education_entries,
+        affiliation_entries=education_entries,
+        role_property_id="P512",
         property_id="P69",  # Property for educated at
     )
 
@@ -146,8 +147,8 @@ def get_qid_for_item(key: str, name: str):
     If it is not present, it lets the user update the dict.
 
     Args:
-        key (str): The stem f the file path (e.g., `degree` for
-        `degree.json`, `institutions` for `institutions.json`)
+        key (str): The stem f the file path (e.g., `role` for
+        `role.json`, `institutions` for `institutions.json`)
         name: The string to lookup in the dict
 
     Returns:
@@ -229,17 +230,16 @@ def get_date(entry, start_or_end="start"):
     return f"+{year}-{month}-{day}T00:00:00Z/{str(precision)}"
 
 
-def get_education_info(data):
+def get_affiliation_info(data):
     """
-    Parses ORCID data and returns a list of EducationEntry objects.
+    Parses ORCID data and returns a list of AffiliationEntry objects.
     """
     organization_list = []
 
     for data_entry in data:
-
         title = data_entry["role-title"]
         if title is not None:
-            role_qid = get_qid_for_item("degree", title)
+            role_qid = get_qid_for_item("role", title)
         else:
             role_qid = None
         start_date = get_date(data_entry, "start")
@@ -248,8 +248,8 @@ def get_education_info(data):
         name = data_entry["name"]
         institution_qid = get_institution_qid(data_entry, name)
 
-        entry = EducationEntry(
-            degree=role_qid,
+        entry = AffiliationEntry(
+            role=role_qid,
             institution=institution_qid,
             start_date=start_date,
             end_date=end_date,
@@ -277,22 +277,26 @@ def get_institution_qid(data_entry, name):
     return institution_qid
 
 
-def process_education_entries(qs, subject_qid, ref, education_entries, property_id="P69"):
+def process_affiliation_entries(
+    qs, subject_qid, ref, affiliation_entries, property_id, role_property_id
+):
     """
     From a list of EducationEntry objects, renders quickstatements for the QID.
     """
-    # Quickstatements fails in the case of same institution for multliple degrees.
+    # Quickstatements fails in the case of same institution for multliple roles.
     # See https://www.wikidata.org/wiki/Help:QuickStatements#Limitation
 
-    for entry in education_entries:
+    for entry in affiliation_entries:
 
         qs += f"""
         {subject_qid}|{property_id}|{entry.institution}"""
 
-        if entry.degree is not None:
-            qs += f"|P512|{entry.degree}"
+        if entry.role is not None:
+            qs += f"|{role_property_id}|{entry.role}"
         if entry.start_date != "":
-            qs += f"|P580|{entry.start_date}|P582|{entry.end_date}"
+            qs += f"|P580|{entry.start_date}"
+            if entry.end_date != "":
+                qs += f"|P582|{entry.end_date}"
 
         qs += f"{ref}"
     return qs
