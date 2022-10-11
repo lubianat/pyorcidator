@@ -39,7 +39,7 @@ class DateQualifier(BaseModel):
 class TextQualifier(BaseModel):
     """A qualifier that points to a string literal."""
 
-    predicate: str = Field(regex=r"^S\d+$")
+    predicate: str = Field(regex=r"^[PQS]\d+$")
     target: str
 
     def get_target(self):
@@ -52,7 +52,7 @@ Qualifier = Union[EntityQualifier, DateQualifier, TextQualifier]
 
 class BaseLine(BaseModel):
     subject: str = Field(regex=r"^(LAST)|(Q\d+)$")
-    predicate: str = Field(regex=r"^P\d+$")
+    predicate: str = Field(regex=r"^(P\d+)|(Len)|(Des)$")
     qualifiers: List[Qualifier]
 
     def get_target(self):
