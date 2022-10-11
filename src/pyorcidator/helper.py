@@ -18,15 +18,24 @@ EXTERNAL_ID_PROPERTIES = {
     "Loop profile": "P2798",
     "Scopus Author ID": "P1153",
     "ResearcherID": "P1053",
+    "github": "P2037",
 }
 
 
 def get_external_ids(data):
-    id_list = data["person"]["external-identifiers"]["external-identifier"]
-    id_dict = {}
-    for id in id_list:
-        id_dict[id["external-id-type"]] = id["external-id-value"]
-    return id_dict
+    rv = {}
+    for d in data["person"]["external-identifiers"]["external-identifier"]:
+        rv[d["external-id-type"]] = d["external-id-value"]
+    for d in data["person"]["researcher-urls"].get("researcher-url", []):
+        url_name = d["url-name"].lower().replace(" ", "")
+        url = d["url"]["value"]
+        if url_name == "github" and "github.com" in url:
+            github = url[len("https://github.com/")]
+            if "/" in github or " " in github:
+                logger.warning("invalid Github: %s", url)
+            else:
+                rv["github"] = github
+    return rv
 
 
 def render_orcid_qs(orcid):

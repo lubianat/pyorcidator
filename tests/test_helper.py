@@ -4,6 +4,7 @@ Tests for the helper module
 
 from pyorcidator.helper import (
     get_date,
+    get_orcid_data,
     get_organization_list,
     get_paper_dois,
     lookup_id,
@@ -57,3 +58,11 @@ def test_get_loop_id(sample_orcid_data):
 
 def test_render_orcid_runs():
     render_orcid_qs("0000-0003-4423-4370")
+
+
+def test_get_github():
+    """Test getting a github link."""
+    orcid = "0000-0002-0791-1347"  #  Selja Seppälä
+    data = get_orcid_data(orcid)
+    ids = get_external_ids(data)
+    assert ids["github"] == "seljaseppala"
