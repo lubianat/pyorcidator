@@ -1,6 +1,7 @@
 """A data model for quickstatements."""
 
 from pydantic import BaseModel, Field
+from typing import Union, List
 from typing_extensions import Annotated, Literal
 
 __all__ = [
@@ -18,8 +19,8 @@ __all__ = [
 class EntityQualifier(BaseModel):
     """A qualifier that points to Wikidata entity."""
 
-    predicate: str = Field(regex=r"^S\d+$")
-    target: str = Field(regex=r"^([QS]\d+$")
+    predicate: str = Field(regex=r"^[PQS]\d+$")
+    target: str = Field(regex=r"^[PQS]\d+$")
 
     def get_target(self):
         return self.target
@@ -28,8 +29,8 @@ class EntityQualifier(BaseModel):
 class DateQualifier(BaseModel):
     """A qualifier that points to a date string."""
 
-    predicate: str = Field(regex=r"^S\d+$")
-    target: str = Field(regex=r"^S\d+$")
+    predicate: str = Field(regex=r"^[PQS]\d+$")
+    target: str
 
     def get_target(self):
         return self.target
@@ -39,7 +40,7 @@ class TextQualifier(BaseModel):
     """A qualifier that points to a string literal."""
 
     predicate: str = Field(regex=r"^S\d+$")
-    target: str = Field(regex=r"^\"\w+\"$")
+    target: str
 
     def get_target(self):
         return f'"{self.target}"'
@@ -73,14 +74,14 @@ class CreateLine(BaseModel):
         return "CREATE"
 
 
-class TextLine(BaseLine):
-    """A line whose target is a Wikidata entity."""
+class EntityLine(BaseLine):
+    """A line whose target is a string literal."""
 
     target: str = Field(regex=r"^(Q\d+)$")
 
 
-class EntityLine(BaseLine):
-    """A line whose target is a string literal."""
+class TextLine(BaseLine):
+    """A line whose target is a Wikidata entity."""
 
     target: str
 

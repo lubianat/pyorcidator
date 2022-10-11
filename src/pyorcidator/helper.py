@@ -13,7 +13,9 @@ from wdcuration import add_key
 from .classes import AffiliationEntry
 from .dictionaries import dicts, stem_to_path
 from .wikidata_lookup import query_wikidata
-from .quickstatements import TextQualifier, DateQualifier, Annotated, EntityQualifier,CreateLine, BaseLine, TextLine, EntityLine, Line, Qualifier
+from .quickstatements import (
+    TextQualifier, DateQualifier, EntityQualifier, CreateLine, TextLine, EntityLine, Line, Qualifier
+)
 
 logger = logging.getLogger(__name__)
 EXTERNAL_ID_PROPERTIES = {
@@ -39,7 +41,7 @@ def render_orcid_qs(orcid: str) -> str:
         orcid: The ORCID of the researcher to reconcile to Wikidata.
     """
     return "\n".join(
-        line.get_text()
+        line.get_line()
         for line in get_orcid_quickstatements(orcid)
     )
 
@@ -99,12 +101,12 @@ def get_base_qs(orcid, data, researcher_qid, ref: List[Qualifier]) -> List[Line]
 
     if researcher_qid == "LAST":
         rv.append(CreateLine())
-        rv.append(TextLine(subject=researcher_qid, predicate="Len", object=f"{first_name} {last_name}"))
-        rv.append(TextLine(subject=researcher_qid, predicate="Den", object="researcher"))
+        rv.append(TextLine(subject=researcher_qid, predicate="Len", target=f"{first_name} {last_name}"))
+        rv.append(TextLine(subject=researcher_qid, predicate="Den", target="researcher"))
     else:
-        rv.append(EntityLine(subject=researcher_qid, predicate="P31", object="Q5", qualifiers=ref))
-        rv.append(EntityLine(subject=researcher_qid, predicate="P106", object="Q1650915", qualifiers=ref))
-        rv.append(TextLine(subject=researcher_qid, predicate="P496", object=orcid, qualifiers=ref))
+        rv.append(EntityLine(subject=researcher_qid, predicate="P31", target="Q5", qualifiers=ref))
+        rv.append(EntityLine(subject=researcher_qid, predicate="P106", target="Q1650915", qualifiers=ref))
+        rv.append(TextLine(subject=researcher_qid, predicate="P496", target=orcid, qualifiers=ref))
     return rv
 
 
