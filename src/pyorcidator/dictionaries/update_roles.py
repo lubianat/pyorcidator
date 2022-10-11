@@ -9,6 +9,13 @@ from pyorcidator.dictionaries import DEGREE_PATH
 from pyorcidator.wikidata_lookup import query_wikidata
 
 HERE = Path(__file__).parent.resolve()
+QUERY_ENGLISH = """\
+SELECT (?itemLabel as ?label) ?item
+WHERE {
+  ?item wdt:P279* wd:Q3529618 .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+}
+"""
 QUERY = """\
 SELECT DISTINCT ?label ?item
 WHERE {
@@ -30,7 +37,7 @@ def main():
     data = json.loads(DEGREE_PATH.read_text())
     data.update(
         (record["label"]["value"], _removeprefix(record["item"]["value"], "http://www.wikidata.org/entity/"))
-        for record in query_wikidata(QUERY)
+        for record in query_wikidata(QUERY_ENGLISH)
     )
     DEGREE_PATH.write_text(json.dumps(data, indent=4, sort_keys=True, ensure_ascii=False))
 
