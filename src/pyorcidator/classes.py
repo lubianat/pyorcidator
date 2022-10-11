@@ -2,15 +2,15 @@ from dataclasses import dataclass
 from typing import Optional
 
 __all__ = [
-    "EducationEntry",
+    "AffiliationEntry",
 ]
 
 
 @dataclass
-class EducationEntry:
-    """Class for capturing the info for an education entry on ORCID."""
+class AffiliationEntry:
+    """Class for capturing the info for an affiliation (education or employment) entry on ORCID."""
 
     institution: str
-    degree: Optional[str] = None
+    role: Optional[str] = None
     start_date: Optional[str] = None
     end_date: Optional[str] = None
