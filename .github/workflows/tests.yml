@@ -24,6 +24,9 @@ jobs:
         run: |
           pip install --upgrade pip setuptools wheel
           pip install tox
+      - name: Check manifest
+        run:
+          tox -e manifest
       - name: Test with pytest
         run:
           tox -e py

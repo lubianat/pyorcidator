@@ -1,0 +1,9 @@
+graft src
+graft tests
+
+prune tests/.pytest_cache
+prune .vscode/
+
+global-exclude *.py[cod] __pycache__ *.so *.dylib .DS_Store *.gpickle
+exclude .appveyor.yml .bumpversion.cfg .coveragerc .flake8 .travis.yml .readthedocs.yml tox.ini .pre-commit-config.yaml Dockerfile CITATION.cff sample.json
+include LICENSE *.md *.rst

@@ -141,7 +141,7 @@ def process_item(
     return qs
 
 
-def get_qid_for_item(key, target_item):
+def get_qid_for_item(key: str, name: str):
     """
     Looks up the qid given a key using global dict of dicts.
     If it is not present, it lets the user update the dict.
@@ -149,16 +149,19 @@ def get_qid_for_item(key, target_item):
     Args:
         key (str): The stem f the file path (e.g., `role` for
         `role.json`, `institutions` for `institutions.json`)
-        target_item (str): The string to lookup in the dict
+        name: The string to lookup in the dict
 
     Returns:
         qid:str
     """
-    data = dicts[key]
-    if target_item not in data:
-        add_key(data, target_item)
+    try:
+        data = dicts[key]
+    except KeyError:
+        raise KeyError(f"{key} was not in keys: {dicts.keys()}")
+    if name not in data:
+        add_key(data, name)
         stem_to_path[key].write_text(json.dumps(data, indent=2, sort_keys=True, ensure_ascii=False))
-    qid = data[target_item]
+    qid = data[name]
     return qid
 
 
