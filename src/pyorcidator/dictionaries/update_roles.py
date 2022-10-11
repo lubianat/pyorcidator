@@ -27,20 +27,25 @@ def _removeprefix(s: str, prefix: str) -> str:
 
 
 @click.command(name="update-degrees")
-@click.option("--parent", default="Q3529618")
+@click.option("--parent", default="Q189533")
 def main(parent):
     """Update the degrees lookup able from Wikidata."""
     query = dedent(f"""\
-        SELECT (?itemLabel as ?label) ?item
+        SELECT ?itemLabel ?item
         WHERE {{
           ?item wdt:P279* wd:{parent} .
           SERVICE wikibase:label {{ bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }}
         }}
     """)
     data = json.loads(DEGREE_PATH.read_text())
-    data.update(
-        (record["label"]["value"], _removeprefix(record["item"]["value"], "http://www.wikidata.org/entity/"))
+    it = (
+        (record["itemLabel"]["value"], _removeprefix(record["item"]["value"], "http://www.wikidata.org/entity/"))
         for record in query_wikidata(query)
+    )
+    data.update(
+        (label, qid)
+        for label, qid in it
+        if label != qid
     )
     DEGREE_PATH.write_text(json.dumps(data, indent=2, sort_keys=True, ensure_ascii=False))
 
