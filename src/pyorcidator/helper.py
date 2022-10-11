@@ -5,12 +5,13 @@ Helper functions for pyorcidator
 import json
 import logging
 import re
+
 import requests
-from SPARQLWrapper import JSON, SPARQLWrapper
+
 from wdcuration import add_key
 from .classes import AffiliationEntry
 from .dictionaries import dicts, stem_to_path
-
+from .wikidata_lookup import query_wikidata
 
 logger = logging.getLogger(__name__)
 EXTERNAL_ID_PROPERTIES = {
@@ -169,23 +170,14 @@ def lookup_id(id, property, default):
     """
     Looks up a foreign ID on Wikidata based on its specific property.
     """
-
-    sparql = SPARQLWrapper(
-        "https://query.wikidata.org/sparql",
-        agent="PyORCIDator (https://github.com/lubianat/pyorcidator)",
-    )
-    query = f"""
-    SELECT ?item ?itemLabel
-    WHERE
-    {{
-        ?item wdt:{property} "{id}" .
-    }}
+    query = f"""\
+        SELECT ?item ?itemLabel
+        WHERE
+        {{
+            ?item wdt:{property} "{id}" .
+        }}
     """
-    sparql.setQuery(query)
-
-    sparql.setReturnFormat(JSON)
-    results = sparql.query().convert()
-    bindings = results["results"]["bindings"]
+    bindings = query_wikidata(query)
     if len(bindings) == 1:
         item = bindings[0]["item"]["value"].split("/")[-1]
         return item

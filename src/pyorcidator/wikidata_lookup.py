@@ -1,9 +1,23 @@
 import requests
+from SPARQLWrapper import JSON, SPARQLWrapper
 
 __all__ = [
+    "query_wikidata",
     "search_wikidata",
     "parse_wikidata_result",
 ]
+
+
+def query_wikidata(query):
+    """Run a query against wikidata."""
+    sparql = SPARQLWrapper(
+        "https://query.wikidata.org/sparql",
+        agent="PyORCIDator (https://github.com/lubianat/pyorcidator)",
+    )
+    sparql.setQuery(query)
+    sparql.setReturnFormat(JSON)
+    results = sparql.query().convert()
+    return results["results"]["bindings"]
 
 
 def search_wikidata(search_term):
@@ -27,7 +41,6 @@ def search_wikidata(search_term):
 
 
 def parse_wikidata_result(wikidata_result):
-
     # Workaround for when finding no results
     if len(wikidata_result["search"]) == 0:
         return {
