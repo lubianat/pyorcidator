@@ -16,7 +16,7 @@ logger = logging.getLogger(__name__)
 EXTERNAL_ID_PROPERTIES = {
     "Loop profile": "P2798",
     "Scopus Author ID": "P1153",
-    "ResearcherID": "P2038",
+    "ResearcherID": "P1053",
 }
 
 
