@@ -32,7 +32,7 @@ def get_external_ids(data) -> Mapping[str, str]:
         url_name = d["url-name"].lower().replace(" ", "")
         url = d["url"]["value"].rstrip("/")
         if url_name == "github" and "github.com" in url:
-            github = url[len("https://github.com/")]
+            github = url[len("https://github.com/"):]
             if "/" in github or " " in github:
                 logger.warning("invalid Github: %s", url)
             else:
