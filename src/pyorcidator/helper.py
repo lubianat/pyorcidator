@@ -20,7 +20,14 @@ EXTERNAL_ID_PROPERTIES = {
     "Scopus Author ID": "P1153",
     "ResearcherID": "P1053",
     "github": "P2037",
+    "twitter": "P2002",
+    "scopus": "P1153",
 }
+PREFIXES = [
+    ("github", "https://github.com/"),
+    ("twitter", "https://twitter.com/"),
+    ("scopus", "https://www.scopus.com/authid/detail.uri?authorId=")
+]
 
 
 def get_external_ids(data) -> Mapping[str, str]:
@@ -29,14 +36,11 @@ def get_external_ids(data) -> Mapping[str, str]:
     for d in data["person"]["external-identifiers"]["external-identifier"]:
         rv[d["external-id-type"]] = d["external-id-value"]
     for d in data["person"]["researcher-urls"].get("researcher-url", []):
-        url_name = d["url-name"].lower().replace(" ", "")
+        # url_name = d["url-name"].lower().replace(" ", "")
         url = d["url"]["value"].rstrip("/")
-        if url_name == "github" and "github.com" in url:
-            github = url[len("https://github.com/"):]
-            if "/" in github or " " in github:
-                logger.warning("invalid Github: %s", url)
-            else:
-                rv["github"] = github
+        for key, url_prefix in PREFIXES:
+            if url.startswith(url_prefix):
+                rv[key] = url[len(url_prefix):]
     return rv
 
 
