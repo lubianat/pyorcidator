@@ -221,7 +221,12 @@ def get_date(entry, start_or_end="start") -> Optional[datetime.datetime]:
         return None
     month = date["month"] and int(date["month"]["value"])
     day = date["day"] and int(date["day"]["value"])
-    return datetime.datetime(year=year, month=month, day=day)
+    if day:
+        return datetime.datetime(year=year, month=month, day=day)
+    elif month:
+        return datetime.datetime(year=year, month=month)
+    else:
+        return datetime.datetime(year=year)
 
 
 def get_affiliation_info(data) -> List[AffiliationEntry]:
