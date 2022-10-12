@@ -1,9 +1,9 @@
 """A data model for quickstatements."""
 
 import datetime
+from typing import List, Union
 
 from pydantic import BaseModel, Field
-from typing import Union, List
 from typing_extensions import Annotated, Literal
 
 __all__ = [
@@ -41,16 +41,22 @@ class DateQualifier(BaseModel):
 
     @classmethod
     def start_time(cls, target: Union[str, datetime.datetime]) -> "DateQualifier":
+        return cls(predicate="P580", target=cls._handle_date(target))
+
+    @classmethod
+    def end_time(cls, target: Union[str, datetime.datetime]) -> "DateQualifier":
+        return cls(predicate="P582", target=cls._handle_date(target))
+
+    @staticmethod
+    def _handle_date(target: Union[str, datetime.datetime]) -> str:
         if isinstance(target, str):
-            return cls(predicate="P580", target=target)
+            return target
         elif isinstance(target, datetime.datetime):
+            # TODO implement logic for creating correct format like
+            #  return f"+{year}-{month}-{day}T00:00:00Z/{str(precision)}"
             raise NotImplementedError
         else:
             raise TypeError
-
-    @classmethod
-    def end_time(cls, target: str) -> "DateQualifier":
-        return cls(predicate="P582", target=target)
 
 
 class TextQualifier(BaseModel):
@@ -66,8 +72,7 @@ class TextQualifier(BaseModel):
 
 #: A union of the qualifier types
 Qualifier = Annotated[
-    Union[EntityQualifier, DateQualifier, TextQualifier],
-    Field(discriminator="type")
+    Union[EntityQualifier, DateQualifier, TextQualifier], Field(discriminator="type")
 ]
 
 
@@ -115,7 +120,4 @@ class TextLine(BaseLine):
 
 
 #: A union of the line types
-Line = Annotated[
-    Union[CreateLine, EntityLine, TextLine],
-    Field(discriminator="type")
-]
+Line = Annotated[Union[CreateLine, EntityLine, TextLine], Field(discriminator="type")]
