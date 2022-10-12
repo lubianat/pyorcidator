@@ -30,7 +30,7 @@ class TestQuickStatements(unittest.TestCase):
             qualifiers=[reference_url, start_date, position_held],
         )
         self.assertEqual(
-            'Q47475003|P108|Q49121|S854|"https://orcid.org/0000-0003-4423-4370"',
+            'Q47475003|P108|Q49121|S854|"https://orcid.org/0000-0003-4423-4370"|S580|2021-02-15T00:00:00Z/??????|P39|Q1706722',
             employment_line.get_line(),
         )
 
