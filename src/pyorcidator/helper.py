@@ -5,32 +5,54 @@ Helper functions for pyorcidator
 import json
 import logging
 import re
-from typing import List, Optional
+from typing import List, Mapping, Optional
 
 import requests
-
 from wdcuration import add_key
+
 from .classes import AffiliationEntry
 from .dictionaries import dicts, stem_to_path
-from .wikidata_lookup import query_wikidata
 from .quickstatements import (
-    TextQualifier, DateQualifier, EntityQualifier, CreateLine, TextLine, EntityLine, Line, Qualifier
+    CreateLine,
+    DateQualifier,
+    EntityLine,
+    EntityQualifier,
+    Line,
+    Qualifier,
+    TextLine,
+    TextQualifier,
 )
+from .wikidata_lookup import query_wikidata
 
 logger = logging.getLogger(__name__)
 EXTERNAL_ID_PROPERTIES = {
     "Loop profile": "P2798",
     "Scopus Author ID": "P1153",
     "ResearcherID": "P1053",
+    "github": "P2037",
+    "twitter": "P2002",
+    "scopus": "P1153",
 }
+PREFIXES = [
+    ("github", "https://github.com/"),
+    ("twitter", "https://twitter.com/"),
+    ("scopus", "https://www.scopus.com/authid/detail.uri?authorId=")
+    # TODO linkedin, figshare, researchgate, publons, semion, semantic scholar, google scholar, etc.
+]
 
 
-def get_external_ids(data):
-    id_list = data["person"]["external-identifiers"]["external-identifier"]
-    id_dict = {}
-    for id in id_list:
-        id_dict[id["external-id-type"]] = id["external-id-value"]
-    return id_dict
+def get_external_ids(data) -> Mapping[str, str]:
+    """Get external identifiers that can be mapped to Wikidata properties."""
+    rv = {}
+    for d in data["person"]["external-identifiers"]["external-identifier"]:
+        rv[d["external-id-type"]] = d["external-id-value"]
+    for d in data["person"]["researcher-urls"].get("researcher-url", []):
+        # url_name = d["url-name"].lower().replace(" ", "")
+        url = d["url"]["value"].rstrip("/")
+        for key, url_prefix in PREFIXES:
+            if url.startswith(url_prefix):
+                rv[key] = url[len(url_prefix) :]
+    return rv
 
 
 def render_orcid_qs(orcid: str) -> str:
@@ -40,14 +62,11 @@ def render_orcid_qs(orcid: str) -> str:
     Args:
         orcid: The ORCID of the researcher to reconcile to Wikidata.
     """
-    return "\n".join(
-        line.get_line()
-        for line in get_orcid_quickstatements(orcid)
-    )
+    return "\n".join(line.get_line() for line in get_orcid_quickstatements(orcid))
 
 
 def _get_orcid_qualifier(orcid: str) -> Qualifier:
-    return TextQualifier(predicate="S854", target=f'https://orcid.org/{orcid}')
+    return TextQualifier(predicate="S854", target=f"https://orcid.org/{orcid}")
 
 
 def get_orcid_quickstatements(orcid: str) -> List[Line]:
@@ -60,35 +79,41 @@ def get_orcid_quickstatements(orcid: str) -> List[Line]:
 
     employment_data = data["activities-summary"]["employments"]["employment-summary"]
     employment_entries = get_affiliation_info(employment_data)
-    lines.extend(process_affiliation_entries(
-        orcid=orcid,
-        subject_qid=researcher_qid,
-        affiliation_entries=employment_entries,
-        role_property_id="P2868",  # subject has role
-        property_id="P108",  # Property for employer
-    ))
+    lines.extend(
+        process_affiliation_entries(
+            orcid=orcid,
+            subject_qid=researcher_qid,
+            affiliation_entries=employment_entries,
+            role_property_id="P2868",  # subject has role
+            property_id="P108",  # Property for employer
+        )
+    )
 
     education_data = data["activities-summary"]["educations"]["education-summary"]
     education_entries = get_affiliation_info(education_data)
-    lines.extend(process_affiliation_entries(
-        orcid=orcid,
-        subject_qid=researcher_qid,
-        affiliation_entries=education_entries,
-        role_property_id="P512",  # academic degree
-        property_id="P69",  # Property for educated at
-    ))
+    lines.extend(
+        process_affiliation_entries(
+            orcid=orcid,
+            subject_qid=researcher_qid,
+            affiliation_entries=education_entries,
+            role_property_id="P512",  # academic degree
+            property_id="P69",  # Property for educated at
+        )
+    )
 
     external_ids = get_external_ids(data)
     for key, value in external_ids.items():
         predicate = EXTERNAL_ID_PROPERTIES.get(key)
         if predicate is None:
             continue
-        lines.append(TextLine(
-            subject=researcher_qid,
-            predicate=predicate,
-            target=value,
-            qualifiers=[_get_orcid_qualifier(orcid)],
-        ))
+        lines.append(
+            TextLine(
+                subject=researcher_qid,
+                predicate=predicate,
+                target=value,
+                qualifiers=[_get_orcid_qualifier(orcid)],
+            )
+        )
 
     return lines
 
@@ -100,13 +125,23 @@ def get_base_qs(orcid, data, researcher_qid) -> List[Line]:
         rv.append(CreateLine())
         first_name = data["person"]["name"]["given-names"]["value"]
         last_name = data["person"]["name"]["family-name"]["value"]
-        rv.append(TextLine(subject=researcher_qid, predicate="Len", target=f"{first_name} {last_name}"))
+        rv.append(
+            TextLine(subject=researcher_qid, predicate="Len", target=f"{first_name} {last_name}")
+        )
         rv.append(TextLine(subject=researcher_qid, predicate="Den", target="researcher"))
     else:
         qualifiers = [_get_orcid_qualifier(orcid)]
-        rv.append(EntityLine(subject=researcher_qid, predicate="P31", target="Q5", qualifiers=qualifiers))
-        rv.append(EntityLine(subject=researcher_qid, predicate="P106", target="Q1650915", qualifiers=qualifiers))
-        rv.append(TextLine(subject=researcher_qid, predicate="P496", target=orcid, qualifiers=qualifiers))
+        rv.append(
+            EntityLine(subject=researcher_qid, predicate="P31", target="Q5", qualifiers=qualifiers)
+        )
+        rv.append(
+            EntityLine(
+                subject=researcher_qid, predicate="P106", target="Q1650915", qualifiers=qualifiers
+            )
+        )
+        rv.append(
+            TextLine(subject=researcher_qid, predicate="P496", target=orcid, qualifiers=qualifiers)
+        )
     return rv
 
 
@@ -303,7 +338,12 @@ def process_affiliation_entries(
             qualifiers.append(DateQualifier(predicate="P580", target=entry.start_date))
             if entry.end_date:
                 qualifiers.append(DateQualifier(predicate="P580", target=entry.end_date))
-        line = EntityLine(subject=subject_qid, predicate=property_id, target=entry.institution, qualifiers=qualifiers)
+        line = EntityLine(
+            subject=subject_qid,
+            predicate=property_id,
+            target=entry.institution,
+            qualifiers=qualifiers,
+        )
         rv.append(line)
     return rv
 
