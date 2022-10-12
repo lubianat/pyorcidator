@@ -1,5 +1,7 @@
 """A data model for quickstatements."""
 
+import datetime
+
 from pydantic import BaseModel, Field
 from typing import Union, List
 from typing_extensions import Annotated, Literal
@@ -37,8 +39,20 @@ class DateQualifier(BaseModel):
     def get_target(self):
         return self.target
 
+    @classmethod
+    def start_time(cls, target: Union[str, datetime.datetime]) -> "DateQualifier":
+        if isinstance(target, str):
+            return cls(predicate="P580", target=target)
+        elif isinstance(target, datetime.datetime):
+            raise NotImplementedError
+        else:
+            raise TypeError
 
-# FIXME input a datetime
+    @classmethod
+    def end_time(cls, target: str) -> "DateQualifier":
+        return cls(predicate="P582", target=target)
+
+
 class TextQualifier(BaseModel):
     """A qualifier that points to a string literal."""
 

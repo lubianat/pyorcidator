@@ -303,9 +303,9 @@ def process_affiliation_entries(
             else:
                 logger.warning("ungrounded role: %s", entry.role)
         if entry.start_date:
-            qualifiers.append(DateQualifier(predicate="P580", target=entry.start_date))
+            qualifiers.append(DateQualifier.start_time(entry.start_date))
             if entry.end_date:
-                qualifiers.append(DateQualifier(predicate="P580", target=entry.end_date))
+                qualifiers.append(DateQualifier.end_time(entry.end_date))
         line = EntityLine(
             subject=subject_qid,
             predicate=property_id,
