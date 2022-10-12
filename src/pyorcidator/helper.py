@@ -5,6 +5,7 @@ Helper functions for pyorcidator
 import json
 import logging
 import re
+from typing import Mapping
 
 import requests
 
@@ -18,15 +19,30 @@ EXTERNAL_ID_PROPERTIES = {
     "Loop profile": "P2798",
     "Scopus Author ID": "P1153",
     "ResearcherID": "P1053",
+    "github": "P2037",
+    "twitter": "P2002",
+    "scopus": "P1153",
 }
+PREFIXES = [
+    ("github", "https://github.com/"),
+    ("twitter", "https://twitter.com/"),
+    ("scopus", "https://www.scopus.com/authid/detail.uri?authorId=")
+    # TODO linkedin, figshare, researchgate, publons, semion, semantic scholar, google scholar, etc.
+]
 
 
-def get_external_ids(data):
-    id_list = data["person"]["external-identifiers"]["external-identifier"]
-    id_dict = {}
-    for id in id_list:
-        id_dict[id["external-id-type"]] = id["external-id-value"]
-    return id_dict
+def get_external_ids(data) -> Mapping[str, str]:
+    """Get external identifiers that can be mapped to Wikidata properties."""
+    rv = {}
+    for d in data["person"]["external-identifiers"]["external-identifier"]:
+        rv[d["external-id-type"]] = d["external-id-value"]
+    for d in data["person"]["researcher-urls"].get("researcher-url", []):
+        # url_name = d["url-name"].lower().replace(" ", "")
+        url = d["url"]["value"].rstrip("/")
+        for key, url_prefix in PREFIXES:
+            if url.startswith(url_prefix):
+                rv[key] = url[len(url_prefix):]
+    return rv
 
 
 def render_orcid_qs(orcid):
