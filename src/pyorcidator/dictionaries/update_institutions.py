@@ -3,7 +3,7 @@
 import click
 
 from pyorcidator.dictionaries import INSTITUTIONS_PATH
-from pyorcidator.dictionaries.utils import update
+from pyorcidator.dictionaries.utils import update_curation_dictionary
 
 ANCESTORS = {
     "Q4671277": "academic institution",
@@ -13,7 +13,7 @@ ANCESTORS = {
 @click.command(name="update-institutions")
 def main():
     """Update the institutions lookup table from Wikidata."""
-    update(
+    update_curation_dictionary(
         parents=sorted(ANCESTORS),
         path=INSTITUTIONS_PATH,
         clause="?item wdt:P31/wdt:P279* ?ancestor .",
