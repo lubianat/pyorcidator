@@ -2,8 +2,8 @@
 
 import click
 
-from pyorcidator.dictionaries import DEGREE_PATH
-from pyorcidator.dictionaries.utils import update
+from pyorcidator.dictionaries import ROLE_PATH
+from pyorcidator.dictionaries.utils import update_curation_dictionary
 
 QUERY = """\
 SELECT DISTINCT ?label ?item
@@ -20,7 +20,7 @@ ANCESTORS = {
 @click.command(name="update-degrees")
 def main():
     """Update the degrees lookup able from Wikidata."""
-    update(parents=sorted(ANCESTORS), path=DEGREE_PATH)
+    update_curation_dictionary(parents=sorted(ANCESTORS), path=ROLE_PATH)
 
 
 if __name__ == "__main__":
