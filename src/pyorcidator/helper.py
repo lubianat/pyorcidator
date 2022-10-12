@@ -279,8 +279,12 @@ def get_institution_qid(data_entry, name) -> Optional[str]:
 
 
 def process_affiliation_entries(
-    subject_qid, qualifiers, affiliation_entries, property_id, role_property_id
-):
+    subject_qid: str,
+    qualifiers: List[Qualifier],
+    affiliation_entries: List[AffiliationEntry],
+    property_id: str,
+    role_property_id: str,
+) -> List[Line]:
     """
     From a list of EducationEntry objects, renders quickstatements for the QID.
     """
@@ -289,8 +293,11 @@ def process_affiliation_entries(
     rv = []
     for entry in affiliation_entries:
         _qualifiers = qualifiers.copy()
-        if entry.role is not None:
-            _qualifiers.append(EntityQualifier(predicate=role_property_id, target=entry.role))
+        if entry.role and entry.role.lower() != "none":
+            if re.match(r"^[PQS]\d+$", entry.role):
+                _qualifiers.append(EntityQualifier(predicate=role_property_id, target=entry.role))
+            else:
+                logger.warning("ungrounded role: %s", entry.role)
         if entry.start_date:
             _qualifiers.append(DateQualifier(predicate="P580", target=entry.start_date))
             if entry.end_date:
