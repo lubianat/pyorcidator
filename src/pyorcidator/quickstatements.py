@@ -54,7 +54,7 @@ class DateQualifier(BaseModel):
         elif isinstance(target, datetime.datetime):
             # TODO implement logic for creating correct format like
             #  return f"+{year}-{month}-{day}T00:00:00Z/{str(precision)}"
-            raise NotImplementedError
+            return target.isoformat()
         else:
             raise TypeError
 
