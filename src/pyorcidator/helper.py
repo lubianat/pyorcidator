@@ -49,6 +49,7 @@ def render_orcid_qs(orcid: str) -> str:
 def _get_orcid_qualifier(orcid: str) -> Qualifier:
     return TextQualifier(predicate="S854", target=f'https://orcid.org/{orcid}')
 
+
 def get_orcid_quickstatements(orcid: str) -> List[Line]:
     """Get a list of quickstatement line objects."""
     data = get_orcid_data(orcid)
@@ -79,13 +80,15 @@ def get_orcid_quickstatements(orcid: str) -> List[Line]:
 
     external_ids = get_external_ids(data)
     for key, value in external_ids.items():
-        if key in EXTERNAL_ID_PROPERTIES:
-            lines.append(TextLine(
-                subject=researcher_qid,
-                predicate=EXTERNAL_ID_PROPERTIES[key],
-                target=value,
-                qualifiers=[_get_orcid_qualifier(orcid)],
-            ))
+        predicate = EXTERNAL_ID_PROPERTIES.get(key)
+        if predicate is None:
+            continue
+        lines.append(TextLine(
+            subject=researcher_qid,
+            predicate=predicate,
+            target=value,
+            qualifiers=[_get_orcid_qualifier(orcid)],
+        ))
 
     return lines
 
