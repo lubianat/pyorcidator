@@ -1,3 +1,4 @@
+import datetime
 from dataclasses import dataclass
 from typing import Optional
 
@@ -12,5 +13,5 @@ class AffiliationEntry:
 
     institution: str
     role: Optional[str] = None
-    start_date: Optional[str] = None
-    end_date: Optional[str] = None
+    start_date: Optional[datetime.datetime] = None
+    end_date: Optional[datetime.datetime] = None

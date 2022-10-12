@@ -2,6 +2,7 @@
 Helper functions for pyorcidator
 """
 
+import datetime
 import json
 import logging
 import re
@@ -211,27 +212,16 @@ def get_organization_list(data):
     return organization_list
 
 
-def get_date(entry, start_or_end="start"):
+def get_date(entry, start_or_end="start") -> Optional[datetime.datetime]:
     date = entry[f"{start_or_end}-date"]
     if date is None:
-        return ""
-
-    month = "00"
-    day = "00"
-
-    if date["year"] is not None:
-        year = date["year"]["value"]
-        precision = 9
-
-    if date["month"] is not None:
-        month = date["month"]["value"]
-        precision = 10
-
-    if date["day"] is not None:
-        day = date["day"]["value"]
-        precision = 11
-
-    return f"+{year}-{month}-{day}T00:00:00Z/{str(precision)}"
+        return None
+    year = int(date.get("year", {}).get("value", 0))
+    if not year:
+        return None
+    month = int(date["month"]["value"]) if date["month"] is not None else 0
+    day = int(date["day"]["value"]) if date["day"] is not None else 0
+    return datetime.datetime(year=year, month=month, day=day)
 
 
 def get_affiliation_info(data) -> List[AffiliationEntry]:

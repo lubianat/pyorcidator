@@ -41,20 +41,19 @@ class DateQualifier(BaseModel):
 
     @classmethod
     def start_time(cls, target: Union[str, datetime.datetime]) -> "DateQualifier":
-        return cls(predicate="P580", target=cls._handle_date(target))
+        return cls(predicate="S580", target=cls._handle_date(target))
 
     @classmethod
     def end_time(cls, target: Union[str, datetime.datetime]) -> "DateQualifier":
-        return cls(predicate="P582", target=cls._handle_date(target))
+        return cls(predicate="S582", target=cls._handle_date(target))
 
     @staticmethod
     def _handle_date(target: Union[str, datetime.datetime]) -> str:
         if isinstance(target, str):
             return target
         elif isinstance(target, datetime.datetime):
-            # TODO implement logic for creating correct format like
-            #  return f"+{year}-{month}-{day}T00:00:00Z/{str(precision)}"
-            return target.isoformat()
+            # See section on precision in https://www.wikidata.org/wiki/Help:Dates#Precision
+            return f"+{target.isoformat()}Z"
         else:
             raise TypeError
 
