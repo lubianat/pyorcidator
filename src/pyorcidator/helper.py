@@ -219,8 +219,8 @@ def get_date(entry, start_or_end="start") -> Optional[datetime.datetime]:
     year = int(date.get("year", {}).get("value", 0))
     if not year:
         return None
-    month = int(date["month"]["value"]) if date["month"] is not None else 0
-    day = int(date["day"]["value"]) if date["day"] is not None else 0
+    month = date["month"] and int(date["month"]["value"])
+    day = date["day"] and int(date["day"]["value"])
     return datetime.datetime(year=year, month=month, day=day)
 
 
