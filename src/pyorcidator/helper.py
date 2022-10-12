@@ -27,6 +27,7 @@ PREFIXES = [
     ("github", "https://github.com/"),
     ("twitter", "https://twitter.com/"),
     ("scopus", "https://www.scopus.com/authid/detail.uri?authorId=")
+    # TODO linkedin, figshare, researchgate, publons, semion, semantic scholar, google scholar, etc.
 ]
 
 
