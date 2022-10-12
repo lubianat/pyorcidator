@@ -155,38 +155,6 @@ def get_orcid_data(orcid):
     return data
 
 
-def process_item(
-    qs,
-    property_id,
-    original_dict,
-    target_list,
-    subject_qid,
-    ref,
-    qualifier_nested_dictionary=None,
-):
-    # FIXME this is unused, delete?
-    for target_item in target_list:
-        if re.findall("Q[0-9]*", target_item):
-            qid = target_item
-        else:
-            qid = get_qid_for_item(original_dict, target_item)
-        if qid:
-            qs = (
-                qs
-                + f"""
-    {subject_qid}|{property_id}|{qid}"""
-            )
-
-        if qualifier_nested_dictionary is not None:
-            qualifier_pairs = qualifier_nested_dictionary[target_item]
-
-            for key, value in qualifier_pairs.items():
-                qs = qs + f"|{key}|{value}" + f"{ref}"
-        else:
-            qs = qs + f"{ref}"
-    return qs
-
-
 def get_qid_for_item(key: str, name: str) -> Optional[str]:
     """
     Looks up the qid given a key using global dict of dicts.
