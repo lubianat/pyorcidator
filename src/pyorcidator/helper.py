@@ -213,7 +213,9 @@ def get_organization_list(data):
     return organization_list
 
 
-def get_date(entry, start_or_end="start") -> Union[Tuple[datetime.datetime, int], Tuple[None, None]]:
+def get_date(
+    entry, start_or_end="start"
+) -> Union[Tuple[datetime.datetime, int], Tuple[None, None]]:
     date = entry.get(f"{start_or_end}-date")
     if date is None:
         return None, None

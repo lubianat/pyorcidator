@@ -60,8 +60,9 @@ class TestQuickStatements(unittest.TestCase):
         )
         self.assertTrue(
             any(
-                qualifier.predicate == "S580" and qualifier.get_target() == start_date_qualifier.get_target()
+                qualifier.predicate == "S580"
+                and qualifier.get_target() == start_date_qualifier.get_target()
                 for qualifier in harvard_line.qualifiers
             ),
-            msg=f"Got qualifiers: {harvard_line.qualifiers}"
+            msg=f"Got qualifiers: {harvard_line.qualifiers}",
         )
