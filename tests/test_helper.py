@@ -25,7 +25,9 @@ def test_get_date(sample_orcid_data):
     test_start_date, start_date_precision = get_date(education_data[1])
     test_end_date, end_date_precision = get_date(education_data[1], start_or_end="end")
 
-    assert prepare_date(test_start_date, precision=start_date_precision) == "+2015-08-00T00:00:00Z/10"
+    assert (
+        prepare_date(test_start_date, precision=start_date_precision) == "+2015-08-00T00:00:00Z/10"
+    )
     assert prepare_date(test_end_date, precision=end_date_precision) == "+2017-10-27T00:00:00Z/11"
 
 
