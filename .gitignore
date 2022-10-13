@@ -173,3 +173,4 @@ cython_debug/
 
 # VS Code files
 .vscode/launch.json
+sample.json

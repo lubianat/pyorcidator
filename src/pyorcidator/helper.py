@@ -19,6 +19,7 @@ EXTERNAL_ID_PROPERTIES = {
     "Loop profile": "P2798",
     "Scopus Author ID": "P1153",
     "ResearcherID": "P1053",
+    "GND": "P227",
     "github": "P2037",
     "twitter": "P2002",
     "scopus": "P1153",
@@ -41,7 +42,7 @@ def get_external_ids(data) -> Mapping[str, str]:
         url = d["url"]["value"].rstrip("/")
         for key, url_prefix in PREFIXES:
             if url.startswith(url_prefix):
-                rv[key] = url[len(url_prefix):]
+                rv[key] = url[len(url_prefix) :]
     return rv
 
 
