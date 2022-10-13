@@ -11,6 +11,7 @@ from pyorcidator.helper import (
     lookup_id,
     render_orcid_qs,
 )
+from pyorcidator.quickstatements import prepare_date
 
 
 def test_lookup_id():
@@ -21,11 +22,11 @@ def test_lookup_id():
 def test_get_date(sample_orcid_data):
     education_data = sample_orcid_data["activities-summary"]["educations"]["education-summary"]
 
-    test_start_date = get_date(education_data[1])
-    test_end_date = get_date(education_data[1], start_or_end="end")
+    test_start_date, start_date_precision = get_date(education_data[1])
+    test_end_date, end_date_precision = get_date(education_data[1], start_or_end="end")
 
-    assert test_start_date == "+2015-08-00T00:00:00Z/10"
-    assert test_end_date == "+2017-10-27T00:00:00Z/11"
+    assert prepare_date(test_start_date, precision=start_date_precision) == "+2015-08-00T00:00:00Z/10"
+    assert prepare_date(test_end_date, precision=end_date_precision) == "+2017-10-27T00:00:00Z/11"
 
 
 def test_get_paper_dois(sample_orcid_data):
