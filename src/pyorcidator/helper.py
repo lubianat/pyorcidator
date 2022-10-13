@@ -79,6 +79,17 @@ def get_orcid_quickstatements(orcid: str) -> List[Line]:
 
     lines: List[Line] = get_base_qs(orcid, data, researcher_qid)
 
+    keyword_data = data["person"]["keywords"]["keyword"]
+    if len(keyword_data) > 0:
+        lines.extend(
+            process_keyword_entries(
+                orcid=orcid,
+                researcher_qid=researcher_qid,
+                keyword_data=keyword_data,
+                property_id="P101",
+            )
+        )
+
     employment_data = data["activities-summary"]["employments"]["employment-summary"]
     employment_entries = get_affiliation_info(employment_data)
     lines.extend(
@@ -213,7 +224,9 @@ def get_organization_list(data):
     return organization_list
 
 
-def get_date(entry, start_or_end="start") -> Union[Tuple[datetime.datetime, int], Tuple[None, None]]:
+def get_date(
+    entry, start_or_end="start"
+) -> Union[Tuple[datetime.datetime, int], Tuple[None, None]]:
     date = entry.get(f"{start_or_end}-date")
     if date is None:
         return None, None
@@ -263,6 +276,27 @@ def get_affiliation_info(data) -> List[AffiliationEntry]:
         organization_list.append(entry)
 
     return organization_list
+
+
+def process_keyword_entries(
+    orcid: str, researcher_qid: str, keyword_data: List, property_id: str
+) -> List[EntityLine]:
+
+    fields = [keyword["content"] for keyword in keyword_data]
+    field_of_work_list = []
+    for field in fields:
+
+        qualifiers = [_get_orcid_qualifier(orcid)]
+
+        field_qid = get_qid_for_item("fields", field)
+
+        entry = EntityLine(
+            subject=researcher_qid, predicate=property_id, target=field_qid, qualifiers=qualifiers
+        )
+
+        field_of_work_list.append(entry)
+
+    return field_of_work_list
 
 
 def get_institution_qid(data_entry, name) -> Optional[str]:
