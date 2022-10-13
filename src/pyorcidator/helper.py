@@ -6,7 +6,7 @@ import datetime
 import json
 import logging
 import re
-from typing import List, Mapping, Optional
+from typing import List, Mapping, Optional, Tuple, Union
 
 import requests
 from wdcuration import add_key
@@ -212,21 +212,24 @@ def get_organization_list(data):
     return organization_list
 
 
-def get_date(entry, start_or_end="start") -> Optional[datetime.datetime]:
-    date = entry[f"{start_or_end}-date"]
+def get_date(entry, start_or_end="start") -> Union[Tuple[datetime.datetime, int], Tuple[None, None]]:
+    date = entry.get(f"{start_or_end}-date")
     if date is None:
-        return None
+        return None, None
     year = int(date.get("year", {}).get("value", 0))
     if not year:
-        return None
-    month = date["month"] and int(date["month"]["value"])
+        return None, None
+    month = int(date["month"]["value"]) if date["month"] else 1
     day = date["day"] and int(date["day"]["value"])
     if day:
-        return datetime.datetime(year=year, month=month, day=day)
+        # precision of 11 means day is known
+        return datetime.datetime(year=year, month=month, day=day), 11
     elif month:
-        return datetime.datetime(year=year, month=month)
+        # precision of 10 means up to the month is known
+        return datetime.datetime(year=year, month=month, day=1), 10
     else:
-        return datetime.datetime(year=year)
+        # precision of 9 means up to the year is known
+        return datetime.datetime(year=year, month=1, day=1), 9
 
 
 def get_affiliation_info(data) -> List[AffiliationEntry]:
@@ -241,8 +244,8 @@ def get_affiliation_info(data) -> List[AffiliationEntry]:
             role_qid = get_qid_for_item("role", title)
         else:
             role_qid = None
-        start_date = get_date(data_entry, "start")
-        end_date = get_date(data_entry, "end")
+        start_date, start_date_precision = get_date(data_entry, "start")
+        end_date, end_date_precision = get_date(data_entry, "end")
         data_entry = data_entry["organization"]
         name = data_entry["name"]
         institution_qid = get_institution_qid(data_entry, name)
@@ -251,7 +254,9 @@ def get_affiliation_info(data) -> List[AffiliationEntry]:
             role=role_qid,
             institution=institution_qid,
             start_date=start_date,
+            start_date_precision=start_date_precision,
             end_date=end_date,
+            end_date_precision=end_date_precision,
         )
 
         organization_list.append(entry)

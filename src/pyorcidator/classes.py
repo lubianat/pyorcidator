@@ -14,4 +14,6 @@ class AffiliationEntry:
     institution: str
     role: Optional[str] = None
     start_date: Optional[datetime.datetime] = None
+    start_date_precision: Optional[int] = None
     end_date: Optional[datetime.datetime] = None
+    end_date_precision: Optional[int] = None

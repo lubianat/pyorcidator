@@ -1,7 +1,7 @@
 """A data model for quickstatements."""
 
 import datetime
-from typing import List, Union
+from typing import List, Optional, Union
 
 from pydantic import BaseModel, Field
 from typing_extensions import Annotated, Literal
@@ -25,7 +25,7 @@ class EntityQualifier(BaseModel):
     predicate: str = Field(regex=r"^[PQS]\d+$")
     target: str = Field(regex=r"^[PQS]\d+$")
 
-    def get_target(self):
+    def get_target(self) -> str:
         return self.target
 
 
@@ -36,26 +36,84 @@ class DateQualifier(BaseModel):
     predicate: str = Field(regex=r"^[PQS]\d+$")
     target: str
 
-    def get_target(self):
+    def get_target(self) -> str:
         return self.target
 
     @classmethod
-    def start_time(cls, target: Union[str, datetime.datetime]) -> "DateQualifier":
-        return cls(predicate="S580", target=cls._handle_date(target))
+    def start_time(
+        cls, target: Union[str, datetime.datetime], *, precision: Optional[int] = None
+    ) -> "DateQualifier":
+        return cls(predicate="S580", target=prepare_date(target, precision=precision))
 
     @classmethod
-    def end_time(cls, target: Union[str, datetime.datetime]) -> "DateQualifier":
-        return cls(predicate="S582", target=cls._handle_date(target))
+    def end_time(
+        cls, target: Union[str, datetime.datetime], *, precision: Optional[int] = None
+    ) -> "DateQualifier":
+        return cls(predicate="S582", target=prepare_date(target, precision=precision))
 
-    @staticmethod
-    def _handle_date(target: Union[str, datetime.datetime]) -> str:
-        if isinstance(target, str):
-            return target
-        elif isinstance(target, datetime.datetime):
-            # See section on precision in https://www.wikidata.org/wiki/Help:Dates#Precision
-            return f"+{target.isoformat()}Z"
-        else:
-            raise TypeError
+
+def format_date(
+    *,
+    precision: int,
+    year: int,
+    month: int = 0,
+    day: int = 0,
+    hour: int = 0,
+    minute: int = 0,
+    second: int = 0,
+) -> str:
+    """Format the date in a way appropriate for quickstatements."""
+    return f"+{year:04}-{month:02}-{day:02}T{hour:02}:{minute:02}:{second:02}Z/{precision}"
+
+
+def prepare_date(target: Union[str, datetime.datetime], *, precision: Optional[int] = None) -> str:
+    """Prepare a date for quickstatements."""
+    if isinstance(target, str):
+        return target
+    if not isinstance(target, datetime.datetime):
+        raise TypeError
+    if precision is None:
+        precision = 11
+    # See section on precision in https://www.wikidata.org/wiki/Help:Dates#Precision
+    if precision == 11:  # day precision
+        return format_date(
+            precision=precision, year=target.year, month=target.month, day=target.day
+        )
+    elif precision == 10:  # month precision
+        return format_date(precision=precision, year=target.year, month=target.month)
+    elif precision == 9:  # year precision
+        return format_date(precision=precision, year=target.year)
+    elif precision == 12:  # hour precision
+        return format_date(
+            precision=precision,
+            year=target.year,
+            month=target.month,
+            day=target.day,
+            hour=target.hour,
+        )
+    elif precision == 13:  # minute precision
+        return format_date(
+            precision=precision,
+            year=target.year,
+            month=target.month,
+            day=target.day,
+            hour=target.hour,
+            minute=target.minute,
+        )
+    elif precision == 14:  # second precision
+        return format_date(
+            precision=precision,
+            year=target.year,
+            month=target.month,
+            day=target.day,
+            hour=target.hour,
+            minute=target.minute,
+            second=target.second,
+        )
+    else:
+        raise ValueError(f"Invalid precision: {precision}")
+    # No precision case:
+    # return f"+{target.isoformat()}Z"
 
 
 class TextQualifier(BaseModel):
@@ -65,7 +123,7 @@ class TextQualifier(BaseModel):
     predicate: str = Field(regex=r"^[PQS]\d+$")
     target: str
 
-    def get_target(self):
+    def get_target(self) -> str:
         return f'"{self.target}"'
 
 
