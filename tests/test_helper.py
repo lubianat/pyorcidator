@@ -9,6 +9,7 @@ from pyorcidator.helper import (
     get_organization_list,
     get_paper_dois,
     lookup_id,
+    process_keyword_entries,
     render_orcid_qs,
 )
 from pyorcidator.quickstatements import prepare_date
@@ -25,7 +26,9 @@ def test_get_date(sample_orcid_data):
     test_start_date, start_date_precision = get_date(education_data[1])
     test_end_date, end_date_precision = get_date(education_data[1], start_or_end="end")
 
-    assert prepare_date(test_start_date, precision=start_date_precision) == "+2015-08-00T00:00:00Z/10"
+    assert (
+        prepare_date(test_start_date, precision=start_date_precision) == "+2015-08-00T00:00:00Z/10"
+    )
     assert prepare_date(test_end_date, precision=end_date_precision) == "+2017-10-27T00:00:00Z/11"
 
 
@@ -49,6 +52,21 @@ def test_get_org_list(sample_orcid_data):
         "Q152171",
         "Fraunhofer SCAI",
     ]
+
+
+def test_get_field_of_work(sample_orcid_data):
+
+    keyword_data = sample_orcid_data["person"]["keywords"]["keyword"]
+
+    fields = process_keyword_entries(
+        orcid="0000-0003-4423-4370",
+        researcher_qid="Q47475003",
+        keyword_data=keyword_data,
+        property_id="P101",
+    )
+
+    assert len(fields) == 5
+    assert fields[1].target == "Q114662947"
 
 
 def test_get_loop_id(sample_orcid_data):

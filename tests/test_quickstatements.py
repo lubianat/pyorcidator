@@ -33,7 +33,7 @@ class TestQuickStatements(unittest.TestCase):
             qualifiers=[reference_url_qualifier, start_date_qualifier, position_held_qualifier],
         )
         self.assertEqual(
-            'Q47475003|P108|Q49121|S854|"https://orcid.org/0000-0003-4423-4370"|S580|+2021-02-15T00:00:00Z/11|P39|Q1706722',
+            'Q47475003|P108|Q49121|S854|"https://orcid.org/0000-0003-4423-4370"|P580|+2021-02-15T00:00:00Z/11|P39|Q1706722',
             employment_line.get_line(),
         )
 
@@ -55,13 +55,14 @@ class TestQuickStatements(unittest.TestCase):
         )
         self.assertLess(0, len(harvard_line.qualifiers))
         self.assertTrue(
-            any(qualifier.predicate == "S580" for qualifier in harvard_line.qualifiers),
+            any(qualifier.predicate == "P580" for qualifier in harvard_line.qualifiers),
             msg="No start time qualifier found",
         )
         self.assertTrue(
             any(
-                qualifier.predicate == "S580" and qualifier.get_target() == start_date_qualifier.get_target()
+                qualifier.predicate == "P580"
+                and qualifier.get_target() == start_date_qualifier.get_target()
                 for qualifier in harvard_line.qualifiers
             ),
-            msg=f"Got qualifiers: {harvard_line.qualifiers}"
+            msg=f"Got qualifiers: {harvard_line.qualifiers}",
         )
