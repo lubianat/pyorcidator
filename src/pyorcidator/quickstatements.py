@@ -43,13 +43,13 @@ class DateQualifier(BaseModel):
     def start_time(
         cls, target: Union[str, datetime.datetime], *, precision: Optional[int] = None
     ) -> "DateQualifier":
-        return cls(predicate="S580", target=prepare_date(target, precision=precision))
+        return cls(predicate="P580", target=prepare_date(target, precision=precision))
 
     @classmethod
     def end_time(
         cls, target: Union[str, datetime.datetime], *, precision: Optional[int] = None
     ) -> "DateQualifier":
-        return cls(predicate="S582", target=prepare_date(target, precision=precision))
+        return cls(predicate="P582", target=prepare_date(target, precision=precision))
 
 
 def format_date(
