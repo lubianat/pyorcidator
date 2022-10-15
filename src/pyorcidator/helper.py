@@ -373,7 +373,6 @@ def get_paper_dois(group_of_works_from_orcid: List[Dict]) -> List[str]:
 def get_paper_qids(papers_dois: List[str]) -> List[str]:
     """Get QIDs for list of DOIs"""
 
-    paper_qids = []
     doi_values = " ".join(f"'{doi.upper()}'" for doi in papers_dois)
 
     query = f"""\
@@ -389,8 +388,6 @@ def get_paper_qids(papers_dois: List[str]) -> List[str]:
     bindings = query_wikidata(query)
     if len(bindings) > 0:
         return [binding["item"]["value"] for binding in bindings]
-
-    return paper_qids
 
 
 def process_paper_entries(
