@@ -37,6 +37,25 @@ class TestQuickStatements(unittest.TestCase):
             employment_line.get_line(),
         )
 
+        # Try with different date precision
+        start_date_month = datetime.datetime(year=2021, month=2, day=1)
+        # 10 = month precision
+        start_date_month_qualifier = DateQualifier.start_time(start_date_month, precision=10)
+        employment_line_less_precise = EntityLine(
+            subject=subject_qid,
+            predicate="P108",  # employer
+            target="Q49121",  # Harvard medical school
+            qualifiers=[
+                reference_url_qualifier,
+                start_date_month_qualifier,
+                position_held_qualifier,
+            ],
+        )
+        self.assertEqual(
+            'Q47475003|P108|Q49121|S854|"https://orcid.org/0000-0003-4423-4370"|P580|+2021-02-00T00:00:00Z/10|P39|Q1706722',
+            employment_line_less_precise.get_line(),
+        )
+
         nickname_line = TextLine(
             subject=subject_qid,
             predicate="P1449",
