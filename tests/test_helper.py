@@ -10,6 +10,7 @@ from pyorcidator.helper import (
     get_paper_dois,
     lookup_id,
     process_keyword_entries,
+    process_paper_entries,
     render_orcid_qs,
 )
 from pyorcidator.quickstatements import prepare_date
@@ -37,6 +38,24 @@ def test_get_paper_dois(sample_orcid_data):
 
     test_dois = get_paper_dois(test_papers)
     assert "10.3233/jad-201397" in test_dois
+
+
+def test_process_paper_entries(sample_orcid_data):
+
+    test_papers = sample_orcid_data["activities-summary"]["works"]["group"]
+    test_dois = get_paper_dois(test_papers)
+
+    entries = process_paper_entries(
+        orcid="0000-0003-4423-4370",
+        researcher_qid="Q47475003",
+        paper_dois=test_dois,
+        property_id="P50",
+    )
+
+    entries_qids = [entry.subject for entry in entries]
+
+    assert len(entries) == 31
+    assert entries_qids[1:3] == ["Q63709723", "Q82511885"]
 
 
 def test_get_org_list(sample_orcid_data):
