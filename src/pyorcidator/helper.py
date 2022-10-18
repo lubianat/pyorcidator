@@ -145,29 +145,30 @@ def get_orcid_quickstatements(orcid: str) -> List[Line]:
 
 def get_base_qs(orcid, data, researcher_qid) -> List[Line]:
     """Returns the first lines for the new Quickstatements"""
-    rv = []
+    quickstatements = []
     if researcher_qid == "LAST":
-        rv.append(CreateLine())
+        quickstatements.append(CreateLine())
         first_name = data["person"]["name"]["given-names"]["value"]
         last_name = data["person"]["name"]["family-name"]["value"]
-        rv.append(
+        quickstatements.append(
             TextLine(subject=researcher_qid, predicate="Len", target=f"{first_name} {last_name}")
         )
-        rv.append(TextLine(subject=researcher_qid, predicate="Den", target="researcher"))
-    else:
-        qualifiers = [_get_orcid_qualifier(orcid)]
-        rv.append(
-            EntityLine(subject=researcher_qid, predicate="P31", target="Q5", qualifiers=qualifiers)
+        quickstatements.append(
+            TextLine(subject=researcher_qid, predicate="Den", target="researcher")
         )
-        rv.append(
-            EntityLine(
-                subject=researcher_qid, predicate="P106", target="Q1650915", qualifiers=qualifiers
-            )
+    qualifiers = [_get_orcid_qualifier(orcid)]
+    quickstatements.append(
+        EntityLine(subject=researcher_qid, predicate="P31", target="Q5", qualifiers=qualifiers)
+    )
+    quickstatements.append(
+        EntityLine(
+            subject=researcher_qid, predicate="P106", target="Q1650915", qualifiers=qualifiers
         )
-        rv.append(
-            TextLine(subject=researcher_qid, predicate="P496", target=orcid, qualifiers=qualifiers)
-        )
-    return rv
+    )
+    quickstatements.append(
+        TextLine(subject=researcher_qid, predicate="P496", target=orcid, qualifiers=qualifiers)
+    )
+    return quickstatements
 
 
 def get_orcid_data(orcid):
