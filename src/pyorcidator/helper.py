@@ -6,7 +6,7 @@ import datetime
 import json
 import logging
 import re
-from typing import List, Mapping, Optional, Tuple, Union
+from typing import Dict, List, Mapping, Optional, Tuple, Union
 
 import requests
 from wdcuration import add_key
@@ -111,6 +111,14 @@ def get_orcid_quickstatements(orcid: str) -> List[Line]:
             affiliation_entries=education_entries,
             role_property_id="P512",  # academic degree
             property_id="P69",  # Property for educated at
+        )
+    )
+
+    papers_data = data["activities-summary"]["works"]["group"]
+    papers_entries = get_paper_dois(papers_data)
+    lines.extend(
+        process_paper_entries(
+            orcid=orcid, researcher_qid=researcher_qid, paper_dois=papers_entries, property_id="P50"
         )
     )
 
@@ -338,9 +346,13 @@ def process_affiliation_entries(
             else:
                 logger.warning("ungrounded role: %s", entry.role)
         if entry.start_date:
-            qualifiers.append(DateQualifier.start_time(entry.start_date))
+            qualifiers.append(
+                DateQualifier.start_time(entry.start_date, precision=entry.start_date_precision)
+            )
             if entry.end_date:
-                qualifiers.append(DateQualifier.end_time(entry.end_date))
+                qualifiers.append(
+                    DateQualifier.end_time(entry.end_date, precision=entry.end_date_precision)
+                )
         line = EntityLine(
             subject=subject_qid,
             predicate=property_id,
@@ -351,8 +363,8 @@ def process_affiliation_entries(
     return rv
 
 
-def get_paper_dois(group_of_works_from_orcid):
-    """ """
+def get_paper_dois(group_of_works_from_orcid: List[Dict]) -> List[str]:
+    """Return list of DOIs (strings) from an ORCID API result"""
     dois = []
     for work in group_of_works_from_orcid:
         for external_id in work["external-ids"]["external-id"]:
@@ -360,3 +372,43 @@ def get_paper_dois(group_of_works_from_orcid):
                 dois.append(external_id["external-id-value"])
     logger.info("got paper DOIs: %s", dois)
     return dois
+
+
+def get_paper_qids(papers_dois: List[str]) -> List[str]:
+    """Get QIDs for list of DOIs"""
+
+    doi_values = " ".join(f"'{doi.upper()}'" for doi in papers_dois)
+
+    query = f"""\
+        SELECT ?item
+        WHERE
+        {{
+            VALUES ?doi {{{doi_values}}}
+            ?itemURL wdt:P356 ?doi .
+            BIND(REPLACE(STR(?itemURL), "http://www.wikidata.org/entity/", "") AS ?item)
+        }}
+    """
+
+    bindings = query_wikidata(query)
+    if len(bindings) > 0:
+        return [binding["item"]["value"] for binding in bindings]
+
+
+def process_paper_entries(
+    orcid: str, researcher_qid: str, paper_dois: List[str], property_id: str
+) -> List[EntityLine]:
+    """From a list of paper DOIs create statements for linking them to author"""
+
+    paper_qids = get_paper_qids(paper_dois)
+
+    paper_statements = []
+
+    qualifiers = [_get_orcid_qualifier(orcid)]
+    for paper in paper_qids:
+        entry = EntityLine(
+            subject=paper, predicate=property_id, target=researcher_qid, qualifiers=qualifiers
+        )
+
+        paper_statements.append(entry)
+
+    return paper_statements
