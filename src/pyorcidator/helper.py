@@ -116,11 +116,15 @@ def get_orcid_quickstatements(orcid: str) -> List[Line]:
 
     papers_data = data["activities-summary"]["works"]["group"]
     papers_entries = get_paper_dois(papers_data)
-    lines.extend(
-        process_paper_entries(
-            orcid=orcid, researcher_qid=researcher_qid, paper_dois=papers_entries, property_id="P50"
+    if len(papers_entries) > 0:
+        lines.extend(
+            process_paper_entries(
+                orcid=orcid,
+                researcher_qid=researcher_qid,
+                paper_dois=papers_entries,
+                property_id="P50",
+            )
         )
-    )
 
     external_ids = get_external_ids(data)
     for key, value in external_ids.items():

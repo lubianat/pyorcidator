@@ -2,8 +2,15 @@
   "Bioinformatics": "Q128570",
   "Cheminformatics": "Q910164",
   "Data Integration": "Q386824",
+  "Health Behaviors": "Q19374090",
+  "Health Psychology": "Q1403186",
+  "Healthy Diet": "Q5906358",
   "Knowledge Assembly": "Q114662985",
   "Metagenomics": "Q903778",
   "Networks Biology": "Q114662947",
+  "Physical Activity": "Q747883",
+  "Positive Organizational Health Psychology": "Q114664392",
+  "Positive Psychology": "Q718809",
+  "Sleep": "Q35831",
   "Systems Biology": "Q815297"
 }
