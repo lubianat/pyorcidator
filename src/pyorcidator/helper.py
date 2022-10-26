@@ -35,10 +35,11 @@ EXTERNAL_ID_PROPERTIES = {
     "twitter": "P2002",
     "scopus": "P1153",
 }
+HTTP_REGEX = "(https?:\/\/)?"
 PREFIXES = [
-    ("github", "https://github.com/"),
-    ("twitter", "https://twitter.com/"),
-    ("scopus", "https://www.scopus.com/authid/detail.uri?authorId=")
+    ("github", "github.com/"),
+    ("twitter", "twitter.com/"),
+    ("scopus", "www.scopus.com/authid/detail.uri?authorId=")
     # TODO linkedin, figshare, researchgate, publons, semion, semantic scholar, google scholar, etc.
 ]
 
@@ -52,8 +53,9 @@ def get_external_ids(data) -> Mapping[str, str]:
         # url_name = d["url-name"].lower().replace(" ", "")
         url = d["url"]["value"].rstrip("/")
         for key, url_prefix in PREFIXES:
-            if url.startswith(url_prefix):
-                rv[key] = url[len(url_prefix) :]
+            prefix_w_regex = f"{HTTP_REGEX}{url_prefix}"
+            if re.match(prefix_w_regex, url):
+                rv[key] = re.sub(prefix_w_regex, "", url)
     return rv
 
 

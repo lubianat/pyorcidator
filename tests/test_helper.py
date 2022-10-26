@@ -103,12 +103,14 @@ def test_get_github(orcid_w_external_links):
     assert orcid_w_external_links["github"] == "seljaseppala"
 
 
-def test_get_twitter():
+def test_get_twitter(orcid_w_other_external_links):
     """Test getting a twitter link."""
-    orcid = "0000-0001-7542-0286"  # Egon Willighagen
-    data = get_orcid_data(orcid)
-    ids = get_external_ids(data)
-    assert ids["twitter"] == "egonwillighagen"
+    assert orcid_w_other_external_links["twitter"] == "egonwillighagen"
+
+
+def test_get_github_no_https(orcid_w_other_external_links):
+    """Test getting a github link with no https."""
+    assert orcid_w_other_external_links["github"] == "egonw"
 
 
 def test_get_scopus(orcid_w_external_links):
