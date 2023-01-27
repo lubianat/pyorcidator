@@ -298,7 +298,10 @@ def process_keyword_entries(
     fields = [keyword["content"] for keyword in keyword_data]
     field_of_work_list = []
     for field in fields:
-
+        print(field)
+        if ";" in field:
+          fields.extend(field.split(";"))
+          continue
         qualifiers = [_get_orcid_qualifier(orcid)]
 
         field_qid = get_qid_for_item("fields", field)
