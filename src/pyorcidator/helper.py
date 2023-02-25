@@ -9,11 +9,7 @@ import re
 from typing import Dict, List, Mapping, Optional, Tuple, Union
 
 import requests
-from wdcuration import add_key
-
-from .classes import AffiliationEntry
-from .dictionaries import dicts, stem_to_path
-from .quickstatements import (
+from quickstatements_client import (
     CreateLine,
     DateQualifier,
     EntityLine,
@@ -22,7 +18,12 @@ from .quickstatements import (
     Qualifier,
     TextLine,
     TextQualifier,
+    render_lines,
 )
+from wdcuration import add_key
+
+from .classes import AffiliationEntry
+from .dictionaries import dicts, stem_to_path
 from .wikidata_lookup import query_wikidata
 
 logger = logging.getLogger(__name__)
@@ -66,7 +67,7 @@ def render_orcid_qs(orcid: str) -> str:
     Args:
         orcid: The ORCID of the researcher to reconcile to Wikidata.
     """
-    return "\n".join(line.get_line() for line in get_orcid_quickstatements(orcid))
+    return render_lines(get_orcid_quickstatements(orcid), newline="\n")
 
 
 def _get_orcid_qualifier(orcid: str) -> Qualifier:
@@ -296,14 +297,12 @@ def get_affiliation_info(data) -> List[AffiliationEntry]:
 def process_keyword_entries(
     orcid: str, researcher_qid: str, keyword_data: List, property_id: str
 ) -> List[EntityLine]:
-
     fields = [keyword["content"] for keyword in keyword_data]
     field_of_work_list = []
     for field in fields:
-        print(field)
         if ";" in field:
-          fields.extend(field.split(";"))
-          continue
+            fields.extend(field.split(";"))
+            continue
         qualifiers = [_get_orcid_qualifier(orcid)]
 
         field_qid = get_qid_for_item("fields", field)
