@@ -20,7 +20,7 @@ __all__ = [
 
 
 @click.command(name="import")
-@click.argument("orcid")
+@click.option("--orcid", prompt=True, help="The ORCID Id to look up")
 @click.option(
     "-b",
     "--open-browser",
