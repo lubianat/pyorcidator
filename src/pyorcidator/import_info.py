@@ -39,7 +39,7 @@ __all__ = [
 def main(orcid: str, open_browser: bool, upload: bool, batch_name: Optional[str]):
     """Import ORCID information into Wikidata."""
     lines = get_orcid_quickstatements(orcid)
-    print(render_lines(lines))
+    print(render_lines(lines, sep="\t", newline="\n"))
     print(lines_to_url(lines))
     if open_browser:
         lines_to_new_tab(lines)
