@@ -92,12 +92,12 @@ def test_get_github(orcid_w_external_links):
 
 def test_get_twitter(orcid_w_other_external_links):
     """Test getting a twitter link."""
-    assert orcid_w_other_external_links["twitter"] == "egonwillighagen"
+    assert orcid_w_other_external_links["twitter"] == "cthoyt"
 
 
 def test_get_github_no_https(orcid_w_other_external_links):
     """Test getting a github link with no https."""
-    assert orcid_w_other_external_links["github"] == "egonw"
+    assert orcid_w_other_external_links["github"] == "cthoyt"
 
 
 def test_get_scopus(orcid_w_external_links):
