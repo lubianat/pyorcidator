@@ -7,7 +7,7 @@ import json
 import logging
 import re
 from typing import Dict, List, Mapping, Optional, Tuple, Union
-
+import pydantic
 import requests
 from wdcuration import add_key
 
@@ -414,11 +414,14 @@ def process_paper_entries(
     paper_statements = []
 
     qualifiers = [_get_orcid_qualifier(orcid)]
-    for paper in paper_qids:
-        entry = EntityLine(
-            subject=paper, predicate=property_id, target=researcher_qid, qualifiers=qualifiers
-        )
+    try:
+      for paper in paper_qids:
+          entry = EntityLine(
+              subject=paper, predicate=property_id, target=researcher_qid, qualifiers=qualifiers
+          )
 
-        paper_statements.append(entry)
-
+          paper_statements.append(entry)
+    except pydantic.error_wrappers.ValidationError:
+      #TODO
+      pass
     return paper_statements
