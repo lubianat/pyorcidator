@@ -1,3 +1,4 @@
+import os
 import click
 from urllib.parse import quote
 from SPARQLWrapper import SPARQLWrapper, JSON
@@ -30,17 +31,29 @@ def get_orcids_for_event(event_qid):
     help="The QID of the event you are interested in",
 )
 def import_orcids_from_event(event_qid: str):
-    orcids = get_orcids_for_event(event_qid)
+    processed_orcids_file = "processed_orcids.txt"
+    if os.path.exists(processed_orcids_file):
+        with open(processed_orcids_file) as f:
+            processed_orcids = f.read().splitlines()
+    else:
+        processed_orcids = []
 
-    qs = ""
-    for orcid in orcids:
-        print(f"===== Runing for {orcid} ======")
+    orcids = get_orcids_for_event(event_qid)
+    orcids_to_process = [orcid for orcid in orcids if orcid not in processed_orcids]
+
+    for orcid in orcids_to_process:
+        print(f"===== Running for {orcid} ======")
         qs = render_orcid_qs(orcid)
         quoted_qs = quote(qs.replace("\t", "|").replace("\n", "||"), safe="")
         url = f"https://quickstatements.toolforge.org/#/v1={quoted_qs}\\"
         print(qs)
         print(url)
         mock = input("Enter anything to continue.")
+
+        # Record processed ORCIDs
+        processed_orcids.append(orcid)
+        with open(processed_orcids_file, "a") as f:
+            f.write(f"{orcid}\n")
 
 
 if __name__ == "__main__":

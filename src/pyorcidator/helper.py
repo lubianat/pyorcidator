@@ -250,9 +250,14 @@ def get_date(
         return None, None
     month = int(date["month"]["value"]) if date["month"] else 1
     day = date["day"] and int(date["day"]["value"])
+
     if day:
         # precision of 11 means day is known
-        return datetime.datetime(year=year, month=month, day=day), 11
+        try:
+            return datetime.datetime(year=year, month=month, day=day), 11
+        except:
+            return datetime.datetime(year=year, month=month, day=1), 10
+
     elif month:
         # precision of 10 means up to the month is known
         return datetime.datetime(year=year, month=month, day=1), 10
