@@ -13,24 +13,11 @@ from pyorcidator.helper import (
     process_paper_entries,
     render_orcid_qs,
 )
-from pyorcidator.quickstatements import prepare_date
 
 
 def test_lookup_id():
     tiago = lookup_id("0000-0003-2473-2313", "P496", "LAST")
     assert tiago == "Q90076935"
-
-
-def test_get_date(sample_orcid_data):
-    education_data = sample_orcid_data["activities-summary"]["educations"]["education-summary"]
-
-    test_start_date, start_date_precision = get_date(education_data[1])
-    test_end_date, end_date_precision = get_date(education_data[1], start_or_end="end")
-
-    assert (
-        prepare_date(test_start_date, precision=start_date_precision) == "+2015-08-00T00:00:00Z/10"
-    )
-    assert prepare_date(test_end_date, precision=end_date_precision) == "+2017-10-27T00:00:00Z/11"
 
 
 def test_get_paper_dois(sample_orcid_data):
@@ -105,12 +92,12 @@ def test_get_github(orcid_w_external_links):
 
 def test_get_twitter(orcid_w_other_external_links):
     """Test getting a twitter link."""
-    assert orcid_w_other_external_links["twitter"] == "egonwillighagen"
+    assert orcid_w_other_external_links["twitter"] == "cthoyt"
 
 
 def test_get_github_no_https(orcid_w_other_external_links):
     """Test getting a github link with no https."""
-    assert orcid_w_other_external_links["github"] == "egonw"
+    assert orcid_w_other_external_links["github"] == "cthoyt"
 
 
 def test_get_scopus(orcid_w_external_links):

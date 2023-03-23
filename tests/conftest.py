@@ -32,7 +32,7 @@ def orcid_w_external_links():
 @pytest.fixture
 def orcid_w_other_external_links():
     # Useful for testing twitter and github with no https in URL
-    orcid = "0000-0001-7542-0286"  # Egon Willighagen
+    orcid = "0000-0003-4423-4370"  # Charlie Hoyt
     data = get_orcid_data(orcid)
     ids = get_external_ids(data)
 
