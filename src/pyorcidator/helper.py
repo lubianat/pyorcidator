@@ -296,14 +296,13 @@ def get_affiliation_info(data) -> List[AffiliationEntry]:
 def process_keyword_entries(
     orcid: str, researcher_qid: str, keyword_data: List, property_id: str
 ) -> List[EntityLine]:
-
     fields = [keyword["content"] for keyword in keyword_data]
     field_of_work_list = []
     for field in fields:
         print(field)
         if ";" in field:
-          fields.extend(field.split(";"))
-          continue
+            fields.extend(field.split(";"))
+            continue
         qualifiers = [_get_orcid_qualifier(orcid)]
 
         field_qid = get_qid_for_item("fields", field)
@@ -387,7 +386,9 @@ def get_paper_dois(group_of_works_from_orcid: List[Dict]) -> List[str]:
 def get_paper_qids(papers_dois: List[str]) -> List[str]:
     """Get QIDs for list of DOIs"""
 
-    doi_values = " ".join(f"'{doi.upper()}'" for doi in papers_dois)
+    filtered_list_of_dois = [a for a in papers_dois if a[0:3] == "10."]
+    print(filtered_list_of_dois)
+    doi_values = " ".join(f"'{doi.upper()}'" for doi in filtered_list_of_dois)
 
     query = f"""\
         SELECT ?item
@@ -415,13 +416,13 @@ def process_paper_entries(
 
     qualifiers = [_get_orcid_qualifier(orcid)]
     try:
-      for paper in paper_qids:
-          entry = EntityLine(
-              subject=paper, predicate=property_id, target=researcher_qid, qualifiers=qualifiers
-          )
+        for paper in paper_qids:
+            entry = EntityLine(
+                subject=paper, predicate=property_id, target=researcher_qid, qualifiers=qualifiers
+            )
 
-          paper_statements.append(entry)
+            paper_statements.append(entry)
     except pydantic.error_wrappers.ValidationError:
-      #TODO
-      pass
+        # TODO
+        pass
     return paper_statements
