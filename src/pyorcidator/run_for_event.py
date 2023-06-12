@@ -2,7 +2,7 @@ import os
 import click
 from urllib.parse import quote
 from SPARQLWrapper import SPARQLWrapper, JSON
-from pyorcidator.import_info import render_orcid_qs
+from pyorcidator.helper import render_orcid_qs
 
 
 def get_orcids_for_event(event_qid):
